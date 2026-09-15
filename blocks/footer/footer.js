@@ -71,3 +71,5 @@ export default async function decorate(block) {
     block.querySelectorAll('.footer-column-title').forEach((t) => t.setAttribute('aria-expanded', 'false'));
   });
 }
+
+// cache-bust 20260915141455

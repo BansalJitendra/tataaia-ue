@@ -96,7 +96,7 @@
         {
           "name": "table-data",
           "instances": [
-            ".term-insurance-maininfo-container table"
+            "table"
           ]
         },
         {

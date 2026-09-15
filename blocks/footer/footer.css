@@ -1,20 +1,171 @@
+/* Tata AIA footer — mobile-first. Light-grey background, brand + social, link
+   columns (accordion on mobile, multi-column grid on desktop), legal strip. */
+
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: #f5f5f5;
+  color: var(--text-color, #58595b);
+  font-size: 14px;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+footer .footer-inner {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 32px 16px 24px;
 }
 
-footer .footer p {
+/* ---- brand + social ---- */
+footer .footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+footer .footer-logo {
   margin: 0;
 }
 
+footer .footer-logo img {
+  height: 40px;
+  width: auto;
+}
+
+footer .footer-social {
+  display: flex;
+  gap: 16px;
+  margin: 8px 0 0;
+}
+
+footer .footer-social a {
+  display: inline-flex;
+  transition: opacity 0.2s;
+}
+
+footer .footer-social a:hover {
+  opacity: 0.7;
+}
+
+footer .footer-social img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* ---- link columns (mobile accordion) ---- */
+footer .footer-columns {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-column {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+footer .footer-column-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  color: var(--heading-color, #333);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer .footer-column-title::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 2px solid currentcolor;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+}
+
+footer .footer-column-open .footer-column-title::after {
+  transform: rotate(-135deg);
+}
+
+footer .footer-column > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 12px;
+  display: none;
+}
+
+footer .footer-column-open > ul {
+  display: block;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer-column > ul a {
+  display: block;
+  padding: 6px 0;
+  color: var(--text-color, #58595b);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+footer .footer-column > ul a:hover {
+  color: var(--brand-primary, #d62049);
+  text-decoration: underline;
+}
+
+/* ---- legal / copyright ---- */
+footer .footer-legal {
+  padding-top: 20px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #777;
+}
+
+footer .footer-legal p {
+  margin: 0 0 10px;
+}
+
+footer .footer-legal strong {
+  color: var(--heading-color, #333);
+}
+
+/* ================= Desktop ================= */
 @media (width >= 900px) {
-  footer .footer > div {
+  footer .footer-inner {
     padding: 40px 32px 24px;
+  }
+
+  footer .footer-brand {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* columns become a multi-column grid; all lists open */
+  footer .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 32px;
+    padding: 32px 0;
+  }
+
+  footer .footer-column {
+    border-bottom: none;
+  }
+
+  footer .footer-column-title {
+    padding: 0 0 12px;
+    cursor: default;
+  }
+
+  /* hide the accordion chevron on desktop */
+  footer .footer-column-title::after {
+    display: none;
+  }
+
+  footer .footer-column > ul {
+    display: block;
+    padding: 0;
   }
 }

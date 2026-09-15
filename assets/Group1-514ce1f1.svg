@@ -1,0 +1,18 @@
+<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<rect id="Rectangle" width="36.9565" height="36.9565" rx="18.4783" fill="#1F5790"/>
+<g id="Group 9">
+<g id="Group 6">
+<g id="Group 3">
+<mask id="mask0_104_101" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="31" height="30">
+<path id="Clip 2" fill-rule="evenodd" clip-rule="evenodd" d="M3.69531 3.2467H33.0938V32.6453H3.69531V3.2467Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_104_101)">
+<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M33.0939 17.9458C33.0939 26.0647 26.513 32.6453 18.3944 32.6453C10.2759 32.6453 3.69531 26.0647 3.69531 17.9458C3.69531 9.82757 10.2759 3.2467 18.3944 3.2467C26.513 3.2467 33.0939 9.82757 33.0939 17.9458" fill="#1F5790"/>
+</g>
+</g>
+<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M16.2291 26.6587V18.8132H13.6309V15.7776H16.2291V13.0622C16.2291 13.0622 16.3459 9.90945 19.4111 9.53003H22.5054V12.3326H20.5204C20.5204 12.3326 19.4694 12.3034 19.3819 13.5584V15.8063H22.4471L22.0384 18.8132H19.3819L19.3787 26.6634L16.2291 26.6587Z" fill="#FEFEFE"/>
+</g>
+</g>
+</g>
+</svg>

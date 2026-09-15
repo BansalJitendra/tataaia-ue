@@ -21,6 +21,23 @@ export default function parse(element, { document }) {
     return out;
   }
 
+  // Detect a leading section heading (h1–h4) that is NOT part of a repeating
+  // card item, so it can be emitted as section-level default content.
+  function extractSectionHeading(itemSelector) {
+    const headings = Array.from(element.querySelectorAll('h1, h2, h3, h4'));
+    for (const h of headings) {
+      if (itemSelector && h.closest(itemSelector)) continue;
+      const text = h.textContent.trim();
+      if (text) {
+        const out = document.createElement(h.tagName.toLowerCase());
+        out.textContent = text;
+        return out;
+      }
+    }
+    return null;
+  }
+
+  const sectionHeading = extractSectionHeading('.things-card-layout');
   const cards = Array.from(element.querySelectorAll('.things-card-layout'));
   const cells = [];
 
@@ -69,5 +86,11 @@ export default function parse(element, { document }) {
   }
 
   const block = WebImporter.Blocks.createBlock(document, { name: 'cards-article', cells });
-  element.replaceWith(block);
+  // Emit the section heading as default content BEFORE the block table so it
+  // survives into the output as section-level content (not inside a card cell).
+  if (sectionHeading) {
+    element.replaceWith(sectionHeading, block);
+  } else {
+    element.replaceWith(block);
+  }
 }

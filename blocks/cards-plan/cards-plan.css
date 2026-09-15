@@ -1,32 +1,121 @@
+/* Block: cards-plan — Tata AIA "Top Selling Plans" cards
+   Values extracted from source .bannerSectionCategoryCards computed styles. */
+
+.cards-plan-wrapper {
+  width: 100%;
+}
+
+/* Section heading (h2 sits outside the block in the same section) */
+.cards-plan-container h2,
+.cards-plan-wrapper + * h2 {
+  text-align: center;
+}
+
 .cards-plan ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 4px;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
 }
 
 .cards-plan li {
+  position: relative;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 16px;
-  border: 1px solid var(--dark-color, #dadada);
-  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid rgb(224 238 247);
+  border-radius: 20px;
+  box-shadow: rgb(0 92 149 / 12%) 0 8px 16px -2px;
+  padding: 24px 10px 10px;
+  overflow: visible;
 }
 
+/* Icon / image cell */
 .cards-plan .cards-plan-card-image {
-  width: 40px;
+  width: auto;
+  margin: 0;
+  text-align: center;
+}
+
+.cards-plan .cards-plan-card-image p {
+  margin: 0;
 }
 
 .cards-plan .cards-plan-card-image img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* Guard: if the image asset is unavailable and EDS renders the standalone
+   image-link as a button/link, keep it icon-sized and never blow out the
+   grid track. In production this cell holds a 48px <img>. */
+.cards-plan .cards-plan-card-image a,
+.cards-plan .cards-plan-card-image a.button {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: transparent;
+  font-size: 0;
+  overflow: hidden;
+}
+
+/* Body cell */
+.cards-plan .cards-plan-card-body {
   width: 100%;
-  height: auto;
 }
 
 .cards-plan .cards-plan-card-body > * {
   margin: 0;
+}
+
+.cards-plan .cards-plan-card-body h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--heading-color);
+  margin: 5px 0;
+  letter-spacing: 0;
+}
+
+.cards-plan .cards-plan-card-body h3 a {
+  color: var(--heading-color);
+  text-decoration: none;
+}
+
+.cards-plan .cards-plan-card-body p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* Discount / returns ribbon tag */
+.cards-plan .cards-plan-tag {
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 4px 8px;
+  border-radius: 0 0 9px 9px;
+  background-color: var(--brand-primary);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 @media (width >= 600px) {
@@ -38,5 +127,6 @@
 @media (width >= 900px) {
   .cards-plan ul {
     grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
   }
 }

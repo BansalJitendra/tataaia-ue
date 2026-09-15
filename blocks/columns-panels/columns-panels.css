@@ -1,32 +1,55 @@
-.columns-panels > div {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-}
+/* Block: columns-panels
+ * Source: .term-insurance-maininfo-container (Tata AIA "Life Insurance" intro)
+ * Layout: stacked — centered gradient heading on top, full-width description below.
+ * Values extracted from source computed styles.
+ */
 
-.columns-panels > div > div {
+.columns-panels > div {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 20px;
-  border: 1px solid var(--dark-color, #dadada);
-  border-radius: 8px;
+  gap: 8px;
 }
 
-.columns-panels .columns-panels-img-col {
-  padding: 0;
-  border: none;
+/* heading cell — centered gradient text (source: h1 700, gradient span) */
+.columns-panels > div > div:first-child {
+  text-align: center;
 }
 
-.columns-panels .columns-panels-img-col img {
-  width: 100%;
-  height: auto;
-  display: block;
+.columns-panels h1,
+.columns-panels h2,
+.columns-panels h3 {
+  margin: 0;
+  font-size: 28px; /* source gradient text span renders 28px */
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+
+  /* blue -> red gradient clipped to text (source: linear-gradient(89deg,
+     rgb(0,115,187) 0.58%, rgb(214,32,73) 99.42%)) */
+  background: linear-gradient(89deg, #0073bb 0.58%, #d62049 99.42%);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* description cell — full width, left aligned grey body copy */
+.columns-panels > div > div:last-child {
+  text-align: start;
+}
+
+.columns-panels > div > div:last-child,
+.columns-panels > div > div:last-child p {
+  color: #58595b; /* --text-color */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 @media (width >= 900px) {
+  /* remain stacked; heading and description are full width on the source */
   .columns-panels.columns-panels-2-cols > div {
-    grid-template-columns: 1fr 1fr;
-    align-items: stretch;
+    grid-template-columns: none;
   }
 }

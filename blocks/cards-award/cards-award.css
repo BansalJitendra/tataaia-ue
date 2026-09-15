@@ -1,33 +1,61 @@
-.cards-award ul {
+/* Block: cards-award — Awards & Recognition
+ * Values extracted from source .award-section (Swiper teaser cards).
+ * Row of ~4 award cards: image on top, bold centered caption below.
+ */
+
+.cards-award > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 24px; /* source slide margin-right: 24px */
 }
 
-.cards-award li {
+/* Card = source .cmp-teaser: rounded, subtle shadow, white surface */
+.cards-award > ul > li {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 12px;
-  padding: 16px;
+  background-color: #fff;
+  border-radius: 14px; /* source teaser border-radius */
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 10%); /* source teaser box-shadow */
+  overflow: hidden; /* keep image corners within card radius */
+}
+
+/* Image cell */
+.cards-award .cards-award-card-image {
+  line-height: 0;
+
+  /* defensive: reserve space + light backdrop so 404 DAM images don't collapse */
+  min-height: 180px;
+  background-color: var(--light-color, #f4f7fb);
 }
 
 .cards-award .cards-award-card-image img {
+  display: block;
   width: 100%;
   height: auto;
   object-fit: contain;
 }
 
-.cards-award .cards-award-card-body > * {
+/* Caption cell — source .cmp-teaser__content padding: 16px 27px */
+.cards-award .cards-award-card-body {
+  padding: 16px 27px;
+  text-align: center;
+}
+
+.cards-award .cards-award-card-body p {
   margin: 0;
+  font-family: var(--body-font-family, 'Inter', sans-serif);
+  font-size: 18px; /* source caption */
+  font-weight: 700;
+  line-height: normal;
+  color: var(--heading-color, #333); /* source rgb(51,51,51) */
+  text-align: center;
 }
 
 @media (width >= 900px) {
-  .cards-award ul {
-    grid-template-columns: repeat(4, 1fr);
+  .cards-award > ul {
+    grid-template-columns: repeat(4, 1fr); /* row of 4 award cards */
   }
 }

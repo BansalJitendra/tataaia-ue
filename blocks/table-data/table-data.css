@@ -1,44 +1,58 @@
+/* Block: table-data — Tata AIA comparison table (e.g. Online vs Offline).
+ * Values extracted from source computed styles of the "Feature / Online / Offline"
+ * table on https://www.tataaia.com/ :
+ *   table  -> border-collapse: collapse; transparent bg; no outer border
+ *   th/td  -> padding 0; no borders; text-align left; vertical-align top
+ *   text   -> 16px, #333 (heading color), line-height 24px (1.5)
+ *   header <b> + first-column <strong> -> font-weight 700
+ * The source table is intentionally minimal/borderless; a light horizontal
+ * gutter is used only to separate the value columns (Yes/No) from the label
+ * column — no decorative borders or fills are added.
+ */
+
 .table-data {
   width: 100%;
   overflow-x: auto;
 }
 
 .table-data table {
-  width: 100%;
+  width: auto;
   max-width: 100%;
   border-collapse: collapse;
-  font-size: var(--body-font-size-xs);
-}
-
-@media (width >= 600px) {
-  .table-data table {
-    font-size: var(--body-font-size-s);
-  }
-}
-
-@media (width >= 900px) {
-  .table-data table {
-    font-size: var(--body-font-size-m);
-  }
-}
-
-.table-data table thead tr {
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-}
-
-.table-data table tbody tr {
-  border-bottom: 1px solid;
-}
-
-.table-data table th {
-  font-weight: 700;
+  background-color: transparent;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m); /* 16px */
+  line-height: 1.5;                    /* 24px on 16px */
+  color: var(--heading-color);         /* #333 */
 }
 
 .table-data table th,
 .table-data table td {
-  padding: 0.5em;
+  padding: 0 32px 0 0; /* source cells: 0; right gutter separates columns */
+  border: 0;
   text-align: left;
+  vertical-align: top;
+  color: var(--heading-color);
+  font-size: var(--body-font-size-m);
+  line-height: 1.5;
+}
+
+/* Header row: bold text only (source uses <b>, no fill/border) */
+.table-data table thead th {
+  font-weight: 700;
+}
+
+/* value columns (Yes/No) hug the right edge like the source */
+.table-data table th:last-child,
+.table-data table td:last-child {
+  padding-right: 0;
+}
+
+/* bold feature labels inside the first column (authored <strong>) */
+.table-data table td strong,
+.table-data table td b {
+  font-weight: 700;
+  color: var(--heading-color);
 }
 
 .table-data table th p,
@@ -50,6 +64,7 @@
   margin-top: 0.25em;
 }
 
-.table-data.no-header table tbody tr {
-  border-top: 1px solid;
+/* no-header variant: all rows are data rows */
+.table-data.no-header table thead th {
+  font-weight: 400;
 }

@@ -1,76 +1,134 @@
+/*
+ * tabs-links — "Popular Searches" style link groups.
+ * Source: https://www.tataaia.com/ .popular-searches-section
+ * Each block row becomes a tab (the title) + a panel (the link chip list).
+ * Values extracted via getComputedStyle from the source.
+ */
+
+.tabs-links {
+  margin: 0;
+}
+
+/* --- Tab list (title chips) --- */
 .tabs-links .tabs-links-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  max-width: 100%;
-  font-size: var(--body-font-size-xs);
-  overflow-x: auto;
-}
-
-@media (width >= 600px) {
-  .tabs-links .tabs-links-list {
-    font-size: var(--body-font-size-s);
-  }
-}
-
-@media (width >= 900px) {
-  .tabs-links .tabs-links-list {
-    font-size: var(--body-font-size-m);
-  }
-}
-
-.tabs-links .tabs-links-list button {
-  flex: 0 0 max-content;
+  gap: 12px;
   margin: 0;
-  border: 1px solid #dadada;
+  padding: 0;
+}
+
+/*
+ * The tab button holds the section title. On the source this is rendered as a
+ * large bold heading, so we reset the global red-pill button styling and match
+ * the source heading (36px / 700 / #333).
+ */
+.tabs-links .tabs-links-list button.tabs-links-tab {
+  margin: 0 0 20px;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+  color: var(--heading-color, #333);
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xxl); /* 28px mobile → 36px desktop */
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  text-align: left;
+  white-space: normal;
+  overflow: visible;
+  cursor: default;
+  transition: none;
+}
+
+.tabs-links .tabs-links-list button.tabs-links-tab:hover,
+.tabs-links .tabs-links-list button.tabs-links-tab:focus {
+  background-color: transparent;
+  color: var(--heading-color, #333);
+}
+
+.tabs-links .tabs-links-list button.tabs-links-tab p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+/*
+ * When there is more than one tab, render them as selectable pill chips
+ * (unselected = outlined, selected = filled). Single-tab blocks keep the
+ * heading look above.
+ */
+.tabs-links .tabs-links-list:has(button.tabs-links-tab + button.tabs-links-tab) button.tabs-links-tab {
+  margin: 0;
+  border: 1px solid var(--text-color, #58595b);
   border-radius: 999px;
-  padding: 0.5em 1em;
-  background-color: var(--light-color, #f8f8f8);
-  color: initial;
-  font-weight: bold;
-  line-height: unset;
-  text-align: initial;
-  white-space: nowrap;
-  transition: background-color 0.2s;
+  padding: 7px 16px 6px;
+  color: var(--text-color, #58595b);
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
 }
 
-.tabs-links .tabs-links-list button p {
-  margin: 0;
+.tabs-links .tabs-links-list:has(button.tabs-links-tab + button.tabs-links-tab) button.tabs-links-tab[aria-selected='true'] {
+  background-color: var(--text-color, #58595b);
+  color: #fff;
+  cursor: default;
 }
 
-.tabs-links .tabs-links-list button[aria-selected='true'] {
-  background-color: var(--text-color, #131313);
-  color: var(--background-color, #fff);
-  cursor: initial;
-}
-
-/* Link-list panel: category links laid out in a responsive grid */
+/* --- Panel (link chip grid) --- */
 .tabs-links .tabs-links-panel {
-  margin-top: 16px;
-  padding: 8px 0;
+  margin: 0;
+  padding: 0;
 }
 
 .tabs-links .tabs-links-panel[aria-hidden='true'] {
   display: none;
 }
 
-.tabs-links .tabs-links-panel ul {
-  list-style: none;
+.tabs-links .tabs-links-panel > div {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px 24px;
 }
 
-@media (width >= 600px) {
-  .tabs-links .tabs-links-panel ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* Link list: wrapped flex row of rectangular bordered chips */
+.tabs-links .tabs-links-panel ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
 }
 
-@media (width >= 900px) {
-  .tabs-links .tabs-links-panel ul {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.tabs-links .tabs-links-panel ul li {
+  margin: 0;
+  padding: 0;
+}
+
+/* The chip itself — anchor styled as the bordered box from the source */
+.tabs-links .tabs-links-panel ul li a:any-link {
+  display: inline-block;
+  border: 1px solid var(--text-color, #58595b);
+  border-radius: 0;
+  padding: 7px 12px 6px;
+  background-color: transparent;
+  color: var(--text-color, #58595b);
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.tabs-links .tabs-links-panel ul li a:hover,
+.tabs-links .tabs-links-panel ul li a:focus {
+  border-color: var(--brand-primary, #d62049);
+  color: var(--brand-primary, #d62049);
+  text-decoration: none;
 }

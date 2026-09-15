@@ -1,3 +1,10 @@
+/* Block: hero-banner -- full-width mid-page / regulatory banner.
+   Values extracted from tataaia.com homepage banner slider (computed styles):
+   the active slide is a full-bleed 1206x400 (~3:1) illustrated image, centered
+   at max-width 1206px, object-fit: fill, overflow hidden, no border-radius. */
+
+/* Full-width: escape the section's 1200px max-width and side padding, then
+   re-center at the source banner's own 1206px max-width. */
 .hero-banner-container .hero-banner-wrapper {
   max-width: unset;
   padding: 0;
@@ -5,14 +12,46 @@
 
 .hero-banner {
   position: relative;
+  box-sizing: border-box;
+  max-width: 1206px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* ---- Image-only banner (source behaviour) --------------------------------
+   A single full-width clickable image whose intrinsic ~3:1 ratio drives the
+   height. */
+.hero-banner .hero-banner-media,
+.hero-banner .hero-banner-media a {
+  display: block;
+  width: 100%;
+}
+
+.hero-banner .hero-banner-media picture,
+.hero-banner .hero-banner-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  /* Match the source slide's aspect ratio (1206 x 400). */
+  aspect-ratio: 1206 / 400;
+  object-fit: fill;
+}
+
+/* ---- Background + foreground fallback ------------------------------------
+   When the banner is authored as an illustrated background with real overlay
+   content (logos, paragraph, CTA), layer the text on top of the art. */
+.hero-banner:has(.hero-banner-content) {
   display: flex;
   align-items: center;
   min-height: 320px;
   padding: 32px 24px;
-  overflow: hidden;
+
+  /* Light pink -> blue illustrated tint sampled from the source banner,
+     shown while / if the background image is unavailable. */
+  background: linear-gradient(90deg, #fdeef2 0%, #f4f7fb 55%, #eaf3fb 100%);
 }
 
-/* Background image layer */
 .hero-banner .hero-banner-bg {
   position: absolute;
   inset: 0;
@@ -26,37 +65,60 @@
   object-fit: cover;
 }
 
-/* Foreground content */
 .hero-banner .hero-banner-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  max-width: 1200px;
-  margin: 0 auto;
   width: 100%;
+  max-width: 1206px;
+  margin: 0 auto;
 }
 
 .hero-banner .hero-banner-content > * {
   margin: 0;
 }
 
-/* Badge chips: any inline list of short items directly under the content */
-.hero-banner .hero-banner-content ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 0;
-  list-style: none;
+/* Logos / images that sit in the foreground content keep intrinsic size. */
+.hero-banner .hero-banner-content img {
+  width: auto;
+  height: auto;
+  max-height: 56px;
 }
 
-.hero-banner .hero-banner-content .button-container {
+.hero-banner .hero-banner-content p {
+  color: var(--heading-color);
+  font-size: var(--body-font-size-m);
+  line-height: 1.5;
+}
+
+/* CTA button -- brand red pill from the source "Know More" button.
+   Match the global a.button specificity baseline. */
+.hero-banner .button-container {
   margin-top: 8px;
 }
 
+main .hero-banner a.button:any-link {
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  background-color: var(--brand-primary);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+main .hero-banner a.button:hover,
+main .hero-banner a.button:focus {
+  background-color: var(--brand-primary-dark);
+  color: #fff;
+}
+
 @media (width >= 900px) {
-  .hero-banner {
-    min-height: 420px;
-    padding: 48px 32px;
+  .hero-banner:has(.hero-banner-content) {
+    min-height: 400px;
+    padding: 48px 40px;
   }
 }

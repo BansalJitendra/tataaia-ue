@@ -1,0 +1,33 @@
+/* Brand design tokens extracted from https://www.tataaia.com/ */
+:root {
+  /* fonts */
+  --heading-font-family: "Inter", sans-serif;
+  --body-font-family: "Inter", sans-serif;
+
+  /* base colors */
+  --background-color: #fff;
+  --text-color: #58595b;
+  --heading-color: #333;
+  --link-color: #0073bb;
+  --link-hover-color: #005a91;
+
+  /* brand palette */
+  --brand-primary: #d62049;      /* Tata AIA CTA red/magenta */
+  --brand-primary-dark: #b81a3d;
+  --brand-secondary: #6e2b62;    /* deep magenta */
+  --brand-blue: #0073bb;         /* accent blue */
+  --light-color: #f4f7fb;        /* blue-tone-light section bg */
+  --dark-color: #333;
+
+  /* spacing */
+  --section-padding: 40px;
+  --nav-height: 40px;
+
+  /* heading sizes (desktop) */
+  --heading-size-xxl: 36px;
+  --heading-size-xl: 28px;
+  --heading-size-l: 24px;
+  --heading-size-m: 22px;
+  --heading-size-s: 18px;
+  --heading-size-xs: 16px;
+}

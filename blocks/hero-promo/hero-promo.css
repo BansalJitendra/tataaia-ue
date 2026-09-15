@@ -1,3 +1,7 @@
+/* Block: hero-promo -- full-bleed dark promo banner
+   Values extracted from tataaia.com homepage banner slider (computed styles). */
+
+/* Full-width: escape the section's 1200px max-width and side padding */
 .hero-promo-container .hero-promo-wrapper {
   max-width: unset;
   padding: 0;
@@ -7,9 +11,15 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 320px;
-  padding: 32px 24px;
+  min-height: 300px;
+  padding: 24px 20px;
   overflow: hidden;
+  border-radius: 20px;
+  color: #fff;
+
+  /* Deep-blue fallback sampled from the source banner, shown while / if the
+     background image is unavailable so foreground text stays legible. */
+  background-color: rgb(40 71 150);
 }
 
 /* Background image layer */
@@ -31,32 +41,110 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 12px;
   width: 100%;
+  max-width: 1206px;
+  margin: 0 auto;
+  padding-left: 16px;
 }
 
 .hero-promo .hero-promo-content > * {
   margin: 0;
 }
 
-/* Badge chips: any inline list of short items directly under the content */
-.hero-promo .hero-promo-content ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 0;
-  list-style: none;
+/* Eyebrow */
+.hero-promo .hero-promo-eyebrow {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
 }
 
-.hero-promo .hero-promo-content .button-container {
-  margin-top: 8px;
+/* Heading */
+.hero-promo .hero-promo-heading {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+/* Badge chip box -- translucent rounded container */
+.hero-promo .hero-promo-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  border: 1px solid rgb(230 231 232 / 50%);
+  border-radius: 13px;
+  background: rgb(255 255 255 / 8%);
+  padding: 10px 0;
+}
+
+.hero-promo .hero-promo-chip {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fff;
+}
+
+/* vertical divider between chips */
+.hero-promo .hero-promo-chip + .hero-promo-chip {
+  border-left: 1px solid rgb(255 255 255 / 35%);
+}
+
+.hero-promo .hero-promo-fineprint {
+  max-width: 640px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgb(255 255 255 / 85%);
+}
+
+/* CTA button -- white pill with red label */
+.hero-promo .button-container {
+  margin: 4px 0 0;
+}
+
+main .hero-promo a.button:any-link {
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 19px;
+  background-color: #fff;
+  color: var(--brand-primary);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+main .hero-promo a.button:hover,
+main .hero-promo a.button:focus {
+  background-color: #f4f7fb;
+  color: var(--brand-primary);
 }
 
 @media (width >= 900px) {
   .hero-promo {
-    min-height: 420px;
-    padding: 48px 32px;
+    min-height: 300px;
+    padding: 24px 20px;
+  }
+
+  .hero-promo .hero-promo-eyebrow {
+    font-size: 20px;
+  }
+
+  .hero-promo .hero-promo-heading {
+    font-size: 32px;
+  }
+
+  .hero-promo .hero-promo-chip {
+    font-size: 18px;
+  }
+
+  main .hero-promo a.button:any-link {
+    font-size: 20px;
   }
 }

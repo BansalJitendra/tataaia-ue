@@ -1,44 +1,113 @@
+/* Block: cards-promo — "Find the right life insurance plan for you" promo cards.
+   Values extracted from source computed styles (tataaia.com .quiz-test-cards). */
+
+.cards-promo {
+  color: var(--text-color);
+}
+
 .cards-promo ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 30px;
 }
 
+/* Card = photo on top, white content box overlapping its lower edge */
 .cards-promo li {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  min-height: 200px;
-  padding: 24px;
-  border-radius: 8px;
-  overflow: hidden;
 }
 
-/* Photo sits behind the text content */
+/* --- Photo --- */
 .cards-promo .cards-promo-card-image {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 454 / 190;
+
+  /* Defensive: DAM images 404 on localhost — keep the card shape with a
+     brand-light placeholder so the layout never collapses. */
+  background-color: var(--light-color, #f4f7fb);
+}
+
+.cards-promo .cards-promo-card-image p {
+  margin: 0;
+  height: 100%;
+}
+
+.cards-promo .cards-promo-card-image picture {
+  display: block;
+  height: 100%;
 }
 
 .cards-promo .cards-promo-card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
+/* --- White content box, pulled up over the photo bottom --- */
 .cards-promo .cards-promo-card-body {
+  position: relative;
+  z-index: 1;
+  margin: -52px 0 0 24px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  align-items: flex-start;
+  gap: 14px;
+  background-color: #fff;
+  border-radius: 16px 0 16px 16px;
+  box-shadow: 0 0 15px rgb(51 51 51 / 15%);
 }
 
 .cards-promo .cards-promo-card-body > * {
   margin: 0;
+}
+
+.cards-promo .cards-promo-card-body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--heading-color, #333);
+}
+
+/* --- CTA: outlined red pill with arrow (override EDS solid button) --- */
+.cards-promo .cards-promo-card-body .button-container {
+  margin: 0;
+}
+
+.cards-promo a.button:any-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 10px 16px;
+  border: 1px solid var(--brand-primary, #d62049);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--brand-primary, #d62049);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.cards-promo a.button:any-link::after {
+  content: "→";
+  font-size: 15px;
+  line-height: 1;
+}
+
+.cards-promo a.button:hover,
+.cards-promo a.button:focus {
+  background-color: var(--brand-primary, #d62049);
+  color: #fff;
 }
 
 @media (width >= 900px) {

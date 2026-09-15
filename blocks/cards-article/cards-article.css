@@ -1,38 +1,104 @@
+/* Block: cards-article — blog "Related Articles" cards */
+
+/* Values extracted from source computed styles (tataaia.com homepage blog cards). */
+
 .cards-article ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 20px;
 }
 
+/* Card container — .slider-temp-wrap on source */
 .cards-article li {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  border: 1px solid var(--dark-color, #dadada);
-  border-radius: 8px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 0 rgb(0 115 187 / 10%); /* brand-blue tinted shadow */
   overflow: hidden;
 }
 
-.cards-article .cards-article-card-image img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  display: block;
+/* Image wrapper — source landscape ratio ~282x205 */
+.cards-article .cards-article-card-image {
+  position: relative;
+  margin: 0;
+  line-height: 0;
 }
 
+.cards-article .cards-article-card-image p {
+  margin: 0;
+  line-height: 0;
+}
+
+.cards-article .cards-article-card-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 282 / 205;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+
+  /* defensive: DAM images may 404 on localhost — keep box shape + tint */
+  background-color: var(--light-color, #f4f7fb);
+  color: transparent; /* hide broken-image alt text */
+}
+
+/* Category tag overlaid on image bottom-right */
+.cards-article .cards-article-tag {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: var(--text-color, #58595b);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Body — .slider-card-cont-wrap on source */
 .cards-article .cards-article-card-body {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 12px 16px 16px;
+  padding: 16px;
 }
 
 .cards-article .cards-article-card-body > * {
   margin: 0;
+}
+
+/* Title — .blog-car-static-anly-linkpos on source */
+.cards-article .cards-article-card-body h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+.cards-article .cards-article-card-body h3 a:any-link {
+  color: var(--dark-color, #333);
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cards-article .cards-article-card-body h3 a:hover {
+  color: var(--brand-primary, #d62049);
+  text-decoration: none;
+}
+
+/* any stray body paragraphs (e.g. read time) */
+.cards-article .cards-article-card-body p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: var(--text-color, #58595b);
 }
 
 @media (width >= 600px) {

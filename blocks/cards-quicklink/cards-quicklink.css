@@ -1,38 +1,78 @@
+/* cards-quicklink -- centered row of compact icon + label quick-link tiles.
+   Values extracted from source .quick-access-cards teasers. */
+
 .cards-quicklink ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
+/* Tile (source .teaserv2.teaser) */
 .cards-quicklink li {
+  flex: 0 0 auto;
+  width: calc(50% - 8px);
+  padding: 2px;
+  background-color: #fff;
+  border: 1px solid #e0eef7;
+  border-radius: 16px;
+  box-shadow: 1px 1px 12px 4px #f2f3f4;
+}
+
+/* Clickable content: icon stacked above label, centered */
+.cards-quicklink .cards-quicklink-link {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 12px;
+  height: 100%;
+  box-sizing: border-box;
+  color: var(--heading-color, #333);
+  text-decoration: none;
+}
+
+.cards-quicklink .cards-quicklink-link:hover {
+  text-decoration: none;
+  color: var(--heading-color, #333);
+}
+
+/* Icon (source img 54x54). Defensive: fixed box so a 404 DAM asset
+   never collapses the tile layout. */
+.cards-quicklink .cards-quicklink-icon {
+  width: 54px;
+  height: 54px;
+  min-height: 54px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+/* Label (source h3: 16px / 700 / #333, centered) */
+.cards-quicklink .cards-quicklink-label {
+  font-family: var(--heading-font-family, 'Inter', sans-serif);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--heading-color, #333);
   text-align: center;
-  gap: 8px;
-  padding: 16px 12px;
-  border: 1px solid var(--dark-color, #dadada);
-  border-radius: 8px;
 }
 
-.cards-quicklink .cards-quicklink-card-image {
-  width: 40px;
-}
-
-.cards-quicklink .cards-quicklink-card-image img {
-  width: 100%;
-  height: auto;
-}
-
-.cards-quicklink .cards-quicklink-card-body > * {
-  margin: 0;
-}
-
-@media (width >= 600px) {
+@media (width >= 900px) {
   .cards-quicklink ul {
-    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .cards-quicklink li {
+    width: 180px;
+  }
+
+  .cards-quicklink .cards-quicklink-link {
+    gap: 16px;
+    padding: 24px;
   }
 }

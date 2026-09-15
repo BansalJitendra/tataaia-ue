@@ -1,3 +1,7 @@
+/* Block: cards-persona -- persona image cards
+ * Source: https://www.tataaia.com/ "Life insurance plans for everyone"
+ * Values extracted from source computed styles. */
+
 .cards-persona ul {
   list-style: none;
   margin: 0;
@@ -7,34 +11,97 @@
   gap: 16px;
 }
 
+/* Each card: image on top, floating white label overlapping its bottom edge */
 .cards-persona li {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  overflow: hidden;
+  display: block;
+
+  /* reserve room for the label that overhangs below the image */
+  padding-bottom: 28px;
 }
 
+/* --- Full-bleed image with fixed aspect ratio ---
+   The fixed aspect-ratio + background keep the grid stable even when a
+   DAM image 404s on localhost (broken img can't collapse the card). */
+.cards-persona .cards-persona-card-image {
+  position: relative;
+  aspect-ratio: 284 / 160;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--light-color);
+}
+
+.cards-persona .cards-persona-card-image picture,
 .cards-persona .cards-persona-card-image img {
-  width: 100%;
-  height: auto;
   display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
+/* Hide the broken-image glyph / alt text if the source asset 404s */
+.cards-persona .cards-persona-card-image img {
+  color: transparent;
+  font-size: 0;
+}
+
+/* --- Floating white label box (source: .cmp-teaser__description) --- */
 .cards-persona .cards-persona-card-body {
+  position: absolute;
+  left: 20px;
+  right: 0;
+  bottom: 0;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   gap: 8px;
-  padding: 12px;
+  padding: 16px;
+  border-radius: 16px 0 16px 16px;
+  background-color: #fff;
+  box-shadow: 0 0 16px 0 rgb(0 0 0 / 25%);
 }
 
 .cards-persona .cards-persona-card-body > * {
   margin: 0;
 }
 
+/* Title (h3 > a) -- 16px / 600, dark heading colour, tight tracking */
+.cards-persona .cards-persona-card-body h3 {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0;
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+  color: var(--heading-color);
+}
+
+.cards-persona .cards-persona-card-body h3 a:any-link {
+  color: var(--heading-color);
+  font: inherit;
+  letter-spacing: inherit;
+  text-decoration: none;
+}
+
+/* Red rounded-square CTA arrow (source: CTA-Arrow.svg, brand red) */
+.cards-persona .cards-persona-card-body::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: var(--brand-primary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14'/%3E%3Cpath d='M13 6l6 6-6 6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+}
+
 @media (width >= 900px) {
   .cards-persona ul {
     grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
   }
 }

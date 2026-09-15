@@ -1,3 +1,14 @@
+/*
+ * Carousel Review Block -- "Voice of Happy Customers" testimonial slider.
+ * Visual values extracted from https://www.tataaia.com/ (.voiceof-happy-customer / .testinomial-cards).
+ * Horizontally scroll-snapping testimonial cards: avatar + name + plan/meta + quote.
+ *
+ * Decorated DOM:
+ *   li.carousel-review-slide
+ *     div.carousel-review-slide-image     (avatar picture)
+ *     div.carousel-review-slide-content   (h3 name, p meta..., p quote [last])
+ */
+
 .carousel-review .carousel-review-slides-container {
   position: relative;
 }
@@ -11,40 +22,98 @@
 
 .carousel-review .carousel-review-slides {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   overflow: auto hidden;
-  padding-bottom: 8px;
+  padding: 8px 4px 16px;
 }
 
 .carousel-review .carousel-review-slides::-webkit-scrollbar {
   display: none;
 }
 
-/* Multiple testimonial cards visible at once */
+/* --- Testimonial card --- */
 .carousel-review .carousel-review-slide {
-  flex: 0 0 85%;
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 20px;
-  border: 1px solid var(--dark-color, #dadada);
-  border-radius: 8px;
+  scroll-snap-align: center;
+  flex: 0 0 88%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  column-gap: 16px;
+  align-content: start;
+  min-height: 240px;
+  padding: 30px 24px;
+  background-color: #fff;
+  border: 1px solid #daeef8;
+  border-radius: 18px;
+  box-shadow: 0 4px 7px rgb(0 115 187 / 5%);
 }
 
+/* Avatar (column 1, row 1) */
+.carousel-review .carousel-review-slide-image {
+  grid-column: 1;
+  grid-row: 1;
+  width: 80px;
+  height: 80px;
+  padding: 3px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #d0e2f0;
+}
+
+.carousel-review .carousel-review-slide-image p {
+  margin: 0;
+  line-height: 0;
+}
+
+.carousel-review .carousel-review-slide-image picture,
 .carousel-review .carousel-review-slide-image img {
-  width: 56px;
-  height: 56px;
+  display: block;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.carousel-review .carousel-review-slide-content > * {
-  margin: 0;
+/* Content column: name + meta beside the avatar (column 2, row 1) */
+.carousel-review .carousel-review-slide-content {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding-top: 4px;
 }
 
+/* Name */
+.carousel-review .carousel-review-slide-content h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--brand-blue);
+}
+
+/* Meta lines (company / plan / date) */
+.carousel-review .carousel-review-slide-content p {
+  margin: 3px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-color);
+}
+
+/* Quote (last paragraph) -- drop below the avatar and span full card width */
+.carousel-review .carousel-review-slide-content p:last-child {
+  margin-top: 16px;
+  margin-left: -96px;   /* pull back under the avatar column (80px + 16px gap) */
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+/* --- Navigation arrows --- */
 .carousel-review .carousel-review-navigation-buttons {
   display: flex;
   justify-content: flex-end;
@@ -57,34 +126,17 @@
   width: 40px;
   height: 40px;
   padding: 0;
+  border: 1px solid #daeef8;
   border-radius: 50%;
-  background-color: var(--light-color, #f8f8f8);
-}
-
-.carousel-review .carousel-review-slide-indicators {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px;
-}
-
-.carousel-review .carousel-review-slide-indicator button {
-  width: 12px;
-  height: 12px;
-  padding: 0;
-  border-radius: 50%;
-  background-color: #dadada;
-}
-
-.carousel-review .carousel-review-slide-indicator button:disabled {
-  background-color: var(--text-color, #131313);
+  background-color: #fff;
+  box-shadow: 0 4px 7px rgb(0 115 187 / 5%);
+  cursor: pointer;
 }
 
 .carousel-review .carousel-review-navigation-buttons button::after {
   display: block;
   content: '';
-  border: 2px solid;
+  border: 2px solid var(--brand-blue);
   border-bottom: 0;
   border-left: 0;
   height: 10px;
@@ -100,9 +152,34 @@
   left: calc(50% - 2px);
 }
 
+/* --- Dot indicators --- */
+.carousel-review .carousel-review-slide-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+}
+
+.carousel-review .carousel-review-slide-indicator button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: #d0e2f0;
+  cursor: pointer;
+}
+
+.carousel-review .carousel-review-slide-indicator button:disabled {
+  width: 26px;
+  border-radius: 5px;
+  background-color: var(--brand-blue);
+}
+
 @media (width >= 600px) {
   .carousel-review .carousel-review-slide {
-    flex-basis: 45%;
+    flex-basis: 48%;
   }
 }
 

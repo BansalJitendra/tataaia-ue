@@ -1,36 +1,107 @@
+/* Block: cards-stats — stat tiles ("Why choose Tata AIA") */
+
+/* Values extracted from source .whychoose-cards computed styles. Do not replace with generic defaults. */
+
+/* Source section sits on a light blue-tone background (#f4f7fb) with white tiles.
+   Give the block that backdrop so the white cards read the same way as the source. */
+.cards-stats {
+  background-color: var(--light-color);
+  padding: 32px 0;
+}
+
 .cards-stats ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 16px;
 }
 
+/* Tile: white card, icon left, text right, left-aligned (source .proxyteaserv2 box) */
 .cards-stats li {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
-  gap: 8px;
-  padding: 20px 12px;
+  column-gap: 12px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 16px;
 }
 
+/* Icon cell — fixed 50px box, defensive so DAM 404s don't collapse layout */
 .cards-stats .cards-stats-card-image {
-  width: 48px;
+  flex: 0 0 auto;
+  width: 50px;
+  min-width: 50px;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-stats .cards-stats-card-image picture {
+  display: block;
+  width: 100%;
 }
 
 .cards-stats .cards-stats-card-image img {
   width: 100%;
   height: auto;
+  max-height: 54px;
+  object-fit: contain;
+
+  /* Defensive: keep broken-image alt text from bloating the tile */
+  overflow: hidden;
+  color: transparent;
+  font-size: 0;
+}
+
+/* Text column: metric on top, caption below, 8px gap */
+.cards-stats .cards-stats-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
 }
 
 .cards-stats .cards-stats-card-body > * {
   margin: 0;
 }
 
+/* Metric — bold number */
+.cards-stats .cards-stats-card-body h3 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: var(--heading-color);
+}
+
+/* Caption — supporting text */
+.cards-stats .cards-stats-card-body p {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--heading-color);
+}
+
+.cards-stats .cards-stats-card-body sup {
+  font-size: 0.7em;
+}
+
 @media (width >= 900px) {
+  .cards-stats {
+    padding: 40px 0;
+  }
+
   .cards-stats ul {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
   }
 }

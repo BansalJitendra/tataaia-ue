@@ -1,0 +1,12 @@
+{
+  "variantName": "hero-banner",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Full-width mid-page banner with logos, a short paragraph and a Know More CTA over an illustrated background.",
+  "contentPattern": "One background image plus a text group (logos/heading, paragraph, CTA).",
+  "usage": "Mid-page informational/regulatory banner with a background image and call to action.",
+  "options": [],
+  "memberVariantIds": [
+    "hero-banner"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "variantName": "cards-promo",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Promo cards with a photographic background and heading plus a CTA layered on top.",
+  "contentPattern": "Repeating cards: background image cell + body cell (heading, CTA).",
+  "usage": "Highlight two or more promotional offers as image-background cards.",
+  "options": [],
+  "memberVariantIds": [
+    "cards-promo"
+  ]
+}

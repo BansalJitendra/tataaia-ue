@@ -1,0 +1,12 @@
+{
+  "variantName": "table-data",
+  "baseBlock": "table",
+  "canonicalModel": "container",
+  "visualCharacteristics": "Multi-column data comparison grid embedded within article prose.",
+  "contentPattern": "Header row plus data rows of cells.",
+  "usage": "Comparison/data tables inside long-form content.",
+  "options": [],
+  "memberVariantIds": [
+    "table-data"
+  ]
+}

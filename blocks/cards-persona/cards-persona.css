@@ -1,0 +1,40 @@
+.cards-persona ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cards-persona li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cards-persona .cards-persona-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.cards-persona .cards-persona-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+
+.cards-persona .cards-persona-card-body > * {
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .cards-persona ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

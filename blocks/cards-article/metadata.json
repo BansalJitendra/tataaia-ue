@@ -1,0 +1,12 @@
+{
+  "variantName": "cards-article",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Grid of blog/article cards: a landscape thumbnail with a title/link below.",
+  "contentPattern": "Repeating cards: image cell + body cell (title/link).",
+  "usage": "List related articles or blog posts as thumbnail cards.",
+  "options": [],
+  "memberVariantIds": [
+    "cards-article"
+  ]
+}

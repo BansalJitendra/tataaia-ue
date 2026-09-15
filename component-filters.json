@@ -24,7 +24,29 @@
       "table",
       "text",
       "title",
-      "video"
+      "video",
+      "hero-promo",
+      "hero-banner",
+      "cards-plan",
+      "cards-persona",
+      "cards-quicklink",
+      "cards-promo",
+      "cards-award",
+      "cards-stats",
+      "cards-article",
+      "columns-panels",
+      "accordion-list",
+      "carousel-review",
+      "carousel-video",
+      "quote-callout",
+      "table-data",
+      "tabs-links"
+    ]
+  },
+  {
+    "id": "accordion-list",
+    "components": [
+      "accordion-list-item"
     ]
   },
   {
@@ -34,15 +56,75 @@
     ]
   },
   {
+    "id": "cards-article",
+    "components": [
+      "cards-article-card"
+    ]
+  },
+  {
+    "id": "cards-award",
+    "components": [
+      "cards-award-card"
+    ]
+  },
+  {
+    "id": "cards-persona",
+    "components": [
+      "cards-persona-card"
+    ]
+  },
+  {
+    "id": "cards-plan",
+    "components": [
+      "cards-plan-card"
+    ]
+  },
+  {
+    "id": "cards-promo",
+    "components": [
+      "cards-promo-card"
+    ]
+  },
+  {
+    "id": "cards-quicklink",
+    "components": [
+      "cards-quicklink-card"
+    ]
+  },
+  {
+    "id": "cards-stats",
+    "components": [
+      "cards-stats-card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
     ]
   },
   {
+    "id": "carousel-review",
+    "components": [
+      "carousel-review-item"
+    ]
+  },
+  {
+    "id": "carousel-video",
+    "components": [
+      "carousel-video-item"
+    ]
+  },
+  {
     "id": "carousel",
     "components": [
       "carousel-item"
+    ]
+  },
+  {
+    "id": "columns-panels",
+    "components": [
+      "column"
     ]
   },
   {
@@ -58,6 +140,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "table-data",
+    "components": [
+      "table-data-row"
     ]
   },
   {
@@ -82,6 +170,12 @@
     "id": "table-4-columns",
     "components": [
       "table-col-4"
+    ]
+  },
+  {
+    "id": "tabs-links",
+    "components": [
+      "tabs-links-item"
     ]
   },
   {

@@ -1,0 +1,12 @@
+{
+  "variantName": "cards-award",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Row of award cards, each an award image with a short caption, centered.",
+  "contentPattern": "Repeating cards: image cell + caption body.",
+  "usage": "Display awards/recognitions as a row of image-and-caption tiles.",
+  "options": [],
+  "memberVariantIds": [
+    "cards-award"
+  ]
+}

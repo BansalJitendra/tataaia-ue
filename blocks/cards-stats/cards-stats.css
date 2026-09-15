@@ -1,0 +1,36 @@
+.cards-stats ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cards-stats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 20px 12px;
+}
+
+.cards-stats .cards-stats-card-image {
+  width: 48px;
+}
+
+.cards-stats .cards-stats-card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.cards-stats .cards-stats-card-body > * {
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .cards-stats ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

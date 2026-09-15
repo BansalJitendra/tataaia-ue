@@ -1,0 +1,32 @@
+.columns-panels > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.columns-panels > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid var(--dark-color, #dadada);
+  border-radius: 8px;
+}
+
+.columns-panels .columns-panels-img-col {
+  padding: 0;
+  border: none;
+}
+
+.columns-panels .columns-panels-img-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-panels.columns-panels-2-cols > div {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+}

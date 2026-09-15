@@ -1,0 +1,12 @@
+{
+  "variantName": "cards-stats",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Grid of statistic tiles: an icon, a bold metric and a caption, centered.",
+  "contentPattern": "Repeating cards: icon cell + body cell (metric, caption).",
+  "usage": "Present key statistics/metrics as a grid of tiles.",
+  "options": [],
+  "memberVariantIds": [
+    "cards-stats"
+  ]
+}

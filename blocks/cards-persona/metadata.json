@@ -1,0 +1,12 @@
+{
+  "variantName": "cards-persona",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Grid of persona cards with a full-bleed image, a tag chip and a label/CTA overlaid or below.",
+  "contentPattern": "Repeating cards: image cell + body cell (label/tag, optional CTA).",
+  "usage": "Segment content by audience/persona using image-forward tiles.",
+  "options": [],
+  "memberVariantIds": [
+    "cards-persona"
+  ]
+}

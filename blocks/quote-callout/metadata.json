@@ -1,0 +1,12 @@
+{
+  "variantName": "quote-callout",
+  "baseBlock": "quote",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Highlighted callout box with a short heading/title and a paragraph on a tinted background.",
+  "contentPattern": "Quotation cell plus optional attribution cell.",
+  "usage": "Emphasize a short callout or brand statement.",
+  "options": [],
+  "memberVariantIds": [
+    "quote-callout"
+  ]
+}

@@ -1,0 +1,42 @@
+.cards-plan ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cards-plan li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid var(--dark-color, #dadada);
+  border-radius: 8px;
+}
+
+.cards-plan .cards-plan-card-image {
+  width: 40px;
+}
+
+.cards-plan .cards-plan-card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.cards-plan .cards-plan-card-body > * {
+  margin: 0;
+}
+
+@media (width >= 600px) {
+  .cards-plan ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-plan ul {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

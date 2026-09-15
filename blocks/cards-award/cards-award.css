@@ -1,0 +1,33 @@
+.cards-award ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cards-award li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.cards-award .cards-award-card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.cards-award .cards-award-card-body > * {
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .cards-award ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

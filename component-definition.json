@@ -83,6 +83,38 @@
       "id": "blocks",
       "components": [
         {
+          "title": "Accordion List",
+          "id": "accordion-list",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Accordion",
+                  "filter": "accordion-list"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Accordion List Item",
+          "id": "accordion-list-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Accordion List Item",
+                  "model": "accordion-list-item",
+                  "summary": "Lorem Ipsum",
+                  "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat consequat dui, sit amet ...</p>"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Accordion",
           "id": "accordion",
           "plugins": {
@@ -109,6 +141,216 @@
                   "model": "accordion-item",
                   "summary": "Lorem Ipsum",
                   "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat consequat dui, sit amet ...</p>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Article",
+          "id": "cards-article",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards Article",
+                  "filter": "cards-article"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Article Card",
+          "id": "cards-article-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Cards Article Card",
+                  "model": "cards-article-card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Award",
+          "id": "cards-award",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards Award",
+                  "filter": "cards-award"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Award Card",
+          "id": "cards-award-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Cards Award Card",
+                  "model": "cards-award-card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Persona",
+          "id": "cards-persona",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards Persona",
+                  "filter": "cards-persona"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Persona Card",
+          "id": "cards-persona-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Cards Persona Card",
+                  "model": "cards-persona-card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Plan",
+          "id": "cards-plan",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards Plan",
+                  "filter": "cards-plan"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Plan Card",
+          "id": "cards-plan-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Cards Plan Card",
+                  "model": "cards-plan-card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Promo",
+          "id": "cards-promo",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards Promo",
+                  "filter": "cards-promo"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Promo Card",
+          "id": "cards-promo-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Cards Promo Card",
+                  "model": "cards-promo-card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Quicklink",
+          "id": "cards-quicklink",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards Quicklink",
+                  "filter": "cards-quicklink"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Quicklink Card",
+          "id": "cards-quicklink-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Cards Quicklink Card",
+                  "model": "cards-quicklink-card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Stats",
+          "id": "cards-stats",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards Stats",
+                  "filter": "cards-stats"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards Stats Card",
+          "id": "cards-stats-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Cards Stats Card",
+                  "model": "cards-stats-card"
                 }
               }
             }
@@ -145,6 +387,66 @@
           }
         },
         {
+          "title": "Carousel Review",
+          "id": "carousel-review",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Carousel",
+                  "filter": "carousel-review"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Review Item",
+          "id": "carousel-review-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Carousel Review Item",
+                  "model": "carousel-review-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Video",
+          "id": "carousel-video",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Carousel",
+                  "filter": "carousel-video"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Video Item",
+          "id": "carousel-video-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Carousel Video Item",
+                  "model": "carousel-video-item"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Carousel",
           "id": "carousel",
           "plugins": {
@@ -169,6 +471,21 @@
                 "template": {
                   "name": "Carousel Slide",
                   "model": "carousel-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Columns Panels",
+          "id": "columns-panels",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/columns/v1/columns",
+                "template": {
+                  "columns": "2",
+                  "rows": "1"
                 }
               }
             }
@@ -235,6 +552,36 @@
           }
         },
         {
+          "title": "Hero Banner",
+          "id": "hero-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Hero Banner",
+                  "model": "hero-banner"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Hero Promo",
+          "id": "hero-promo",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Hero Promo",
+                  "model": "hero-promo"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Hero",
           "id": "hero",
           "plugins": {
@@ -259,6 +606,21 @@
                 "template": {
                   "name": "Modal",
                   "model": "modal"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Quote Callout",
+          "id": "quote-callout",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Quote Callout",
+                  "model": "quote-callout"
                 }
               }
             }
@@ -290,6 +652,38 @@
                   "name": "Search",
                   "model": "search",
                   "filter": "search"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Table Data",
+          "id": "table-data",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Table Data",
+                  "model": "table-data",
+                  "filter": "table-data"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Row",
+          "id": "table-data-row",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Row",
+                  "model": "table-data-row",
+                  "column1text": "Column1"
                 }
               }
             }
@@ -376,6 +770,38 @@
                   "column2text": "Column2",
                   "column3text": "Column3",
                   "column4text": "Column4"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Tabs Links",
+          "id": "tabs-links",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Tabs",
+                  "filter": "tabs-links"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Tabs Links Item",
+          "id": "tabs-links-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Tabs Links Item",
+                  "model": "tabs-links-item",
+                  "title": "Tab Name",
+                  "content_headingType": "h3"
                 }
               }
             }

@@ -1,0 +1,12 @@
+{
+  "variantName": "columns-panels",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Two side-by-side panels: an options/choice panel and a featured product panel with stats and CTA.",
+  "contentPattern": "Name row plus a row of N side-by-side column cells.",
+  "usage": "Place two related content panels next to each other.",
+  "options": [],
+  "memberVariantIds": [
+    "columns-panels"
+  ]
+}

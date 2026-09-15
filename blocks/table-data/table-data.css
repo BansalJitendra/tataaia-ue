@@ -1,0 +1,55 @@
+.table-data {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-data table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-size: var(--body-font-size-xs);
+}
+
+@media (width >= 600px) {
+  .table-data table {
+    font-size: var(--body-font-size-s);
+  }
+}
+
+@media (width >= 900px) {
+  .table-data table {
+    font-size: var(--body-font-size-m);
+  }
+}
+
+.table-data table thead tr {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.table-data table tbody tr {
+  border-bottom: 1px solid;
+}
+
+.table-data table th {
+  font-weight: 700;
+}
+
+.table-data table th,
+.table-data table td {
+  padding: 0.5em;
+  text-align: left;
+}
+
+.table-data table th p,
+.table-data table td p {
+  margin: 0;
+}
+
+.table-data table td p + p {
+  margin-top: 0.25em;
+}
+
+.table-data.no-header table tbody tr {
+  border-top: 1px solid;
+}

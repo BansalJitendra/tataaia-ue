@@ -1,0 +1,12 @@
+{
+  "variantName": "accordion-list",
+  "baseBlock": "accordion",
+  "canonicalModel": "container",
+  "visualCharacteristics": "Vertical list of expandable items; each row has a title that toggles a body of descriptive text.",
+  "contentPattern": "Each item = title cell + content cell.",
+  "usage": "Expandable lists such as feature explanations or FAQs.",
+  "options": [],
+  "memberVariantIds": [
+    "accordion-list"
+  ]
+}

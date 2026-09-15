@@ -1,0 +1,12 @@
+{
+  "variantName": "cards-plan",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Grid of plan cards, each with a small icon, plan name and short description; some cards carry a ribbon/tag.",
+  "contentPattern": "Repeating cards: icon/image cell + body cell (title, description, optional tag).",
+  "usage": "Showcase a set of product/plan tiles in a multi-column grid.",
+  "options": [],
+  "memberVariantIds": [
+    "cards-plan"
+  ]
+}

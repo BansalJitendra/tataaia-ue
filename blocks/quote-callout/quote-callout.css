@@ -1,0 +1,23 @@
+.quote-callout blockquote {
+  margin: 0;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: var(--light-color, #f8f8f8);
+}
+
+.quote-callout .quote-callout-quotation {
+  margin: 0;
+  font-style: normal;
+}
+
+.quote-callout .quote-callout-quotation > * {
+  margin: 0 0 0.6em;
+}
+
+.quote-callout .quote-callout-attribution {
+  margin-top: 12px;
+}
+
+.quote-callout .quote-callout-attribution cite {
+  font-style: normal;
+}

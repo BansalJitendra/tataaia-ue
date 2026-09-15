@@ -1,0 +1,15 @@
+{
+  "type": "xwalk",
+  "sites": {
+    "tataaia-ue": {
+      "previewOrg": "bansaljitendra",
+      "previewSite": "tataaia-ue",
+      "contentHostUrl": "author-p121857-e1377564.adobeaemcloud.com",
+      "aemSitePath": "/content/tata-aia",
+      "aemAssetsFolderPath": "/content/dam/tata-aia",
+      "aemSiteName": "tata-aia",
+      "aemSiteTitle": "Tata AIA",
+      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json"
+    }
+  }
+}

@@ -59,7 +59,23 @@
         "table",
         "text",
         "title",
-        "video"
+        "video",
+        "hero-promo",
+        "hero-banner",
+        "cards-plan",
+        "cards-persona",
+        "cards-quicklink",
+        "cards-promo",
+        "cards-award",
+        "cards-stats",
+        "cards-article",
+        "columns-panels",
+        "accordion-list",
+        "carousel-review",
+        "carousel-video",
+        "quote-callout",
+        "table-data",
+        "tabs-links"
       ]
     }
   ]

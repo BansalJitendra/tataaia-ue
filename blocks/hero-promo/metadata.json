@@ -1,0 +1,10 @@
+{
+  "variantName": "hero-promo",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Full-bleed dark banner with a background image; foreground shows an eyebrow line, a large heading, badge chips, and a primary CTA button, left-aligned.",
+  "contentPattern": "One background image plus a text group (eyebrow, heading, optional badge list, CTA).",
+  "usage": "Prominent top-of-page or mid-page promotional banner with a background image and call to action.",
+  "options": [],
+  "memberVariantIds": ["hero-promo"]
+}

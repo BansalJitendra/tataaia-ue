@@ -1,0 +1,12 @@
+{
+  "variantName": "tabs-links",
+  "baseBlock": "tabs",
+  "canonicalModel": "container",
+  "visualCharacteristics": "Row of category tab chips that switch the visible set of links shown below.",
+  "contentPattern": "Each tab = label cell + content cell (link list).",
+  "usage": "Grouped link directories toggled by category tabs.",
+  "options": [],
+  "memberVariantIds": [
+    "tabs-links"
+  ]
+}

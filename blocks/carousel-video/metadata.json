@@ -1,0 +1,12 @@
+{
+  "variantName": "carousel-video",
+  "baseBlock": "carousel",
+  "canonicalModel": "container",
+  "visualCharacteristics": "Horizontally scrolling video thumbnail cards with a play overlay and caption, with pagination dots.",
+  "contentPattern": "Each slide = thumbnail image cell + caption cell.",
+  "usage": "Related videos/reels shown as a scrolling thumbnail carousel.",
+  "options": [],
+  "memberVariantIds": [
+    "carousel-video"
+  ]
+}

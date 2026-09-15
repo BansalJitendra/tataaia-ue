@@ -1,0 +1,12 @@
+{
+  "variantName": "carousel-review",
+  "baseBlock": "carousel",
+  "canonicalModel": "container",
+  "visualCharacteristics": "Horizontally scrolling testimonial cards (avatar, name, rating, quote); several visible at once with pagination dots.",
+  "contentPattern": "Each slide = image cell + text cell (name, rating, quote).",
+  "usage": "Customer testimonial/review sliders.",
+  "options": [],
+  "memberVariantIds": [
+    "carousel-review"
+  ]
+}

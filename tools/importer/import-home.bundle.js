@@ -785,14 +785,30 @@ var CustomImportScript = (() => {
   }
 
   // tools/importer/parsers/form.js
+  const FORM_DEFINITIONS = {
+    "new-homepage-calc-container": "know-more-buy-2steps.json",
+  };
+  const FORM_ACTIONS = {
+    "new-homepage-calc-container": "/forms/lead-submit",
+  };
   function parse12(element, { document: document2 }) {
     const formEl = element.querySelector("form");
     let referenceHref = null;
     const jsonLink = element.querySelector('a[href$=".json"]');
     if (jsonLink) referenceHref = jsonLink.getAttribute("href");
+    if (!referenceHref) {
+      const mapped = Object.keys(FORM_DEFINITIONS)
+        .find((cls) => element.classList.contains(cls) || element.closest(`.${cls}`));
+      if (mapped) referenceHref = FORM_DEFINITIONS[mapped];
+    }
     let actionUrl = null;
     if (formEl) {
       actionUrl = formEl.getAttribute("action") || formEl.getAttribute("data-action") || formEl.getAttribute("data-url") || null;
+    }
+    if (!actionUrl && referenceHref) {
+      const mapped = Object.keys(FORM_ACTIONS)
+        .find((cls) => element.classList.contains(cls) || element.closest(`.${cls}`));
+      if (mapped) actionUrl = FORM_ACTIONS[mapped];
     }
     const cells = [];
     const referenceFrag = document2.createDocumentFragment();
@@ -807,7 +823,10 @@ var CustomImportScript = (() => {
     const actionFrag = document2.createDocumentFragment();
     if (actionUrl) {
       actionFrag.appendChild(document2.createComment(" field:action "));
-      actionFrag.appendChild(document2.createTextNode(actionUrl));
+      const a = document2.createElement("a");
+      a.setAttribute("href", actionUrl);
+      a.textContent = actionUrl;
+      actionFrag.appendChild(a);
     }
     cells.push([actionFrag]);
     const block = WebImporter.Blocks.createBlock(document2, { name: "form", cells });

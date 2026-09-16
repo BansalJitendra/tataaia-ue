@@ -15,6 +15,27 @@
   max-width: 900px;
 }
 
+/* Form heading (source: "Know more and buy your plan in 2 steps") — a heading
+   field emitted as the first row of the form JSON. */
+.form form .heading-wrapper h2,
+.form form .heading-wrapper h3 {
+  margin: 0 0 20px;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-size-l, 24px);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--heading-color);
+}
+
+/* On the blue-tone-light section the form sits on a white card, matching the
+   source's rounded panel over the tinted section background. */
+main .section.blue-tone-light .form form {
+  padding: 24px;
+  background-color: var(--background-color, #fff);
+  border-radius: 16px;
+  box-shadow: 0 0 15px 0 rgb(0 115 187 / 10%);
+}
+
 /* --- field layout --- */
 .form .field-wrapper {
   display: grid;

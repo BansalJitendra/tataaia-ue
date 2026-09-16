@@ -43,19 +43,36 @@ var CustomImportScript = (() => {
 
   // tools/importer/parsers/accordion-list.js
   function parse(element, { document: document2 }) {
-    const container = element.querySelector(".accordion-content") || element;
-    const nodes = Array.from(container.children);
     const items = [];
-    let current = null;
-    nodes.forEach((node) => {
-      const headingSpan = node.matches && /^H[1-6]$/.test(node.tagName) ? node.querySelector(".faqHeading") : null;
-      if (headingSpan) {
-        current = { summary: headingSpan.textContent.trim(), content: [] };
-        items.push(current);
-      } else if (current) {
-        if (node.textContent.trim() || node.querySelector("img")) current.content.push(node);
-      }
-    });
+    const fqItems = Array.from(element.querySelectorAll("li.ta-fq-content-li"));
+    if (fqItems.length) {
+      fqItems.forEach((li) => {
+        const qEl = li.querySelector(".ta-fq-content-qtext");
+        const ansEl = li.querySelector(".ta-fq-ans-w");
+        const summary = qEl ? qEl.textContent.trim() : "";
+        const content = [];
+        if (ansEl) {
+          const body = ansEl.querySelector(".ta-fq-ans-m") || ansEl;
+          Array.from(body.children).forEach((node) => {
+            if (node.textContent.trim() || node.querySelector("img")) content.push(node);
+          });
+        }
+        if (summary || content.length) items.push({ summary, content });
+      });
+    } else {
+      const container = element.querySelector(".accordion-content") || element;
+      const nodes = Array.from(container.children);
+      let current = null;
+      nodes.forEach((node) => {
+        const headingSpan = node.matches && /^H[1-6]$/.test(node.tagName) ? node.querySelector(".faqHeading") : null;
+        if (headingSpan) {
+          current = { summary: headingSpan.textContent.trim(), content: [] };
+          items.push(current);
+        } else if (current) {
+          if (node.textContent.trim() || node.querySelector("img")) current.content.push(node);
+        }
+      });
+    }
     const hoistedTables = [];
     const cells = [];
     items.forEach((item) => {
@@ -1035,6 +1052,27 @@ var CustomImportScript = (() => {
         ".screen-reader-popup",
         // OTP popups injected near forms (cleaned.html L8791, L9950, ...)
         ".new-otp-popup-section",
+        // --- Product-recommendation calculator + its popup/loader/failure states ---
+        // Hidden feature containers between the first and second
+        // .term-insurance-maininfo-container that leaked into the import as visible
+        // default content trailing the first columns-panels block.
+        ".product-recommendation-calcuator",
+        ".productrecommendation-cal",
+        ".production-recommendation-api",
+        ".product-recom-form-section",
+        ".newcampaignloader",
+        ".page-loader-wrapper",
+        ".api-failure-page",
+        ".vymoapifailuremessage-page",
+        ".vymo-api-failure-wrapper",
+        ".otp-popup",
+        ".new-otp-popup-overlay",
+        ".trs-new-otp-popup-overlay",
+        ".otppopup-failpopup-wrapper",
+        ".otpfailpopup",
+        ".need-info-cc-popup-wrapper",
+        ".in-fo-search-popup",
+        ".ta-modal-wrap",
         // --- Header / navigation chrome (removed BEFORE block parsing) ---
         // The desktop header XF (cleaned.html L35) and the mobile navigation
         // experience fragments live in SEPARATE containers that are NOT nested

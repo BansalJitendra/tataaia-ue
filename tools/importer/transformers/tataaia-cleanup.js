@@ -37,6 +37,32 @@ export default function transform(hookName, element, payload) {
       // OTP popups injected near forms (cleaned.html L8791, L9950, ...)
       '.new-otp-popup-section',
 
+      // --- Product-recommendation calculator + its popup/loader/failure states ---
+      // These hidden feature containers live between the first and second
+      // `.term-insurance-maininfo-container` (Life Insurance intro → Types of Life
+      // Insurance). On the live page they are all display:none popups/loaders, but
+      // they serialized into the import as visible default content trailing the first
+      // columns-panels block (OTP verify, "Almost there" loader, API-failure states,
+      // "Can't decide" teaser, product-recom banners). All selectors verified to occur
+      // ONLY after hero-promo and before the FAQ accordion — never in visible content.
+      '.product-recommendation-calcuator',
+      '.productrecommendation-cal',
+      '.production-recommendation-api',
+      '.product-recom-form-section',
+      '.newcampaignloader',
+      '.page-loader-wrapper',
+      '.api-failure-page',
+      '.vymoapifailuremessage-page',
+      '.vymo-api-failure-wrapper',
+      '.otp-popup',
+      '.new-otp-popup-overlay',
+      '.trs-new-otp-popup-overlay',
+      '.otppopup-failpopup-wrapper',
+      '.otpfailpopup',
+      '.need-info-cc-popup-wrapper',
+      '.in-fo-search-popup',
+      '.ta-modal-wrap',
+
       // --- Header / navigation chrome (removed BEFORE block parsing) ---
       // The desktop header XF (cleaned.html L35) and the mobile navigation
       // experience fragments live in SEPARATE containers that are NOT nested

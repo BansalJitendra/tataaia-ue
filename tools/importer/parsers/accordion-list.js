@@ -6,25 +6,47 @@
  * Source: Tata AIA homepage — .custom-accordion / .faq-accordian
  * Model: container with accordion-list-item children (2 columns per row).
  *   Item fields: summary (text) in cell 1, text (richtext) in cell 2.
- * The source is a FAQ region where each question is an <h2> wrapping a span.faqHeading,
- * followed by its answer content until the next question heading.
+ * Two source structures are supported:
+ *   (a) .custom-accordion — flat `.accordion-content` where each question is an
+ *       <h2> wrapping a span.faqHeading, followed by its answer content.
+ *   (b) .faq-accordian (redesign) — a <ul> of `li.ta-fq-content-li`, each with the
+ *       question in `.ta-fq-content-qtext` and the answer in `.ta-fq-ans-w`.
  */
 export default function parse(element, { document }) {
-  const container = element.querySelector('.accordion-content') || element;
-  const nodes = Array.from(container.children);
-
-  // Group nodes into FAQ items: a new item starts at each heading containing .faqHeading
   const items = [];
-  let current = null;
-  nodes.forEach((node) => {
-    const headingSpan = node.matches && /^H[1-6]$/.test(node.tagName) ? node.querySelector('.faqHeading') : null;
-    if (headingSpan) {
-      current = { summary: headingSpan.textContent.trim(), content: [] };
-      items.push(current);
-    } else if (current) {
-      if (node.textContent.trim() || node.querySelector('img')) current.content.push(node);
-    }
-  });
+
+  // Variant (b): redesign FAQ accordion — explicit li.ta-fq-content-li items.
+  const fqItems = Array.from(element.querySelectorAll('li.ta-fq-content-li'));
+  if (fqItems.length) {
+    fqItems.forEach((li) => {
+      const qEl = li.querySelector('.ta-fq-content-qtext');
+      const ansEl = li.querySelector('.ta-fq-ans-w');
+      const summary = qEl ? qEl.textContent.trim() : '';
+      const content = [];
+      if (ansEl) {
+        // Prefer the inner answer body, else the whole answer wrapper's children.
+        const body = ansEl.querySelector('.ta-fq-ans-m') || ansEl;
+        Array.from(body.children).forEach((node) => {
+          if (node.textContent.trim() || node.querySelector('img')) content.push(node);
+        });
+      }
+      if (summary || content.length) items.push({ summary, content });
+    });
+  } else {
+    // Variant (a): flat .accordion-content grouped by .faqHeading.
+    const container = element.querySelector('.accordion-content') || element;
+    const nodes = Array.from(container.children);
+    let current = null;
+    nodes.forEach((node) => {
+      const headingSpan = node.matches && /^H[1-6]$/.test(node.tagName) ? node.querySelector('.faqHeading') : null;
+      if (headingSpan) {
+        current = { summary: headingSpan.textContent.trim(), content: [] };
+        items.push(current);
+      } else if (current) {
+        if (node.textContent.trim() || node.querySelector('img')) current.content.push(node);
+      }
+    });
+  }
 
   // Any <table> nested in an answer is hoisted out here: EDS block cells serialize
   // through markdown, which cannot represent a table inside another block's cell

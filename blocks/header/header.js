@@ -96,6 +96,15 @@ export default async function decorate(block) {
       list.classList.add('nav-menu-list');
       list.querySelectorAll(':scope > li').forEach((li) => {
         li.classList.add('nav-menu-item');
+        // The markdown->HTML conversion wraps each top-level link in a <p>
+        // (li > p > a). The nav CSS and trigger lookup expect the link as a
+        // DIRECT child of the li (li > a), so unwrap that leading <p>.
+        const leadP = li.querySelector(':scope > p');
+        const leadLink = leadP && leadP.querySelector(':scope > a');
+        if (leadLink) {
+          li.insertBefore(leadLink, leadP);
+          leadP.remove();
+        }
         const trigger = li.querySelector(':scope > a');
         const hasPanel = !!li.querySelector(':scope > ul');
         if (hasPanel) {

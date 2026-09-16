@@ -962,6 +962,14 @@ var CustomImportScript = (() => {
     const heading = element.querySelector('h1, h2, h3, .banner-title, [class*="title"]:not([class*="banner-slider"])');
     const paras = Array.from(element.querySelectorAll("p")).filter((p) => p.textContent.trim());
     const ctas = Array.from(element.querySelectorAll("a[href]")).filter((a) => a.textContent.trim() && !/slide/i.test(a.getAttribute("aria-label") || ""));
+    // `.banner-asset-container` holds only the slider's prev/next arrow chrome —
+    // no banner image and no text (real banners are in the carousel-banner).
+    // Drop the element when nothing real is extracted rather than emit an empty
+    // placeholder that renders the CSS fallback gradient.
+    if (!bgImage && !(heading && heading.textContent.trim()) && !paras.length && !ctas.length) {
+      element.remove();
+      return;
+    }
     const cells = [];
     const imageFrag = document2.createDocumentFragment();
     if (bgImage) {
@@ -1608,18 +1616,6 @@ var CustomImportScript = (() => {
         "style": null,
         "blocks": [
           "carousel-banner"
-        ],
-        "defaultContent": []
-      },
-      {
-        "id": "s13",
-        "name": "IRDAI Bima Bharosa banner",
-        "selector": [
-          ".banner-asset-container"
-        ],
-        "style": null,
-        "blocks": [
-          "hero-banner"
         ],
         "defaultContent": []
       },

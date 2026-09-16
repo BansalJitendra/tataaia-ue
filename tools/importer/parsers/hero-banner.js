@@ -47,6 +47,16 @@ export default function parse(element, { document }) {
   const paras = Array.from(element.querySelectorAll('p')).filter((p) => p.textContent.trim());
   const ctas = Array.from(element.querySelectorAll('a[href]')).filter((a) => a.textContent.trim() && !/slide/i.test(a.getAttribute('aria-label') || ''));
 
+  // On the tataaia homepage the real banners live in `.banner-slider` (migrated
+  // as the carousel-banner). `.banner-asset-container` holds only the slider's
+  // prev/next arrow chrome — no banner image and no text. When nothing real is
+  // extracted, emit no block at all (drop the element) so we don't leave an
+  // empty placeholder section rendering the CSS fallback gradient.
+  if (!bgImage && !(heading && heading.textContent.trim()) && !paras.length && !ctas.length) {
+    element.remove();
+    return;
+  }
+
   const cells = [];
 
   // Row 2: background image (field:image)

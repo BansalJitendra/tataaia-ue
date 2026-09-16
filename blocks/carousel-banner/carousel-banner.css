@@ -1,9 +1,8 @@
 /* Block: carousel-banner — full-width promo banner carousel
  * Source: .banner-slider on tataaia.com (swiper of promo banners between the
  * "Why choose" stats and the IRDAI Bima Bharosa banner).
- * One banner image per slide; auto-rotates with dot indicators + prev/next.
- * Unlike the hero .carousel, banners display at their natural aspect ratio
- * (contained, not cover-cropped).
+ * Matches live: one full-bleed banner per slide (~3:1, no rounded corners),
+ * auto-rotating, prev/next arrows only (no dot pagination).
  */
 
 .carousel-banner .carousel-banner-slides-container {
@@ -47,18 +46,27 @@
   line-height: 0;
 }
 
-/* Banner images: full width, natural aspect ratio, rounded like source. */
+/* Banner images: full-bleed, square corners (matches the live swiper). */
 .carousel-banner .carousel-banner-slide-image picture,
 .carousel-banner .carousel-banner-slide-image a {
   display: block;
+  width: 100%;
 }
 
 .carousel-banner .carousel-banner-slide-image img {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
-  border-radius: 12px;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+@media (width <= 600px) {
+  /* mobile banners are taller/near-square on the source */
+  .carousel-banner .carousel-banner-slide-image img {
+    aspect-ratio: 16 / 9;
+  }
 }
 
 /* Source shows the desktop banner on wider screens and the mobile banner on
@@ -78,32 +86,19 @@
   }
 }
 
-/* --- dot indicators --- */
-.carousel-banner .carousel-banner-slide-indicators {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px 12px;
-  padding: 12px;
-  line-height: 0;
-}
-
-.carousel-banner .carousel-banner-slide-indicator button {
-  width: 10px;
-  height: 10px;
-  margin: 0;
+/* --- dot indicators ---
+   The live banner slider shows only prev/next arrows (no pagination dots), so
+   the indicator nav is hidden. It stays in the DOM for keyboard/AT navigation. */
+.carousel-banner nav[aria-label] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   padding: 0;
-  border: none;
-  border-radius: 50%;
-  background-color: #dadada;
-  cursor: pointer;
-  transition: background-color 0.2s, width 0.2s;
-}
-
-.carousel-banner .carousel-banner-slide-indicator button:disabled,
-.carousel-banner .carousel-banner-slide-indicator button:hover,
-.carousel-banner .carousel-banner-slide-indicator button:focus-visible {
-  background-color: var(--brand-primary, #d62049);
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* --- prev / next controls --- */

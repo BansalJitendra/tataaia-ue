@@ -94,12 +94,20 @@ function createSlide(row, slideIndex, carouselId) {
   slide.setAttribute('id', `carousel-banner-${carouselId}-slide-${slideIndex}`);
   slide.classList.add('carousel-banner-slide');
 
-  // A banner slide is a single image cell (optionally linked). Keep it simple:
-  // append each source column as the slide's image content.
-  row.querySelectorAll(':scope > div').forEach((column) => {
-    column.classList.add('carousel-banner-slide-image');
-    slide.append(column);
-  });
+  // A banner row has an image cell and an alt-text cell. Render only the image;
+  // fold the alt-text cell into the image's alt attribute (don't show it as text).
+  const cols = [...row.querySelectorAll(':scope > div')];
+  const imageCol = cols.find((c) => c.querySelector('picture, img')) || cols[0];
+  const altCol = cols.find((c) => c !== imageCol && !c.querySelector('picture, img'));
+  if (imageCol) {
+    imageCol.classList.add('carousel-banner-slide-image');
+    if (altCol) {
+      const altText = altCol.textContent.trim();
+      const img = imageCol.querySelector('img');
+      if (img && altText && !img.getAttribute('alt')) img.setAttribute('alt', altText);
+    }
+    slide.append(imageCol);
+  }
 
   return slide;
 }

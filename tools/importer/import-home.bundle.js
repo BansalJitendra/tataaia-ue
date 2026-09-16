@@ -1002,64 +1002,79 @@ var CustomImportScript = (() => {
     element.replaceWith(block);
   }
 
-  // tools/importer/parsers/hero-promo.js
+  // tools/importer/parsers/hero-promo.js — multi-slide carousel (container + items)
   function parse14(element, { document: document2 }) {
-    const slide = element.querySelector(".swiper-slide") || element;
-    let bgImage = null;
-    const sources = Array.from(slide.querySelectorAll("picture source[srcset], picture source[data-srcset]"));
-    let chosen = sources.find((s) => /min-width/i.test(s.getAttribute("media") || "")) || sources[0];
-    if (chosen) {
-      const srcset = chosen.getAttribute("srcset") || chosen.getAttribute("data-srcset");
-      if (srcset) {
-        bgImage = document2.createElement("img");
-        bgImage.setAttribute("src", srcset.split(",")[0].trim().split(" ")[0]);
-        const pic = chosen.closest("picture");
-        const pImg = pic ? pic.querySelector("img") : null;
-        const alt = pImg ? pImg.getAttribute("alt") : null;
-        if (alt) bgImage.setAttribute("alt", alt);
-      }
-    }
-    if (!bgImage) {
-      const img = slide.querySelector('img[src]:not([src=""]), img[data-src]');
-      if (img) {
-        const src = img.getAttribute("src") || img.getAttribute("data-src");
-        if (src) {
-          bgImage = document2.createElement("img");
-          bgImage.setAttribute("src", src);
-          const alt = img.getAttribute("alt");
-          if (alt) bgImage.setAttribute("alt", alt);
+    let slides = Array.from(element.querySelectorAll(".swiper-slide")).filter((s) => !s.classList.contains("swiper-slide-duplicate"));
+    if (!slides.length) slides = [element];
+    const seenBg = /* @__PURE__ */ new Set();
+    const pickBgImage = (slide) => {
+      const sources = Array.from(slide.querySelectorAll("picture source[srcset], picture source[data-srcset]"));
+      const chosen = sources.find((s) => /min-width/i.test(s.getAttribute("media") || "")) || sources[0];
+      if (chosen) {
+        const srcset = chosen.getAttribute("srcset") || chosen.getAttribute("data-srcset");
+        if (srcset) {
+          const img2 = document2.createElement("img");
+          img2.setAttribute("src", srcset.split(",")[0].trim().split(" ")[0]);
+          const pic = chosen.closest("picture");
+          const pImg = pic ? pic.querySelector("img") : null;
+          const alt = pImg ? pImg.getAttribute("alt") : null;
+          if (alt) img2.setAttribute("alt", alt);
+          return img2;
         }
       }
-    }
-    const textBlocks = Array.from(slide.querySelectorAll(".cmp-text p, .banner-pretitle p, .pretitle-title p, .banner-pointers p")).filter((p) => p.textContent.trim());
-    const cta = slide.querySelector("a.cmp-button, a[href], .cmp-button");
+      const bare = slide.querySelector('img[src]:not([src=""]), img[data-src]');
+      if (bare) {
+        const src = bare.getAttribute("src") || bare.getAttribute("data-src");
+        if (src) {
+          const img2 = document2.createElement("img");
+          img2.setAttribute("src", src);
+          const alt = bare.getAttribute("alt");
+          if (alt) img2.setAttribute("alt", alt);
+          return img2;
+        }
+      }
+      return null;
+    };
     const cells = [];
-    const imageFrag = document2.createDocumentFragment();
-    if (bgImage) {
-      imageFrag.appendChild(document2.createComment(" field:media_image "));
-      imageFrag.appendChild(bgImage);
-    }
-    cells.push([imageFrag]);
-    const textFrag = document2.createDocumentFragment();
-    textFrag.appendChild(document2.createComment(" field:text "));
-    const seen = /* @__PURE__ */ new Set();
-    textBlocks.forEach((p) => {
-      const txt = p.textContent.trim();
-      if (seen.has(txt)) return;
-      seen.add(txt);
-      const np = document2.createElement("p");
-      np.innerHTML = p.innerHTML;
-      textFrag.appendChild(np);
+    slides.forEach((slide) => {
+      const bgImage = pickBgImage(slide);
+      const bgKey = bgImage ? bgImage.getAttribute("src") : null;
+      if (bgKey) {
+        if (seenBg.has(bgKey)) return;
+        seenBg.add(bgKey);
+      }
+      const textBlocks = Array.from(slide.querySelectorAll(".cmp-text p, .banner-pretitle p, .pretitle-title p, .banner-pointers p")).filter((p) => p.textContent.trim());
+      const cta = slide.querySelector("a.cmp-button, .cmp-button a, a[href]");
+      const imageFrag = document2.createDocumentFragment();
+      if (bgImage) {
+        imageFrag.appendChild(document2.createComment(" field:media_image "));
+        imageFrag.appendChild(bgImage);
+      }
+      const textFrag = document2.createDocumentFragment();
+      textFrag.appendChild(document2.createComment(" field:content_text "));
+      const seen = /* @__PURE__ */ new Set();
+      textBlocks.forEach((p) => {
+        const txt = p.textContent.trim();
+        if (seen.has(txt)) return;
+        seen.add(txt);
+        const np = document2.createElement("p");
+        np.innerHTML = p.innerHTML;
+        textFrag.appendChild(np);
+      });
+      if (cta && cta.getAttribute && cta.getAttribute("href")) {
+        const p = document2.createElement("p");
+        const a = document2.createElement("a");
+        a.setAttribute("href", cta.getAttribute("href"));
+        a.textContent = (cta.textContent || "").trim() || "Buy now";
+        p.appendChild(a);
+        textFrag.appendChild(p);
+      }
+      cells.push([imageFrag, textFrag]);
     });
-    if (cta && cta.getAttribute && cta.getAttribute("href")) {
-      const p = document2.createElement("p");
-      const a = document2.createElement("a");
-      a.setAttribute("href", cta.getAttribute("href"));
-      a.textContent = (cta.textContent || "").trim() || "Know more";
-      p.appendChild(a);
-      textFrag.appendChild(p);
+    if (!cells.length) {
+      element.remove();
+      return;
     }
-    cells.push([textFrag]);
     const block = WebImporter.Blocks.createBlock(document2, { name: "hero-promo", cells });
     element.replaceWith(block);
   }

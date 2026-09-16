@@ -1,60 +1,33 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
+import { moveInstrumentation } from '../../scripts/scripts.js';
+import { fetchPlaceholders } from '../../scripts/placeholders.js';
 
-/**
- * Hero Promo block.
- * Full-bleed dark banner: a background image with foreground content layered
- * on top -- an eyebrow, a large heading, a row of badge "chips" inside a
- * translucent rounded box, optional fine print, and a CTA button.
+/*
+ * Hero Promo block — full-bleed promotional hero CAROUSEL.
+ * Source: .homepage-banner-slider-container on tataaia.com (a swiper of promo
+ * banners at the top of the homepage). Each slide is a background image with
+ * foreground content layered on top: an eyebrow line, a large heading, a row of
+ * badge "chips", optional fine print, and a primary CTA button.
  *
- * Authored structure (one column, two rows):
- *   - row 1: the background image (a <picture> / <img>)
- *   - row 2: the text content -- eyebrow <p>, heading <p>, one or more short
- *     badge <p>, a long fine-print <p>, and a <p><a> CTA (in that order).
+ * Authored structure (container + repeating item):
+ *   - each row (item) has two cells: an image cell (media_image) and a richtext
+ *     cell (content_text) holding the eyebrow, heading, chip <p>s, fine print
+ *     and the <p><a> CTA (in that order).
+ * Slides auto-rotate and can be navigated via dots / prev-next controls.
  */
-export default function decorate(block) {
+
+function classifyContent(textCell) {
+  // Build the foreground content container from a slide's richtext cell,
+  // classifying paragraphs into eyebrow / heading / chips / fine print / CTA.
   const content = document.createElement('div');
   content.className = 'hero-promo-content';
-
-  let background = null;
-  let backgroundSrc = null;
-  const paras = [];
-  const isImageUrl = (url) => /\.(png|jpe?g|webp|gif|svg|avif)(\?|$)/i.test(url || '');
-
-  [...block.children].forEach((row) => {
-    const picture = row.querySelector('picture');
-    const img = row.querySelector('img');
-    // A row whose only meaningful payload is an image is the background.
-    if ((picture || img) && !row.textContent.trim()) {
-      background = picture || img;
-      return;
-    }
-    // Some pipelines deliver the background as a bare link to an image file
-    // (its href/text is an image URL). Treat such a row as the background.
-    const soleLink = row.querySelector('a');
-    if (soleLink && isImageUrl(soleLink.getAttribute('href'))
-      && row.querySelectorAll('a').length === 1
-      && row.textContent.trim() === soleLink.textContent.trim()) {
-      backgroundSrc = soleLink.getAttribute('href');
-      return;
-    }
-    // Otherwise collect the paragraph-level content from each cell.
-    [...row.children].forEach((cell) => {
-      [...cell.children].forEach((node) => paras.push(node));
-    });
-  });
-
-  block.textContent = '';
-
-  // Classify the collected paragraphs.
   const badges = document.createElement('div');
   badges.className = 'hero-promo-badges';
 
-  paras.forEach((node, i) => {
-    const hasLink = node.querySelector('a');
+  const nodes = [...textCell.children];
+  nodes.forEach((node, i) => {
+    const hasLink = node.querySelector && node.querySelector('a');
     const text = node.textContent.trim();
-
     if (hasLink) {
-      // CTA -- keep as its own button container.
       const link = node.querySelector('a');
       link.classList.add('button');
       const container = document.createElement('p');
@@ -72,31 +45,178 @@ export default function decorate(block) {
     } else if (text.length > 120) {
       node.classList.add('hero-promo-fineprint');
       content.append(node);
-    } else {
+    } else if (text) {
       node.classList.add('hero-promo-chip');
       badges.append(node);
     }
   });
 
-  // Insert the badge box right after the heading (before fine print / CTA).
   if (badges.children.length) {
     const heading = content.querySelector('.hero-promo-heading');
     if (heading) heading.after(badges);
     else content.prepend(badges);
   }
+  return content;
+}
 
-  if (background || backgroundSrc) {
-    const bg = document.createElement('div');
-    bg.className = 'hero-promo-bg';
-    if (backgroundSrc) {
-      bg.append(createOptimizedPicture(backgroundSrc, '', true));
-    } else if (background.tagName === 'IMG') {
-      bg.append(createOptimizedPicture(background.src, background.alt, true));
-    } else {
-      bg.append(background);
-    }
-    block.append(bg);
+function updateActiveSlide(slide) {
+  const block = slide.closest('.hero-promo');
+  const slideIndex = parseInt(slide.dataset.slideIndex, 10);
+  block.dataset.activeSlide = slideIndex;
+
+  const slides = block.querySelectorAll('.hero-promo-slide');
+  slides.forEach((aSlide, idx) => {
+    aSlide.setAttribute('aria-hidden', idx !== slideIndex);
+    aSlide.querySelectorAll('a').forEach((link) => {
+      if (idx !== slideIndex) link.setAttribute('tabindex', '-1');
+      else link.removeAttribute('tabindex');
+    });
+  });
+
+  const indicators = block.querySelectorAll('.hero-promo-slide-indicator');
+  indicators.forEach((indicator, idx) => {
+    if (idx !== slideIndex) indicator.querySelector('button').removeAttribute('disabled');
+    else indicator.querySelector('button').setAttribute('disabled', 'true');
+  });
+}
+
+function showSlide(block, slideIndex = 0, behavior = 'smooth') {
+  const slides = block.querySelectorAll('.hero-promo-slide');
+  let realSlideIndex = slideIndex < 0 ? slides.length - 1 : slideIndex;
+  if (slideIndex >= slides.length) realSlideIndex = 0;
+  const activeSlide = slides[realSlideIndex];
+
+  activeSlide.querySelectorAll('a').forEach((link) => link.removeAttribute('tabindex'));
+  block.querySelector('.hero-promo-slides').scrollTo({
+    top: 0,
+    left: activeSlide.offsetLeft,
+    behavior,
+  });
+}
+
+function bindEvents(block) {
+  const slideIndicators = block.querySelector('.hero-promo-slide-indicators');
+  if (slideIndicators) {
+    slideIndicators.querySelectorAll('button').forEach((button) => {
+      button.addEventListener('click', (e) => {
+        const slideIndicator = e.currentTarget.parentElement;
+        showSlide(block, parseInt(slideIndicator.dataset.targetSlide, 10));
+      });
+    });
   }
 
-  block.append(content);
+  const prev = block.querySelector('.slide-prev');
+  const next = block.querySelector('.slide-next');
+  if (prev) prev.addEventListener('click', () => showSlide(block, parseInt(block.dataset.activeSlide, 10) - 1));
+  if (next) next.addEventListener('click', () => showSlide(block, parseInt(block.dataset.activeSlide, 10) + 1));
+
+  const slideObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) updateActiveSlide(entry.target);
+    });
+  }, { threshold: 0.5 });
+  block.querySelectorAll('.hero-promo-slide').forEach((slide) => slideObserver.observe(slide));
+}
+
+// Auto-rotate through the banners; pause on hover / when the tab is hidden.
+function autoRotate(block) {
+  const slides = block.querySelectorAll('.hero-promo-slide');
+  if (slides.length < 2) return;
+  const INTERVAL = 5000;
+  let timer = null;
+  const advance = () => {
+    const current = parseInt(block.dataset.activeSlide || '0', 10);
+    showSlide(block, current + 1);
+  };
+  const start = () => { if (!timer) timer = window.setInterval(advance, INTERVAL); };
+  const stop = () => { if (timer) { window.clearInterval(timer); timer = null; } };
+  block.addEventListener('mouseenter', stop);
+  block.addEventListener('mouseleave', start);
+  block.addEventListener('focusin', stop);
+  block.addEventListener('focusout', start);
+  document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+  start();
+}
+
+function createSlide(row, slideIndex) {
+  const slide = document.createElement('li');
+  slide.dataset.slideIndex = slideIndex;
+  slide.classList.add('hero-promo-slide');
+
+  const cols = [...row.querySelectorAll(':scope > div')];
+  const imageCol = cols.find((c) => c.querySelector('picture, img'));
+  const textCol = cols.find((c) => c !== imageCol);
+
+  // Background image layer.
+  if (imageCol) {
+    const bg = document.createElement('div');
+    bg.className = 'hero-promo-bg';
+    const pic = imageCol.querySelector('picture') || imageCol.querySelector('img');
+    if (pic) bg.append(pic);
+    slide.append(bg);
+  }
+
+  // Foreground content layer.
+  if (textCol) slide.append(classifyContent(textCol));
+
+  return slide;
+}
+
+let heroPromoId = 0;
+export default async function decorate(block) {
+  heroPromoId += 1;
+  block.setAttribute('id', `hero-promo-${heroPromoId}`);
+  const rows = [...block.querySelectorAll(':scope > div')];
+  const isSingleSlide = rows.length < 2;
+
+  const placeholders = await fetchPlaceholders();
+  block.setAttribute('role', 'region');
+  block.setAttribute('aria-roledescription', placeholders.carousel || 'Carousel');
+
+  const container = document.createElement('div');
+  container.classList.add('hero-promo-slides-container');
+
+  const slidesWrapper = document.createElement('ul');
+  slidesWrapper.classList.add('hero-promo-slides');
+
+  let slideIndicators;
+  if (!isSingleSlide) {
+    const slideIndicatorsNav = document.createElement('nav');
+    slideIndicatorsNav.setAttribute('aria-label', placeholders.carouselSlideControls || 'Carousel Slide Controls');
+    slideIndicators = document.createElement('ol');
+    slideIndicators.classList.add('hero-promo-slide-indicators');
+    slideIndicatorsNav.append(slideIndicators);
+
+    const slideNavButtons = document.createElement('div');
+    slideNavButtons.classList.add('hero-promo-navigation-buttons');
+    slideNavButtons.innerHTML = `
+      <button type="button" class="slide-prev" aria-label="${placeholders.previousSlide || 'Previous Slide'}"></button>
+      <button type="button" class="slide-next" aria-label="${placeholders.nextSlide || 'Next Slide'}"></button>
+    `;
+    container.append(slideNavButtons);
+    container.append(slideIndicatorsNav);
+  }
+
+  rows.forEach((row, idx) => {
+    const slide = createSlide(row, idx);
+    moveInstrumentation(row, slide);
+    slidesWrapper.append(slide);
+
+    if (slideIndicators) {
+      const indicator = document.createElement('li');
+      indicator.classList.add('hero-promo-slide-indicator');
+      indicator.dataset.targetSlide = idx;
+      indicator.innerHTML = `<button type="button" aria-label="${placeholders.showSlide || 'Show Slide'} ${idx + 1} ${placeholders.of || 'of'} ${rows.length}"></button>`;
+      slideIndicators.append(indicator);
+    }
+    row.remove();
+  });
+
+  container.prepend(slidesWrapper);
+  block.append(container);
+
+  if (!isSingleSlide) {
+    bindEvents(block);
+    autoRotate(block);
+  }
 }

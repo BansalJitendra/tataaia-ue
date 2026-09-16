@@ -1,5 +1,7 @@
-/* Block: hero-promo -- full-bleed dark promo banner
-   Values extracted from tataaia.com homepage banner slider (computed styles). */
+/* Block: hero-promo -- full-bleed dark promo banner CAROUSEL
+   Source: .homepage-banner-slider-container on tataaia.com — a rotating swiper
+   of promo banners. Each slide is a background image with foreground text
+   (eyebrow, heading, chips, CTA) overlaid, ~3:1 on desktop. */
 
 /* Full-width: escape the section's 1200px max-width and side padding */
 .hero-promo-container .hero-promo-wrapper {
@@ -9,12 +11,36 @@
 
 .hero-promo {
   position: relative;
+}
+
+/* ---- slides track ---- */
+.hero-promo .hero-promo-slides-container {
+  position: relative;
+}
+
+.hero-promo .hero-promo-slides {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: scroll clip;
+}
+
+.hero-promo .hero-promo-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-promo .hero-promo-slide {
+  position: relative;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
   display: flex;
   align-items: center;
   min-height: 300px;
   padding: 24px 20px;
   overflow: hidden;
-  border-radius: 20px;
   color: #fff;
 
   /* Deep-blue fallback sampled from the source banner, shown while / if the
@@ -26,7 +52,7 @@
 .hero-promo .hero-promo-bg {
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .hero-promo .hero-promo-bg picture,
@@ -38,6 +64,8 @@
 
 /* Foreground content */
 .hero-promo .hero-promo-content {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -126,8 +154,93 @@ main .hero-promo a.button:focus {
   color: var(--brand-primary);
 }
 
+/* ---- dot indicators ---- */
+.hero-promo .hero-promo-slide-indicators {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-promo .hero-promo-slide-indicator button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(255 255 255 / 50%);
+  cursor: pointer;
+  transition: background-color 0.2s, width 0.2s;
+}
+
+.hero-promo .hero-promo-slide-indicator button[disabled] {
+  width: 24px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* ---- prev / next controls ---- */
+.hero-promo .hero-promo-navigation-buttons {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  right: 12px;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.hero-promo .hero-promo-navigation-buttons button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(255 255 255 / 80%);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background-color 0.2s;
+}
+
+.hero-promo .hero-promo-navigation-buttons button:hover,
+.hero-promo .hero-promo-navigation-buttons button:focus-visible {
+  background-color: #fff;
+}
+
+.hero-promo .hero-promo-navigation-buttons button::after {
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--text-color, #58595b);
+  border-bottom: 0;
+  border-left: 0;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 2px);
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.hero-promo .hero-promo-navigation-buttons button.slide-next::after {
+  left: calc(50% - 2px);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
 @media (width >= 900px) {
-  .hero-promo {
+  .hero-promo .hero-promo-slide {
     min-height: 300px;
     padding: 24px 20px;
   }

@@ -149,6 +149,12 @@
     ]
   },
   {
+    "id": "hero-promo",
+    "components": [
+      "hero-promo-item"
+    ]
+  },
+  {
     "id": "table-data",
     "components": [
       "table-data-row"

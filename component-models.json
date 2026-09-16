@@ -599,28 +599,28 @@
     ]
   },
   {
-    "id": "hero-promo",
+    "id": "hero-promo-item",
     "fields": [
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
-        "label": "Image",
+        "name": "media_image",
+        "label": "Banner Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
+        "name": "media_imageAlt",
+        "value": "",
+        "label": "Banner Alt"
       },
       {
         "component": "richtext",
-        "name": "text",
+        "valueType": "string",
+        "name": "content_text",
         "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "label": "Caption"
       }
     ]
   },

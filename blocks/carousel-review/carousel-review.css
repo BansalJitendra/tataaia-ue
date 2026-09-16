@@ -33,29 +33,43 @@
   display: none;
 }
 
-/* --- Testimonial card --- */
+/* --- Testimonial card: avatar + name/meta header, review text below --- */
 .carousel-review .carousel-review-slide {
+  position: relative;
   scroll-snap-align: center;
   flex: 0 0 88%;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 72px 1fr;
   column-gap: 16px;
   align-content: start;
   min-height: 240px;
-  padding: 30px 24px;
+  padding: 28px 28px 32px;
   background-color: #fff;
-  border: 1px solid #daeef8;
+  border: 1px solid #cfe6f5;
   border-radius: 18px;
-  box-shadow: 0 4px 7px rgb(0 115 187 / 5%);
+  box-shadow: 0 4px 12px rgb(0 115 187 / 6%);
+  overflow: hidden;
 }
 
-/* Avatar (column 1, row 1) */
+/* Decorative quote mark in the top-right corner */
+.carousel-review .carousel-review-slide::before {
+  content: '\201D';
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 90px;
+  line-height: 1;
+  color: rgb(0 115 187 / 10%);
+  pointer-events: none;
+}
+
+/* Avatar (top-left, circular) */
 .carousel-review .carousel-review-slide-image {
   grid-column: 1;
-  grid-row: 1;
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   padding: 3px;
   box-sizing: border-box;
   border-radius: 50%;
@@ -76,41 +90,46 @@
   object-fit: cover;
 }
 
-/* Content column: name + meta beside the avatar (column 2, row 1) */
+/* Name + meta beside the avatar; the review quote flows below (full column width) */
 .carousel-review .carousel-review-slide-content {
   grid-column: 2;
-  grid-row: 1;
   display: flex;
   flex-direction: column;
   min-width: 0;
-  padding-top: 4px;
+  padding-top: 2px;
 }
 
-/* Name */
+/* Name (blue, bold) */
 .carousel-review .carousel-review-slide-content h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 1.25;
-  color: var(--brand-blue);
+  line-height: 1.2;
+  color: var(--brand-blue, #0073bb);
 }
 
 /* Meta lines (company / plan / date) */
 .carousel-review .carousel-review-slide-content p {
-  margin: 3px 0 0;
+  margin: 4px 0 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
-  color: var(--text-color);
+  color: var(--text-color, #58595b);
 }
 
-/* Quote (last paragraph) -- drop below the avatar and span full card width */
+/* the plan-name meta line (2nd non-name paragraph) is emphasised on live */
+.carousel-review .carousel-review-slide-content p:nth-of-type(2) {
+  font-weight: 700;
+  color: #333;
+}
+
+/* Review quote — the last paragraph, below the name/meta */
 .carousel-review .carousel-review-slide-content p:last-child {
   margin-top: 16px;
-  margin-left: -96px;   /* pull back under the avatar column (80px + 16px gap) */
   font-size: 15px;
-  line-height: 1.5;
-  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--text-color, #58595b);
 }
 
 /* --- Navigation arrows --- */

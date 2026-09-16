@@ -1,30 +1,44 @@
 /* Block: form -- Tata AIA lead-capture / call-back form
- * Values extracted from source computed styles (tataaia.com):
- *   input   height 50px, padding 12px 16px, border 1px #e6e7e8, radius 8px, font 14px
+ * Values extracted from source computed styles (tataaia.com "Know more and buy
+ * your plan in 2 steps" calc form):
+ *   heading 18px / 400, color #58595b, left-aligned
+ *   input   height 40px, padding 10px 16px, border 1px #e6e7e8, radius 8px, font 14px
  *   label   14px / 600, color #58595b, stacked above field
- *   submit  bg #d62049 (brand primary), color #fff, radius 8px, padding 12px 24px
+ *   submit  bg #d62049 (brand primary), color #fff, radius 8px, padding 16px 24px
+ *   layout  fields flow side-by-side (responsive grid) on a white card
  */
 
 .form {
   --form-input-border: #e6e7e8;   /* rgb(230, 231, 232) */
   --form-input-radius: 8px;
-  --form-input-height: 50px;
+  --form-input-height: 40px;       /* live inputs are 40px tall */
 }
 
+/* Live lays the fields out in a horizontal row; on EDS we use a responsive grid
+   so the fields flow side-by-side (2 cols tablet, 3 cols desktop) and wrap
+   cleanly on mobile, on a single white card. */
 .form form {
-  max-width: 900px;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px 20px;
+  align-items: start;
 }
 
-/* Form heading (source: "Know more and buy your plan in 2 steps") — a heading
-   field emitted as the first row of the form JSON. */
+/* Form heading (source: "Know more and buy your plan in 2 steps") — matches the
+   live heading: small, regular weight, grey, left-aligned. */
+.form form .heading-wrapper {
+  grid-column: 1 / -1;
+}
+
 .form form .heading-wrapper h2,
 .form form .heading-wrapper h3 {
-  margin: 0 0 20px;
+  margin: 0 0 4px;
   font-family: var(--heading-font-family);
-  font-size: var(--heading-size-l, 24px);
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1.3;
-  color: var(--heading-color);
+  color: var(--text-color, #58595b);
 }
 
 /* On the blue-tone-light section the form sits on a white card, matching the
@@ -40,41 +54,54 @@ main .section.blue-tone-light .form form {
 .form .field-wrapper {
   display: grid;
   grid-auto-flow: row;
-  align-items: start;
+  align-content: start;
 }
 
 .form fieldset {
   display: grid;
   grid-auto-flow: row;
+  align-content: start;
   margin: 0;
   border: none;
   padding: 0;
 }
 
-.form form > .field-wrapper + .field-wrapper,
-.form form fieldset .field-wrapper + .field-wrapper {
-  margin-top: 20px;
-}
-
-.form form > .selection-wrapper + .selection-wrapper,
-.form form fieldset .selection-wrapper + .selection-wrapper {
+/* Radio/checkbox groups line their options in a row under the legend. */
+.form fieldset .selection-wrapper + .selection-wrapper {
   margin-top: 0.25em;
 }
 
+/* Heading, consent checkbox and submit span the full width of the grid. */
+.form form > .heading-wrapper,
+.form form > .checkbox-wrapper,
+.form form > .button-wrapper {
+  grid-column: 1 / -1;
+}
+
 @media (width >= 600px) {
-  .form fieldset {
+  .form form {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
   }
 
-  .form form > .selection-wrapper + .selection-wrapper,
-  .form form fieldset .field-wrapper + .field-wrapper,
-  .form form fieldset .selection-wrapper + .selection-wrapper {
+  .form fieldset {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 20px;
+  }
+
+  .form fieldset > legend {
+    grid-column: 1 / -1;
+  }
+
+  .form fieldset .selection-wrapper + .selection-wrapper {
     margin-top: 0;
   }
 }
 
 @media (width >= 900px) {
+  .form form {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .form fieldset {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -104,7 +131,7 @@ main .section.blue-tone-light .form form {
   width: 100%;
   height: var(--form-input-height);
   margin: 0;
-  padding: 12px 16px;
+  padding: 10px 16px;
   border: 1px solid var(--form-input-border);
   border-radius: var(--form-input-radius);
   background-color: var(--background-color);
@@ -152,18 +179,15 @@ main .section.blue-tone-light .form form {
   color: var(--brand-primary);
 }
 
-/* --- submit button: rectangular red CTA (radius 8px), overrides global pill --- */
-.form .button-wrapper {
-  margin-top: 24px;
-}
-
+/* --- submit button: rectangular red CTA (radius 8px), overrides global pill ---
+   (grid `gap` handles spacing; button-wrapper spans full width via the grid rule) */
 .form button,
 .form .button-wrapper button.button {
   display: inline-block;
   width: auto;
   min-height: var(--form-input-height);
   margin: 0;
-  padding: 12px 24px;
+  padding: 14px 32px;
   border: 1px solid var(--brand-primary);
   border-radius: var(--form-input-radius);
   background-color: var(--brand-primary);

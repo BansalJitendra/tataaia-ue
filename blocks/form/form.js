@@ -157,11 +157,56 @@ function enhancePlanLayout(block, form) {
   if (first) setActive(first.value);
 }
 
+// Resolve the form-definition JSON URL from a reference that may be an <a> href
+// OR plain text (AEM's crosswalk render drops the anchor and leaves the JSON
+// filename as text). Also fixes the path: a bare "foo.json" on a page served at
+// "/" would resolve to "/foo.json" (404) while the asset is published under
+// "/content/foo.json" — so we probe both.
+async function resolveFormJson(block) {
+  // 1) any explicit .json anchor
+  const anchors = [...block.querySelectorAll('a')].map((a) => a.getAttribute('href') || a.href);
+  let ref = anchors.find((h) => h && h.endsWith('.json'));
+  // 2) fall back to plain-text cell content that looks like a .json filename
+  if (!ref) {
+    const textRef = [...block.querySelectorAll('div, p')]
+      .map((el) => el.textContent.trim())
+      .find((t) => /^[\w./-]+\.json$/.test(t));
+    if (textRef) ref = textRef;
+  }
+  if (!ref) return null;
+
+  // Build candidate URLs (absolute, root, and /content/ fallback).
+  const name = ref.split('/').pop();
+  const candidates = [];
+  if (/^https?:\/\//.test(ref)) candidates.push(ref);
+  else candidates.push(new URL(ref, window.location.href).href);
+  candidates.push(new URL(`/${name}`, window.location.origin).href);
+  candidates.push(new URL(`/content/${name}`, window.location.origin).href);
+
+  // Return the first candidate that actually fetches OK (sequential, deduped).
+  const unique = [...new Set(candidates)];
+  const tryFetch = async (url) => {
+    try {
+      const resp = await fetch(url, { method: 'GET' });
+      return resp.ok ? url : null;
+    } catch (e) {
+      return null;
+    }
+  };
+  return unique.reduce(
+    (chain, url) => chain.then((found) => found || tryFetch(url)),
+    Promise.resolve(null),
+  );
+}
+
 export default async function decorate(block) {
   const links = [...block.querySelectorAll('a')].map((a) => a.href);
-  const formLink = links.find((link) => link.startsWith(window.location.origin) && link.endsWith('.json'));
-  const submitLink = links.find((link) => link !== formLink);
-  if (!formLink || !submitLink) return;
+  const formLink = await resolveFormJson(block);
+  const submitLink = links.find((link) => link !== formLink)
+    || [...block.querySelectorAll('div, p')].map((el) => el.textContent.trim())
+      .find((t) => t.startsWith('/') && !t.endsWith('.json'))
+    || '/forms/lead-submit';
+  if (!formLink) return;
 
   const form = await createForm(formLink, submitLink);
   block.replaceChildren(form);

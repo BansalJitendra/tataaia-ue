@@ -3,7 +3,7 @@
    of promo banners. Each slide is a background image with foreground text
    (eyebrow, heading, chips, CTA) overlaid, ~3:1 on desktop. */
 
-/* Full-width: escape the section's 1200px max-width and side padding */
+/* Match live: the banner slider is centered at 1206px (not full-bleed). */
 .hero-promo-container .hero-promo-wrapper {
   max-width: unset;
   padding: 0;
@@ -11,6 +11,8 @@
 
 .hero-promo {
   position: relative;
+  max-width: 1206px;
+  margin: 0 auto;
 }
 
 /* ---- slides track ---- */

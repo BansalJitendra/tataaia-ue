@@ -299,3 +299,30 @@ main img[alt="close-popup"] {
 main p:has(> img[alt="close-popup"]) {
   display: none;
 }
+
+/* "Awards & Recognition" section title. It was imported as a bare default-content
+   paragraph (not a heading), so it rendered as small body text. On live it's a
+   32px centered blue->red gradient heading — style the standalone paragraph in
+   the cards-promo section's default-content wrapper to match. */
+main .section.cards-promo-container > .default-content-wrapper > p:only-child {
+  margin: 24px 0;
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+
+  /* blue -> red gradient clipped to text */
+  background: linear-gradient(90deg, #0073bb 38%, #d62049 66%);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (width >= 900px) {
+  main .section.cards-promo-container > .default-content-wrapper > p:only-child {
+    font-size: 32px;
+  }
+}

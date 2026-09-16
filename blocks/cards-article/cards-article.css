@@ -2,6 +2,13 @@
 
 /* Values extracted from source computed styles (tataaia.com homepage blog cards). */
 
+/* The Related Articles section sits on a slightly deeper blue tint than the
+   generic blue-tone-light sections (live: #ecf5fa). Scope it to this section so
+   the shared --light-color isn't changed globally. */
+main .section.cards-article-container {
+  background-color: #ecf5fa;
+}
+
 /* Horizontal card slider (source: .things-to-know-slider) — cards sit side-by-side
    in a scrollable row, NOT a wrapping grid. */
 .cards-article ul {

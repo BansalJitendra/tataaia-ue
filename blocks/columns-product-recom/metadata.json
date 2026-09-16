@@ -1,0 +1,14 @@
+{
+  "variantName": "columns-product-recom",
+  "baseBlock": "columns",
+  "canonicalModel": "columns",
+  "visualCharacteristics": "Rounded two-column callout: left pitch panel with heading + check bullets over an illustration, right plan card with a best-seller ribbon, plan name, price, details, benefit list and a red CTA.",
+  "contentPattern": "One row, three columns: illustration image, left pitch copy, right plan card.",
+  "usage": "Product-recommendation callout under the Life Insurance intro nudging users to a best-selling term plan.",
+  "options": [],
+  "memberVariantIds": ["columns-product-recom"],
+  "sourceContext": {
+    "originUrl": "https://www.tataaia.com/",
+    "selector": ".product-recom-banner"
+  }
+}

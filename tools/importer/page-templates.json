@@ -75,6 +75,12 @@
           ]
         },
         {
+          "name": "columns-product-recom",
+          "instances": [
+            ".product-recom-banner"
+          ]
+        },
+        {
           "name": "columns-panels",
           "instances": [
             ".term-insurance-maininfo-container"
@@ -184,6 +190,18 @@
           "style": null,
           "blocks": [
             "columns-panels"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s4b",
+          "name": "Can't decide callout",
+          "selector": [
+            ".product-recom-banner"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-product-recom"
           ],
           "defaultContent": []
         },

@@ -1205,6 +1205,50 @@ var CustomImportScript = (() => {
     element.replaceWith(block);
   }
 
+  // tools/importer/parsers/columns-product-recom.js
+  function parseColumnsProductRecom(element, { document: document2 }) {
+    const DAM = "https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited";
+    const BANNER_IMG = `${DAM}/hard-code-icons/Product-Recommendation/Banner_Image.png`;
+    const h = (html) => {
+      const t = document2.createElement("template");
+      t.innerHTML = html.trim();
+      return t.content;
+    };
+    const imageFrag = document2.createDocumentFragment();
+    const img = document2.createElement("img");
+    img.setAttribute("src", BANNER_IMG);
+    img.setAttribute("alt", "Family protected by Tata AIA term insurance");
+    const imgP = document2.createElement("p");
+    imgP.appendChild(img);
+    imageFrag.appendChild(imgP);
+    const leftFrag = document2.createDocumentFragment();
+    leftFrag.appendChild(h(`
+      <h2>Can't decide on a term insurance plan?</h2>
+      <p>Share your needs and get</p>
+      <ul>
+        <li>Personalized suggestions</li>
+        <li>Customizable quotes</li>
+      </ul>
+      <p>Non-Linked, Non-Participating, pure risk, Individual Life Insurance Product (UIN:110N176V11)</p>
+    `));
+    const rightFrag = document2.createDocumentFragment();
+    rightFrag.appendChild(h(`
+      <p>Best Seller</p>
+      <h3>Tata AIA Sampoorna Raksha Promise</h3>
+      <p>Get ₹1 Crore Life cover @ ₹826/month</p>
+      <p>Age: 25 | Cover till age: 60 yrs | Payment duration: 35 yrs</p>
+      <ul>
+        <li>99.45% Individual Death Claim Settlement Ratio</li>
+        <li>Pay later option — Defer premium by 12 months</li>
+        <li>Instant Payout on terminal illness</li>
+      </ul>
+      <p><a href="/life-insurance-plans/term-insurance/sampoorna-raksha-promise.html?utm_campaign=homepage_productrecom">Customize plans for you</a></p>
+    `));
+    const cells = [[imageFrag, leftFrag, rightFrag]];
+    const block = WebImporter.Blocks.createBlock(document2, { name: "columns-product-recom", cells });
+    element.replaceWith(block);
+  }
+
   // tools/importer/transformers/tataaia-cleanup.js
   var TransformHook = {
     beforeTransform: "beforeTransform",
@@ -1212,6 +1256,19 @@ var CustomImportScript = (() => {
   };
   function transform(hookName, element, payload) {
     if (hookName === TransformHook.beforeTransform) {
+      // The "Can't decide on a term insurance plan?" banner (.product-recom-banner)
+      // is nested inside the hidden product-recommendation calculator wrappers
+      // (.product-recommendation-calcuator / .api-failure-page) that we strip
+      // below. Hoist it out to the body first so it survives the cleanup and the
+      // product-recom-banner parser can map it. Placed right after the first
+      // .term-insurance-maininfo-container (the Life Insurance intro) to keep it
+      // in its live position.
+      const recomBanner = element.querySelector(".product-recom-banner");
+      if (recomBanner) {
+        const intro = element.querySelector(".term-insurance-maininfo-container");
+        if (intro && intro.parentNode) intro.parentNode.insertBefore(recomBanner, intro.nextSibling);
+        else element.appendChild(recomBanner);
+      }
       WebImporter.DOMUtils.remove(element, [
         // Top-of-body hidden runtime inputs (cleaned.html L2, L4, L6)
         "#otp_require",
@@ -1399,7 +1456,8 @@ var CustomImportScript = (() => {
     "quote-callout": parse15,
     "table-data": parse16,
     "tabs-links": parse17,
-    "quicklinks-toggle": parseQuicklinksToggle
+    "quicklinks-toggle": parseQuicklinksToggle,
+    "columns-product-recom": parseColumnsProductRecom
   };
   var PAGE_TEMPLATE = {
     "name": "home",
@@ -1430,6 +1488,12 @@ var CustomImportScript = (() => {
         "name": "quicklinks-toggle",
         "instances": [
           ".homepagewishlistcomp"
+        ]
+      },
+      {
+        "name": "columns-product-recom",
+        "instances": [
+          ".product-recom-banner"
         ]
       },
       {
@@ -1583,6 +1647,18 @@ var CustomImportScript = (() => {
         "style": null,
         "blocks": [
           "columns-panels"
+        ],
+        "defaultContent": []
+      },
+      {
+        "id": "s4b",
+        "name": "Can't decide callout",
+        "selector": [
+          ".product-recom-banner"
+        ],
+        "style": null,
+        "blocks": [
+          "columns-product-recom"
         ],
         "defaultContent": []
       },

@@ -2,7 +2,7 @@
   "status": "success",
   "url": "https://www.tataaia.com/",
   "path": "index",
-  "timestamp": "2026-09-16T12:21:17.144Z",
+  "timestamp": "2026-09-16T13:01:39.346Z",
   "title": "Life Insurance - Best Life Insurance Online in India 2026",
   "template": "home",
   "blocks": [
@@ -10,6 +10,7 @@
     "hero-banner",
     "cards-plan",
     "quicklinks-toggle",
+    "columns-product-recom",
     "cards-persona",
     "cards-quicklink",
     "cards-promo",

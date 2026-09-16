@@ -134,6 +134,12 @@
     ]
   },
   {
+    "id": "columns-product-recom",
+    "components": [
+      "column"
+    ]
+  },
+  {
     "id": "columns",
     "components": [
       "column"

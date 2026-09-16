@@ -2,7 +2,7 @@
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Hero Promo                                                                                                                                                                                                                |
-+============================+==============================================================================================================================================================================================+
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                                                                                                                                                  |
 |                            |                                                                                                                                                                                              |
 | ![][image1]                | In this policy, the investment risk in the investment portfolio will be borne by the policyholder.                                                                                           |
@@ -62,55 +62,55 @@
 
 ## Top Selling Plans by Tata AIA Life Insurance
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Cards Plan                                                                                                                                                                                             |
-+============================+===========================================================================================================================================================================+
-| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                                       |
-|                            |                                                                                                                                                                           |
-| ![][image4]                | New Fund Offer                                                                                                                                                            |
-|                            |                                                                                                                                                                           |
-|                            | ### [Wealth Plans/ULIPs](/life-insurance-plans/wealth-solutions/premier-sip.html?utm_campaign=homepagecard)                                                               |
-|                            |                                                                                                                                                                           |
-|                            | 15.83% 5 yr Returns<sup>1f</sup> of Multi Cap Fund \+ 0 LTCG Tax<sup>1a</sup>                                                                                             |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                                       |
-|                            |                                                                                                                                                                           |
-| ![][image5]                | 2.5% FESTIVE DISCOUNT                                                                                                                                                     |
-|                            |                                                                                                                                                                           |
-|                            | ### [Term Plans](/life-insurance-plans/term-insurance/sampoorna-raksha-promise.html?utm_campaign=homepagecard)                                                            |
-|                            |                                                                                                                                                                           |
-|                            | ₹1.5 Cr Life Cover starts @678/month<sup>1b</sup>                                                                                                                         |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                                       |
-|                            |                                                                                                                                                                           |
-| ![][image6]                | New Fund Offer                                                                                                                                                            |
-|                            |                                                                                                                                                                           |
-|                            | ### [Term \+ Wealth Plans](/life-insurance-plans/term-plan-with-market-linked-returns.html?utm_campaign=homepagecard)                                                     |
-|                            |                                                                                                                                                                           |
-|                            | ₹1 Cr Life Cover \+ 15.83% 5 yr Returns<sup>1f</sup> of Multi Cap Fund                                                                                                    |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                                       |
-|                            |                                                                                                                                                                           |
-| ![][image7]                | ₹46 Lakh\+ Returns                                                                                                                                                        |
-|                            |                                                                                                                                                                           |
-|                            | ### [Guaranteed Returns Plans](/life-insurance-plans/savings-solutions.html?utm_campaign=homepagecard)                                                                    |
-|                            |                                                                                                                                                                           |
-|                            | ₹46 Lakh\+ Guaranteed<sup>1g</sup> Tax Free<sup>1a</sup> Returns<sup>1h</sup>                                                                                             |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                                       |
-|                            |                                                                                                                                                                           |
-| ![][image8]                | ### [Investment Plan for NRI](https://www.tataaia.com/life-insurance-plans/nri-life-insurance-plans/nri-investment-plans.html?utm_campaign=investmentplanfornri_homepage) |
-|                            |                                                                                                                                                                           |
-|                            | Get Guaranteed<sup>7</sup> \+ Market-Linked<sup>9</sup> Returns                                                                                                           |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                                       |
-|                            |                                                                                                                                                                           |
-| ![][image9]                | CANCER COVER                                                                                                                                                              |
-|                            |                                                                                                                                                                           |
-|                            | ### [Health Plans](/health-insurance-plans/sampoorna-care-cancer.html?utm_campaign=homepagecard)                                                                          |
-|                            |                                                                                                                                                                           |
-|                            | Cancer cover with 30-yr fixed premium \+ Flexible payouts                                                                                                                 |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Cards Plan                                                                                                                                                                                  |
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                            |
+|                            |                                                                                                                                                                |
+| ![][image4]                | New Fund Offer                                                                                                                                                 |
+|                            |                                                                                                                                                                |
+|                            | ### [Wealth Plans/ULIPs](/life-insurance-plans/wealth-solutions/premier-sip.html?utm_campaign=homepagecard)                                                    |
+|                            |                                                                                                                                                                |
+|                            | 15.83% 5 yr Returns<sup>1f</sup> of Multi Cap Fund \+ 0 LTCG Tax<sup>1a</sup>                                                                                  |
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                            |
+|                            |                                                                                                                                                                |
+| ![][image5]                | 2.5% FESTIVE DISCOUNT                                                                                                                                          |
+|                            |                                                                                                                                                                |
+|                            | ### [Term Plans](/life-insurance-plans/term-insurance/sampoorna-raksha-promise.html?utm_campaign=homepagecard)                                                 |
+|                            |                                                                                                                                                                |
+|                            | ₹1.5 Cr Life Cover starts @678/month<sup>1b</sup>                                                                                                              |
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                            |
+|                            |                                                                                                                                                                |
+| ![][image6]                | New Fund Offer                                                                                                                                                 |
+|                            |                                                                                                                                                                |
+|                            | ### [Term \+ Wealth Plans](/life-insurance-plans/term-plan-with-market-linked-returns.html?utm_campaign=homepagecard)                                          |
+|                            |                                                                                                                                                                |
+|                            | ₹1 Cr Life Cover \+ 15.83% 5 yr Returns<sup>1f</sup> of Multi Cap Fund                                                                                         |
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                            |
+|                            |                                                                                                                                                                |
+| ![][image7]                | ₹46 Lakh\+ Returns                                                                                                                                             |
+|                            |                                                                                                                                                                |
+|                            | ### [Guaranteed Returns Plans](/life-insurance-plans/savings-solutions.html?utm_campaign=homepagecard)                                                         |
+|                            |                                                                                                                                                                |
+|                            | ₹46 Lakh\+ Guaranteed<sup>1g</sup> Tax Free<sup>1a</sup> Returns<sup>1h</sup>                                                                                  |
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                            |
+|                            |                                                                                                                                                                |
+| ![][image8]                | ### [Term Insurance in USD](https://www.tataaia.com/life-insurance-plans/term-insurance/term-insurance-for-nri.html?utm_campaign=terminsurancefornri_homepage) |
+|                            |                                                                                                                                                                |
+|                            | GST Free premium<sup>3</sup> \+ 18.5% discount on 1st year premium<sup>11</sup>                                                                                |
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| <!-- field:media_image --> | <!-- field:text -->                                                                                                                                            |
+|                            |                                                                                                                                                                |
+| ![][image9]                | CANCER COVER                                                                                                                                                   |
+|                            |                                                                                                                                                                |
+|                            | ### [Health Plans](/health-insurance-plans/sampoorna-care-cancer.html?utm_campaign=homepagecard)                                                               |
+|                            |                                                                                                                                                                |
+|                            | Cancer cover with 30-yr fixed premium \+ Flexible payouts                                                                                                      |
++----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Life cover included.<sup>1b</sup>20 year old female (Standard Life, Non-Smoker), regular pay, 20 year policy term. <sup>1f</sup>5 year returns of Tata AIA Multi Cap Fund as of Apr’26. Benchmark: 12.01%. Past performance is not indicative of future performance. <sup>1g</sup>T\&C apply.\
 L\&C/Advt/2026/Jul/4466
@@ -119,7 +119,7 @@ L\&C/Advt/2026/Jul/4466
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Quicklinks Toggle                                                                                                                                                                                                                                                                            |
-+======================+=======================================================================================================================================================================================================================================================================+
++----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:label --> | <!-- field:links -->                                                                                                                                                                                                                                                  |
 |                      |                                                                                                                                                                                                                                                                       |
 | I am a new customer  | I want to                                                                                                                                                                                                                                                             |
@@ -145,13 +145,13 @@ L\&C/Advt/2026/Jul/4466
 
 +---------------------------+
 | Section Metadata          |
-+=========+=================+
++---------+-----------------+
 | style   | blue-tone-light |
 +---------+-----------------+
 
 +--------------------------------------------------------+
 | Form                                                   |
-+========================================================+
++--------------------------------------------------------+
 | <!-- field:reference -->                               |
 |                                                        |
 | [know-more-buy-2steps.json](know-more-buy-2steps.json) |
@@ -163,11 +163,9 @@ L\&C/Advt/2026/Jul/4466
 
 ---
 
----
-
 +------------------------------------------------------------------------------+
 | Columns Panels                                                               |
-+==================+===========================================================+
++------------------+-----------------------------------------------------------+
 | # Life Insurance | Life insurance is a legally binding contract between you  |
 |                  | (the policyholder) and a life insurance company that      |
 |                  | provides financial protection to your loved ones. In      |
@@ -186,9 +184,29 @@ L\&C/Advt/2026/Jul/4466
 |                  | long-term financial stability. Read less                  |
 +------------------+-----------------------------------------------------------+
 
+---
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Columns Product Recom                                                                                                                                                                                                                  |
++---------------------------------------------------------+-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| ![Family protected by Tata AIA term insurance][image10] | ## Can't decide on a term insurance plan? | Best Seller                                                                                                                      |
+|                                                         |                                           |                                                                                                                                  |
+|                                                         | Share your needs and get                  | ### Tata AIA Sampoorna Raksha Promise                                                                                            |
+|                                                         |                                           |                                                                                                                                  |
+|                                                         | - Personalized suggestions                | Get ₹1 Crore Life cover @ ₹826/month                                                                                             |
+|                                                         | - Customizable quotes                     |                                                                                                                                  |
+|                                                         |                                           | Age: 25 \| Cover till age: 60 yrs \| Payment duration: 35 yrs                                                                    |
+|                                                         | Non-Linked, Non-Participating, pure risk, |                                                                                                                                  |
+|                                                         | Individual Life Insurance Product         | - 99.45% Individual Death Claim Settlement Ratio                                                                                 |
+|                                                         | (UIN:110N176V11)                          | - Pay later option — Defer premium by 12 months                                                                                  |
+|                                                         |                                           | - Instant Payout on terminal illness                                                                                             |
+|                                                         |                                           |                                                                                                                                  |
+|                                                         |                                           | [Customize plans for you](/life-insurance-plans/term-insurance/sampoorna-raksha-promise.html?utm_campaign=homepage_productrecom) |
++---------------------------------------------------------+-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+
 +-----------------------------------------------------------------------------------------+
 | Columns Panels                                                                          |
-+============================+============================================================+
++----------------------------+------------------------------------------------------------+
 | ## Types of Life Insurance | Life insurance comes with many choices, each designed for  |
 |                            | different financial needs. Some focus on protection, while |
 |                            | others... Read more combine savings or future security. To |
@@ -211,7 +229,7 @@ L\&C/Advt/2026/Jul/4466
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Accordion List                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-+========================================+=============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
++----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:summary -->                 | <!-- field:text -->                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | 1\. Term Plan                          | A [<u>term insurance plan</u>](/life-insurance-plans/term-insurance.html) is the basic type of life insurance that provides financial protection for a specific time period, called the policy term and involves a fixed premium. A term insurance plan protects your family in your absence. With this type of life insurance, your family can cover expenses such as a child's fees, home loans, groceries, and more.\                                                                    |
@@ -219,9 +237,7 @@ L\&C/Advt/2026/Jul/4466
 |                                        | Benefits:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | - Comprehensive life cover at affordable premiums                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|                                        | - Tax benefits                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|                                        |   <sup>3a</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   as per applicable tax laws.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                                        | - Tax benefits <sup>3a</sup> as per applicable tax laws.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | [Calculate Premium](https://sellonline.tataaia.com/app/products?product=SRP\&campaign=BO\&camcode=2095\&cid=website:link:homepage_typesoflifeinsurance::sampoornarakshapromise:terminsurance:2095\&sourcePage=https://www.tataaia.com/) [Know More About Term Insurance](/life-insurance-plans/term-insurance.html?utm_campaign=homepage_typesoflifeinsurance)                                                                                                                              |
 +----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -235,12 +251,8 @@ L\&C/Advt/2026/Jul/4466
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | Benefits:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        | - Life cover \+ Wealth creation with market-linked                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|                                        |   <sup>3b</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   funds                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                        | - Tax-free                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|                                        |   <sup>3a</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   returns                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|                                        | - Life cover \+ Wealth creation with market-linked <sup>3b</sup> funds                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                        | - Tax-free <sup>3a</sup> returns                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |                                        | - Flexibility to choose from 20\+ funds with unlimited switching options                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | [Calculate Returns](https://sellonline.tataaia.com/app/products?product=SSRS\&campaign=BO\&camcode=2095\&cid=website:link:homepage_typesoflifeinsurance::paramrakshalifeproplus:ulips:2095\&sourcePage=https://www.tataaia.com/) [Know More About ULIP Plans](/life-insurance-plans/wealth-solutions.html?utm_campaign=homepage_typesoflifeinsurance)                                                                                                                                       |
@@ -252,9 +264,7 @@ L\&C/Advt/2026/Jul/4466
 |                                        | Benefits:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | - Life cover \+ savings option                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|                                        | - Tax-free                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|                                        |   <sup>3a</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   returns                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|                                        | - Tax-free <sup>3a</sup> returns                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | [Calculate Returns](https://sellonline.tataaia.com/app/products?product=GRIP\&campaign=BO\&camcode=2095\&cid=website:link:homepage_typesoflifeinsurance::guaranteedreturninsuranceplan:endowmentpolicy:2095%20\&sourcePage=https://www.tataaia.com/) [Know More About Endowment Policy](/life-insurance-plans/savings-solutions/endowment-policy.html?utm_campaign=homepage_typesoflifeinsurance)                                                                                           |
 +----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -264,12 +274,8 @@ L\&C/Advt/2026/Jul/4466
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | Benefits:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        | - Guaranteed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                                        |   <sup>3c</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   , long-term regular income                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                                        | - Tax-free                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|                                        |   <sup>3s</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   returns                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|                                        | - Guaranteed <sup>3c</sup> , long-term regular income                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                                        | - Tax-free <sup>3s</sup> returns                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | [Calculate Returns](https://sellonline.tataaia.com/app/products?product=FGP\&campaign=BO\&camcode=2095\&cid=website:link:homepage_typesoflifeinsurance::fortuneguaranteeplus:moneybackpolicy:2095\&sourcePage=https://www.tataaia.com/) [Know More About Money Back Policy](/life-insurance-plans/savings-solutions/money-back-policy.html?utm_campaign=homepage_typesoflifeinsurance)                                                                                                      |
 +----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -281,18 +287,12 @@ L\&C/Advt/2026/Jul/4466
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | Benefits of fixed income retirement plan:                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        | - Guaranteed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                                        |   <sup>3d</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   lifelong income                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|                                        | - Tax benefits                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|                                        |   <sup>3a</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   as per applicable tax laws                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                        | - Guaranteed <sup>3d</sup> lifelong income                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|                                        | - Tax benefits <sup>3a</sup> as per applicable tax laws                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | Benefits of market-linked<sup>3b</sup> retirement plan:                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        | - Wealth creation through top rated                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|                                        |   <sup>3e</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   funds                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|                                        | - Wealth creation through top rated <sup>3e</sup> funds                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                                        | - Zero premium allocation charges                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | [Calculate Returns](https://sellonline.tataaia.com/app/products?product=SPS\&campaign=BO\&camcode=2095\&cid=website:link:homepage_typesoflifeinsurance::smartpensionsecure:retirementplans:2095\&sourcePage=https://www.tataaia.com/) [Know More About Retirement Plan](/life-insurance-plans/retirement-and-pension-solutions.html?utm_campaign=homepage_typesoflifeinsurance)                                                                                                             |
@@ -304,9 +304,7 @@ L\&C/Advt/2026/Jul/4466
 |                                        | Benefits:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | - Save for milestones like child’s education or wedding                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                        | - Tax-free                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|                                        |   <sup>3a</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   returns                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|                                        | - Tax-free <sup>3a</sup> returns                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | [Calculate Returns](https://sellonline.tataaia.com/app/products?product=FGP\&campaign=BO\&camcode=2095\&cid=website:link:homepage_typesoflifeinsurance::fortuneguaranteeplus:childplans:2095\&sourcePage=https://www.tataaia.com/) [Know More About Child Insurance Plans](/life-insurance-plans/savings-solutions/child-savings-plan.html?utm_campaign=homepage_typesoflifeinsurance)                                                                                                      |
 +----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -316,13 +314,8 @@ L\&C/Advt/2026/Jul/4466
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | Benefits:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        | - Option to receive cash bonus                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|                                        |   <sup>3f</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   (if declared) from 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|                                        |   <sup>st</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   month/year                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                                        | - Grow income with sub-wallet feature and withdraw as per your requirement                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|                                        |   <sup>3g</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|                                        | - Option to receive cash bonus <sup>3f</sup> (if declared) from 1 <sup>st</sup> month/year                                                                                                                                                                                                                                                                                                                                                                                                  |
+|                                        | - Grow income with sub-wallet feature and withdraw as per your requirement <sup>3g</sup>                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | [Calculate Returns](https://sellonline.tataaia.com/app/products?product=SFIP\&campaign=BO\&camcode=2095\&cid=website:link:homepage_typesoflifeinsurance::shubhflexiincomeplan:participatingplans:2095\&sourcePage=https://www.tataaia.com/) [Know More About Life Insurance Plan](/life-insurance-plans/savings-solutions/shubh-flexi-income-plan.html?utm_campaign=homepage_typesoflifeinsurance)                                                                                          |
 +----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -332,9 +325,7 @@ L\&C/Advt/2026/Jul/4466
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | Benefits:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        | - Grow wealth with top-rated                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                                        |   <sup>3e</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   funds                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|                                        | - Grow wealth with top-rated <sup>3e</sup> funds                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |                                        | - Capital guarantee                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | [Calculate Returns](https://sellonline.tataaia.com/app/products?product=CGS\&campaign=BO\&camcode=2095\&cid=website:link:homepage_typesoflifeinsurance::capitalguaranteesolution:capitalguaranteeplans:2095\&sourcePage=https://www.tataaia.com/) [Know More About Capital Guarantee Plans](/life-insurance-plans/combo-plans/capital-guarantee-solution.html?utm_campaign=homepage_typesoflifeinsurance)                                                                                   |
@@ -345,10 +336,8 @@ L\&C/Advt/2026/Jul/4466
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | Benefits:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        | - Life cover till the age of 100                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|                                        |   <sup>3h</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        | - 100% premium refund option                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                                        |   <sup>3i</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|                                        | - Life cover till the age of 100 <sup>3h</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|                                        | - 100% premium refund option <sup>3i</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | [Calculate Premium](https://sellonline.tataaia.com/app/products?product=SRP\&campaign=BO\&camcode=2095\&cid=website:link:homepage_typesoflifeinsurance::sampoornarakshapromise:wholelifeinsurance:2095\&sourcePage=https://www.tataaia.com/) [Know More About Whole Life Insurance](/life-insurance-plans/term-insurance/whole-life-insurance.html?utm_campaign=homepage_typesoflifeinsurance)                                                                                              |
 +----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -358,9 +347,7 @@ L\&C/Advt/2026/Jul/4466
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | Benefits:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        | - Wealth creation through top rated                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|                                        |   <sup>3e</sup>                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                        |   funds                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|                                        | - Wealth creation through top rated <sup>3e</sup> funds                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                                        | - Zero premium allocation charges                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                        | [Calculate Returns](https://sellonline.tataaia.com/app/products?product=SPS\&campaign=BO\&camcode=2095\&cid=website:link:homepage_typesoflifeinsurance::smartpensionsecure:annuityplans:2095\&sourcePage=https://www.tataaia.com/) [Know More About Annuity Plans](/life-insurance-plans/retirement-and-pension-solutions/annuity-plans.html?utm_campaign=homepage_typesoflifeinsurance)                                                                                                    |
@@ -370,13 +357,13 @@ L\&C/Advt/2026/Jul/4466
 
 +--------------------------+
 | Section Metadata         |
-+=========+================+
++---------+----------------+
 | style   | tinted-callout |
 +---------+----------------+
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Quote Callout                                                                                                                                             |
-+===========================================================================================================================================================+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:quotation -->                                                                                                                                  |
 |                                                                                                                                                           |
 | [Quote/Benefit Illustration](https://siddhi-insurance.tataaia.com/product/quotation/generate-quote?source=WEBSALES\&callbackUrl=https://www.tataaia.com/) |
@@ -390,22 +377,22 @@ L\&C/Advt/2026/Jul/4466
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Cards Persona                                                                                                                                                           |
-+============================+============================================================================================================================================+
-| <!-- field:media_image --> | <!-- field:text -->                                                                                                                        |
-|                            |                                                                                                                                            |
-| ![icon1][image10]          | ### [Term insurance for women](/life-insurance-plans/life-insurance-for-women.html?utm_campaign=homepage_insuranceplansforall)             |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                                                                        |
 |                            |                                                                                                                                            |
-| ![image2][image11]         | ### [Life Insurance for NRI](/life-insurance-plans/nri-life-insurance-plans.html?utm_campaign=homepage_insuranceplansforall)               |
+| ![icon1][image11]          | ### [Term insurance for women](/life-insurance-plans/life-insurance-for-women.html?utm_campaign=homepage_insuranceplansforall)             |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                                                                        |
 |                            |                                                                                                                                            |
-| ![image3][image12]         | ### [₹1 Crore Term plan](/life-insurance-plans/term-insurance/1-crore-term-insurance-plan.html?utm_campaign=homepage_insuranceplansforall) |
+| ![image2][image12]         | ### [Life Insurance for NRI](/life-insurance-plans/nri-life-insurance-plans.html?utm_campaign=homepage_insuranceplansforall)               |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                                                                        |
 |                            |                                                                                                                                            |
-| ![image4][image13]         | ### [Investment plans](/life-insurance-plans/investment-plans.html?utm_campaign=homepage_insuranceplansforall)                             |
+| ![image3][image13]         | ### [₹1 Crore Term plan](/life-insurance-plans/term-insurance/1-crore-term-insurance-plan.html?utm_campaign=homepage_insuranceplansforall) |
++----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| <!-- field:media_image --> | <!-- field:text -->                                                                                                                        |
+|                            |                                                                                                                                            |
+| ![image4][image14]         | ### [Investment plans](/life-insurance-plans/investment-plans.html?utm_campaign=homepage_insuranceplansforall)                             |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 ---
@@ -414,30 +401,30 @@ L\&C/Advt/2026/Jul/4466
 
 +------------------------------------------------------------------------------------------------------------------------+
 | Cards Quicklink                                                                                                        |
-+============================+===========================================================================================+
-| <!-- field:media_image --> | <!-- field:text -->                                                                       |
-|                            |                                                                                           |
-| ![pay][image14]            | ### [Pay premium](https://myinsurance.tataaia.com/portfolio/login?target=50)              |
 +----------------------------+-------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                       |
 |                            |                                                                                           |
-| ![Download][image15]       | ### [Download statement](/premium-payment/download-statement.html?id=premiumReceiptCerti) |
+| ![pay][image15]            | ### [Pay premium](https://myinsurance.tataaia.com/portfolio/login?target=50)              |
 +----------------------------+-------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                       |
 |                            |                                                                                           |
-| ![Register][image16]       | ### [Register claim](/customer-service/claim-registration.html)                           |
+| ![Download][image16]       | ### [Download statement](/premium-payment/download-statement.html?id=premiumReceiptCerti) |
 +----------------------------+-------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                       |
 |                            |                                                                                           |
-| ![raise][image17]          | ### [Raise service request](https://myinsurance.tataaia.com)                              |
+| ![Register][image17]       | ### [Register claim](/customer-service/claim-registration.html)                           |
 +----------------------------+-------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                       |
 |                            |                                                                                           |
-| ![raise][image18]          | ### [Raise a complaint](/customer-service/grievance-redressal.html)                       |
+| ![raise][image18]          | ### [Raise service request](https://myinsurance.tataaia.com)                              |
 +----------------------------+-------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                       |
 |                            |                                                                                           |
-| ![LoginLogin][image19]     | ### [Login to my account](https://myinsurance.tataaia.com/)                               |
+| ![raise][image19]          | ### [Raise a complaint](/customer-service/grievance-redressal.html)                       |
++----------------------------+-------------------------------------------------------------------------------------------+
+| <!-- field:media_image --> | <!-- field:text -->                                                                       |
+|                            |                                                                                           |
+| ![LoginLogin][image20]     | ### [Login to my account](https://myinsurance.tataaia.com/)                               |
 +----------------------------+-------------------------------------------------------------------------------------------+
 
 ---
@@ -446,16 +433,16 @@ L\&C/Advt/2026/Jul/4466
 
 +-------------------------------------------------------------------------------------------------+
 | Cards Promo                                                                                     |
-+============================+====================================================================+
++----------------------------+--------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                |
 |                            |                                                                    |
-| ![image1][image20]         | ### Plan your financial future as per **your unique personality.** |
+| ![image1][image21]         | ### Plan your financial future as per **your unique personality.** |
 |                            |                                                                    |
 |                            | [Take Personality Quiz](/financial-personality-test.html)          |
 +----------------------------+--------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                |
 |                            |                                                                    |
-| ![image2][image21]         | ### Choose a plan that best suits **your future goals.**           |
+| ![image2][image22]         | ### Choose a plan that best suits **your future goals.**           |
 |                            |                                                                    |
 |                            | [Take Suitability Test](/suitabilitytest.html)                     |
 +----------------------------+--------------------------------------------------------------------+
@@ -466,35 +453,35 @@ Awards & Recognition
 
 +-------------------------------------------------------+
 | Cards Award                                           |
-+============================+==========================+
++----------------------------+--------------------------+
 | <!-- field:media_image --> | <!-- field:text -->      |
 |                            |                          |
-| ![slider1][image22]        | Kincentric Best Employer |
+| ![slider1][image23]        | Kincentric Best Employer |
 |                            |                          |
 |                            | – 8 Years                |
 +----------------------------+--------------------------+
 | <!-- field:media_image --> | <!-- field:text -->      |
 |                            |                          |
-| ![slider2][image23]        | Great Place to Work      |
+| ![slider2][image24]        | Great Place to Work      |
 +----------------------------+--------------------------+
 | <!-- field:media_image --> | <!-- field:text -->      |
 |                            |                          |
-| ![slider3][image24]        | Innovista Award          |
+| ![slider3][image25]        | Innovista Award          |
 +----------------------------+--------------------------+
 | <!-- field:media_image --> | <!-- field:text -->      |
 |                            |                          |
-| ![slider4][image25]        | ET Brand Equity Award    |
+| ![slider4][image26]        | ET Brand Equity Award    |
 +----------------------------+--------------------------+
 
-![prevoius-arrow][image26]
+![prevoius-arrow][image27]
 
-![next-arrow][image27]
+![next-arrow][image28]
 
 ---
 
 +------+
 | Form |
-+======+
++------+
 |      |
 +------+
 |      |
@@ -506,10 +493,10 @@ Awards & Recognition
 
 +-----------------------------------------------------------------------------------------+
 | Carousel Review                                                                         |
-+============================+============================================================+
++----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image28]               | ### Swapnil Vartak                                         |
+| ![][image29]               | ### Swapnil Vartak                                         |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -520,7 +507,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image29]               | ### Simran Yadav                                           |
+| ![][image30]               | ### Simran Yadav                                           |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -531,7 +518,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image30]               | ### Mahesh Gaikar                                          |
+| ![][image31]               | ### Mahesh Gaikar                                          |
 |                            |                                                            |
 |                            | Value Income Plan 12 Nov 2022                              |
 |                            |                                                            |
@@ -541,7 +528,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image31]               | ### Jatin Zala                                             |
+| ![][image32]               | ### Jatin Zala                                             |
 |                            |                                                            |
 |                            | Sampoorna Raksha 17 Dec 2024                               |
 |                            |                                                            |
@@ -551,7 +538,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image32]               | ### Shweta Ghag                                            |
+| ![][image33]               | ### Shweta Ghag                                            |
 |                            |                                                            |
 |                            | Pro-Fit 27 June 2024                                       |
 |                            |                                                            |
@@ -561,7 +548,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image33]               | ### Meena Chaudhari                                        |
+| ![][image34]               | ### Meena Chaudhari                                        |
 |                            |                                                            |
 |                            | Smart Health 28 June 2024                                  |
 |                            |                                                            |
@@ -572,7 +559,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image34]               | ### Nilesh Sharma                                          |
+| ![][image35]               | ### Nilesh Sharma                                          |
 |                            |                                                            |
 |                            | Maha Raksha Supreme 12 June 2020                           |
 |                            |                                                            |
@@ -582,7 +569,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image35]               | ### Dimple Aadin                                           |
+| ![][image36]               | ### Dimple Aadin                                           |
 |                            |                                                            |
 |                            | Savings Plan 12 Dec 2024                                   |
 |                            |                                                            |
@@ -591,7 +578,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image36]               | ### Pooja Haria                                            |
+| ![][image37]               | ### Pooja Haria                                            |
 |                            |                                                            |
 |                            | Param Raksha 19 Nov 2022                                   |
 |                            |                                                            |
@@ -601,7 +588,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image37]               | ### Kanchan Sharma                                         |
+| ![][image38]               | ### Kanchan Sharma                                         |
 |                            |                                                            |
 |                            | Sampoorna Raksha 12 Dec 2024                               |
 |                            |                                                            |
@@ -610,7 +597,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image38]               | ### Dinesh Ahuja                                           |
+| ![][image39]               | ### Dinesh Ahuja                                           |
 |                            |                                                            |
 |                            | Multiple Policies2 May 2025                                |
 |                            |                                                            |
@@ -620,7 +607,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image39]               | ### Amin                                                   |
+| ![][image40]               | ### Amin                                                   |
 |                            |                                                            |
 |                            | Multiple Policies2 May 2025                                |
 |                            |                                                            |
@@ -630,7 +617,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image40]               | ### Sunita Mandal                                          |
+| ![][image41]               | ### Sunita Mandal                                          |
 |                            |                                                            |
 |                            | Maha Raksha Supreme Select15 May 2025                      |
 |                            |                                                            |
@@ -640,7 +627,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image41]               | ### Maushmi                                                |
+| ![][image42]               | ### Maushmi                                                |
 |                            |                                                            |
 |                            | Smart Income Plus 6 May 2025                               |
 |                            |                                                            |
@@ -650,7 +637,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image42]               | ### Kala R                                                 |
+| ![][image43]               | ### Kala R                                                 |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -663,7 +650,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image43]               | ### Akash Jai Singh                                        |
+| ![][image44]               | ### Akash Jai Singh                                        |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -675,7 +662,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image44]               | ### Sumeet Nayak                                           |
+| ![][image45]               | ### Sumeet Nayak                                           |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -687,7 +674,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image45]               | ### Anita Diwadkar                                         |
+| ![][image46]               | ### Anita Diwadkar                                         |
 |                            |                                                            |
 |                            | Invest Assure Gold 12 Dec 2024                             |
 |                            |                                                            |
@@ -696,7 +683,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image46]               | ### Pearlann Serrao                                        |
+| ![][image47]               | ### Pearlann Serrao                                        |
 |                            |                                                            |
 |                            | MahaLife Gold                                              |
 |                            |                                                            |
@@ -705,7 +692,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image47]               | ### Vivek Upadhyay                                         |
+| ![][image48]               | ### Vivek Upadhyay                                         |
 |                            |                                                            |
 |                            | Param Raksha 2.0 12 Dec 2024                               |
 |                            |                                                            |
@@ -715,7 +702,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image48]               | ### Aniket Gaikwad                                         |
+| ![][image49]               | ### Aniket Gaikwad                                         |
 |                            |                                                            |
 |                            | Fortune Guarantee Plus 21 Mar 2024                         |
 |                            |                                                            |
@@ -724,7 +711,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image49]               | ### Jeetendra Dhiman                                       |
+| ![][image50]               | ### Jeetendra Dhiman                                       |
 |                            |                                                            |
 |                            | Sampoorna Raksha 12 Dec 2024                               |
 |                            |                                                            |
@@ -733,7 +720,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image50]               | ### Amit Pravin Taralkar                                   |
+| ![][image51]               | ### Amit Pravin Taralkar                                   |
 |                            |                                                            |
 |                            | Fortune Guarantee Pension 12 Dec 2024                      |
 |                            |                                                            |
@@ -741,7 +728,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image51]               | ### Meena Bhatia                                           |
+| ![][image52]               | ### Meena Bhatia                                           |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -754,7 +741,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image52]               | ### Nitin Vishwakarma                                      |
+| ![][image53]               | ### Nitin Vishwakarma                                      |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -771,42 +758,42 @@ Awards & Recognition
 
 +---------------------------------------------------------------------+
 | Cards Stats                                                         |
-+============================+========================================+
++----------------------------+----------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon][image53]           | ### 1.4 Lakh Crore\+                   |
+| ![icon][image54]           | ### 1.4 Lakh Crore\+                   |
 |                            |                                        |
 |                            | Assets Under Management\               |
 |                            | (AUM)<sup>4a</sup>                     |
 +----------------------------+----------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon2][image54]          | ### 9 Lakh Crore\+                     |
+| ![icon2][image55]          | ### 9 Lakh Crore\+                     |
 |                            |                                        |
 |                            | \#1 in Retail Sum Assured<sup>4b</sup> |
 +----------------------------+----------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon3][image55]          | ### 98 Lakh\+                          |
+| ![icon3][image56]          | ### 98 Lakh\+                          |
 |                            |                                        |
 |                            | Families protected so far<sup>4c</sup> |
 +----------------------------+----------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon4][image56]          | ### 600\+ Branches                     |
+| ![icon4][image57]          | ### 600\+ Branches                     |
 |                            |                                        |
 |                            | Presence across major cities in India  |
 +----------------------------+----------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon5][image57]          | ### 99.45%                             |
+| ![icon5][image58]          | ### 99.45%                             |
 |                            |                                        |
 |                            | Individual Death Claim\                |
 |                            | Settlement Ratio<sup>4d</sup>          |
 +----------------------------+----------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon6][image58]          | ### 4 Hours                            |
+| ![icon6][image59]          | ### 4 Hours                            |
 |                            |                                        |
 |                            | Express Claim Settlement<sup>4e</sup>  |
 +----------------------------+----------------------------------------+
@@ -815,22 +802,18 @@ Awards & Recognition
 
 +-----------------------------------------------------------------------+
 | Carousel Banner                                                       |
-+=======================================+===============================+
-| <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
-|                                       |                               |
-| ![Unclaimed Insurance Funds][image59] | Unclaimed Insurance Funds     |
 +---------------------------------------+-------------------------------+
 | <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
 |                                       |                               |
-| ![APK][image60]                       | APK                           |
+| ![Unclaimed Insurance Funds][image60] | Unclaimed Insurance Funds     |
 +---------------------------------------+-------------------------------+
 | <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
 |                                       |                               |
-| ![Extended image][image61]            | Extended image                |
+| ![APK][image61]                       | APK                           |
 +---------------------------------------+-------------------------------+
 | <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
 |                                       |                               |
-| ![Bima Bharosa][image62]              | Bima Bharosa                  |
+| ![Extended image][image62]            | Extended image                |
 +---------------------------------------+-------------------------------+
 | <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
 |                                       |                               |
@@ -838,14 +821,18 @@ Awards & Recognition
 +---------------------------------------+-------------------------------+
 | <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
 |                                       |                               |
-| ![1600 Series][image64]               | 1600 Series                   |
+| ![Bima Bharosa][image64]              | Bima Bharosa                  |
++---------------------------------------+-------------------------------+
+| <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
+|                                       |                               |
+| ![1600 Series][image65]               | 1600 Series                   |
 +---------------------------------------+-------------------------------+
 
 ---
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Accordion List                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-+==========================================================+===================================================================================================================================================================================================================================================================================================================================================================================================================================+
++----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:summary -->                                   | <!-- field:text -->                                                                                                                                                                                                                                                                                                                                                                                                               |
 |                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | What is Life Insurance?                                  | Life insurance is a contract between two parties - an individual (the insured or policyholder) and a life insurance company (the insurer or insurance provider).                                                                                                                                                                                                                                                                  |
@@ -1230,17 +1217,13 @@ Awards & Recognition
 |                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                                          | If you want to file a claim with us, you can choose any of the options below:                                                                                                                                                                                                                                                                                                                                                     |
 |                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|                                                          | - Online process through our website (                                                                                                                                                                                                                                                                                                                                                                                            |
-|                                                          |   [<u>Tata AIA Life Insurance</u>](https://myinsurance.tataaia.com/portfolio/claim-intimation)                                                                                                                                                                                                                                                                                                                                    |
-|                                                          |   )                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                                                          | - Online process through our website ( [<u>Tata AIA Life Insurance</u>](https://myinsurance.tataaia.com/portfolio/claim-intimation) )                                                                                                                                                                                                                                                                                             |
 |                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|                                                          | * Send us an email at: customercare@tataaia.com                                                                                                                                                                                                                                                                                                                                                                                   |
+|                                                          | * Send us an email at: customercare\@tataaia.com                                                                                                                                                                                                                                                                                                                                                                                  |
 |                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                                          | - Call our helpline number: 1860-266-9966 (local charges apply)                                                                                                                                                                                                                                                                                                                                                                   |
 |                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|                                                          | * Visit any of our Tata AIA Life Insurance Company                                                                                                                                                                                                                                                                                                                                                                                |
-|                                                          |   [<u>branch offices</u>](/contact-us.html?contactUs-2)                                                                                                                                                                                                                                                                                                                                                                           |
-|                                                          |   .                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                                                          | * Visit any of our Tata AIA Life Insurance Company [<u>branch offices</u>](/contact-us.html?contactUs-2) .                                                                                                                                                                                                                                                                                                                        |
 |                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                                          | - Write to us at the below address:                                                                                                                                                                                                                                                                                                                                                                                               |
 |                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -1310,11 +1293,11 @@ Awards & Recognition
 |                                                          |   Life insurance will not cover your death caused while involved in criminal activities.                                                                                                                                                                                                                                                                                                                                          |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-![bar chart of Individual death claim settlement ratio from 2020 to 2025, showing an upwards graph][image65]
+![bar chart of Individual death claim settlement ratio from 2020 to 2025, showing an upwards graph][image66]
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | Table Data                                                                                                                          |
-+===========================================================================+============================+============================+
++---------------------------------------------------------------------------+----------------------------+----------------------------+
 | <!-- field:column1text -->                                                | <!-- field:column2text --> | <!-- field:column3text --> |
 |                                                                           |                            |                            |
 | **Feature**                                                               | **Online**                 | **Offline**                |
@@ -1344,7 +1327,7 @@ Awards & Recognition
 | **Certified support availability** - IRDAI-approved assistance            | Yes                        | Yes                        |
 +---------------------------------------------------------------------------+----------------------------+----------------------------+
 
-![tata aia][image66]
+![tata aia][image67]
 
 ## Tata AIA Life Insurance
 
@@ -1356,7 +1339,7 @@ With a strong legacy of trust and expertise, Tata AIA Life Insurance offers prot
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Accordion List                                                                                                                                                                                           |
-+=====================================+====================================================================================================================================================================+
++-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:summary -->              | <!-- field:text -->                                                                                                                                                |
 |                                     |                                                                                                                                                                    |
 | Key terms related to Life Insurance | Understanding common life insurance terms helps you make informed decisions and avoid confusion while choosing a                                                   |
@@ -1454,7 +1437,7 @@ With a strong legacy of trust and expertise, Tata AIA Life Insurance offers prot
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Accordion List                                                                                                                                                                      |
-+========================================================+============================================================================================================================+
++--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:summary -->                                 | <!-- field:text -->                                                                                                        |
 |                                                        |                                                                                                                            |
 | Frequently Asked Questions (FAQs) about Life Insurance | 1. Life Insurance                                                                                                          |
@@ -1673,7 +1656,7 @@ L\&C/Advt/2026/Jul/4249
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
 | Columns Panels                                                                                                                                      |
-+=====================================================================================================================================================+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Sources:**\                                                                                                                                       |
 | [<u>https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx?key=80c</u>](https://incometaxindia.gov.in/pages/acts/income-tax-act.aspx?key=80c) |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1684,25 +1667,25 @@ L\&C/Advt/2026/Jul/4249
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Carousel Video                                                                                                                                                                                          |
-+=====================================================================================+===================================================================================================================+
-| <!-- field:media_image -->                                                          | <!-- field:content_text -->                                                                                       |
-|                                                                                     |                                                                                                                   |
-| ![What's the Best Shield against Emergencies?][image67]                             | [What's the Best Shield against Emergencies?](https://youtube.com/shorts/Rx8X_Pjsaew)                             |
 +-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:content_text -->                                                                                       |
 |                                                                                     |                                                                                                                   |
-| ![Life Insurance - The Dual Purpose Financial Tool you need to know about][image68] | [Life Insurance - The Dual Purpose Financial Tool you need to know about](https://youtube.com/shorts/WyZKqzxQkUg) |
+| ![What's the Best Shield against Emergencies?][image68]                             | [What's the Best Shield against Emergencies?](https://youtube.com/shorts/Rx8X_Pjsaew)                             |
 +-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:content_text -->                                                                                       |
 |                                                                                     |                                                                                                                   |
-| ![Why should women join Life Insurance?][image69]                                   | [Why should women join Life Insurance?](<https://youtube.com/shorts/u2V-M_cayqE >)                                |
+| ![Life Insurance - The Dual Purpose Financial Tool you need to know about][image69] | [Life Insurance - The Dual Purpose Financial Tool you need to know about](https://youtube.com/shorts/WyZKqzxQkUg) |
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| <!-- field:media_image -->                                                          | <!-- field:content_text -->                                                                                       |
+|                                                                                     |                                                                                                                   |
+| ![Why should women join Life Insurance?][image70]                                   | [Why should women join Life Insurance?](https://youtube.com/shorts/u2V-M_cayqE%20)                                |
 +-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
 
 ---
 
 +---------------------------+
 | Section Metadata          |
-+=========+=================+
++---------+-----------------+
 | style   | blue-tone-light |
 +---------+-----------------+
 
@@ -1710,92 +1693,92 @@ L\&C/Advt/2026/Jul/4249
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Cards Article                                                                                                                                                                                                                                                   |
-+=====================================================================================+===========================================================================================================================================================================+
-| <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
-|                                                                                     |                                                                                                                                                                           |
-| ![image][image70]                                                                   | Life Insurance                                                                                                                                                            |
-|                                                                                     |                                                                                                                                                                           |
-|                                                                                     | ### [How Simple Is It To Buy A Life Insurance Policy? \| Tata AIA Blog](/blogs/life-insurance/how-simple-is-it-to-buy-a-life-insurance-policy.html)                       |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
 | ![image][image71]                                                                   | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
-|                                                                                     | ### [Types of Life Insurance - A Complete Guide](/blogs/life-insurance/complete-guide-to-types-of-life-insurance.html)                                                    |
+|                                                                                     | ### [How Simple Is It To Buy A Life Insurance Policy? \| Tata AIA Blog](/blogs/life-insurance/how-simple-is-it-to-buy-a-life-insurance-policy.html)                       |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
 | ![image][image72]                                                                   | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
-|                                                                                     | ### [What Are the Different Types of Whole Life Insurance Policies?](/blogs/life-insurance/what-are-the-different-types-of-whole-life-insurance-policies.html)            |
+|                                                                                     | ### [Types of Life Insurance - A Complete Guide](/blogs/life-insurance/complete-guide-to-types-of-life-insurance.html)                                                    |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
 | ![image][image73]                                                                   | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
-|                                                                                     | ### [4 Steps to Buy Life Insurance Plan With Your Smartphone](/blogs/life-insurance/4-steps-to-buy-life-insurance-plan-with-your-smartphone2.html)                        |
+|                                                                                     | ### [What Are the Different Types of Whole Life Insurance Policies?](/blogs/life-insurance/what-are-the-different-types-of-whole-life-insurance-policies.html)            |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
 | ![image][image74]                                                                   | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
+|                                                                                     | ### [4 Steps to Buy Life Insurance Plan With Your Smartphone](/blogs/life-insurance/4-steps-to-buy-life-insurance-plan-with-your-smartphone2.html)                        |
++-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
+|                                                                                     |                                                                                                                                                                           |
+| ![image][image75]                                                                   | Life Insurance                                                                                                                                                            |
+|                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [4 Ways to Calculate Coverage of Your Life Insurance Policy](/blogs/life-insurance/4-ways-to-calculate-coverage-of-your-life-insurance-policy.html)                   |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![calculator, showing tax savings, surrounded by money][image75]                    | ### [How To Save Tax With Insurance Policy?](/knowledge-centre/how-to-save-income-tax-with-insurance-policy.html)                                                         |
+| ![calculator, showing tax savings, surrounded by money][image76]                    | ### [How To Save Tax With Insurance Policy?](/knowledge-centre/how-to-save-income-tax-with-insurance-policy.html)                                                         |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of Life insurance][image76]                                           | Life Insurance                                                                                                                                                            |
+| ![Stock image of Life insurance][image77]                                           | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Everything Important to Know About Death Benefits of Life Insurance](/blogs/life-insurance/everything-important-to-know-about-death-benefits-of-life-insurance.html) |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of man saving up money][image77]                                      | Life Insurance                                                                                                                                                            |
+| ![Stock image of man saving up money][image78]                                      | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Will Savings Be Enough for Your Loved Ones if Tomorrow Never Comes?](/blogs/life-insurance/will-savings-be-enough-for-your-loved-ones-if-tomorrow-never-comes.html)  |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of person placing blocks, in an upwards trend][image78]               | Life Insurance                                                                                                                                                            |
+| ![Stock image of person placing blocks, in an upwards trend][image79]               | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [What are the Benefits of a Term Plan with Return of Premium?](/blogs/term-insurance/what-are-the-benefits-of-a-term-plan-with-return-of-premium.html)                |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of Life insurance on an umbrella, saving a family from rain][image79] | Life Insurance                                                                                                                                                            |
+| ![Stock image of Life insurance on an umbrella, saving a family from rain][image80] | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Term Insurance Tax Benefits & Refund Details \| Tata AIA Blog](/blogs/life-insurance/term-insurance-tax-benefits-and-refund-details.html)                            |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image representing annuity][image80]                                        | Life Insurance                                                                                                                                                            |
+| ![Stock image representing annuity][image81]                                        | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [How can annuity plans offer you steady income?](/blogs/life-insurance/how-can-annuity-plans-offer-you-steady-income.html)                                            |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image showing Life insurance][image81]                                      | Life Insurance                                                                                                                                                            |
+| ![Stock image showing Life insurance][image82]                                      | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [10 Reasons You Must Read Your Life Insurance Policy Carefully](/blogs/life-insurance/10-reasons-to-read-life-insurance-policy-carefully.html)                        |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image representing insurance claims][image82]                               | Life Insurance                                                                                                                                                            |
+| ![Stock image representing insurance claims][image83]                               | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Why Your Life Insurance Claim Cannot Be Rejected So Easily](/blogs/life-insurance/why-life-insurance-claim-cannot-be-rejected-so-easily.html)                        |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of a man celebrating][image83]                                        | Life Insurance                                                                                                                                                            |
+| ![Stock image of a man celebrating][image84]                                        | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Guaranteed Income Plans: Why Should You Buy This?](/blogs/life-insurance/why-should-you-buy-guaranteed-income-plans.html)                                            |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of family with insurance policies][image84]                           | Life insurance                                                                                                                                                            |
+| ![Stock image of family with insurance policies][image85]                           | Life insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Life Insurance TYPES OF ULIP PLANS: WHICH ONE SHOULD YOU BUY?](/blogs/ulip/different-types-of-ulip-plans.html)                                                       |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1804,7 +1787,7 @@ L\&C/Advt/2026/Jul/4249
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Tabs Links                                                                                                                                                                     |
-+============================================+===================================================================================================================================+
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:title -->                       | <!-- field:content_richtext -->                                                                                                   |
 |                                            |                                                                                                                                   |
 | Popular Searches Related to Life Insurance | - [Life Insurance](/)                                                                                                             |
@@ -1827,7 +1810,7 @@ L\&C/Advt/2026/Jul/4249
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Tabs Links                                                                                                                                                             |
-+======================+=================================================================================================================================================+
++----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:title --> | <!-- field:content_richtext -->                                                                                                                 |
 |                      |                                                                                                                                                 |
 | Popular Searches     | - [Term Insurance Calculator](/calculator/term-insurance-calculator.html)                                                                       |
@@ -1862,627 +1845,407 @@ L\&C/Advt/2026/Jul/4249
 
 Last updated on 16<sup>th</sup> Sept 2026
 
-+--------------------------------------------------------------------------------------------+
-| Accordion List                                                                             |
-+========================+===================================================================+
-| <!-- field:summary --> | <!-- field:text -->                                               |
-|                        |                                                                   |
-| Disclaimers            | L\&C/Advt/2026/Sep/5250                                           |
-|                        |                                                                   |
-|                        | - Tata AIA Sampoorna Raksha Promise (UIN:110N176V13) -            |
-|                        |   Non-Linked, Non-Participating, pure risk, Individual Life       |
-|                        |   Insurance Product                                               |
-|                        |                                                                   |
-|                        | - Tata AIA Premier SIP is a combination of the Tata AIA Smart     |
-|                        |   SIP, a non-participating, unit-linked, individual life          |
-|                        |   insurance savings plan (UIN: 110L174V02) and Tata AIA Health    |
-|                        |   Buddy, a Non-participating, Non-Linked, Individual Health       |
-|                        |   Product (UIN:110N183V02). Both Tata AIA Smart SIP and Tata      |
-|                        |   AIA Health Buddy are also available for sale individually.      |
-|                        |                                                                   |
-|                        | - Tata AIA Sampoorna Care - Cancer is the variant name of         |
-|                        |   Tata AIA Sampoorna Care product. Tata AIA Sampoorna Care is a   |
-|                        |   Non-Participating, Non-Linked Individual Health Product (UIN:   |
-|                        |   110N186V01)                                                     |
-|                        |                                                                   |
-|                        | - Tata AIA Param Raksha Life Pro \+ is designed for               |
-|                        |   combination of benefits of following individual and separate    |
-|                        |   products named (1) Tata AIA Smart Sampoorna Raksha Supreme      |
-|                        |   Unit Linked, Non-Participating Individual Life Insurance Plan   |
-|                        |   (UIN: 110L179V02) and (2) Tata AIA Health Buddy,                |
-|                        |   Non-Participating, Non-Linked, Individual Health Product        |
-|                        |   (UIN: 110N183V01). These products are also available for sale   |
-|                        |   individually without the combination offered/ suggested.        |
-|                        |                                                                   |
-|                        | - The information, provided herein, may not be treated as a       |
-|                        |   solicitation request in any manner. Any decision to buy         |
-|                        |   online insurance by NRIs is completely his/her choice. The      |
-|                        |   insurer is permitted to solicit insurance in India and          |
-|                        |   settles claim in INR only.                                      |
-|                        |                                                                   |
-|                        | - <sup>1a</sup>                                                   |
-|                        |   No Goods and Service Tax shall be applicable on Individual      |
-|                        |   life insurance products as per prevailing laws. Income Tax      |
-|                        |   benefits would be available, subject to fulfillment of          |
-|                        |   conditions of aggregate premium within threshold limit of       |
-|                        |   ₹2.50 Lakh/annum for ULIP and ₹5.0 Lakh/annum for non ULIP      |
-|                        |   Life insurance and maintaining conditions of premium to sum     |
-|                        |   assured ratio as stipulated therein in Section 11, Schedule     |
-|                        |   II (erstwhile Section10(10D)) of Income Tax Act 2025. Tata      |
-|                        |   AIA Life Insurance Company Ltd. does not assume                 |
-|                        |   responsibility on tax implications mentioned anywhere on this   |
-|                        |   site. Please consult your own tax consultant to know the tax    |
-|                        |   benefits available to you.                                      |
-|                        |                                                                   |
-|                        | - <sup>1b</sup>                                                   |
-|                        |   Illustrated premium of ₹501 and ₹678 are the monthly            |
-|                        |   premiums for ₹1 Cr And ₹1.5 Cr Sum Assured respectively for a   |
-|                        |   20 yr. old female, Standard Life, Non-Smoker with a Policy      |
-|                        |   Term of 20 yrs. (Regular Pay) under Life Promise Option of      |
-|                        |   Tata AIA Sampoorna Raksha Promise with first year premium       |
-|                        |   discount of 10% for digital purchase and 8.5% for salaried      |
-|                        |   person. Please refer Benefit Illustration for more details.     |
-|                        |                                                                   |
-|                        | - <sup>1c</sup>                                                   |
-|                        |   The Buy Together Discount is available when purchasing a        |
-|                        |   product jointly, as per the Board Approved Underwriting         |
-|                        |   Policy (BAUP). The discount is 5% for Limited Pay/Regular Pay   |
-|                        |   and 1% for Single Pay on 1                                      |
-|                        |   <sup>st</sup>                                                   |
-|                        |   year premium.                                                   |
-|                        |                                                                   |
-|                        | - <sup>1d</sup>                                                   |
-|                        |   Individual Death Claim Settlement Ratio is 99.45% for FY        |
-|                        |   2025-26 as per latest annual audited figures.                   |
-|                        |                                                                   |
-|                        | - <sup>1e</sup>                                                   |
-|                        |   All funds open for new business which have completed 5          |
-|                        |   years since inception are rated 4 star or 5 Stars by            |
-|                        |   Morningstar as of December 2025.                                |
-|                        |                                                                   |
-|                        | - ©2025 Morningstar. All rights reserved. The Morningstar         |
-|                        |   name is a registered trademark of Morningstar, Inc. in India    |
-|                        |   and other jurisdictions. The information contained here: (1)    |
-|                        |   includes the proprietary information of Morningstar, Inc. and   |
-|                        |   its affiliates, including, without limitation, Morningstar      |
-|                        |   India Private Limited (“Morningstar”); (2) may not be copied,   |
-|                        |   redistributed or used, by any means, in whole or in part,       |
-|                        |   without the prior, written consent of Morningstar; (3) is not   |
-|                        |   warranted to be complete, accurate or timely; and (4) may be    |
-|                        |   drawn from data published on various dates and procured from    |
-|                        |   various sources and (5) shall not be construed as an offer to   |
-|                        |   buy or sell any security or other investment vehicle. Neither   |
-|                        |   Morningstar, Inc. nor any of its affiliates (including,         |
-|                        |   without limitation, Morningstar) nor any of their officers,     |
-|                        |   directors, employees, associates or agents shall be             |
-|                        |   responsible or liable for any trading decisions, damages or     |
-|                        |   other losses resulting directly or indirectly from the          |
-|                        |   information.                                                    |
-|                        |                                                                   |
-|                        | - <sup>1f</sup>                                                   |
-|                        |   Data from our Tata AIA fund factsheet shows the performance     |
-|                        |   of Tata AIA Multi Cap fund & SFINN no ULIF 060 15/07/14 MCF     |
-|                        |   110 as of April 2026.                                           |
-|                        |                                                                   |
-|                        |   Benchmark: S\&P BSE 200                                         |
-|                        |                                                                   |
-|                        | - <sup>1g</sup>                                                   |
-|                        |   Guaranteed Income shall be total of Guaranteed annual           |
-|                        |   Income plus Income Booster payable in a year. Guaranteed        |
-|                        |   Income as per the chosen Income Frequency shall commence        |
-|                        |   after maturity till the end of the Income Period,               |
-|                        |   irrespective of survival of the life insured(s) during the      |
-|                        |   Income Period.                                                  |
-|                        |                                                                   |
-|                        | - <sup>1h</sup>                                                   |
-|                        |   Illustrated premium of ₹8,830 is the monthly premium for a      |
-|                        |   18-50 year old, Male/Female, Standard Life, Plan Option 1       |
-|                        |   (Regular Income) with Premium Payment Term: 10 years, Policy    |
-|                        |   Term: 15 years, Income Term: 30 years. Income will start from   |
-|                        |   16                                                              |
-|                        |   <sup>th</sup>                                                   |
-|                        |   year. Total Guaranteed Benefit: ₹46,06,600. Please refer        |
-|                        |   Benefit Illustration for more details.                          |
-|                        |                                                                   |
-|                        | - <sup>1i</sup>                                                   |
-|                        |   Market-linked returns are subject to market risks and terms     |
-|                        |   & conditions of the product. The assumed rate of returns or     |
-|                        |   illustrated amount may not be guaranteed and depends on         |
-|                        |   market fluctuations.                                            |
-|                        |                                                                   |
-|                        | - <sup>1j</sup>                                                   |
-|                        |   Data from our Tata AIA fund factsheet shows the performance     |
-|                        |   of Tata AIA Top 200 fund & SFINN no ULIF 027 12/01/09 ITT 110   |
-|                        |   as of July 2026.                                                |
-|                        |                                                                   |
-|                        |   Benchmark: S\&P BSE 200                                         |
-|                        |                                                                   |
-|                        | - For more details on risk factors, terms and conditions          |
-|                        |   please read Sales Brochure carefully before concluding a        |
-|                        |   sale. Insurance cover is available under this product.          |
-|                        |                                                                   |
-|                        | - For ULIP products                                               |
-|                        |                                                                   |
-|                        |   - In this policy, the investment risk in investment             |
-|                        |     portfolio is borne by the policyholder.                       |
-|                        |   - **The linked insurance product do not offer any liquidity     |
-|                        |     during the first five years of the contract. The policy       |
-|                        |     holder will not be able to surrender/withdraw the monies      |
-|                        |     invested in linked insurance products completely or partially |
-|                        |     till the end of the fifth year.**                             |
-|                        |   - Linked Life Insurance products are different from             |
-|                        |     traditional insurance products and are subject to risk        |
-|                        |     factors.                                                      |
-|                        |   - The premium paid in Linked Life Insurance policies is         |
-|                        |     subject to investment risks associated with capital markets   |
-|                        |     and publicly available index. The NAV of the units may go up  |
-|                        |     or down based on the performance of Fund and factors          |
-|                        |     influencing the capital market/publicly available index and   |
-|                        |     the insured is responsible for his/her decisions.             |
-|                        |   - Tata AIA Life Insurance Company Limited is only the name      |
-|                        |     of the Life Insurance Company & Tata AIA Smart SIP and Tata   |
-|                        |     AIA Health SIP are only the name of the Linked Insurance      |
-|                        |     contract and does not in any way indicate the quality of the  |
-|                        |     contract, its future prospects or returns.                    |
-|                        |   - Please know the associated risks and the applicable           |
-|                        |     charges, from your insurance agent or the Intermediary or     |
-|                        |     policy document issued by the insurance company.              |
-|                        |   - The various funds offered under this contract are the         |
-|                        |     names of the funds and do not in any way indicate the quality |
-|                        |     of these plans, their future prospects and returns.           |
-|                        |   - Past performance is not indicative of future performance.     |
-|                        |                                                                   |
-|                        | L\&C/Advt/2026/Jul/4465                                           |
-|                        |                                                                   |
-|                        | - Tata AIA Sampoorna Raksha Promise (UIN:110N176V12) -            |
-|                        |   Non-Linked, Non-Participating, pure risk, Individual Life       |
-|                        |   Insurance Product                                               |
-|                        |                                                                   |
-|                        | - Param Raksha Life Pro\+ is a combination of (1) Tata AIA        |
-|                        |   Smart Sampoorna Raksha Supreme Unit Linked, Non-Participating   |
-|                        |   Individual Life Insurance Plan (UIN: 110L179V02) and (2) Tata   |
-|                        |   AIA Health Buddy, Non-Participating, Non-Linked, Individual     |
-|                        |   Health Product (UIN: 110N183V02). These products are also       |
-|                        |   available for sale individually without the combination         |
-|                        |   offered/ suggested.                                             |
-|                        |                                                                   |
-|                        | - The complete name of Tata AIA Fortune Guarantee Plus is         |
-|                        |   Tata AIA Life Insurance Fortune Guarantee Plus (UIN:            |
-|                        |   110N158V14) - Non-Linked, Non-Participating, Individual Life    |
-|                        |   Insurance Savings Plan.                                         |
-|                        |                                                                   |
-|                        | - Tata AIA Premier SIP is a combination of the Tata AIA Smart     |
-|                        |   SIP, a non-participating, unit-linked, individual life          |
-|                        |   insurance savings plan (UIN: 110L174V02) and Tata AIA Health    |
-|                        |   Buddy Plan, a Non-participating, Non-Linked, Individual         |
-|                        |   Health Product (UIN:110N183V01). Both Tata AIA Smart SIP and    |
-|                        |   Tata AIA Health Buddy are also available for sale               |
-|                        |   individually.                                                   |
-|                        |                                                                   |
-|                        | - Tata AIA Smart Pension Secure (UIN: 110L182V09) -               |
-|                        |   Non-Participating, Unit Linked, Individual Life Insurance       |
-|                        |   Pension Plan                                                    |
-|                        |                                                                   |
-|                        | - Tata AIA Sampoorna Care - Cancer is the variant name of         |
-|                        |   Tata AIA Sampoorna Care product. Tata AIA Sampoorna Care is a   |
-|                        |   Non-Participating, Non-Linked Individual Health Product (UIN:   |
-|                        |   110N186V01)                                                     |
-|                        |                                                                   |
-|                        | - <sup>2a</sup>                                                   |
-|                        |   Illustrated premium of ₹501 and ₹678 are the monthly            |
-|                        |   premiums for ₹1 Cr and ₹1.5 Cr Sum Assured respectively for a   |
-|                        |   20 yr. old female, Standard Life, Non-Smoker with a Policy      |
-|                        |   Term of 20 yrs. (Regular Pay) under Life Promise Option of      |
-|                        |   Tata AIA Sampoorna Raksha Promise with first year premium       |
-|                        |   discount of 10% for digital purchase and 8.5% for salaried      |
-|                        |   person. Please refer Benefit Illustration for more details.     |
-|                        |                                                                   |
-|                        | - <sup>2b</sup>                                                   |
-|                        |   As per the duly approved product design and terms &             |
-|                        |   conditions of the Tata AIA Sampoorna Raksha Promise, this       |
-|                        |   includes first year digital discount of 10% for Limited         |
-|                        |   Pay/Regular Pay and 8.5% salaried discount. For Single Pay,     |
-|                        |   1% discount will be available for online purchase and           |
-|                        |   salaried discount each.                                         |
-|                        |                                                                   |
-|                        | - <sup>2c</sup>                                                   |
-|                        |   Under Life Promise Plus Option of Tata AIA Sampoorna Raksha     |
-|                        |   Promise, an amount equal to the 100% of the Total Premiums      |
-|                        |   Paid (excluding loading for modal premiums) shall be payable    |
-|                        |   at the end of the Policy Term, provided the life assured        |
-|                        |   survives till maturity and the policy is not terminated         |
-|                        |   earlier.                                                        |
-|                        |                                                                   |
-|                        | - <sup>2d</sup>                                                   |
-|                        |   Data from our Tata AIA fund factsheet shows the performance     |
-|                        |   of Tata AIA Multi Cap fund & SFINN no ULIF 060 15/07/14 MCF     |
-|                        |   110 as of April 2026. Benchmark: S\&P BSE 200                   |
-|                        |                                                                   |
-|                        | - <sup>2e</sup>                                                   |
-|                        |   All funds open for new business which have completed 5          |
-|                        |   years since inception are rated 4 star or 5 Stars by            |
-|                        |   Morningstar as of December 2025.                                |
-|                        |                                                                   |
-|                        | - <sup>2f</sup>                                                   |
-|                        |   ©2025 Morningstar. All rights reserved. The Morningstar         |
-|                        |   name is a registered trademark of Morningstar, Inc. in India    |
-|                        |   and other jurisdictions. The information contained here: (1)    |
-|                        |   includes the proprietary information of Morningstar, Inc. and   |
-|                        |   its affiliates, including, without limitation, Morningstar      |
-|                        |   India Private Limited (“Morningstar”); (2) may not be copied,   |
-|                        |   redistributed or used, by any means, in whole or in part,       |
-|                        |   without the prior, written consent of Morningstar; (3) is not   |
-|                        |   warranted to be complete, accurate or timely; and (4) may be    |
-|                        |   drawn from data published on various dates and procured from    |
-|                        |   various sources and (5) shall not be construed as an offer to   |
-|                        |   buy or sell any security or other investment vehicle. Neither   |
-|                        |   Morningstar, Inc. nor any of its affiliates (including,         |
-|                        |   without limitation, Morningstar) nor any of their officers,     |
-|                        |   directors, employees, associates or agents shall be             |
-|                        |   responsible or liable for any trading decisions, damages or     |
-|                        |   other losses resulting directly or indirectly from the          |
-|                        |   information.                                                    |
-|                        |                                                                   |
-|                        | - <sup>2g</sup>                                                   |
-|                        |   Guaranteed Income shall be total of Guaranteed annual           |
-|                        |   Income plus Income Booster payable in a year. Guaranteed        |
-|                        |   Income as per the chosen Income Frequency shall commence        |
-|                        |   after maturity till the end of the Income Period,               |
-|                        |   irrespective of survival of the life insured(s) during the      |
-|                        |   Income Period.                                                  |
-|                        |                                                                   |
-|                        | - <sup>2h</sup>                                                   |
-|                        |   No Goods and Service Tax shall be applicable on Individual      |
-|                        |   life insurance products as per prevailing laws. Income Tax      |
-|                        |   benefits would be available, subject to fulfillment of          |
-|                        |   conditions of aggregate premium within threshold limit of       |
-|                        |   ₹2.50 Lakh/annum for ULIP and ₹5.0 Lakh/annum for non ULIP      |
-|                        |   Life insurance and maintaining conditions of premium to sum     |
-|                        |   assured ratio as stipulated therein in Section 11, Schedule     |
-|                        |   II (erstwhile Section10(10D)) of Income Tax Act 2025. Tata      |
-|                        |   AIA Life Insurance Company Ltd. does not assume                 |
-|                        |   responsibility on tax implications mentioned anywhere on this   |
-|                        |   site. Please consult your own tax consultant to know the tax    |
-|                        |   benefits available to you.                                      |
-|                        |                                                                   |
-|                        | - <sup>2i</sup>                                                   |
-|                        |   Available under Regular Income with an Inbuilt Critical         |
-|                        |   Illness Benefit option                                          |
-|                        |                                                                   |
-|                        | - <sup>2j</sup>                                                   |
-|                        |   Partial withdrawals only available 3 times during the           |
-|                        |   entire policy term and only for reasons specified in IRDA       |
-|                        |   Regulations as amended from time to time                        |
-|                        |                                                                   |
-|                        | - <sup>2k</sup>                                                   |
-|                        |   On cancer diagnosis, insured has the option to take income      |
-|                        |   payouts from 1 to 5 years.                                      |
-|                        |                                                                   |
-|                        | - For more details on risk factors, terms and conditions          |
-|                        |   please read Sales Brochure carefully before concluding a        |
-|                        |   sale. Insurance cover is available under this product.          |
-|                        |                                                                   |
-|                        | - For ULIP products                                               |
-|                        |                                                                   |
-|                        |   - In this policy, the investment risk in investment             |
-|                        |     portfolio is borne by the policyholder.                       |
-|                        |   - **The linked insurance product do not offer any liquidity     |
-|                        |     during the first five years of the contract. The policy       |
-|                        |     holder will not be able to surrender/withdraw the monies      |
-|                        |     invested in linked insurance products completely or partially |
-|                        |     till the end of the fifth year.**                             |
-|                        |   - Linked Life Insurance products are different from             |
-|                        |     traditional insurance products and are subject to risk        |
-|                        |     factors.                                                      |
-|                        |   - The premium paid in Linked Life Insurance policies is         |
-|                        |     subject to investment risks associated with capital markets   |
-|                        |     and publicly available index. The NAV of the units may go up  |
-|                        |     or down based on the performance of Fund and factors          |
-|                        |     influencing the capital market/publicly available index and   |
-|                        |     the insured is responsible for his/her decisions.             |
-|                        |   - Tata AIA Life Insurance Company Limited is only the name      |
-|                        |     of the Life Insurance Company & Tata AIA Smart SIP is only    |
-|                        |     the name of the Linked Insurance contract and does not in any |
-|                        |     way indicate the quality of the contract, its future          |
-|                        |     prospects or returns.                                         |
-|                        |   - Please know the associated risks and the applicable           |
-|                        |     charges, from your insurance agent or the Intermediary or     |
-|                        |     policy document issued by the insurance company.              |
-|                        |   - The various funds offered under this contract are the         |
-|                        |     names of the funds and do not in any way indicate the quality |
-|                        |     of these plans, their future prospects and returns.           |
-|                        |   - Past performance is not indicative of future performance.     |
-|                        |                                                                   |
-|                        | L\&C/Advt/2026/Jul/4251                                           |
-|                        |                                                                   |
-|                        | - <sup>3a</sup>                                                   |
-|                        |   No Goods and Service Tax shall be applicable on Individual      |
-|                        |   life insurance products as per prevailing laws. Income Tax      |
-|                        |   benefits would be available, subject to fulfillment of          |
-|                        |   conditions of aggregate premium within threshold limit of       |
-|                        |   ₹2.50 Lakh/annum for ULIP and ₹5.0 Lakh/annum for non ULIP      |
-|                        |   Life insurance and maintaining conditions of premium to sum     |
-|                        |   assured ratio as stipulated therein in Section 11, Schedule     |
-|                        |   II (erstwhile Section10(10D)) of Income Tax Act 2025. Tata      |
-|                        |   AIA Life Insurance Company Ltd. does not assume                 |
-|                        |   responsibility on tax implications mentioned anywhere on this   |
-|                        |   site. Please consult your own tax consultant to know the tax    |
-|                        |   benefits available to you.                                      |
-|                        |                                                                   |
-|                        | - <sup>3b</sup>                                                   |
-|                        |   Market-linked returns are subject to market risks and terms     |
-|                        |   & conditions of the product. The assumed rate of returns or     |
-|                        |   illustrated amount may not be guaranteed and depends on         |
-|                        |   market fluctuations.                                            |
-|                        |                                                                   |
-|                        | - <sup>3c</sup>                                                   |
-|                        |   Guaranteed returns in this plan depends on Age at Entry of      |
-|                        |   life assured, Premium payment term, policy term, premium        |
-|                        |   amount and plan option chosen.                                  |
-|                        |                                                                   |
-|                        | - <sup>3d</sup>                                                   |
-|                        |   The word Guaranteed and Guarantee means the annuity payout      |
-|                        |   is fixed at inception of the policy and will be payable for     |
-|                        |   whole of life or till death of the Annuitant(s).                |
-|                        |                                                                   |
-|                        | - <sup>3e</sup>                                                   |
-|                        |   All funds open for new business which have completed 5          |
-|                        |   years since inception are rated 4 star or 5 Stars by            |
-|                        |   Morningstar as of December 2025.                                |
-|                        |                                                                   |
-|                        | - <sup>3f</sup>                                                   |
-|                        |   Cash bonuses (if declared) may be opted to be paid out at       |
-|                        |   the end of the chosen pay-out frequency or as premiums          |
-|                        |   offset. Alternatively, the cash bonus (if declared) can be      |
-|                        |   chosen to be accumulated and paid out on maturity, death or     |
-|                        |   surrender. Cash bonuses are applicable for Early income and     |
-|                        |   Deferred income option. Please refer Brochure for additional    |
-|                        |   details                                                         |
-|                        |                                                                   |
-|                        | - <sup>3g</sup>                                                   |
-|                        |   Only available with cash bonus option. The current loyalty      |
-|                        |   addition rate on the Sub-wallet will be 6.00% compounding       |
-|                        |   monthly. The loyalty addition rate shall be at which RBI        |
-|                        |   absorbs liquidity which currently is the Standing Deposit       |
-|                        |   Facility (SDF) rate. The current Standing Deposit Facility      |
-|                        |   rate is 6.00% p.a. and the same shall be reviewed bi-monthly.   |
-|                        |   The Company may in future change the reference rate from        |
-|                        |   Standing Deposit Facility rate to some other index.             |
-|                        |                                                                   |
-|                        | - <sup>3h</sup>                                                   |
-|                        |   Not applicable under PoS, please refer sales brochure for       |
-|                        |   more information                                                |
-|                        |                                                                   |
-|                        | - <sup>3i</sup>                                                   |
-|                        |   Under Life Promise Plus Option of Tata AIA Sampoorna Raksha     |
-|                        |   Promise, an amount equal to the 100% of the Total Premiums      |
-|                        |   Paid (excluding loading for modal premiums) shall be payable    |
-|                        |   at the end of the Policy Term, provided the life assured        |
-|                        |   survives till maturity and the policy is not terminated         |
-|                        |   earlier. Tata AIA Sampoorna Raksha Promise - Non-Linked,        |
-|                        |   Non-Participating, pure risk, Individual Life Insurance         |
-|                        |   Product (UIN:110N176V12)                                        |
-|                        |                                                                   |
-|                        | - For more details on risk factors, terms and conditions          |
-|                        |   please read Sales Brochure carefully before concluding a        |
-|                        |   sale. Insurance cover is available under this product.          |
-|                        |                                                                   |
-|                        | - For ULIP products                                               |
-|                        |                                                                   |
-|                        |   - In this policy, the investment risk in investment             |
-|                        |     portfolio is borne by the policyholder.                       |
-|                        |   - **The linked insurance product do not offer any liquidity     |
-|                        |     during the first five years of the contract. The policy       |
-|                        |     holder will not be able to surrender/withdraw the monies      |
-|                        |     invested in linked insurance products completely or partially |
-|                        |     till the end of the fifth year.**                             |
-|                        |   - Linked Life Insurance products are different from             |
-|                        |     traditional insurance products and are subject to risk        |
-|                        |     factors.                                                      |
-|                        |   - The premium paid in Linked Life Insurance policies is         |
-|                        |     subject to investment risks associated with capital markets   |
-|                        |     and publicly available index. The NAV of the units may go up  |
-|                        |     or down based on the performance of Fund and factors          |
-|                        |     influencing the capital market/publicly available index and   |
-|                        |     the insured is responsible for his/her decisions.             |
-|                        |   - Please know the associated risks and the applicable           |
-|                        |     charges, from your insurance agent or the Intermediary or     |
-|                        |     policy document issued by the insurance company.              |
-|                        |   - The various funds offered under this contract are the         |
-|                        |     names of the funds and do not in any way indicate the quality |
-|                        |     of these plans, their future prospects and returns.           |
-|                        |   - Past performance is not indicative of future performance.     |
-|                        |                                                                   |
-|                        | L\&C/Advt/2026/Jul/4147                                           |
-|                        |                                                                   |
-|                        | - <sup>4a</sup>                                                   |
-|                        |   Total Assets Under Management (AUM) as on 31                    |
-|                        |   <sup>st</sup>                                                   |
-|                        |   Mar’26 is ₹1,45,589 Crore.                                      |
-|                        | - <sup>4b</sup>                                                   |
-|                        |   https://irdai.gov.in/document-detail?documentId=9311918.        |
-|                        |   Retail Sum Assured for FY 2025-26 is ₹9,00,876 Crore.           |
-|                        | - <sup>4c</sup>                                                   |
-|                        |   98,26,808 families protected till 31                            |
-|                        |   <sup>st</sup>                                                   |
-|                        |   May 2026.                                                       |
-|                        | - <sup>4d</sup>                                                   |
-|                        |   Individual Death Claim Settlement Ratio is 99.45% for FY        |
-|                        |   2025-26 as per latest annual audited figures.                   |
-|                        | - <sup>4e</sup>                                                   |
-|                        |   Applicable to only non-early claims with more than 3 years      |
-|                        |   of policy duration, non-investigation cases, up to Sum          |
-|                        |   assured of ₹50 Lakh. Applicable for branch walk in. Time        |
-|                        |   limit to submit claim to Tata AIA Life Insurance by 2 pm        |
-|                        |   (working days). Subject to submission of complete documents.    |
-|                        |   Not applicable for ULIP policies and open title claims.         |
-|                        | - For more details on risk factors, terms and conditions          |
-|                        |   please read Sales Brochure carefully before concluding a        |
-|                        |   sale. Insurance cover is available under this product.          |
-|                        |                                                                   |
-|                        | L\&C/Advt/2026/Jul/4262                                           |
-|                        |                                                                   |
-|                        | - The information, provided herein, may not be treated as a       |
-|                        |   solicitation request in any manner. Any decision to buy         |
-|                        |   online insurance by NRIs is completely his/her choice. The      |
-|                        |   insurer is permitted to solicit insurance in India and          |
-|                        |   settles claim in INR only.                                      |
-|                        |                                                                   |
-|                        | - <sup>5a</sup>                                                   |
-|                        |   No Goods and Service Tax shall be applicable on Individual      |
-|                        |   life insurance products as per prevailing laws. Income Tax      |
-|                        |   benefits would be available, subject to fulfillment of          |
-|                        |   conditions of aggregate premium within threshold limit of       |
-|                        |   ₹2.50 Lakh/annum for ULIP and ₹5.0 Lakh/annum for non ULIP      |
-|                        |   Life insurance and maintaining conditions of premium to sum     |
-|                        |   assured ratio as stipulated therein in Section 11, Schedule     |
-|                        |   II (erstwhile Section10(10D)) of Income Tax Act 2025. Tata      |
-|                        |   AIA Life Insurance Company Ltd. does not assume                 |
-|                        |   responsibility on tax implications mentioned anywhere on this   |
-|                        |   site. Please consult your own tax consultant to know the tax    |
-|                        |   benefits available to you.                                      |
-|                        |                                                                   |
-|                        | - <sup>5b</sup>                                                   |
-|                        |   Not applicable under PoS, please refer sales brochure for       |
-|                        |   more information                                                |
-|                        |                                                                   |
-|                        | - <sup>5c</sup>                                                   |
-|                        |   Riders are not mandatory and are available for a nominal        |
-|                        |   extra cost. For more details on benefits, premiums, and         |
-|                        |   exclusions under the Rider, please contact Tata AIA Life's      |
-|                        |   Insurance Advisor/Intermediary/ branch.                         |
-|                        |                                                                   |
-|                        | - <sup>5d</sup>                                                   |
-|                        |   Individual Death Claim Settlement Ratio is 99.45% for FY        |
-|                        |   2025-26 as per latest annual audited figures.                   |
-|                        |                                                                   |
-|                        | - <sup>5e</sup>                                                   |
-|                        |   Individual Death Claim Settlement Ratio is 98.02% for FY        |
-|                        |   2020-21, 98.53% for FY 2021-22, 99.01% for FY 2022-23, 99.13%   |
-|                        |   for FY 2023-24, 99.41% for FY 2024-25, 99.45% for FY25-26 as    |
-|                        |   per latest annual audited figures.                              |
-|                        |                                                                   |
-|                        | - <sup>5f</sup>                                                   |
-|                        |   Applicable to only non-early claims with more than 3 years      |
-|                        |   of policy duration, non-investigation cases, up to Sum          |
-|                        |   assured of ₹50 Lakh. Applicable for branch walk in. Time        |
-|                        |   limit to submit claim to Tata AIA Life Insurance by 2 pm        |
-|                        |   (working days). Subject to submission of complete documents.    |
-|                        |   Not applicable for ULIP policies and open title claims.         |
-|                        |                                                                   |
-|                        | - For more details on risk factors, terms and conditions          |
-|                        |   please read Sales Brochure carefully before concluding a        |
-|                        |   sale. Insurance cover is available under this product.          |
-|                        |                                                                   |
-|                        | - For ULIP products                                               |
-|                        |                                                                   |
-|                        |   - In this policy, the investment risk in investment             |
-|                        |     portfolio is borne by the policyholder.                       |
-|                        |   - **The linked insurance product do not offer any liquidity     |
-|                        |     during the first five years of the contract. The policy       |
-|                        |     holder will not be able to surrender/withdraw the monies      |
-|                        |     invested in linked insurance products completely or partially |
-|                        |     till the end of the fifth year.**                             |
-|                        |   - Linked Life Insurance products are different from             |
-|                        |     traditional insurance products and are subject to risk        |
-|                        |     factors.                                                      |
-|                        |   - The premium paid in Linked Life Insurance policies is         |
-|                        |     subject to investment risks associated with capital markets   |
-|                        |     and publicly available index. The NAV of the units may go up  |
-|                        |     or down based on the performance of Fund and factors          |
-|                        |     influencing the capital market/publicly available index and   |
-|                        |     the insured is responsible for his/her decisions.             |
-|                        |   - Please know the associated risks and the applicable           |
-|                        |     charges, from your insurance agent or the Intermediary or     |
-|                        |     policy document issued by the insurance company.              |
-|                        |   - The various funds offered under this contract are the         |
-|                        |     names of the funds and do not in any way indicate the quality |
-|                        |     of these plans, their future prospects and returns.           |
-|                        |   - Past performance is not indicative of future performance.     |
-|                        |                                                                   |
-|                        | L\&C/Advt/2026/Jul/4249                                           |
-|                        |                                                                   |
-|                        | - <sup>6a</sup>                                                   |
-|                        |   No Goods and Service Tax shall be applicable on Individual      |
-|                        |   life insurance products as per prevailing laws. Income Tax      |
-|                        |   benefits would be available, subject to fulfillment of          |
-|                        |   conditions of aggregate premium within threshold limit of       |
-|                        |   ₹2.50 Lakh/annum for ULIP and ₹5.0 Lakh/annum for non ULIP      |
-|                        |   Life insurance and maintaining conditions of premium to sum     |
-|                        |   assured ratio as stipulated therein in Section 11, Schedule     |
-|                        |   II (erstwhile Section10(10D)) of Income Tax Act 2025. Tata      |
-|                        |   AIA Life Insurance Company Ltd. does not assume                 |
-|                        |   responsibility on tax implications mentioned anywhere on this   |
-|                        |   site. Please consult your own tax consultant to know the tax    |
-|                        |   benefits available to you.                                      |
-|                        |                                                                   |
-|                        | - <sup>6b</sup>                                                   |
-|                        |   Individual Death Claim Settlement Ratio is 99.45% for FY        |
-|                        |   2025-26 as per latest annual audited figures.                   |
-|                        |                                                                   |
-|                        | - <sup>6c</sup>                                                   |
-|                        |   98,26,808 families protected till 31                            |
-|                        |   <sup>st</sup>                                                   |
-|                        |   May 2026.                                                       |
-|                        |                                                                   |
-|                        | - <sup>6d</sup>                                                   |
-|                        |   Applicable to only non-early claims with more than 3 years      |
-|                        |   of policy duration, non-investigation cases, up to Sum          |
-|                        |   assured of ₹50 Lakh. Applicable for branch walk in. Time        |
-|                        |   limit to submit claim to Tata AIA Life Insurance by 2 pm        |
-|                        |   (working days). Subject to submission of complete documents.    |
-|                        |   Not applicable for ULIP policies and open title claims.         |
-|                        |                                                                   |
-|                        | - <sup>6e</sup>                                                   |
-|                        |   Market-linked returns are subject to market risks and terms     |
-|                        |   & conditions of the product. The assumed rate of returns or     |
-|                        |   illustrated amount may not be guaranteed and depends on         |
-|                        |   market fluctuations.                                            |
-|                        |                                                                   |
-|                        | - For more details on risk factors, terms and conditions          |
-|                        |   please read Sales Brochure carefully before concluding a        |
-|                        |   sale. Insurance cover is available under this product.          |
-|                        |                                                                   |
-|                        | - For ULIP products                                               |
-|                        |                                                                   |
-|                        |   - In this policy, the investment risk in investment             |
-|                        |     portfolio is borne by the policyholder.                       |
-|                        |   - **The linked insurance product do not offer any liquidity     |
-|                        |     during the first five years of the contract. The policy       |
-|                        |     holder will not be able to surrender/withdraw the monies      |
-|                        |     invested in linked insurance products completely or partially |
-|                        |     till the end of the fifth year.**                             |
-|                        |   - Linked Life Insurance products are different from             |
-|                        |     traditional insurance products and are subject to risk        |
-|                        |     factors.                                                      |
-|                        |   - The premium paid in Linked Life Insurance policies is         |
-|                        |     subject to investment risks associated with capital markets   |
-|                        |     and publicly available index. The NAV of the units may go up  |
-|                        |     or down based on the performance of Fund and factors          |
-|                        |     influencing the capital market/publicly available index and   |
-|                        |     the insured is responsible for his/her decisions.             |
-|                        |   - Please know the associated risks and the applicable           |
-|                        |     charges, from your insurance agent or the Intermediary or     |
-|                        |     policy document issued by the insurance company.              |
-|                        |   - The various funds offered under this contract are the         |
-|                        |     names of the funds and do not in any way indicate the quality |
-|                        |     of these plans, their future prospects and returns.           |
-|                        |   - Past performance is not indicative of future performance.     |
-+------------------------+-------------------------------------------------------------------+
-
-![][image85]
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Accordion List                                                                                                                                                                                                   |
++------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| <!-- field:summary --> | <!-- field:text -->                                                                                                                                                                     |
+|                        |                                                                                                                                                                                         |
+| Disclaimers            | L\&C/Advt/2026/Sep/5250                                                                                                                                                                 |
+|                        |                                                                                                                                                                                         |
+|                        | - Tata AIA Sampoorna Raksha Promise (UIN:110N176V13) - Non-Linked, Non-Participating, pure risk,                                                                                        |
+|                        |   Individual Life Insurance Product                                                                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        | - Tata AIA Premier SIP is a combination of the Tata AIA Smart SIP, a non-participating, unit-linked,                                                                                    |
+|                        |   individual life insurance savings plan (UIN: 110L174V02) and Tata AIA Health Buddy, a                                                                                                 |
+|                        |   Non-participating, Non-Linked, Individual Health Product (UIN:110N183V02). Both Tata AIA Smart SIP                                                                                    |
+|                        |   and Tata AIA Health Buddy are also available for sale individually.                                                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | - Tata AIA Sampoorna Care - Cancer is the variant name of Tata AIA Sampoorna Care product. Tata AIA                                                                                     |
+|                        |   Sampoorna Care is a Non-Participating, Non-Linked Individual Health Product (UIN: 110N186V01)                                                                                         |
+|                        |                                                                                                                                                                                         |
+|                        | - Tata AIA Param Raksha Life Pro \+ is designed for combination of benefits of following individual                                                                                     |
+|                        |   and separate products named (1) Tata AIA Smart Sampoorna Raksha Supreme Unit Linked,                                                                                                  |
+|                        |   Non-Participating Individual Life Insurance Plan (UIN: 110L179V02) and (2) Tata AIA Health Buddy,                                                                                     |
+|                        |   Non-Participating, Non-Linked, Individual Health Product (UIN: 110N183V01). These products are also                                                                                   |
+|                        |   available for sale individually without the combination offered/ suggested.                                                                                                           |
+|                        |                                                                                                                                                                                         |
+|                        | - The information, provided herein, may not be treated as a solicitation request in any manner. Any                                                                                     |
+|                        |   decision to buy online insurance by NRIs is completely his/her choice. The insurer is permitted to                                                                                    |
+|                        |   solicit insurance in India and settles claim in INR only.                                                                                                                             |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>1a</sup> No Goods and Service Tax shall be applicable on Individual life insurance products as                                                                                   |
+|                        |   per prevailing laws. Income Tax benefits would be available, subject to fulfillment of conditions of                                                                                  |
+|                        |   aggregate premium within threshold limit of ₹2.50 Lakh/annum for ULIP and ₹5.0 Lakh/annum for non                                                                                     |
+|                        |   ULIP Life insurance and maintaining conditions of premium to sum assured ratio as stipulated therein                                                                                  |
+|                        |   in Section 11, Schedule II (erstwhile Section10(10D)) of Income Tax Act 2025. Tata AIA Life Insurance                                                                                 |
+|                        |   Company Ltd. does not assume responsibility on tax implications mentioned anywhere on this site.                                                                                      |
+|                        |   Please consult your own tax consultant to know the tax benefits available to you.                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>1b</sup> Illustrated premium of ₹501 and ₹678 are the monthly premiums for ₹1 Cr And ₹1.5 Cr                                                                                     |
+|                        |   Sum Assured respectively for a 20 yr. old female, Standard Life, Non-Smoker with a Policy Term of 20                                                                                  |
+|                        |   yrs. (Regular Pay) under Life Promise Option of Tata AIA Sampoorna Raksha Promise with first year                                                                                     |
+|                        |   premium discount of 10% for digital purchase and 8.5% for salaried person. Please refer Benefit                                                                                       |
+|                        |   Illustration for more details.                                                                                                                                                        |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>1c</sup> The Buy Together Discount is available when purchasing a product jointly, as per the                                                                                    |
+|                        |   Board Approved Underwriting Policy (BAUP). The discount is 5% for Limited Pay/Regular Pay and 1% for                                                                                  |
+|                        |   Single Pay on 1 <sup>st</sup> year premium.                                                                                                                                           |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>1d</sup> Individual Death Claim Settlement Ratio is 99.45% for FY 2025-26 as per latest annual                                                                                   |
+|                        |   audited figures.                                                                                                                                                                      |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>1e</sup> All funds open for new business which have completed 5 years since inception are                                                                                        |
+|                        |   rated 4 star or 5 Stars by Morningstar as of December 2025.                                                                                                                           |
+|                        |                                                                                                                                                                                         |
+|                        | - ©2025 Morningstar. All rights reserved. The Morningstar name is a registered trademark of                                                                                             |
+|                        |   Morningstar, Inc. in India and other jurisdictions. The information contained here: (1) includes the                                                                                  |
+|                        |   proprietary information of Morningstar, Inc. and its affiliates, including, without limitation,                                                                                       |
+|                        |   Morningstar India Private Limited (“Morningstar”); (2) may not be copied, redistributed or used, by                                                                                   |
+|                        |   any means, in whole or in part, without the prior, written consent of Morningstar; (3) is not                                                                                         |
+|                        |   warranted to be complete, accurate or timely; and (4) may be drawn from data published on various                                                                                     |
+|                        |   dates and procured from various sources and (5) shall not be construed as an offer to buy or sell any                                                                                 |
+|                        |   security or other investment vehicle. Neither Morningstar, Inc. nor any of its affiliates (including,                                                                                 |
+|                        |   without limitation, Morningstar) nor any of their officers, directors, employees, associates or                                                                                       |
+|                        |   agents shall be responsible or liable for any trading decisions, damages or other losses resulting                                                                                    |
+|                        |   directly or indirectly from the information.                                                                                                                                          |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>1f</sup> Data from our Tata AIA fund factsheet shows the performance of Tata AIA Multi Cap                                                                                       |
+|                        |   fund & SFINN no ULIF 060 15/07/14 MCF 110 as of April 2026.                                                                                                                           |
+|                        |                                                                                                                                                                                         |
+|                        |   Benchmark: S\&P BSE 200                                                                                                                                                               |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>1g</sup> Guaranteed Income shall be total of Guaranteed annual Income plus Income Booster                                                                                        |
+|                        |   payable in a year. Guaranteed Income as per the chosen Income Frequency shall commence after maturity                                                                                 |
+|                        |   till the end of the Income Period, irrespective of survival of the life insured(s) during the Income                                                                                  |
+|                        |   Period.                                                                                                                                                                               |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>1h</sup> Illustrated premium of ₹8,830 is the monthly premium for a 18-50 year old,                                                                                              |
+|                        |   Male/Female, Standard Life, Plan Option 1 (Regular Income) with Premium Payment Term: 10 years,                                                                                       |
+|                        |   Policy Term: 15 years, Income Term: 30 years. Income will start from 16 <sup>th</sup> year. Total Guaranteed Benefit: ₹46,06,600. Please refer Benefit Illustration for more details. |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>1i</sup> Market-linked returns are subject to market risks and terms & conditions of the                                                                                         |
+|                        |   product. The assumed rate of returns or illustrated amount may not be guaranteed and depends on                                                                                       |
+|                        |   market fluctuations.                                                                                                                                                                  |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>1j</sup> Data from our Tata AIA fund factsheet shows the performance of Tata AIA Top 200 fund                                                                                    |
+|                        |   & SFINN no ULIF 027 12/01/09 ITT 110 as of July 2026.                                                                                                                                 |
+|                        |                                                                                                                                                                                         |
+|                        |   Benchmark: S\&P BSE 200                                                                                                                                                               |
+|                        |                                                                                                                                                                                         |
+|                        | - For more details on risk factors, terms and conditions please read Sales Brochure carefully before                                                                                    |
+|                        |   concluding a sale. Insurance cover is available under this product.                                                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | - For ULIP products                                                                                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        |   - In this policy, the investment risk in investment portfolio is borne by the policyholder.                                                                                           |
+|                        |   - **The linked insurance product do not offer any liquidity during the first five years of the                                                                                        |
+|                        |     contract. The policy holder will not be able to surrender/withdraw the monies invested in linked                                                                                    |
+|                        |     insurance products completely or partially till the end of the fifth year.**                                                                                                        |
+|                        |   - Linked Life Insurance products are different from traditional insurance products and are subject                                                                                    |
+|                        |     to risk factors.                                                                                                                                                                    |
+|                        |   - The premium paid in Linked Life Insurance policies is subject to investment risks associated with                                                                                   |
+|                        |     capital markets and publicly available index. The NAV of the units may go up or down based on the                                                                                   |
+|                        |     performance of Fund and factors influencing the capital market/publicly available index and the                                                                                     |
+|                        |     insured is responsible for his/her decisions.                                                                                                                                       |
+|                        |   - Tata AIA Life Insurance Company Limited is only the name of the Life Insurance Company & Tata AIA                                                                                   |
+|                        |     Smart SIP and Tata AIA Health SIP are only the name of the Linked Insurance contract and does not in                                                                                |
+|                        |     any way indicate the quality of the contract, its future prospects or returns.                                                                                                      |
+|                        |   - Please know the associated risks and the applicable charges, from your insurance agent or the                                                                                       |
+|                        |     Intermediary or policy document issued by the insurance company.                                                                                                                    |
+|                        |   - The various funds offered under this contract are the names of the funds and do not in any way                                                                                      |
+|                        |     indicate the quality of these plans, their future prospects and returns.                                                                                                            |
+|                        |   - Past performance is not indicative of future performance.                                                                                                                           |
+|                        |                                                                                                                                                                                         |
+|                        | L\&C/Advt/2026/Jul/4465                                                                                                                                                                 |
+|                        |                                                                                                                                                                                         |
+|                        | - Tata AIA Sampoorna Raksha Promise (UIN:110N176V12) - Non-Linked, Non-Participating, pure risk,                                                                                        |
+|                        |   Individual Life Insurance Product                                                                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        | - Param Raksha Life Pro\+ is a combination of (1) Tata AIA Smart Sampoorna Raksha Supreme Unit                                                                                          |
+|                        |   Linked, Non-Participating Individual Life Insurance Plan (UIN: 110L179V02) and (2) Tata AIA Health                                                                                    |
+|                        |   Buddy, Non-Participating, Non-Linked, Individual Health Product (UIN: 110N183V02). These products are                                                                                 |
+|                        |   also available for sale individually without the combination offered/ suggested.                                                                                                      |
+|                        |                                                                                                                                                                                         |
+|                        | - The complete name of Tata AIA Fortune Guarantee Plus is Tata AIA Life Insurance Fortune Guarantee                                                                                     |
+|                        |   Plus (UIN: 110N158V14) - Non-Linked, Non-Participating, Individual Life Insurance Savings Plan.                                                                                       |
+|                        |                                                                                                                                                                                         |
+|                        | - Tata AIA Premier SIP is a combination of the Tata AIA Smart SIP, a non-participating, unit-linked,                                                                                    |
+|                        |   individual life insurance savings plan (UIN: 110L174V02) and Tata AIA Health Buddy Plan, a                                                                                            |
+|                        |   Non-participating, Non-Linked, Individual Health Product (UIN:110N183V01). Both Tata AIA Smart SIP                                                                                    |
+|                        |   and Tata AIA Health Buddy are also available for sale individually.                                                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | - Tata AIA Smart Pension Secure (UIN: 110L182V09) - Non-Participating, Unit Linked, Individual Life                                                                                     |
+|                        |   Insurance Pension Plan                                                                                                                                                                |
+|                        |                                                                                                                                                                                         |
+|                        | - Tata AIA Sampoorna Care - Cancer is the variant name of Tata AIA Sampoorna Care product. Tata AIA                                                                                     |
+|                        |   Sampoorna Care is a Non-Participating, Non-Linked Individual Health Product (UIN: 110N186V01)                                                                                         |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>2a</sup> Illustrated premium of ₹501 and ₹678 are the monthly premiums for ₹1 Cr and ₹1.5 Cr                                                                                     |
+|                        |   Sum Assured respectively for a 20 yr. old female, Standard Life, Non-Smoker with a Policy Term of 20                                                                                  |
+|                        |   yrs. (Regular Pay) under Life Promise Option of Tata AIA Sampoorna Raksha Promise with first year                                                                                     |
+|                        |   premium discount of 10% for digital purchase and 8.5% for salaried person. Please refer Benefit                                                                                       |
+|                        |   Illustration for more details.                                                                                                                                                        |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>2b</sup> As per the duly approved product design and terms & conditions of the Tata AIA                                                                                          |
+|                        |   Sampoorna Raksha Promise, this includes first year digital discount of 10% for Limited Pay/Regular                                                                                    |
+|                        |   Pay and 8.5% salaried discount. For Single Pay, 1% discount will be available for online purchase and                                                                                 |
+|                        |   salaried discount each.                                                                                                                                                               |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>2c</sup> Under Life Promise Plus Option of Tata AIA Sampoorna Raksha Promise, an amount equal                                                                                    |
+|                        |   to the 100% of the Total Premiums Paid (excluding loading for modal premiums) shall be payable at the                                                                                 |
+|                        |   end of the Policy Term, provided the life assured survives till maturity and the policy is not                                                                                        |
+|                        |   terminated earlier.                                                                                                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>2d</sup> Data from our Tata AIA fund factsheet shows the performance of Tata AIA Multi Cap                                                                                       |
+|                        |   fund & SFINN no ULIF 060 15/07/14 MCF 110 as of April 2026. Benchmark: S\&P BSE 200                                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>2e</sup> All funds open for new business which have completed 5 years since inception are                                                                                        |
+|                        |   rated 4 star or 5 Stars by Morningstar as of December 2025.                                                                                                                           |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>2f</sup> ©2025 Morningstar. All rights reserved. The Morningstar name is a registered                                                                                            |
+|                        |   trademark of Morningstar, Inc. in India and other jurisdictions. The information contained here: (1)                                                                                  |
+|                        |   includes the proprietary information of Morningstar, Inc. and its affiliates, including, without                                                                                      |
+|                        |   limitation, Morningstar India Private Limited (“Morningstar”); (2) may not be copied, redistributed                                                                                   |
+|                        |   or used, by any means, in whole or in part, without the prior, written consent of Morningstar; (3) is                                                                                 |
+|                        |   not warranted to be complete, accurate or timely; and (4) may be drawn from data published on various                                                                                 |
+|                        |   dates and procured from various sources and (5) shall not be construed as an offer to buy or sell any                                                                                 |
+|                        |   security or other investment vehicle. Neither Morningstar, Inc. nor any of its affiliates (including,                                                                                 |
+|                        |   without limitation, Morningstar) nor any of their officers, directors, employees, associates or                                                                                       |
+|                        |   agents shall be responsible or liable for any trading decisions, damages or other losses resulting                                                                                    |
+|                        |   directly or indirectly from the information.                                                                                                                                          |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>2g</sup> Guaranteed Income shall be total of Guaranteed annual Income plus Income Booster                                                                                        |
+|                        |   payable in a year. Guaranteed Income as per the chosen Income Frequency shall commence after maturity                                                                                 |
+|                        |   till the end of the Income Period, irrespective of survival of the life insured(s) during the Income                                                                                  |
+|                        |   Period.                                                                                                                                                                               |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>2h</sup> No Goods and Service Tax shall be applicable on Individual life insurance products as                                                                                   |
+|                        |   per prevailing laws. Income Tax benefits would be available, subject to fulfillment of conditions of                                                                                  |
+|                        |   aggregate premium within threshold limit of ₹2.50 Lakh/annum for ULIP and ₹5.0 Lakh/annum for non                                                                                     |
+|                        |   ULIP Life insurance and maintaining conditions of premium to sum assured ratio as stipulated therein                                                                                  |
+|                        |   in Section 11, Schedule II (erstwhile Section10(10D)) of Income Tax Act 2025. Tata AIA Life Insurance                                                                                 |
+|                        |   Company Ltd. does not assume responsibility on tax implications mentioned anywhere on this site.                                                                                      |
+|                        |   Please consult your own tax consultant to know the tax benefits available to you.                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>2i</sup> Available under Regular Income with an Inbuilt Critical Illness Benefit option                                                                                          |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>2j</sup> Partial withdrawals only available 3 times during the entire policy term and only for                                                                                   |
+|                        |   reasons specified in IRDA Regulations as amended from time to time                                                                                                                    |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>2k</sup> On cancer diagnosis, insured has the option to take income payouts from 1 to 5 years.                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | - For more details on risk factors, terms and conditions please read Sales Brochure carefully before                                                                                    |
+|                        |   concluding a sale. Insurance cover is available under this product.                                                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | - For ULIP products                                                                                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        |   - In this policy, the investment risk in investment portfolio is borne by the policyholder.                                                                                           |
+|                        |   - **The linked insurance product do not offer any liquidity during the first five years of the                                                                                        |
+|                        |     contract. The policy holder will not be able to surrender/withdraw the monies invested in linked                                                                                    |
+|                        |     insurance products completely or partially till the end of the fifth year.**                                                                                                        |
+|                        |   - Linked Life Insurance products are different from traditional insurance products and are subject                                                                                    |
+|                        |     to risk factors.                                                                                                                                                                    |
+|                        |   - The premium paid in Linked Life Insurance policies is subject to investment risks associated with                                                                                   |
+|                        |     capital markets and publicly available index. The NAV of the units may go up or down based on the                                                                                   |
+|                        |     performance of Fund and factors influencing the capital market/publicly available index and the                                                                                     |
+|                        |     insured is responsible for his/her decisions.                                                                                                                                       |
+|                        |   - Tata AIA Life Insurance Company Limited is only the name of the Life Insurance Company & Tata AIA                                                                                   |
+|                        |     Smart SIP is only the name of the Linked Insurance contract and does not in any way indicate the                                                                                    |
+|                        |     quality of the contract, its future prospects or returns.                                                                                                                           |
+|                        |   - Please know the associated risks and the applicable charges, from your insurance agent or the                                                                                       |
+|                        |     Intermediary or policy document issued by the insurance company.                                                                                                                    |
+|                        |   - The various funds offered under this contract are the names of the funds and do not in any way                                                                                      |
+|                        |     indicate the quality of these plans, their future prospects and returns.                                                                                                            |
+|                        |   - Past performance is not indicative of future performance.                                                                                                                           |
+|                        |                                                                                                                                                                                         |
+|                        | L\&C/Advt/2026/Jul/4251                                                                                                                                                                 |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>3a</sup> No Goods and Service Tax shall be applicable on Individual life insurance products as                                                                                   |
+|                        |   per prevailing laws. Income Tax benefits would be available, subject to fulfillment of conditions of                                                                                  |
+|                        |   aggregate premium within threshold limit of ₹2.50 Lakh/annum for ULIP and ₹5.0 Lakh/annum for non                                                                                     |
+|                        |   ULIP Life insurance and maintaining conditions of premium to sum assured ratio as stipulated therein                                                                                  |
+|                        |   in Section 11, Schedule II (erstwhile Section10(10D)) of Income Tax Act 2025. Tata AIA Life Insurance                                                                                 |
+|                        |   Company Ltd. does not assume responsibility on tax implications mentioned anywhere on this site.                                                                                      |
+|                        |   Please consult your own tax consultant to know the tax benefits available to you.                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>3b</sup> Market-linked returns are subject to market risks and terms & conditions of the                                                                                         |
+|                        |   product. The assumed rate of returns or illustrated amount may not be guaranteed and depends on                                                                                       |
+|                        |   market fluctuations.                                                                                                                                                                  |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>3c</sup> Guaranteed returns in this plan depends on Age at Entry of life assured, Premium                                                                                        |
+|                        |   payment term, policy term, premium amount and plan option chosen.                                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>3d</sup> The word Guaranteed and Guarantee means the annuity payout is fixed at inception of                                                                                     |
+|                        |   the policy and will be payable for whole of life or till death of the Annuitant(s).                                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>3e</sup> All funds open for new business which have completed 5 years since inception are                                                                                        |
+|                        |   rated 4 star or 5 Stars by Morningstar as of December 2025.                                                                                                                           |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>3f</sup> Cash bonuses (if declared) may be opted to be paid out at the end of the chosen                                                                                         |
+|                        |   pay-out frequency or as premiums offset. Alternatively, the cash bonus (if declared) can be chosen to                                                                                 |
+|                        |   be accumulated and paid out on maturity, death or surrender. Cash bonuses are applicable for Early                                                                                    |
+|                        |   income and Deferred income option. Please refer Brochure for additional details                                                                                                       |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>3g</sup> Only available with cash bonus option. The current loyalty addition rate on the                                                                                         |
+|                        |   Sub-wallet will be 6.00% compounding monthly. The loyalty addition rate shall be at which RBI absorbs                                                                                 |
+|                        |   liquidity which currently is the Standing Deposit Facility (SDF) rate. The current Standing Deposit                                                                                   |
+|                        |   Facility rate is 6.00% p.a. and the same shall be reviewed bi-monthly. The Company may in future                                                                                      |
+|                        |   change the reference rate from Standing Deposit Facility rate to some other index.                                                                                                    |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>3h</sup> Not applicable under PoS, please refer sales brochure for more information                                                                                              |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>3i</sup> Under Life Promise Plus Option of Tata AIA Sampoorna Raksha Promise, an amount equal                                                                                    |
+|                        |   to the 100% of the Total Premiums Paid (excluding loading for modal premiums) shall be payable at the                                                                                 |
+|                        |   end of the Policy Term, provided the life assured survives till maturity and the policy is not                                                                                        |
+|                        |   terminated earlier. Tata AIA Sampoorna Raksha Promise - Non-Linked, Non-Participating, pure risk,                                                                                     |
+|                        |   Individual Life Insurance Product (UIN:110N176V12)                                                                                                                                    |
+|                        |                                                                                                                                                                                         |
+|                        | - For more details on risk factors, terms and conditions please read Sales Brochure carefully before                                                                                    |
+|                        |   concluding a sale. Insurance cover is available under this product.                                                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | - For ULIP products                                                                                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        |   - In this policy, the investment risk in investment portfolio is borne by the policyholder.                                                                                           |
+|                        |   - **The linked insurance product do not offer any liquidity during the first five years of the                                                                                        |
+|                        |     contract. The policy holder will not be able to surrender/withdraw the monies invested in linked                                                                                    |
+|                        |     insurance products completely or partially till the end of the fifth year.**                                                                                                        |
+|                        |   - Linked Life Insurance products are different from traditional insurance products and are subject                                                                                    |
+|                        |     to risk factors.                                                                                                                                                                    |
+|                        |   - The premium paid in Linked Life Insurance policies is subject to investment risks associated with                                                                                   |
+|                        |     capital markets and publicly available index. The NAV of the units may go up or down based on the                                                                                   |
+|                        |     performance of Fund and factors influencing the capital market/publicly available index and the                                                                                     |
+|                        |     insured is responsible for his/her decisions.                                                                                                                                       |
+|                        |   - Please know the associated risks and the applicable charges, from your insurance agent or the                                                                                       |
+|                        |     Intermediary or policy document issued by the insurance company.                                                                                                                    |
+|                        |   - The various funds offered under this contract are the names of the funds and do not in any way                                                                                      |
+|                        |     indicate the quality of these plans, their future prospects and returns.                                                                                                            |
+|                        |   - Past performance is not indicative of future performance.                                                                                                                           |
+|                        |                                                                                                                                                                                         |
+|                        | L\&C/Advt/2026/Jul/4147                                                                                                                                                                 |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>4a</sup> Total Assets Under Management (AUM) as on 31 <sup>st</sup> Mar’26 is ₹1,45,589 Crore.                                                                                   |
+|                        | - <sup>4b</sup> https\://irdai.gov.in/document-detail?documentId=9311918. Retail Sum Assured for FY                                                                                     |
+|                        |   2025-26 is ₹9,00,876 Crore.                                                                                                                                                           |
+|                        | - <sup>4c</sup> 98,26,808 families protected till 31 <sup>st</sup> May 2026.                                                                                                            |
+|                        | - <sup>4d</sup> Individual Death Claim Settlement Ratio is 99.45% for FY 2025-26 as per latest annual                                                                                   |
+|                        |   audited figures.                                                                                                                                                                      |
+|                        | - <sup>4e</sup> Applicable to only non-early claims with more than 3 years of policy duration,                                                                                          |
+|                        |   non-investigation cases, up to Sum assured of ₹50 Lakh. Applicable for branch walk in. Time limit to                                                                                  |
+|                        |   submit claim to Tata AIA Life Insurance by 2 pm (working days). Subject to submission of complete                                                                                     |
+|                        |   documents. Not applicable for ULIP policies and open title claims.                                                                                                                    |
+|                        | - For more details on risk factors, terms and conditions please read Sales Brochure carefully before                                                                                    |
+|                        |   concluding a sale. Insurance cover is available under this product.                                                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | L\&C/Advt/2026/Jul/4262                                                                                                                                                                 |
+|                        |                                                                                                                                                                                         |
+|                        | - The information, provided herein, may not be treated as a solicitation request in any manner. Any                                                                                     |
+|                        |   decision to buy online insurance by NRIs is completely his/her choice. The insurer is permitted to                                                                                    |
+|                        |   solicit insurance in India and settles claim in INR only.                                                                                                                             |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>5a</sup> No Goods and Service Tax shall be applicable on Individual life insurance products as                                                                                   |
+|                        |   per prevailing laws. Income Tax benefits would be available, subject to fulfillment of conditions of                                                                                  |
+|                        |   aggregate premium within threshold limit of ₹2.50 Lakh/annum for ULIP and ₹5.0 Lakh/annum for non                                                                                     |
+|                        |   ULIP Life insurance and maintaining conditions of premium to sum assured ratio as stipulated therein                                                                                  |
+|                        |   in Section 11, Schedule II (erstwhile Section10(10D)) of Income Tax Act 2025. Tata AIA Life Insurance                                                                                 |
+|                        |   Company Ltd. does not assume responsibility on tax implications mentioned anywhere on this site.                                                                                      |
+|                        |   Please consult your own tax consultant to know the tax benefits available to you.                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>5b</sup> Not applicable under PoS, please refer sales brochure for more information                                                                                              |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>5c</sup> Riders are not mandatory and are available for a nominal extra cost. For more details                                                                                   |
+|                        |   on benefits, premiums, and exclusions under the Rider, please contact Tata AIA Life's Insurance                                                                                       |
+|                        |   Advisor/Intermediary/ branch.                                                                                                                                                         |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>5d</sup> Individual Death Claim Settlement Ratio is 99.45% for FY 2025-26 as per latest annual                                                                                   |
+|                        |   audited figures.                                                                                                                                                                      |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>5e</sup> Individual Death Claim Settlement Ratio is 98.02% for FY 2020-21, 98.53% for FY                                                                                         |
+|                        |   2021-22, 99.01% for FY 2022-23, 99.13% for FY 2023-24, 99.41% for FY 2024-25, 99.45% for FY25-26 as                                                                                   |
+|                        |   per latest annual audited figures.                                                                                                                                                    |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>5f</sup> Applicable to only non-early claims with more than 3 years of policy duration,                                                                                          |
+|                        |   non-investigation cases, up to Sum assured of ₹50 Lakh. Applicable for branch walk in. Time limit to                                                                                  |
+|                        |   submit claim to Tata AIA Life Insurance by 2 pm (working days). Subject to submission of complete                                                                                     |
+|                        |   documents. Not applicable for ULIP policies and open title claims.                                                                                                                    |
+|                        |                                                                                                                                                                                         |
+|                        | - For more details on risk factors, terms and conditions please read Sales Brochure carefully before                                                                                    |
+|                        |   concluding a sale. Insurance cover is available under this product.                                                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | - For ULIP products                                                                                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        |   - In this policy, the investment risk in investment portfolio is borne by the policyholder.                                                                                           |
+|                        |   - **The linked insurance product do not offer any liquidity during the first five years of the                                                                                        |
+|                        |     contract. The policy holder will not be able to surrender/withdraw the monies invested in linked                                                                                    |
+|                        |     insurance products completely or partially till the end of the fifth year.**                                                                                                        |
+|                        |   - Linked Life Insurance products are different from traditional insurance products and are subject                                                                                    |
+|                        |     to risk factors.                                                                                                                                                                    |
+|                        |   - The premium paid in Linked Life Insurance policies is subject to investment risks associated with                                                                                   |
+|                        |     capital markets and publicly available index. The NAV of the units may go up or down based on the                                                                                   |
+|                        |     performance of Fund and factors influencing the capital market/publicly available index and the                                                                                     |
+|                        |     insured is responsible for his/her decisions.                                                                                                                                       |
+|                        |   - Please know the associated risks and the applicable charges, from your insurance agent or the                                                                                       |
+|                        |     Intermediary or policy document issued by the insurance company.                                                                                                                    |
+|                        |   - The various funds offered under this contract are the names of the funds and do not in any way                                                                                      |
+|                        |     indicate the quality of these plans, their future prospects and returns.                                                                                                            |
+|                        |   - Past performance is not indicative of future performance.                                                                                                                           |
+|                        |                                                                                                                                                                                         |
+|                        | L\&C/Advt/2026/Jul/4249                                                                                                                                                                 |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>6a</sup> No Goods and Service Tax shall be applicable on Individual life insurance products as                                                                                   |
+|                        |   per prevailing laws. Income Tax benefits would be available, subject to fulfillment of conditions of                                                                                  |
+|                        |   aggregate premium within threshold limit of ₹2.50 Lakh/annum for ULIP and ₹5.0 Lakh/annum for non                                                                                     |
+|                        |   ULIP Life insurance and maintaining conditions of premium to sum assured ratio as stipulated therein                                                                                  |
+|                        |   in Section 11, Schedule II (erstwhile Section10(10D)) of Income Tax Act 2025. Tata AIA Life Insurance                                                                                 |
+|                        |   Company Ltd. does not assume responsibility on tax implications mentioned anywhere on this site.                                                                                      |
+|                        |   Please consult your own tax consultant to know the tax benefits available to you.                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>6b</sup> Individual Death Claim Settlement Ratio is 99.45% for FY 2025-26 as per latest annual                                                                                   |
+|                        |   audited figures.                                                                                                                                                                      |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>6c</sup> 98,26,808 families protected till 31 <sup>st</sup> May 2026.                                                                                                            |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>6d</sup> Applicable to only non-early claims with more than 3 years of policy duration,                                                                                          |
+|                        |   non-investigation cases, up to Sum assured of ₹50 Lakh. Applicable for branch walk in. Time limit to                                                                                  |
+|                        |   submit claim to Tata AIA Life Insurance by 2 pm (working days). Subject to submission of complete                                                                                     |
+|                        |   documents. Not applicable for ULIP policies and open title claims.                                                                                                                    |
+|                        |                                                                                                                                                                                         |
+|                        | - <sup>6e</sup> Market-linked returns are subject to market risks and terms & conditions of the                                                                                         |
+|                        |   product. The assumed rate of returns or illustrated amount may not be guaranteed and depends on                                                                                       |
+|                        |   market fluctuations.                                                                                                                                                                  |
+|                        |                                                                                                                                                                                         |
+|                        | - For more details on risk factors, terms and conditions please read Sales Brochure carefully before                                                                                    |
+|                        |   concluding a sale. Insurance cover is available under this product.                                                                                                                   |
+|                        |                                                                                                                                                                                         |
+|                        | - For ULIP products                                                                                                                                                                     |
+|                        |                                                                                                                                                                                         |
+|                        |   - In this policy, the investment risk in investment portfolio is borne by the policyholder.                                                                                           |
+|                        |   - **The linked insurance product do not offer any liquidity during the first five years of the                                                                                        |
+|                        |     contract. The policy holder will not be able to surrender/withdraw the monies invested in linked                                                                                    |
+|                        |     insurance products completely or partially till the end of the fifth year.**                                                                                                        |
+|                        |   - Linked Life Insurance products are different from traditional insurance products and are subject                                                                                    |
+|                        |     to risk factors.                                                                                                                                                                    |
+|                        |   - The premium paid in Linked Life Insurance policies is subject to investment risks associated with                                                                                   |
+|                        |     capital markets and publicly available index. The NAV of the units may go up or down based on the                                                                                   |
+|                        |     performance of Fund and factors influencing the capital market/publicly available index and the                                                                                     |
+|                        |     insured is responsible for his/her decisions.                                                                                                                                       |
+|                        |   - Please know the associated risks and the applicable charges, from your insurance agent or the                                                                                       |
+|                        |     Intermediary or policy document issued by the insurance company.                                                                                                                    |
+|                        |   - The various funds offered under this contract are the names of the funds and do not in any way                                                                                      |
+|                        |     indicate the quality of these plans, their future prospects and returns.                                                                                                            |
+|                        |   - Past performance is not indicative of future performance.                                                                                                                           |
++------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ![][image86]
 
 ![][image87]
 
----
+![][image88]
 
 ---
 
 +-------------------------------------------------------------------------+
 | Metadata                                                                |
-+=============+===========================================================+
++-------------+-----------------------------------------------------------+
 | Title       | Life Insurance - Best Life Insurance Online in India 2026 |
 +-------------+-----------------------------------------------------------+
 | Description | Buy life insurance online and secure your family's        |
@@ -2490,7 +2253,7 @@ Last updated on 16<sup>th</sup> Sept 2026
 |             | insurance like term, ulip, savings, investment &          |
 |             | retirement plans.                                         |
 +-------------+-----------------------------------------------------------+
-| Image       | ![Buy Life Insurance with Tata AIA][image88]              |
+| Image       | ![Buy Life Insurance with Tata AIA][image89]              |
 +-------------+-----------------------------------------------------------+
 
 [image0]: https://www.tataaia.com/content/tataaialifeinsurancecompanylimited/en/homepage/_jcr_content/root/responsivegrid/container_1628882372/leadproxyteaser.img.png/1773681683908.png
@@ -2513,160 +2276,162 @@ Last updated on 16<sup>th</sup> Sept 2026
 
 [image9]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-first-fold/group-three.png
 
-[image10]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2.coreimg.png/1781784684425/image1.png
+[image10]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/hard-code-icons/Product-Recommendation/Banner_Image.png
 
-[image11]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy.coreimg.png/1781781300616/image2.png
+[image11]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2.coreimg.png/1781784684425/image1.png
 
-[image12]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy_495815520.coreimg.png/1781781317662/image3.png
+[image12]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy.coreimg.png/1781781300616/image2.png
 
-[image13]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy_520581843.coreimg.png/1781781331329/image4.png
+[image13]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy_495815520.coreimg.png/1781781317662/image3.png
 
-[image14]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy.coreimg.svg/1754945974266/icon-pay-premium.svg
+[image14]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy_520581843.coreimg.png/1781781331329/image4.png
 
-[image15]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_1261577590.coreimg.svg/1754945984403/icon-download-premium.svg
+[image15]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy.coreimg.svg/1754945974266/icon-pay-premium.svg
 
-[image16]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_1842855145.coreimg.svg/1754945996764/icon-register-claim.svg
+[image16]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_1261577590.coreimg.svg/1754945984403/icon-download-premium.svg
 
-[image17]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_347414094.coreimg.svg/1754946010445/icon-raise-service-request.svg
+[image17]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_1842855145.coreimg.svg/1754945996764/icon-register-claim.svg
 
-[image18]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_347414.coreimg.svg/1764768565946/register-a-complaint.svg
+[image18]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_347414094.coreimg.svg/1754946010445/icon-raise-service-request.svg
 
-[image19]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2.coreimg.png/1754946019342/login.png
+[image19]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_347414.coreimg.svg/1764768565946/register-a-complaint.svg
 
-[image20]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_405398028/container/proxyteaserv2.coreimg.png/1781781441429/banner1.png
+[image20]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2.coreimg.png/1754946019342/login.png
 
-[image21]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_405398028/container/proxyteaserv2_982284627.coreimg.png/1781784715649/vision-success-ideas-businessmans-perspective-future.png
+[image21]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_405398028/container/proxyteaserv2.coreimg.png/1781781441429/banner1.png
 
-[image22]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser.coreimg.svg/1781781736319/slider1.svg
+[image22]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_405398028/container/proxyteaserv2_982284627.coreimg.png/1781784715649/vision-success-ideas-businessmans-perspective-future.png
 
-[image23]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_4095735.coreimg.png/1781781743730/frame-1000010093.png
+[image23]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser.coreimg.svg/1781781736319/slider1.svg
 
-[image24]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_396644274.coreimg.png/1781781754363/frame-1000010095.png
+[image24]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_4095735.coreimg.png/1781781743730/frame-1000010093.png
 
-[image25]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_1386845038.coreimg.png/1781781761064/frame-1000010094.png
+[image25]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_396644274.coreimg.png/1781781754363/frame-1000010095.png
 
-[image26]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/Button1.png
+[image26]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_1386845038.coreimg.png/1781781761064/frame-1000010094.png
 
-[image27]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/Button2.png
+[image27]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/Button1.png
 
-[image28]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Swapnil-Vartak.png
+[image28]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/Button2.png
 
-[image29]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Simran-Yadav.png
+[image29]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Swapnil-Vartak.png
 
-[image30]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Mahesh-Gaikar.png
+[image30]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Simran-Yadav.png
 
-[image31]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Jatin-Zala.png
+[image31]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Mahesh-Gaikar.png
 
-[image32]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Shweta-Ghag.png
+[image32]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Jatin-Zala.png
 
-[image33]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Meena-Chaudhari.png
+[image33]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Shweta-Ghag.png
 
-[image34]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Nilesh-Kumar.png
+[image34]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Meena-Chaudhari.png
 
-[image35]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Dimple-Amin.png
+[image35]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Nilesh-Kumar.png
 
-[image36]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Pooja-Haria.png
+[image36]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Dimple-Amin.png
 
-[image37]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/desktop-Kanchan-Sharma.png
+[image37]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Pooja-Haria.png
 
-[image38]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Dinesh-Ahuja.png
+[image38]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/desktop-Kanchan-Sharma.png
 
-[image39]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Amin-Yusaf-Jivani.png
+[image39]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Dinesh-Ahuja.png
 
-[image40]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Sunita-Mandal.png
+[image40]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Amin-Yusaf-Jivani.png
 
-[image41]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Maushmi-Dutt.png
+[image41]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Sunita-Mandal.png
 
-[image42]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Kala-R.png
+[image42]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Maushmi-Dutt.png
 
-[image43]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Akash-Jai-Singh.png
+[image43]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Kala-R.png
 
-[image44]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Sumeet-Nayak.png
+[image44]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Akash-Jai-Singh.png
 
-[image45]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Anita-Diwadkar.png
+[image45]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Sumeet-Nayak.png
 
-[image46]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Pearlann-Serro.png
+[image46]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Anita-Diwadkar.png
 
-[image47]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Vivek-Upadhyay.png
+[image47]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Pearlann-Serro.png
 
-[image48]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Aniket-Gaikwad.png
+[image48]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Vivek-Upadhyay.png
 
-[image49]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Jitendra-Dhiman.png
+[image49]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Aniket-Gaikwad.png
 
-[image50]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Amit-Taralkar.png
+[image50]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Jitendra-Dhiman.png
 
-[image51]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Meena-Bhatia.png
+[image51]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Amit-Taralkar.png
 
-[image52]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Nitin-Vishwakarma.png
+[image52]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Meena-Bhatia.png
 
-[image53]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2.coreimg.svg/1785151490717/icon3.svg
+[image53]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Nitin-Vishwakarma.png
 
-[image54]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2_1338146403.coreimg.svg/1785151504940/icon2.svg
+[image54]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2.coreimg.svg/1785151490717/icon3.svg
 
-[image55]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2_1334429098.coreimg.svg/1785233820949/icon1.svg
+[image55]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2_1338146403.coreimg.svg/1785151504940/icon2.svg
 
-[image56]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2.coreimg.svg/1781781993033/icon4.svg
+[image56]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2_1334429098.coreimg.svg/1785233820949/icon1.svg
 
-[image57]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2_1721122278.coreimg.svg/1785151540660/icon5.svg
+[image57]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2.coreimg.svg/1781781993033/icon4.svg
 
-[image58]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2_123025738.coreimg.svg/1785151557269/icon6.svg
+[image58]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2_1721122278.coreimg.svg/1785151540660/icon5.svg
 
-[image59]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-Unclaimed-Insurance-Funds.jpg
+[image59]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2_123025738.coreimg.svg/1785151557269/icon6.svg
 
-[image60]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/APK-Desk.png
+[image60]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-Unclaimed-Insurance-Funds.jpg
 
-[image61]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-MDRT-Without-CTA.jpg
+[image61]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/APK-Desk.png
 
-[image62]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-BIMA-BHAROSA.png
+[image62]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-MDRT-Without-CTA.jpg
 
-[image63]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-Fortune-India-Article.png
+[image63]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-BIMA-BHAROSA.png
 
-[image64]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-1600-Series.png
+[image64]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-Fortune-India-Article.png
 
-[image65]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/HP-Desktop-Chart.png
+[image65]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-1600-Series.png
 
-[image66]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_copy/leadproxyv2teaser.coreimg.png/1781782373911/frame-11712759556.png
+[image66]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/HP-Desktop-Chart.png
 
-[image67]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010113.png
+[image67]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_copy/leadproxyv2teaser.coreimg.png/1781782373911/frame-11712759556.png
 
-[image68]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010114.png
+[image68]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010113.png
 
-[image69]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010092.png
+[image69]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010114.png
 
-[image70]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/how-simple-is-it-to-buy-a-life-insurance-policy-tata-aia-blog/Insurance_Desktop.png
+[image70]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010092.png
 
-[image71]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/types-of-life-insurance-a-complete-guide/shutterstock_1272469927.jpg
+[image71]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/how-simple-is-it-to-buy-a-life-insurance-policy-tata-aia-blog/Insurance_Desktop.png
 
-[image72]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/what-are-the-different-types-of-whole-life-insurance-policies/Whole-Life-insurance-Desktop.png
+[image72]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/types-of-life-insurance-a-complete-guide/shutterstock_1272469927.jpg
 
-[image73]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/4-steps-to-buy-life-insurance-plan-with-your-smartphone/shutterstock_469323245.jpg
+[image73]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/what-are-the-different-types-of-whole-life-insurance-policies/Whole-Life-insurance-Desktop.png
 
-[image74]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/shutterstock_1893826969.jpg
+[image74]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/4-steps-to-buy-life-insurance-plan-with-your-smartphone/shutterstock_469323245.jpg
 
-[image75]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/knowledge-centre/how-to-save-tax-with-insurance-policy/saving-tax-banner.png
+[image75]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/shutterstock_1893826969.jpg
 
-[image76]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/everything-important-to-know-about-death-benefits-of-life-insurance/shutterstock_2631799343.jpg
+[image76]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/knowledge-centre/how-to-save-tax-with-insurance-policy/saving-tax-banner.png
 
-[image77]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/investment-planning/will-savings-be-enough-for-your-loved-ones-if-tomorrow-never-comes/shutterstock_1224969034.jpg
+[image77]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/everything-important-to-know-about-death-benefits-of-life-insurance/shutterstock_2631799343.jpg
 
-[image78]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/term-insurance/what-are-the-benefits-of-a-term-plan-with-return-of-premium/Benefits-of-a-Term-Plan-Desktop.jpg
+[image78]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/investment-planning/will-savings-be-enough-for-your-loved-ones-if-tomorrow-never-comes/shutterstock_1224969034.jpg
 
-[image79]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/shutterstock_2798726246.jpg
+[image79]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/term-insurance/what-are-the-benefits-of-a-term-plan-with-return-of-premium/Benefits-of-a-Term-Plan-Desktop.jpg
 
-[image80]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/retirement-planning/how-to-choose-the-perfect-annuity-insurance/shutterstock_5645836331.jpg
+[image80]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/shutterstock_2798726246.jpg
 
-[image81]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/10-reasons-you-must-read-your-life-insurance-policy-carefully/shutterstock_551101630.jpg
+[image81]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/retirement-planning/how-to-choose-the-perfect-annuity-insurance/shutterstock_5645836331.jpg
 
-[image82]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/why-your-life-insurance-claim-cannot-be-rejected-so-easily/shutterstock_1919068553.jpg
+[image82]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/10-reasons-you-must-read-your-life-insurance-policy-carefully/shutterstock_551101630.jpg
 
-[image83]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/guaranteed-income-plans--why-should-you-buy-this/Guaranteed-Income-Plans-desktop.png
+[image83]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/why-your-life-insurance-claim-cannot-be-rejected-so-easily/shutterstock_1919068553.jpg
 
-[image84]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/how-to-calculate-the-interest-rate-on-provident-fund/shutterstock_14993250921.jpg
+[image84]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/guaranteed-income-plans--why-should-you-buy-this/Guaranteed-Income-Plans-desktop.png
 
-[image85]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/june2026.png
+[image85]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/how-to-calculate-the-interest-rate-on-provident-fund/shutterstock_14993250921.jpg
 
-[image86]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/june-26.png
+[image86]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/june2026.png
 
-[image87]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/fund-performance-homepage.png
+[image87]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/june-26.png
 
-[image88]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/MicrosoftTeams-image\(1\)1.png
+[image88]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/fund-performance-homepage.png
+
+[image89]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/MicrosoftTeams-image\(1\)1.png

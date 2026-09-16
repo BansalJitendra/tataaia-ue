@@ -17,6 +17,7 @@
 // Keyed by a stable source container class → the JSON authored under content/.
 const FORM_DEFINITIONS = {
   'new-homepage-calc-container': 'know-more-buy-2steps.json',
+  'tte-form-redesign': 'looking-to-buy-callback.json',
 };
 
 // Submit endpoint per mapped form. The form block (aem-block-collection) requires a

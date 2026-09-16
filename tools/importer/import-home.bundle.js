@@ -881,9 +881,11 @@ var CustomImportScript = (() => {
   // tools/importer/parsers/form.js
   const FORM_DEFINITIONS = {
     "new-homepage-calc-container": "know-more-buy-2steps.json",
+    "tte-form-redesign": "looking-to-buy-callback.json",
   };
   const FORM_ACTIONS = {
     "new-homepage-calc-container": "/forms/lead-submit",
+    "tte-form-redesign": "/forms/lead-submit",
   };
   function parse12(element, { document: document2 }) {
     const formEl = element.querySelector("form");

@@ -149,6 +149,11 @@ const PLAN_INFO = {
 function enhancePlanLayout(block, form) {
   const planSelect = form.querySelector('select[name="plan"]');
   if (!planSelect) return;
+  // Only the "Know more…2 steps" calc form uses the tabbed plan-picker layout
+  // (it has the full applicant fieldset, incl. date of birth). Simpler forms
+  // that merely include a Plan dropdown (e.g. the "Looking to buy" call-back
+  // form) stay as a plain vertical form.
+  if (!form.querySelector('[name="dateOfBirth"]')) return;
   const planFieldWrapper = planSelect.closest('.field-wrapper') || planSelect.parentElement;
   const options = [...planSelect.options];
 

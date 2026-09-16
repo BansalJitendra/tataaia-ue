@@ -47,7 +47,16 @@ function walk(dir) {
   return out;
 }
 
-const files = walk(SRC);
+// Exclude assets AEM's publish replication rejects or that are build leftovers:
+//  - SVGs over the 40KB publish limit (a raster replacement is referenced instead)
+//  - stray temp .png renders left beside a replaced asset
+const SVG_LIMIT = 40 * 1024;
+const files = walk(SRC).filter((p) => {
+  const lower = p.toLowerCase();
+  if (lower.endsWith('.svg') && statSync(p).size > SVG_LIMIT) return false;
+  if (lower.endsWith('slider1.png')) return false; // temp render; slider1.jpg is used
+  return true;
+});
 
 const FOLDER_CONTENT = `<?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"

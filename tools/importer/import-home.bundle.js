@@ -45,6 +45,8 @@ var CustomImportScript = (() => {
   function parse(element, { document: document2 }) {
     const items = [];
     const fqItems = Array.from(element.querySelectorAll("li.ta-fq-content-li"));
+    const headerItems = Array.from(element.querySelectorAll(".accordion-item"))
+      .filter((it) => it.querySelector(".custom-accordion-header"));
     if (fqItems.length) {
       fqItems.forEach((li) => {
         const qEl = li.querySelector(".ta-fq-content-qtext");
@@ -53,6 +55,19 @@ var CustomImportScript = (() => {
         const content = [];
         if (ansEl) {
           const body = ansEl.querySelector(".ta-fq-ans-m") || ansEl;
+          Array.from(body.children).forEach((node) => {
+            if (node.textContent.trim() || node.querySelector("img")) content.push(node);
+          });
+        }
+        if (summary || content.length) items.push({ summary, content });
+      });
+    } else if (headerItems.length && !element.querySelector(".accordion-content .faqHeading")) {
+      headerItems.forEach((item) => {
+        const header = item.querySelector(".custom-accordion-header");
+        const body = item.querySelector(".accordion-content");
+        const summary = header ? header.textContent.trim() : "";
+        const content = [];
+        if (body) {
           Array.from(body.children).forEach((node) => {
             if (node.textContent.trim() || node.querySelector("img")) content.push(node);
           });

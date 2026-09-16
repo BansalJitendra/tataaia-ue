@@ -6,17 +6,24 @@
  * Source: Tata AIA homepage — .custom-accordion / .faq-accordian
  * Model: container with accordion-list-item children (2 columns per row).
  *   Item fields: summary (text) in cell 1, text (richtext) in cell 2.
- * Two source structures are supported:
+ * Three source structures are supported:
  *   (a) .custom-accordion — flat `.accordion-content` where each question is an
  *       <h2> wrapping a span.faqHeading, followed by its answer content.
  *   (b) .faq-accordian (redesign) — a <ul> of `li.ta-fq-content-li`, each with the
  *       question in `.ta-fq-content-qtext` and the answer in `.ta-fq-ans-w`.
+ *   (c) .custom-accordion with `.accordion-item` children — the clickable title is
+ *       an <h2 class="custom-accordion-header"> (OUTSIDE .accordion-content) and the
+ *       body is the sibling `.accordion-content` (e.g. the "Disclaimers" accordion).
  */
 export default function parse(element, { document }) {
   const items = [];
 
   // Variant (b): redesign FAQ accordion — explicit li.ta-fq-content-li items.
   const fqItems = Array.from(element.querySelectorAll('li.ta-fq-content-li'));
+  // Variant (c): .accordion-item with a .custom-accordion-header title.
+  const headerItems = Array.from(element.querySelectorAll('.accordion-item'))
+    .filter((it) => it.querySelector('.custom-accordion-header'));
+
   if (fqItems.length) {
     fqItems.forEach((li) => {
       const qEl = li.querySelector('.ta-fq-content-qtext');
@@ -26,6 +33,20 @@ export default function parse(element, { document }) {
       if (ansEl) {
         // Prefer the inner answer body, else the whole answer wrapper's children.
         const body = ansEl.querySelector('.ta-fq-ans-m') || ansEl;
+        Array.from(body.children).forEach((node) => {
+          if (node.textContent.trim() || node.querySelector('img')) content.push(node);
+        });
+      }
+      if (summary || content.length) items.push({ summary, content });
+    });
+  } else if (headerItems.length && !element.querySelector('.accordion-content .faqHeading')) {
+    // Variant (c): title in .custom-accordion-header, body in .accordion-content.
+    headerItems.forEach((item) => {
+      const header = item.querySelector('.custom-accordion-header');
+      const body = item.querySelector('.accordion-content');
+      const summary = header ? header.textContent.trim() : '';
+      const content = [];
+      if (body) {
         Array.from(body.children).forEach((node) => {
           if (node.textContent.trim() || node.querySelector('img')) content.push(node);
         });

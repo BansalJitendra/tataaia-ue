@@ -50,6 +50,108 @@ main .section.blue-tone-light .form form {
   box-shadow: 0 0 15px 0 rgb(0 115 187 / 10%);
 }
 
+/* ============================================================================
+   Plan-picker layout (source: "Know more and buy your plan in 2 steps")
+   Heading on top, a row of plan tabs, then a two-column body: a plan-specific
+   illustration on the left and the form fields on the right.
+   ========================================================================== */
+
+/* Block-level heading sits above the tabs, centered like the source. */
+/* stylelint-disable no-descending-specificity */
+.form > .heading-wrapper h2,
+.form > .heading-wrapper h3 {
+  margin: 0 0 20px;
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--heading-color, #1a1a1a);
+}
+/* stylelint-enable no-descending-specificity */
+
+/* --- plan tabs --- */
+.form .form-plan-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.form .form-plan-tab {
+  margin: 0;
+  padding: 10px 20px;
+  border: 1px solid #d7d9dc;
+  border-radius: 24px;
+  background-color: #fff;
+  color: var(--text-color, #58595b);
+  font-family: var(--body-font-family);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.form .form-plan-tab:hover {
+  border-color: var(--brand-primary, #e11138);
+}
+
+.form .form-plan-tab[aria-selected='true'] {
+  border-color: var(--brand-primary, #e11138);
+  color: var(--brand-primary, #e11138);
+  box-shadow: 0 0 0 1px var(--brand-primary, #e11138) inset;
+}
+
+/* The plan <select> is replaced by the tab bar; keep it in the DOM (for submit)
+   but hidden. Uses !important because .field-wrapper sets display:grid at equal
+   specificity later in the file (and the [hidden] attribute would be overridden
+   the same way). */
+.form .field-wrapper.form-plan-select-hidden {
+  display: none !important;
+}
+
+/* --- two-column body: media + form --- */
+.form .form-plan-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.form .form-plan-media {
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #eaf3fb;
+}
+
+.form .form-plan-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* On the plan layout the form no longer needs its own card padding/shadow —
+   the body columns provide the framing. */
+main .section.blue-tone-light .form .form-plan-body form {
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+@media (width >= 900px) {
+  .form .form-plan-body {
+    grid-template-columns: minmax(280px, 360px) 1fr;
+  }
+
+  .form .form-plan-media {
+    min-height: 100%;
+  }
+}
+
 /* --- field layout --- */
 .form .field-wrapper {
   display: grid;

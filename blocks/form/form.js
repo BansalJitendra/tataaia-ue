@@ -77,6 +77,86 @@ async function handleSubmit(form) {
   }
 }
 
+// The "Know more and buy your plan in 2 steps" calc form shows a plan-specific
+// illustration on the left that swaps with the selected plan. The plan option
+// values map to these source illustrations.
+const PLAN_IMAGES = {
+  'Wealth plans/ULIPs': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Wealth-plans-ULIP.png',
+  'Term plans': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Family-Photo.png',
+  'Term + Wealth plans': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Term-wealth-plans.png',
+  'Guaranteed returns plan': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/guaranteed-returns.png',
+  'Retirement/Pension plans': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Retirement-plans1.png',
+  'Health plans': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Health-plans.png',
+};
+
+/**
+ * Turn the plan <select> into a row of tabs across the top and add a left
+ * illustration panel that swaps with the selected plan — matching the live
+ * "Know more and buy your plan in 2 steps" layout. Progressive enhancement:
+ * the underlying <select> stays in the form (kept in sync) so submission and
+ * validation are unchanged; if there's no plan select, the form is untouched.
+ */
+function enhancePlanLayout(block, form) {
+  const planSelect = form.querySelector('select[name="plan"]');
+  if (!planSelect) return;
+  const planFieldWrapper = planSelect.closest('.field-wrapper') || planSelect.parentElement;
+  const options = [...planSelect.options];
+
+  // Tab bar (rendered above the form, full width).
+  const tabs = document.createElement('div');
+  tabs.className = 'form-plan-tabs';
+  tabs.setAttribute('role', 'tablist');
+
+  // Left illustration panel.
+  const media = document.createElement('div');
+  media.className = 'form-plan-media';
+  const img = document.createElement('img');
+  img.loading = 'lazy';
+  img.alt = '';
+  media.append(img);
+
+  const setActive = (value) => {
+    planSelect.value = value;
+    planSelect.dispatchEvent(new Event('change', { bubbles: true }));
+    tabs.querySelectorAll('button').forEach((b) => {
+      b.setAttribute('aria-selected', String(b.dataset.value === value));
+    });
+    const src = PLAN_IMAGES[value];
+    if (src) { img.src = src; img.alt = value; }
+  };
+
+  options.forEach((opt) => {
+    if (!opt.value) return;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'form-plan-tab';
+    btn.dataset.value = opt.value;
+    btn.textContent = opt.textContent.trim();
+    btn.setAttribute('role', 'tab');
+    btn.addEventListener('click', () => setActive(opt.value));
+    tabs.append(btn);
+  });
+
+  // Hide the original select field (tabs drive it now), keep it for submit.
+  // Use a class (not the [hidden] attr) since the block CSS sets display on
+  // .field-wrapper, which would override the attribute.
+  if (planFieldWrapper) planFieldWrapper.classList.add('form-plan-select-hidden');
+
+  // Restructure: [tabs] on top, then [media | form fields] two-column body.
+  const body = document.createElement('div');
+  body.className = 'form-plan-body';
+  const heading = form.querySelector('.heading-wrapper');
+  block.textContent = '';
+  if (heading) block.append(heading);
+  block.append(tabs);
+  body.append(media, form);
+  block.append(body);
+
+  // Default to the first plan.
+  const first = options.find((o) => o.value);
+  if (first) setActive(first.value);
+}
+
 export default async function decorate(block) {
   const links = [...block.querySelectorAll('a')].map((a) => a.href);
   const formLink = links.find((link) => link.startsWith(window.location.origin) && link.endsWith('.json'));
@@ -85,6 +165,7 @@ export default async function decorate(block) {
 
   const form = await createForm(formLink, submitLink);
   block.replaceChildren(form);
+  enhancePlanLayout(block, form);
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();

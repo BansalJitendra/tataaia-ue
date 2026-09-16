@@ -31,3 +31,240 @@
     order: unset;
   }
 }
+
+/* ============================================================================
+   Variant: "Life Insurance" / "Types of Life Insurance" intro (.columns-intro)
+   Centered gradient heading, grey body copy, working Read more/Read less.
+   ========================================================================== */
+.columns.columns-intro > div {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.columns.columns-intro h1,
+.columns.columns-intro h2,
+.columns.columns-intro h3 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+
+  /* blue -> red gradient clipped to text (matches live) */
+  background: linear-gradient(89deg, #0073bb 0.58%, #d62049 99.42%);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.columns.columns-intro > div > div {
+  color: #58595b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: start;
+}
+
+.columns .columns-readmore,
+.columns .columns-readless {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #0073bb;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.columns .columns-readmore:hover,
+.columns .columns-readless:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================================
+   Variant: product-recommendation callout (.columns-product-recom)
+   Rounded two-column card: left pitch panel + right best-seller plan card.
+   ========================================================================== */
+/* stylelint-disable no-descending-specificity */
+.columns.columns-product-recom {
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #f4f7fb;
+}
+
+.columns.columns-product-recom > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  align-items: stretch;
+}
+
+/* left pitch panel */
+.columns.columns-product-recom .columns-recom-left {
+  order: 1;
+  padding: 32px;
+  background: linear-gradient(135deg, #eef4fb 0%, #f8eef2 100%);
+}
+
+.columns.columns-product-recom .columns-recom-left h2,
+.columns.columns-product-recom .columns-recom-left h3 {
+  margin: 0 0 12px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1a1a;
+}
+
+.columns.columns-product-recom .columns-recom-left p {
+  margin: 0 0 8px;
+  color: #58595b;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.columns.columns-product-recom .columns-recom-left ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.columns.columns-product-recom .columns-recom-check {
+  position: relative;
+  margin: 0 0 6px;
+  padding-left: 26px;
+  color: #58595b;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.columns.columns-product-recom .columns-recom-check::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid #d62049;
+  box-sizing: border-box;
+}
+
+.columns.columns-product-recom .columns-recom-check::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  width: 6px;
+  height: 3px;
+  border-left: 1.5px solid #d62049;
+  border-bottom: 1.5px solid #d62049;
+  transform: rotate(-45deg);
+}
+
+.columns.columns-product-recom .columns-recom-left p:last-of-type {
+  margin-top: 8px;
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(88 89 91 / 75%);
+}
+
+.columns.columns-product-recom .columns-recom-media {
+  margin-top: 12px;
+  line-height: 0;
+}
+
+.columns.columns-product-recom .columns-recom-media img {
+  width: 100%;
+  height: auto;
+  max-width: 420px;
+}
+
+/* right plan card */
+.columns.columns-product-recom .columns-recom-right {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+}
+
+.columns.columns-product-recom .columns-recom-ribbon {
+  align-self: flex-start;
+  margin: 0;
+  padding: 4px 14px;
+  border-radius: 4px;
+  background-color: #0073bb;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.columns.columns-product-recom .columns-recom-right h2,
+.columns.columns-product-recom .columns-recom-right h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0073bb;
+}
+
+.columns.columns-product-recom .columns-recom-right p {
+  margin: 0;
+  color: #58595b;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.columns.columns-product-recom .columns-recom-right ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 8px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.columns.columns-product-recom .columns-recom-benefit {
+  flex: 1 1 0;
+  min-width: 120px;
+  text-align: center;
+  color: #58595b;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.columns.columns-product-recom .columns-recom-cta {
+  margin-top: 8px;
+}
+
+main .columns.columns-product-recom a.button:any-link {
+  display: inline-block;
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 28px;
+  background-color: #d62049;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media (width >= 900px) {
+  .columns.columns-product-recom > div {
+    grid-template-columns: 42% 1fr;
+  }
+
+  .columns.columns-product-recom .columns-recom-right {
+    justify-content: center;
+  }
+}
+
+/* stylelint-enable no-descending-specificity */

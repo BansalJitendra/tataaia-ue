@@ -66,7 +66,14 @@ main .section.blue-tone-light .form form {
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
-  color: var(--heading-color, #1a1a1a);
+
+  /* blue -> red gradient clipped to text (matches live section titles) */
+  background: linear-gradient(89deg, #0073bb 0.58%, #d62049 99.42%);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 /* stylelint-enable no-descending-specificity */
 

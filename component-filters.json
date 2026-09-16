@@ -104,6 +104,12 @@
     ]
   },
   {
+    "id": "carousel-banner",
+    "components": [
+      "carousel-banner-item"
+    ]
+  },
+  {
     "id": "carousel-review",
     "components": [
       "carousel-review-item"

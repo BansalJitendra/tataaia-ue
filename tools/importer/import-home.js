@@ -10,6 +10,7 @@ import cardsPlanParser from './parsers/cards-plan.js';
 import cardsPromoParser from './parsers/cards-promo.js';
 import cardsQuicklinkParser from './parsers/cards-quicklink.js';
 import cardsStatsParser from './parsers/cards-stats.js';
+import carouselBannerParser from './parsers/carousel-banner.js';
 import carouselReviewParser from './parsers/carousel-review.js';
 import carouselVideoParser from './parsers/carousel-video.js';
 import columnsPanelsParser from './parsers/columns-panels.js';
@@ -34,6 +35,7 @@ const parsers = {
   'cards-promo': cardsPromoParser,
   'cards-quicklink': cardsQuicklinkParser,
   'cards-stats': cardsStatsParser,
+  'carousel-banner': carouselBannerParser,
   'carousel-review': carouselReviewParser,
   'carousel-video': carouselVideoParser,
   'columns-panels': columnsPanelsParser,
@@ -99,6 +101,12 @@ const PAGE_TEMPLATE = {
       "name": "cards-stats",
       "instances": [
         ".whychoose-cards"
+      ]
+    },
+    {
+      "name": "carousel-banner",
+      "instances": [
+        ".banner-slider"
       ]
     },
     {
@@ -300,6 +308,18 @@ const PAGE_TEMPLATE = {
       "style": null,
       "blocks": [
         "cards-stats"
+      ],
+      "defaultContent": []
+    },
+    {
+      "id": "s12b",
+      "name": "Promo banner carousel",
+      "selector": [
+        ".banner-slider"
+      ],
+      "style": null,
+      "blocks": [
+        "carousel-banner"
       ],
       "defaultContent": []
     },

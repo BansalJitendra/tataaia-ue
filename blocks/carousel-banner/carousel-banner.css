@@ -1,0 +1,161 @@
+/* Block: carousel-banner — full-width promo banner carousel
+ * Source: .banner-slider on tataaia.com (swiper of promo banners between the
+ * "Why choose" stats and the IRDAI Bima Bharosa banner).
+ * One banner image per slide; auto-rotates with dot indicators + prev/next.
+ * Unlike the hero .carousel, banners display at their natural aspect ratio
+ * (contained, not cover-cropped).
+ */
+
+.carousel-banner .carousel-banner-slides-container {
+  position: relative;
+}
+
+.carousel-banner .carousel-banner-slides,
+.carousel-banner .carousel-banner-slide-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-banner .carousel-banner-slides {
+  display: flex;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: scroll clip;
+}
+
+.carousel-banner .carousel-banner-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-banner .carousel-banner-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel-banner .carousel-banner-slide-image {
+  width: 100%;
+  line-height: 0;
+}
+
+.carousel-banner .carousel-banner-slide-image p {
+  margin: 0;
+  line-height: 0;
+}
+
+/* Banner images: full width, natural aspect ratio, rounded like source. */
+.carousel-banner .carousel-banner-slide-image picture,
+.carousel-banner .carousel-banner-slide-image a {
+  display: block;
+}
+
+.carousel-banner .carousel-banner-slide-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* Source shows the desktop banner on wider screens and the mobile banner on
+   small screens. Each slide carries both variants (desktop first, mobile
+   second) as separate <p><picture> — toggle by viewport. */
+.carousel-banner .carousel-banner-slide-image p:nth-of-type(2) {
+  display: none;
+}
+
+@media (width <= 600px) {
+  .carousel-banner .carousel-banner-slide-image p:nth-of-type(1) {
+    display: none;
+  }
+
+  .carousel-banner .carousel-banner-slide-image p:nth-of-type(2) {
+    display: block;
+  }
+}
+
+/* --- dot indicators --- */
+.carousel-banner .carousel-banner-slide-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 12px;
+  padding: 12px;
+  line-height: 0;
+}
+
+.carousel-banner .carousel-banner-slide-indicator button {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #dadada;
+  cursor: pointer;
+  transition: background-color 0.2s, width 0.2s;
+}
+
+.carousel-banner .carousel-banner-slide-indicator button:disabled,
+.carousel-banner .carousel-banner-slide-indicator button:hover,
+.carousel-banner .carousel-banner-slide-indicator button:focus-visible {
+  background-color: var(--brand-primary, #d62049);
+}
+
+/* --- prev / next controls --- */
+.carousel-banner .carousel-banner-navigation-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.carousel-banner .carousel-banner-navigation-buttons button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(255 255 255 / 80%);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background-color 0.2s;
+}
+
+.carousel-banner .carousel-banner-navigation-buttons button:hover,
+.carousel-banner .carousel-banner-navigation-buttons button:focus-visible {
+  background-color: #fff;
+}
+
+.carousel-banner .carousel-banner-navigation-buttons button::after {
+  display: block;
+  content: '';
+  border: 2px solid var(--text-color, #58595b);
+  border-bottom: 0;
+  border-left: 0;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 2px);
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.carousel-banner .carousel-banner-navigation-buttons button.slide-next::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  left: calc(50% - 2px);
+}

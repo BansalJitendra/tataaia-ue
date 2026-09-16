@@ -620,6 +620,64 @@ var CustomImportScript = (() => {
     }
   }
 
+  // tools/importer/parsers/carousel-banner.js
+  function parseBanner(element, { document: document2 }) {
+    const slides = Array.from(element.querySelectorAll(".extendedimage"));
+    const resolveSrc = (img) => (img
+      && (img.getAttribute("src") || img.getAttribute("data-src") || img.getAttribute("data-cmp-src")))
+      || null;
+    const buildPicture = (src, alt) => {
+      if (!src) return null;
+      const picture = document2.createElement("picture");
+      const img = document2.createElement("img");
+      img.setAttribute("src", src);
+      if (alt) img.setAttribute("alt", alt);
+      picture.appendChild(img);
+      return picture;
+    };
+    const cells = [];
+    slides.forEach((slide) => {
+      const deskLink = slide.querySelector("a.cmp-image__link");
+      const deskImg = slide.querySelector('.cmp-image__image, [data-cmp-hook-image="image"]')
+        || (deskLink ? deskLink.querySelector("img") : null);
+      const mobAnchor = slide.querySelector("a.extended__mobileanchor");
+      const mobImg = slide.querySelector(".extended__mobileanchorimage, .extended__mobileimage")
+        || (mobAnchor ? mobAnchor.querySelector("img") : null);
+      const title = slide.getAttribute("data-title") || (deskImg && deskImg.getAttribute("alt")) || "";
+      const href = (deskLink && deskLink.getAttribute("href")) || (mobAnchor && mobAnchor.getAttribute("href")) || null;
+      const deskSrc = resolveSrc(deskImg);
+      const mobSrc = resolveSrc(mobImg);
+      if (!deskSrc && !mobSrc) return;
+      const cell = document2.createElement("div");
+      const deskPara = document2.createElement("p");
+      const mobPara = document2.createElement("p");
+      const deskPic = buildPicture(deskSrc, title);
+      const mobPic = buildPicture(mobSrc || deskSrc, title);
+      if (href) {
+        const a1 = document2.createElement("a");
+        a1.setAttribute("href", href);
+        if (deskPic) a1.appendChild(deskPic);
+        deskPara.appendChild(a1);
+        const a2 = document2.createElement("a");
+        a2.setAttribute("href", href);
+        if (mobPic) a2.appendChild(mobPic);
+        mobPara.appendChild(a2);
+      } else {
+        if (deskPic) deskPara.appendChild(deskPic);
+        if (mobPic) mobPara.appendChild(mobPic);
+      }
+      if (deskPara.childNodes.length) cell.appendChild(deskPara);
+      if (mobPara.childNodes.length) cell.appendChild(mobPara);
+      if (cell.childNodes.length) cells.push([cell]);
+    });
+    if (!cells.length) {
+      element.replaceWith(...element.childNodes);
+      return;
+    }
+    const block = WebImporter.Blocks.createBlock(document2, { name: "carousel-banner", cells });
+    element.replaceWith(block);
+  }
+
   // tools/importer/parsers/carousel-review.js
   function parse9(element, { document: document2 }) {
     function normalizeImg(img) {
@@ -1246,6 +1304,7 @@ var CustomImportScript = (() => {
     "cards-promo": parse6,
     "cards-quicklink": parse7,
     "cards-stats": parse8,
+    "carousel-banner": parseBanner,
     "carousel-review": parse9,
     "carousel-video": parse10,
     "columns-panels": parse11,
@@ -1309,6 +1368,12 @@ var CustomImportScript = (() => {
         "name": "cards-stats",
         "instances": [
           ".whychoose-cards"
+        ]
+      },
+      {
+        "name": "carousel-banner",
+        "instances": [
+          ".banner-slider"
         ]
       },
       {
@@ -1510,6 +1575,18 @@ var CustomImportScript = (() => {
         "style": null,
         "blocks": [
           "cards-stats"
+        ],
+        "defaultContent": []
+      },
+      {
+        "id": "s12b",
+        "name": "Promo banner carousel",
+        "selector": [
+          ".banner-slider"
+        ],
+        "style": null,
+        "blocks": [
+          "carousel-banner"
         ],
         "defaultContent": []
       },

@@ -1,0 +1,12 @@
+{
+  "variantName": "carousel-banner",
+  "baseBlock": "carousel",
+  "canonicalModel": "container",
+  "visualCharacteristics": "Full-width promotional banner carousel; one banner image per slide, auto-rotating, with dot indicators and prev/next controls. Responsive desktop/mobile banner variants.",
+  "contentPattern": "Each slide = one banner image cell (optionally wrapped in a link), with desktop + mobile <picture> variants.",
+  "usage": "Rotating promotional banners (offers, awards, app download, regulatory notices).",
+  "options": [],
+  "memberVariantIds": [
+    "carousel-banner"
+  ]
+}

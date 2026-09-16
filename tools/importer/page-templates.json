@@ -57,6 +57,12 @@
           ]
         },
         {
+          "name": "carousel-banner",
+          "instances": [
+            ".banner-slider"
+          ]
+        },
+        {
           "name": "cards-article",
           "instances": [
             ".homepage-revamp-blog-cards"
@@ -256,6 +262,18 @@
           "style": null,
           "blocks": [
             "cards-stats"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s12b",
+          "name": "Promo banner carousel",
+          "selector": [
+            ".banner-slider"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-banner"
           ],
           "defaultContent": []
         },

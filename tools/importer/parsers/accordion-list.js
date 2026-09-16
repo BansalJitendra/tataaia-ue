@@ -26,21 +26,44 @@ export default function parse(element, { document }) {
     }
   });
 
+  // Any <table> nested in an answer is hoisted out here: EDS block cells serialize
+  // through markdown, which cannot represent a table inside another block's cell
+  // (it flattens to <p>Yes</p><p>No</p>). Collected tables are emitted as standalone
+  // table-data blocks right after the accordion — where they sit in the source.
+  // The accordion block itself keeps its 2-column (summary + text) row structure.
+  const hoistedTables = [];
+
   const cells = [];
   items.forEach((item) => {
     if (!item.summary && !item.content.length) return;
 
-    // Column 1: summary field (question)
+    // Column 1: summary field (question) — the clickable title
     const summaryFrag = document.createDocumentFragment();
     if (item.summary) {
       summaryFrag.appendChild(document.createComment(' field:summary '));
       summaryFrag.appendChild(document.createTextNode(item.summary));
     }
 
-    // Column 2: text field (answer richtext)
+    // Column 2: text field (answer richtext) — strip any tables into hoistedTables
     const textFrag = document.createDocumentFragment();
     textFrag.appendChild(document.createComment(' field:text '));
-    item.content.forEach((node) => textFrag.appendChild(node.cloneNode(true)));
+    item.content.forEach((node) => {
+      const clone = node.cloneNode(true);
+      if (clone.tagName === 'TABLE') {
+        hoistedTables.push(clone);
+        return;
+      }
+      const nested = clone.querySelectorAll ? Array.from(clone.querySelectorAll('table')) : [];
+      if (nested.length) {
+        nested.forEach((t) => { hoistedTables.push(t.cloneNode(true)); t.remove(); });
+        // Keep the table-stripped remainder only if it still carries content.
+        if (clone.textContent.trim() || (clone.querySelector && clone.querySelector('img'))) {
+          textFrag.appendChild(clone);
+        }
+      } else {
+        textFrag.appendChild(clone);
+      }
+    });
 
     cells.push([summaryFrag, textFrag]);
   });
@@ -52,4 +75,30 @@ export default function parse(element, { document }) {
 
   const block = WebImporter.Blocks.createBlock(document, { name: 'accordion-list', cells });
   element.replaceWith(block);
+
+  // Emit each hoisted table as a standalone table-data block after the accordion.
+  const fieldNames = ['column1text', 'column2text', 'column3text'];
+  hoistedTables.forEach((table) => {
+    const rows = Array.from(table.querySelectorAll('tr'));
+    const tableCells = [];
+    rows.forEach((tr) => {
+      const tds = Array.from(tr.querySelectorAll(':scope > td, :scope > th'));
+      if (!tds.length) return;
+      const rowCells = [];
+      for (let i = 0; i < 3; i += 1) {
+        const frag = document.createDocumentFragment();
+        const td = tds[i];
+        if (td && td.textContent.trim()) {
+          frag.appendChild(document.createComment(` field:${fieldNames[i]} `));
+          Array.from(td.childNodes).forEach((n) => frag.appendChild(n.cloneNode(true)));
+        }
+        rowCells.push(frag);
+      }
+      tableCells.push(rowCells);
+    });
+    if (tableCells.length) {
+      const tableBlock = WebImporter.Blocks.createBlock(document, { name: 'table-data', cells: tableCells });
+      block.after(tableBlock);
+    }
+  });
 }

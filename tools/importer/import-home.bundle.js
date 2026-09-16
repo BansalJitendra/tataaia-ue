@@ -56,6 +56,7 @@ var CustomImportScript = (() => {
         if (node.textContent.trim() || node.querySelector("img")) current.content.push(node);
       }
     });
+    const hoistedTables = [];
     const cells = [];
     items.forEach((item) => {
       if (!item.summary && !item.content.length) return;
@@ -66,7 +67,22 @@ var CustomImportScript = (() => {
       }
       const textFrag = document2.createDocumentFragment();
       textFrag.appendChild(document2.createComment(" field:text "));
-      item.content.forEach((node) => textFrag.appendChild(node.cloneNode(true)));
+      item.content.forEach((node) => {
+        const clone = node.cloneNode(true);
+        if (clone.tagName === "TABLE") {
+          hoistedTables.push(clone);
+          return;
+        }
+        const nested = clone.querySelectorAll ? Array.from(clone.querySelectorAll("table")) : [];
+        if (nested.length) {
+          nested.forEach((t) => { hoistedTables.push(t.cloneNode(true)); t.remove(); });
+          if (clone.textContent.trim() || (clone.querySelector && clone.querySelector("img"))) {
+            textFrag.appendChild(clone);
+          }
+        } else {
+          textFrag.appendChild(clone);
+        }
+      });
       cells.push([summaryFrag, textFrag]);
     });
     if (!cells.length) {
@@ -75,6 +91,30 @@ var CustomImportScript = (() => {
     }
     const block = WebImporter.Blocks.createBlock(document2, { name: "accordion-list", cells });
     element.replaceWith(block);
+    const fieldNames = ["column1text", "column2text", "column3text"];
+    hoistedTables.forEach((table) => {
+      const rows = Array.from(table.querySelectorAll("tr"));
+      const tableCells = [];
+      rows.forEach((tr) => {
+        const tds = Array.from(tr.querySelectorAll(":scope > td, :scope > th"));
+        if (!tds.length) return;
+        const rowCells = [];
+        for (let i = 0; i < 3; i += 1) {
+          const frag = document2.createDocumentFragment();
+          const td = tds[i];
+          if (td && td.textContent.trim()) {
+            frag.appendChild(document2.createComment(` field:${fieldNames[i]} `));
+            Array.from(td.childNodes).forEach((n) => frag.appendChild(n.cloneNode(true)));
+          }
+          rowCells.push(frag);
+        }
+        tableCells.push(rowCells);
+      });
+      if (tableCells.length) {
+        const tableBlock = WebImporter.Blocks.createBlock(document2, { name: "table-data", cells: tableCells });
+        block.after(tableBlock);
+      }
+    });
   }
 
   // tools/importer/parsers/cards-article.js

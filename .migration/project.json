@@ -9,7 +9,8 @@
       "aemSitePath": "/content/tata-aia",
       "aemAssetsFolderPath": "/content/dam/tata-aia",
       "aemSiteName": "tata-aia",
-      "aemSiteTitle": "Tata AIA"
+      "aemSiteTitle": "Tata AIA",
+      "baseUrl": "https://www.tataaia.com/"
     }
   }
 }

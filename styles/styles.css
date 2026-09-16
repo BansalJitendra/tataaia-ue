@@ -288,3 +288,14 @@ main .section.dark {
   margin: 0;
   padding: 40px 0;
 }
+
+/* Hide leaked source popup-close artifact: a stray "close-popup" image imported
+   as default content at the top of the homepage renders as a floating ✕ under
+   the nav. Hide its wrapper paragraph until it's removed from content on reimport. */
+main img[alt="close-popup"] {
+  display: none;
+}
+
+main p:has(> img[alt="close-popup"]) {
+  display: none;
+}

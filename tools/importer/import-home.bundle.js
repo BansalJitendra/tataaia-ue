@@ -1269,6 +1269,13 @@ var CustomImportScript = (() => {
         if (intro && intro.parentNode) intro.parentNode.insertBefore(recomBanner, intro.nextSibling);
         else element.appendChild(recomBanner);
       }
+      // Leaked popup-close artifact: a "close-popup" image imported as default
+      // content renders as a stray ✕ at the top of the page. Remove it (and its
+      // now-empty wrapper) before parsing.
+      element.querySelectorAll('img[alt="close-popup"], img[src*="close-popup"]').forEach((img) => {
+        const wrap = img.closest("p, div") || img;
+        wrap.remove();
+      });
       WebImporter.DOMUtils.remove(element, [
         // Top-of-body hidden runtime inputs (cleaned.html L2, L4, L6)
         "#otp_require",

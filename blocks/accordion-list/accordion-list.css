@@ -8,46 +8,38 @@
   color: var(--heading-color);
 }
 
-/* --- Item: separated by a thin light divider (no card border on source) --- */
+/* --- Item: rounded blue-tinted card (matches live .ta-fq-content-li) --- */
 .accordion-list details.accordion-list-item {
-  border: 0;
-  border-bottom: 1px solid #e3e3e3;
-  border-radius: 0;
+  margin-bottom: 16px;
+  border: 2px solid rgb(0 115 187 / 10%);
+  border-radius: 16px;
+  background-color: #f2f7fb;
+  overflow: hidden;
 }
 
-.accordion-list details.accordion-list-item:first-of-type {
-  border-top: 1px solid #e3e3e3;
-}
-
-/* --- Title row (summary) — brand gradient text + chevron toggle --- */
+/* --- Title row (summary) — dark bold text + chevron toggle --- */
 .accordion-list details summary.accordion-list-item-label {
   position: relative;
   display: block;
   margin: 0;
-  padding: 20px 44px 20px 0;
+  padding: 20px 52px 20px 24px;
   list-style: none;
   cursor: pointer;
   font-family: var(--heading-font-family);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3;
-  color: var(--heading-color);
+  color: #333;
 }
 
 .accordion-list details summary.accordion-list-item-label::-webkit-details-marker {
   display: none;
 }
 
-/* gradient title text (blue -> magenta), applied to the question text */
 .accordion-list details summary.accordion-list-item-label p {
   margin: 0;
   font: inherit;
-  color: var(--heading-color);
-  background-image: linear-gradient(90deg, var(--brand-blue) 0%, var(--brand-primary) 100%);
-  background-clip: text;
-  /* stylelint-disable-next-line property-no-vendor-prefix */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #333;
 }
 
 /* chevron toggle icon on the right (points down when closed) */
@@ -55,11 +47,11 @@
   content: '';
   position: absolute;
   top: 50%;
-  right: 6px;
+  right: 24px;
   width: 12px;
   height: 12px;
   margin-top: -8px;
-  border: solid var(--heading-color);
+  border: solid var(--brand-blue, #0073bb);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
   transition: transform 0.2s ease;
@@ -72,7 +64,7 @@
 
 /* --- Body --- */
 .accordion-list details .accordion-list-item-body {
-  padding: 0 0 20px;
+  padding: 0 24px 20px;
   color: var(--heading-color);
   font-size: 16px;
   line-height: 1.5;
@@ -141,17 +133,17 @@
 /* --- Desktop --- */
 @media (width >= 900px) {
   .accordion-list details summary.accordion-list-item-label {
-    padding: 24px 48px 24px 0;
-    font-size: 22px;
+    padding: 22px 56px 22px 28px;
+    font-size: 20px;
   }
 
   .accordion-list details summary.accordion-list-item-label::after {
-    right: 8px;
+    right: 28px;
     width: 14px;
     height: 14px;
   }
 
   .accordion-list details .accordion-list-item-body {
-    padding-bottom: 24px;
+    padding: 0 28px 24px;
   }
 }

@@ -6,7 +6,18 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-  [...block.children].forEach((row) => {
+  const rows = [...block.children];
+
+  // The "Disclaimers" accordion renders plain on live — a single large-title
+  // expandable header with no card background/border (unlike the blue-tinted
+  // card accordions used for Types of Life Insurance / FAQs). Flag it so the CSS
+  // can drop the card treatment.
+  const firstLabel = rows[0]?.children[0]?.textContent.trim() || '';
+  if (rows.length === 1 && /^Disclaimers$/i.test(firstLabel)) {
+    block.classList.add('accordion-list-plain');
+  }
+
+  rows.forEach((row) => {
     // decorate accordion item label
     const label = row.children[0];
     const summary = document.createElement('summary');

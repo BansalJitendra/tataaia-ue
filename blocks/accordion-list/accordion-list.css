@@ -147,3 +147,44 @@
     padding: 0 28px 24px;
   }
 }
+
+/* ============================================================================
+   Plain variant (.accordion-list-plain) — the "Disclaimers" accordion.
+   Live renders it as a large-title expandable header with NO card background,
+   border or rounded corners (unlike the blue-tinted card accordions).
+   ========================================================================== */
+.accordion-list.accordion-list-plain details.accordion-list-item {
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  overflow: visible;
+}
+
+.accordion-list.accordion-list-plain details summary.accordion-list-item-label {
+  padding: 12px 44px 12px 0;
+  font-size: 24px;
+}
+
+.accordion-list.accordion-list-plain details summary.accordion-list-item-label::after {
+  right: 6px;
+}
+
+.accordion-list.accordion-list-plain details .accordion-list-item-body {
+  padding: 0 0 16px;
+}
+
+@media (width >= 900px) {
+  .accordion-list.accordion-list-plain details summary.accordion-list-item-label {
+    padding: 14px 48px 14px 0;
+    font-size: 28px;
+  }
+
+  .accordion-list.accordion-list-plain details summary.accordion-list-item-label::after {
+    right: 8px;
+  }
+
+  .accordion-list.accordion-list-plain details .accordion-list-item-body {
+    padding: 0 0 20px;
+  }
+}

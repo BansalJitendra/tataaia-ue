@@ -1134,12 +1134,43 @@ var CustomImportScript = (() => {
         // (cleaned.html L7315, L7553)
         ".bannerPosition",
         ".ccBannerAnalyticsData",
+        // Post-footer widget chrome (hidden on live): chatbot, sticky calc button,
+        // loader gif, on-screen keyboard, date-picker calendar.
+        ".chatbot-wrapper",
+        ".chatbot-redirect",
+        ".calc-premium-btn-wrap",
+        ".ta-loader",
+        ".keyboardWrapper",
+        '[class*="keyboardWrapper"]',
+        '[class*="virtual-keyboard"]',
+        '[class*="datepicker-calendar"]',
+        '[class*="ta-datepicker-cal"]',
         // Non-authorable leftover elements
         "link",
         "noscript",
         "iframe",
         "style"
       ]);
+      const KEYBOARD_RE = /QWERTYUIOP|ASDFGHJKL|ZXCVBNM/;
+      const WEEKDAYS_RE = /Su.?Mo.?Tu.?We.?Th.?Fr.?Sa/;
+      const junkHosts = new Set();
+      element.querySelectorAll("div, p, ul").forEach((el) => {
+        const text = (el.textContent || "").replace(/\s+/g, "");
+        if (KEYBOARD_RE.test(text) || WEEKDAYS_RE.test(text)) {
+          let host = el;
+          while (host.parentElement
+            && host.parentElement !== element
+            && (host.parentElement.textContent || "").replace(/\s+/g, "") === text) {
+            host = host.parentElement;
+          }
+          junkHosts.add(host);
+        }
+      });
+      junkHosts.forEach((el) => { if (el.parentNode) el.remove(); });
+      element.querySelectorAll('img[src*="lemnisk"]').forEach((img) => {
+        const p = img.closest("p");
+        (p || img).remove();
+      });
       element.querySelectorAll("[data-cmp-data-layer], [data-analytics], [onclick]").forEach((el) => {
         el.removeAttribute("data-cmp-data-layer");
         el.removeAttribute("data-analytics");

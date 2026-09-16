@@ -106,12 +106,58 @@ export default function transform(hookName, element, payload) {
       // (cleaned.html L7315, L7553)
       '.bannerPosition',
       '.ccBannerAnalyticsData',
+
+      // --- Post-footer widget chrome (hidden on the live page) ---
+      // These sit after the footer in source and rendered into the import as a
+      // trailing default-content block (chatbot avatar, sticky "Calculate Term
+      // Premium" button, loader gif, on-screen keyboard, date-picker calendar).
+      // None are visible on the live page.
+      '.chatbot-wrapper',
+      '.chatbot-redirect',
+      '.calc-premium-btn-wrap',
+      '.ta-loader',
+      '.keyboardWrapper',
+      '[class*="keyboardWrapper"]',
+      '[class*="virtual-keyboard"]',
+      '[class*="datepicker-calendar"]',
+      '[class*="ta-datepicker-cal"]',
+
       // Non-authorable leftover elements
       'link',
       'noscript',
       'iframe',
       'style',
     ]);
+
+    // The on-screen keyboard and date-picker calendar are injected by runtime JS
+    // into class-less wrappers at the end of <body>, so no stable selector matches.
+    // Remove any leftover top-level block whose text is only keypad/calendar glyphs
+    // (e.g. "QWERTYUIOP", "January, 2000" day grids) plus tracking pixels.
+    const KEYBOARD_RE = /QWERTYUIOP|ASDFGHJKL|ZXCVBNM/;
+    const WEEKDAYS_RE = /Su.?Mo.?Tu.?We.?Th.?Fr.?Sa/;
+    // Remove the on-screen keyboard and date-picker calendar. Their glyphs may be
+    // split across sibling <p>s, so match on the enclosing container's text and
+    // remove the whole container (not just the inner element).
+    const junkHosts = new Set();
+    element.querySelectorAll('div, p, ul').forEach((el) => {
+      const text = (el.textContent || '').replace(/\s+/g, '');
+      if (KEYBOARD_RE.test(text) || WEEKDAYS_RE.test(text)) {
+        // climb to the outermost ancestor that is still "only" this junk
+        let host = el;
+        while (host.parentElement
+          && host.parentElement !== element
+          && (host.parentElement.textContent || '').replace(/\s+/g, '') === text) {
+          host = host.parentElement;
+        }
+        junkHosts.add(host);
+      }
+    });
+    junkHosts.forEach((el) => { if (el.parentNode) el.remove(); });
+    // Lemnisk / third-party tracking pixels left inline.
+    element.querySelectorAll('img[src*="lemnisk"]').forEach((img) => {
+      const p = img.closest('p');
+      (p || img).remove();
+    });
 
     // Strip AEM/analytics runtime attributes left on content nodes so the
     // import output stays clean and authorable.

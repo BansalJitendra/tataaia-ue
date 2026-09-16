@@ -75,6 +75,12 @@ export default function parse(element, { document }) {
   // table-data blocks right after the accordion — where they sit in the source.
   // The accordion block itself keeps its 2-column (summary + text) row structure.
   const hoistedTables = [];
+  // Images inside answers are likewise hoisted out (md2jcr's greedy richtext stops
+  // at an image mid-answer, breaking the item). They are re-emitted as plain
+  // default-content <picture> right after the accordion so they still render in the
+  // section (e.g. the Disclaimers fund-performance charts) without destabilising the
+  // uniform summary+text rows.
+  const hoistedImages = [];
 
   const cells = [];
   items.forEach((item) => {
@@ -108,11 +114,24 @@ export default function parse(element, { document }) {
       if (nested.length) {
         nested.forEach((t) => { hoistedTables.push(t.cloneNode(true)); t.remove(); });
       }
-      // Remove inline images/pictures from the answer richtext.
-      if (clone.tagName === 'IMG' || clone.tagName === 'PICTURE') return;
+      // Pull inline images/pictures out of the answer richtext and hoist them.
+      if (clone.tagName === 'IMG' || clone.tagName === 'PICTURE') {
+        hoistedImages.push(clone.tagName === 'PICTURE' ? clone : (() => {
+          const p = document.createElement('picture');
+          p.appendChild(clone);
+          return p;
+        })());
+        return;
+      }
       if (clone.querySelectorAll) {
         clone.querySelectorAll('picture, img').forEach((im) => {
           const pic = im.closest('picture') || im;
+          const out = pic.tagName === 'PICTURE' ? pic.cloneNode(true) : (() => {
+            const p = document.createElement('picture');
+            p.appendChild(pic.cloneNode(true));
+            return p;
+          })();
+          hoistedImages.push(out);
           if (pic.parentNode) pic.parentNode.removeChild(pic);
         });
       }
@@ -156,4 +175,23 @@ export default function parse(element, { document }) {
       block.after(tableBlock);
     }
   });
+
+  // Emit hoisted answer images as plain default-content <picture> right after the
+  // accordion (and after any hoisted tables), so they render within the section.
+  if (hoistedImages.length) {
+    const wrapper = document.createElement('div');
+    hoistedImages.forEach((pic) => {
+      const p = document.createElement('p');
+      p.appendChild(pic);
+      wrapper.appendChild(p);
+    });
+    // place after the accordion block (and its hoisted tables)
+    let anchor = block;
+    while (anchor.nextElementSibling
+      && anchor.nextElementSibling.classList
+      && anchor.nextElementSibling.classList.contains('table-data')) {
+      anchor = anchor.nextElementSibling;
+    }
+    anchor.after(...wrapper.childNodes);
+  }
 }

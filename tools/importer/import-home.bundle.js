@@ -89,6 +89,7 @@ var CustomImportScript = (() => {
       });
     }
     const hoistedTables = [];
+    const hoistedImages = [];
     const cells = [];
     items.forEach((item) => {
       if (!item.summary && !item.content.length) return;
@@ -109,13 +110,23 @@ var CustomImportScript = (() => {
         if (nested.length) {
           nested.forEach((t) => { hoistedTables.push(t.cloneNode(true)); t.remove(); });
         }
-        // Drop inline images/pictures: accordion items have only summary + text,
-        // and md2jcr's greedy richtext stops at an image mid-answer, orphaning the
-        // following nodes and failing conversion (this degraded Disclaimers).
-        if (clone.tagName === "IMG" || clone.tagName === "PICTURE") return;
+        // Pull inline images/pictures out of the answer richtext and hoist them
+        // (md2jcr's greedy richtext stops at an image mid-answer). Re-emitted as
+        // plain default-content after the accordion so they still render.
+        const toPicture = (el) => {
+          if (el.tagName === "PICTURE") return el;
+          const p = document2.createElement("picture");
+          p.appendChild(el);
+          return p;
+        };
+        if (clone.tagName === "IMG" || clone.tagName === "PICTURE") {
+          hoistedImages.push(toPicture(clone));
+          return;
+        }
         if (clone.querySelectorAll) {
           clone.querySelectorAll("picture, img").forEach((im) => {
             const pic = im.closest("picture") || im;
+            hoistedImages.push(toPicture(pic.cloneNode(true)));
             if (pic.parentNode) pic.parentNode.removeChild(pic);
           });
         }
@@ -153,6 +164,21 @@ var CustomImportScript = (() => {
         block.after(tableBlock);
       }
     });
+    if (hoistedImages.length) {
+      const wrapper = document2.createElement("div");
+      hoistedImages.forEach((pic) => {
+        const p = document2.createElement("p");
+        p.appendChild(pic);
+        wrapper.appendChild(p);
+      });
+      let anchor = block;
+      while (anchor.nextElementSibling
+        && anchor.nextElementSibling.classList
+        && anchor.nextElementSibling.classList.contains("table-data")) {
+        anchor = anchor.nextElementSibling;
+      }
+      anchor.after(...wrapper.childNodes);
+    }
   }
 
   // tools/importer/parsers/cards-article.js

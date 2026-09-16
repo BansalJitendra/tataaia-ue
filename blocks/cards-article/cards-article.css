@@ -2,19 +2,27 @@
 
 /* Values extracted from source computed styles (tataaia.com homepage blog cards). */
 
+/* Horizontal card slider (source: .things-to-know-slider) — cards sit side-by-side
+   in a scrollable row, NOT a wrapping grid. */
 .cards-article ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: nowrap;
   gap: 20px;
+  overflow: auto hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Card container — .slider-temp-wrap on source */
+/* Card container — .slider-temp-wrap on source: fixed 282px width, does not stretch */
 .cards-article li {
+  flex: 0 0 282px;
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
+  min-height: 340px;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0 0 15px 0 rgb(0 115 187 / 10%); /* brand-blue tinted shadow */
@@ -71,11 +79,11 @@
   margin: 0;
 }
 
-/* Title — .blog-car-static-anly-linkpos on source */
+/* Title — .blog-car-static-anly-linkpos on source (weight 400 on live) */
 .cards-article .cards-article-card-body h3 {
   margin: 0;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.3;
   letter-spacing: normal;
 }
@@ -101,14 +109,5 @@
   color: var(--text-color, #58595b);
 }
 
-@media (width >= 600px) {
-  .cards-article ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (width >= 900px) {
-  .cards-article ul {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+/* Slider layout is identical across breakpoints — cards keep their fixed 282px
+   width and the row scrolls horizontally (matching the source carousel). */

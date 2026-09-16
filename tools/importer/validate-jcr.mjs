@@ -48,6 +48,10 @@ if (/jcr:primaryType="cq:Page"/.test(xml)) ok('root is cq:Page'); else fail('mis
 const rawAmp = (xml.match(/&(?!amp;|lt;|gt;|quot;|apos;|#\d+;|#x[0-9a-fA-F]+;)/g) || []).length;
 if (rawAmp === 0) ok('no raw/unescaped ampersands'); else fail(`${rawAmp} raw & (unescaped) — will break XML upload`);
 
+// 3b) No leaked stub "Metadata / Title" table text (from per-section conversion).
+const stubLeak = (xml.match(/\+-+\+[\s\S]{0,60}Metadata/g) || []).length;
+if (stubLeak === 0) ok('no leaked stub metadata-table text'); else fail(`${stubLeak} leaked stub "| Metadata |" table text node(s) — will render as literal text on the page`);
+
 // 4) Every block in the imported HTML is present in the JCR.
 if (existsSync(PLAIN)) {
   const html = readFileSync(PLAIN, 'utf-8');

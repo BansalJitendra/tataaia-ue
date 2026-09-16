@@ -72,7 +72,19 @@ async function main() {
   writeFileSync(`${OUT_DIR}/index.md`, md, 'utf-8');
 
   const opts = { models, definition, filters };
-  const META = '\n\n+---+\n| Metadata |\n+===+\n| Title | T |\n+---+\n';
+  // A properly-formed GFM grid-table so md2jcr parses it as page metadata (and
+  // consumes it into jcr:content props) instead of leaking it as literal text.
+  // Border/separator widths must line up with the columns.
+  const META = [
+    '',
+    '',
+    '+-------------+-------+',
+    '| Metadata            |',
+    '+=============+=======+',
+    '| Title       | T     |',
+    '+-------------+-------+',
+    '',
+  ].join('\n');
   const escapeAmp = (s) => s.replace(/&(?!amp;|lt;|gt;|quot;|apos;|#\d+;|#x[0-9a-fA-F]+;)/g, '&amp;');
 
   // Separate the trailing image-reference definitions ("[imageN]: url") and the
@@ -112,12 +124,26 @@ async function main() {
   // conversions in the same process). A fresh subprocess per section avoids that.
   const tmpMd = `${OUT_DIR}/.section.tmp.md`;
   const sectionCli = `${REPO}/tools/importer/section2jcr.mjs`;
+  // Strip any <text> node that is just the appended stub Metadata table. md2jcr
+  // doesn't always parse the trailing stub as page metadata; when it doesn't, it
+  // leaks in as a literal "<p>+---+ | Metadata | ...</p>" text node. Remove those
+  // so the stub never reaches the published content.
+  // Remove any <text .../> node whose text attribute contains the stub
+  // "+---+ ... Metadata ... Title ... +---+" table (in any spacing/entity form).
+  // Safety net: the properly-formed META stub above is consumed as page metadata
+  // (never emitted as content), so nothing to strip. But defensively remove any
+  // stray stub text node and any resulting empty <section> so a malformed stub
+  // can never reach the published content.
+  const stripStub = (frag) => frag
+    .replace(/<text(?:_\d+)?[^>]*\btext="[^"]*\+-+\+[^"]*Metadata[^"]*"\s*\/>\s*/g, '')
+    .replace(/<section(?:_\d+)?\b[^>]*>\s*<\/section(?:_\d+)?>\s*/g, '');
   const convertChunk = (chunk) => {
     writeFileSync(tmpMd, `${chunk}\n${refsFor(chunk)}${META}`, 'utf-8');
     const frag = execFileSync('node', [sectionCli, tmpMd], {
       cwd: SCRIPTS, encoding: 'utf-8', maxBuffer: 64 * 1024 * 1024,
     });
-    return frag && frag.trim() ? frag.trim() : null;
+    const cleaned = frag && frag.trim() ? stripStub(frag.trim()) : null;
+    return cleaned && cleaned.trim() ? cleaned.trim() : null;
   };
 
   const sectionXmls = [];

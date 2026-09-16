@@ -27,6 +27,12 @@
           ]
         },
         {
+          "name": "quicklinks-toggle",
+          "instances": [
+            ".homepagewishlistcomp"
+          ]
+        },
+        {
           "name": "cards-persona",
           "instances": [
             ".term-plan-cards"
@@ -142,6 +148,18 @@
           "style": null,
           "blocks": [
             "cards-plan"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s2b",
+          "name": "Quick links persona toggle",
+          "selector": [
+            ".homepagewishlistcomp"
+          ],
+          "style": null,
+          "blocks": [
+            "quicklinks-toggle"
           ],
           "defaultContent": []
         },

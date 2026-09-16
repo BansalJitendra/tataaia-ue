@@ -155,6 +155,12 @@
     ]
   },
   {
+    "id": "quicklinks-toggle",
+    "components": [
+      "quicklinks-toggle-item"
+    ]
+  },
+  {
     "id": "table-data",
     "components": [
       "table-data-row"

@@ -1164,6 +1164,47 @@ var CustomImportScript = (() => {
     element.replaceWith(block);
   }
 
+  // tools/importer/parsers/quicklinks-toggle.js
+  function parseQuicklinksToggle(element, { document: document2 }) {
+    const lists = Array.from(element.querySelectorAll("ul"));
+    const findPrompt = (ul) => {
+      const scope = ul.closest('[class*="dropdown"], [class*="wishlist"]') || element;
+      const label = Array.from(scope.querySelectorAll("*")).find((e) => e.children.length === 0 && /^(i want to|help me to)$/i.test(e.textContent.trim()));
+      if (label) return label.textContent.trim();
+      const first = (ul.querySelector("a")?.textContent || "").toLowerCase();
+      return /buy|save|invest/.test(first) ? "I want to" : "Help me to";
+    };
+    const buildRow = (personaLabel, prompt, ul) => {
+      const labelFrag = document2.createDocumentFragment();
+      labelFrag.appendChild(document2.createComment(" field:label "));
+      labelFrag.appendChild(document2.createTextNode(personaLabel));
+      const linksFrag = document2.createDocumentFragment();
+      linksFrag.appendChild(document2.createComment(" field:links "));
+      const p = document2.createElement("p");
+      p.textContent = prompt;
+      linksFrag.appendChild(p);
+      linksFrag.appendChild(ul.cloneNode(true));
+      return [labelFrag, linksFrag];
+    };
+    const mapped = lists.map((ul) => ({ prompt: findPrompt(ul), ul })).filter((m) => m.ul.querySelector("a"));
+    const wantList = mapped.find((m) => /want/i.test(m.prompt));
+    const helpList = mapped.find((m) => /help/i.test(m.prompt));
+    const cells = [];
+    if (wantList) cells.push(buildRow("I am a new customer", wantList.prompt || "I want to", wantList.ul));
+    if (helpList) cells.push(buildRow("Existing customer", helpList.prompt || "Help me to", helpList.ul));
+    if (!cells.length) {
+      mapped.forEach((m, i) => {
+        cells.push(buildRow(i === 0 ? "I am a new customer" : "Existing customer", m.prompt, m.ul));
+      });
+    }
+    if (!cells.length) {
+      element.remove();
+      return;
+    }
+    const block = WebImporter.Blocks.createBlock(document2, { name: "quicklinks-toggle", cells });
+    element.replaceWith(block);
+  }
+
   // tools/importer/transformers/tataaia-cleanup.js
   var TransformHook = {
     beforeTransform: "beforeTransform",
@@ -1357,7 +1398,8 @@ var CustomImportScript = (() => {
     "hero-promo": parse14,
     "quote-callout": parse15,
     "table-data": parse16,
-    "tabs-links": parse17
+    "tabs-links": parse17,
+    "quicklinks-toggle": parseQuicklinksToggle
   };
   var PAGE_TEMPLATE = {
     "name": "home",
@@ -1382,6 +1424,12 @@ var CustomImportScript = (() => {
         "name": "cards-plan",
         "instances": [
           ".bannerSectionCategoryCards"
+        ]
+      },
+      {
+        "name": "quicklinks-toggle",
+        "instances": [
+          ".homepagewishlistcomp"
         ]
       },
       {
@@ -1499,6 +1547,18 @@ var CustomImportScript = (() => {
         "style": null,
         "blocks": [
           "cards-plan"
+        ],
+        "defaultContent": []
+      },
+      {
+        "id": "s2b",
+        "name": "Quick links persona toggle",
+        "selector": [
+          ".homepagewishlistcomp"
+        ],
+        "style": null,
+        "blocks": [
+          "quicklinks-toggle"
         ],
         "defaultContent": []
       },

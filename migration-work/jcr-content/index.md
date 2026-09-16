@@ -7,13 +7,13 @@
 |                            |                                                                                                                                                                                              |
 | ![][image1]                | In this policy, the investment risk in the investment portfolio will be borne by the policyholder.                                                                                           |
 |                            |                                                                                                                                                                                              |
-|                            | NEW FUND OFFER                                                                                                                                                                               |
+|                            | New Fund Offer                                                                                                                                                                               |
 |                            |                                                                                                                                                                                              |
 |                            | 18.20% 5-year Tax-free<sup>2</sup> Index Returns<sup>1</sup>                                                                                                                                 |
 |                            |                                                                                                                                                                                              |
 |                            | Momentum \+ Value                                                                                                                                                                            |
 |                            |                                                                                                                                                                                              |
-|                            | Closes on 30ᵗʰ Sep'26                                                                                                                                                                        |
+|                            | Closes on 30<sup>th</sup> Sep'26                                                                                                                                                             |
 |                            |                                                                                                                                                                                              |
 |                            | <sup>1</sup>18\.20% is the 5-year CAGR of BSE 500 Momentum Value Index Fund Benchmark. T\&C apply. Past                                                                                      |
 |                            | performance is not indicative of future performance. The linked insurance <u>Read More</u>**product do                                                                                       |
@@ -115,33 +115,31 @@
 Life cover included.<sup>1b</sup>20 year old female (Standard Life, Non-Smoker), regular pay, 20 year policy term. <sup>1f</sup>5 year returns of Tata AIA Multi Cap Fund as of Apr’26. Benchmark: 12.01%. Past performance is not indicative of future performance. <sup>1g</sup>T\&C apply.\
 L\&C/Advt/2026/Jul/4466
 
-![][image10]
+---
 
-I am a new customer
-
-Existing customer
-
-Help me to
-
-Manage policy
-
-- [Manage policy](/customer-service/policy-servicing.html)
-- [Get in touch](/contact-us.html?contactUs-1)
-- [Pay premium](/customer-service/online-insurance-premium-payment.html)
-- [Submit a claim](/customer-service/easy-claims.html)
-- [File a complaint](/customer-service/register-a-complaint.html)
-
-[![Right Arrow][image11]](https://www.tataaia.com/customer-service/policy-servicing.html)
-
-I want to
-
-- [Buy a term plan](https://sellonline.tataaia.com/app/products?product=SRP\&campaign=BO\&camcode=2001\&cid=website:link:homepageiwanttodropdown::sampoornarakshapromise:buytermplan:2001\&sourcePage=https://www.tataaia.com/)
-- [Save for my child’s future](/life-insurance-plans/savings-solutions/child-savings-plan.html?utm_campaign=homepage_iwantto)
-- [Buy a high life cover + wealth plan](https://sellonline.tataaia.com/app/products?product=SSRS\&campaign=BO\&camcode=2001\&cid=website:link:homepageiwanttodropdown::paramrakshalifeproplus:buylifecoverwithwealthplan:2001\&sourcePage=https://www.tataaia.com/)
-- [Buy a guaranteed long-term returns plan](https://sellonline.tataaia.com/app/products?product=FGP\&campaign=BO\&camcode=2001\&cid=website:link:homepageiwanttodropdown::fortuneguaranteesupreme:buyguaranteedreturnsplan:2001\&sourcePage=https://www.tataaia.com/)
-- [Buy a retirement plan](https://sellonline.tataaia.com/app/products?product=SPS\&campaign=BO\&camcode=2001\&cid=website:link:homepageiwanttodropdown::smartpensionsecure:buyretirementplan:2001\&sourcePage=https://www.tataaia.com/)
-
-[![Right Arrow][image11]](https://sellonline.tataaia.com/app/products?product=SRP\&campaign=BO\&camcode=2001\&cid=website:link:homepageiwanttodropdown::sampoornarakshapromise:buytermplan:2001\&sourcePage=https://www.tataaia.com/)
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Quicklinks Toggle                                                                                                                                                                                                                                                                            |
++======================+=======================================================================================================================================================================================================================================================================+
+| <!-- field:label --> | <!-- field:links -->                                                                                                                                                                                                                                                  |
+|                      |                                                                                                                                                                                                                                                                       |
+| I am a new customer  | I want to                                                                                                                                                                                                                                                             |
+|                      |                                                                                                                                                                                                                                                                       |
+|                      | - [Buy a term plan](https://sellonline.tataaia.com/app/products?product=SRP\&campaign=BO\&camcode=2001\&cid=website:link:homepageiwanttodropdown::sampoornarakshapromise:buytermplan:2001\&sourcePage=https://www.tataaia.com/)                                       |
+|                      | - [Save for my child’s future](/life-insurance-plans/savings-solutions/child-savings-plan.html?utm_campaign=homepage_iwantto)                                                                                                                                         |
+|                      | - [Buy a high life cover \+ wealth plan](https://sellonline.tataaia.com/app/products?product=SSRS\&campaign=BO\&camcode=2001\&cid=website:link:homepageiwanttodropdown::paramrakshalifeproplus:buylifecoverwithwealthplan:2001\&sourcePage=https://www.tataaia.com/)  |
+|                      | - [Buy a guaranteed long-term returns plan](https://sellonline.tataaia.com/app/products?product=FGP\&campaign=BO\&camcode=2001\&cid=website:link:homepageiwanttodropdown::fortuneguaranteesupreme:buyguaranteedreturnsplan:2001\&sourcePage=https://www.tataaia.com/) |
+|                      | - [Buy a retirement plan](https://sellonline.tataaia.com/app/products?product=SPS\&campaign=BO\&camcode=2001\&cid=website:link:homepageiwanttodropdown::smartpensionsecure:buyretirementplan:2001\&sourcePage=https://www.tataaia.com/)                               |
++----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| <!-- field:label --> | <!-- field:links -->                                                                                                                                                                                                                                                  |
+|                      |                                                                                                                                                                                                                                                                       |
+| Existing customer    | Help me to                                                                                                                                                                                                                                                            |
+|                      |                                                                                                                                                                                                                                                                       |
+|                      | - [Manage policy](/customer-service/policy-servicing.html)                                                                                                                                                                                                            |
+|                      | - [Get in touch](/contact-us.html?contactUs-1)                                                                                                                                                                                                                        |
+|                      | - [Pay premium](/customer-service/online-insurance-premium-payment.html)                                                                                                                                                                                              |
+|                      | - [Submit a claim](/customer-service/easy-claims.html)                                                                                                                                                                                                                |
+|                      | - [File a complaint](/customer-service/register-a-complaint.html)                                                                                                                                                                                                     |
++----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ---
 
@@ -395,19 +393,19 @@ I want to
 +============================+============================================================================================================================================+
 | <!-- field:media_image --> | <!-- field:text -->                                                                                                                        |
 |                            |                                                                                                                                            |
-| ![icon1][image12]          | ### [Term insurance for women](/life-insurance-plans/life-insurance-for-women.html?utm_campaign=homepage_insuranceplansforall)             |
+| ![icon1][image10]          | ### [Term insurance for women](/life-insurance-plans/life-insurance-for-women.html?utm_campaign=homepage_insuranceplansforall)             |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                                                                        |
 |                            |                                                                                                                                            |
-| ![image2][image13]         | ### [Life Insurance for NRI](/life-insurance-plans/nri-life-insurance-plans.html?utm_campaign=homepage_insuranceplansforall)               |
+| ![image2][image11]         | ### [Life Insurance for NRI](/life-insurance-plans/nri-life-insurance-plans.html?utm_campaign=homepage_insuranceplansforall)               |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                                                                        |
 |                            |                                                                                                                                            |
-| ![image3][image14]         | ### [₹1 Crore Term plan](/life-insurance-plans/term-insurance/1-crore-term-insurance-plan.html?utm_campaign=homepage_insuranceplansforall) |
+| ![image3][image12]         | ### [₹1 Crore Term plan](/life-insurance-plans/term-insurance/1-crore-term-insurance-plan.html?utm_campaign=homepage_insuranceplansforall) |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                                                                        |
 |                            |                                                                                                                                            |
-| ![image4][image15]         | ### [Investment plans](/life-insurance-plans/investment-plans.html?utm_campaign=homepage_insuranceplansforall)                             |
+| ![image4][image13]         | ### [Investment plans](/life-insurance-plans/investment-plans.html?utm_campaign=homepage_insuranceplansforall)                             |
 +----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 ---
@@ -419,27 +417,27 @@ I want to
 +============================+===========================================================================================+
 | <!-- field:media_image --> | <!-- field:text -->                                                                       |
 |                            |                                                                                           |
-| ![pay][image16]            | ### [Pay premium](https://myinsurance.tataaia.com/portfolio/login?target=50)              |
+| ![pay][image14]            | ### [Pay premium](https://myinsurance.tataaia.com/portfolio/login?target=50)              |
 +----------------------------+-------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                       |
 |                            |                                                                                           |
-| ![Download][image17]       | ### [Download statement](/premium-payment/download-statement.html?id=premiumReceiptCerti) |
+| ![Download][image15]       | ### [Download statement](/premium-payment/download-statement.html?id=premiumReceiptCerti) |
 +----------------------------+-------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                       |
 |                            |                                                                                           |
-| ![Register][image18]       | ### [Register claim](/customer-service/claim-registration.html)                           |
+| ![Register][image16]       | ### [Register claim](/customer-service/claim-registration.html)                           |
 +----------------------------+-------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                       |
 |                            |                                                                                           |
-| ![raise][image19]          | ### [Raise service request](https://myinsurance.tataaia.com)                              |
+| ![raise][image17]          | ### [Raise service request](https://myinsurance.tataaia.com)                              |
 +----------------------------+-------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                       |
 |                            |                                                                                           |
-| ![raise][image20]          | ### [Raise a complaint](/customer-service/grievance-redressal.html)                       |
+| ![raise][image18]          | ### [Raise a complaint](/customer-service/grievance-redressal.html)                       |
 +----------------------------+-------------------------------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                                       |
 |                            |                                                                                           |
-| ![LoginLogin][image21]     | ### [Login to my account](https://myinsurance.tataaia.com/)                               |
+| ![LoginLogin][image19]     | ### [Login to my account](https://myinsurance.tataaia.com/)                               |
 +----------------------------+-------------------------------------------------------------------------------------------+
 
 ---
@@ -451,13 +449,13 @@ I want to
 +============================+====================================================================+
 | <!-- field:media_image --> | <!-- field:text -->                                                |
 |                            |                                                                    |
-| ![image1][image22]         | ### Plan your financial future as per **your unique personality.** |
+| ![image1][image20]         | ### Plan your financial future as per **your unique personality.** |
 |                            |                                                                    |
 |                            | [Take Personality Quiz](/financial-personality-test.html)          |
 +----------------------------+--------------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                                                |
 |                            |                                                                    |
-| ![image2][image23]         | ### Choose a plan that best suits **your future goals.**           |
+| ![image2][image21]         | ### Choose a plan that best suits **your future goals.**           |
 |                            |                                                                    |
 |                            | [Take Suitability Test](/suitabilitytest.html)                     |
 +----------------------------+--------------------------------------------------------------------+
@@ -471,26 +469,26 @@ Awards & Recognition
 +============================+==========================+
 | <!-- field:media_image --> | <!-- field:text -->      |
 |                            |                          |
-| ![slider1][image24]        | Kincentric Best Employer |
+| ![slider1][image22]        | Kincentric Best Employer |
 |                            |                          |
 |                            | – 8 Years                |
 +----------------------------+--------------------------+
 | <!-- field:media_image --> | <!-- field:text -->      |
 |                            |                          |
-| ![slider2][image25]        | Great Place to Work      |
+| ![slider2][image23]        | Great Place to Work      |
 +----------------------------+--------------------------+
 | <!-- field:media_image --> | <!-- field:text -->      |
 |                            |                          |
-| ![slider3][image26]        | Innovista Award          |
+| ![slider3][image24]        | Innovista Award          |
 +----------------------------+--------------------------+
 | <!-- field:media_image --> | <!-- field:text -->      |
 |                            |                          |
-| ![slider4][image27]        | ET Brand Equity Award    |
+| ![slider4][image25]        | ET Brand Equity Award    |
 +----------------------------+--------------------------+
 
-![prevoius-arrow][image28]
+![prevoius-arrow][image26]
 
-![next-arrow][image29]
+![next-arrow][image27]
 
 ---
 
@@ -511,7 +509,7 @@ Awards & Recognition
 +============================+============================================================+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image30]               | ### Swapnil Vartak                                         |
+| ![][image28]               | ### Swapnil Vartak                                         |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -522,7 +520,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image31]               | ### Simran Yadav                                           |
+| ![][image29]               | ### Simran Yadav                                           |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -533,7 +531,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image32]               | ### Mahesh Gaikar                                          |
+| ![][image30]               | ### Mahesh Gaikar                                          |
 |                            |                                                            |
 |                            | Value Income Plan 12 Nov 2022                              |
 |                            |                                                            |
@@ -543,7 +541,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image33]               | ### Jatin Zala                                             |
+| ![][image31]               | ### Jatin Zala                                             |
 |                            |                                                            |
 |                            | Sampoorna Raksha 17 Dec 2024                               |
 |                            |                                                            |
@@ -553,7 +551,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image34]               | ### Shweta Ghag                                            |
+| ![][image32]               | ### Shweta Ghag                                            |
 |                            |                                                            |
 |                            | Pro-Fit 27 June 2024                                       |
 |                            |                                                            |
@@ -563,7 +561,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image35]               | ### Meena Chaudhari                                        |
+| ![][image33]               | ### Meena Chaudhari                                        |
 |                            |                                                            |
 |                            | Smart Health 28 June 2024                                  |
 |                            |                                                            |
@@ -574,7 +572,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image36]               | ### Nilesh Sharma                                          |
+| ![][image34]               | ### Nilesh Sharma                                          |
 |                            |                                                            |
 |                            | Maha Raksha Supreme 12 June 2020                           |
 |                            |                                                            |
@@ -584,7 +582,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image37]               | ### Dimple Aadin                                           |
+| ![][image35]               | ### Dimple Aadin                                           |
 |                            |                                                            |
 |                            | Savings Plan 12 Dec 2024                                   |
 |                            |                                                            |
@@ -593,7 +591,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image38]               | ### Pooja Haria                                            |
+| ![][image36]               | ### Pooja Haria                                            |
 |                            |                                                            |
 |                            | Param Raksha 19 Nov 2022                                   |
 |                            |                                                            |
@@ -603,7 +601,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image39]               | ### Kanchan Sharma                                         |
+| ![][image37]               | ### Kanchan Sharma                                         |
 |                            |                                                            |
 |                            | Sampoorna Raksha 12 Dec 2024                               |
 |                            |                                                            |
@@ -612,7 +610,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image40]               | ### Dinesh Ahuja                                           |
+| ![][image38]               | ### Dinesh Ahuja                                           |
 |                            |                                                            |
 |                            | Multiple Policies2 May 2025                                |
 |                            |                                                            |
@@ -622,7 +620,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image41]               | ### Amin                                                   |
+| ![][image39]               | ### Amin                                                   |
 |                            |                                                            |
 |                            | Multiple Policies2 May 2025                                |
 |                            |                                                            |
@@ -632,7 +630,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image42]               | ### Sunita Mandal                                          |
+| ![][image40]               | ### Sunita Mandal                                          |
 |                            |                                                            |
 |                            | Maha Raksha Supreme Select15 May 2025                      |
 |                            |                                                            |
@@ -642,7 +640,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image43]               | ### Maushmi                                                |
+| ![][image41]               | ### Maushmi                                                |
 |                            |                                                            |
 |                            | Smart Income Plus 6 May 2025                               |
 |                            |                                                            |
@@ -652,7 +650,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image44]               | ### Kala R                                                 |
+| ![][image42]               | ### Kala R                                                 |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -665,7 +663,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image45]               | ### Akash Jai Singh                                        |
+| ![][image43]               | ### Akash Jai Singh                                        |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -677,7 +675,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image46]               | ### Sumeet Nayak                                           |
+| ![][image44]               | ### Sumeet Nayak                                           |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -689,7 +687,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image47]               | ### Anita Diwadkar                                         |
+| ![][image45]               | ### Anita Diwadkar                                         |
 |                            |                                                            |
 |                            | Invest Assure Gold 12 Dec 2024                             |
 |                            |                                                            |
@@ -698,7 +696,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image48]               | ### Pearlann Serrao                                        |
+| ![][image46]               | ### Pearlann Serrao                                        |
 |                            |                                                            |
 |                            | MahaLife Gold                                              |
 |                            |                                                            |
@@ -707,7 +705,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image49]               | ### Vivek Upadhyay                                         |
+| ![][image47]               | ### Vivek Upadhyay                                         |
 |                            |                                                            |
 |                            | Param Raksha 2.0 12 Dec 2024                               |
 |                            |                                                            |
@@ -717,7 +715,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image50]               | ### Aniket Gaikwad                                         |
+| ![][image48]               | ### Aniket Gaikwad                                         |
 |                            |                                                            |
 |                            | Fortune Guarantee Plus 21 Mar 2024                         |
 |                            |                                                            |
@@ -726,7 +724,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image51]               | ### Jeetendra Dhiman                                       |
+| ![][image49]               | ### Jeetendra Dhiman                                       |
 |                            |                                                            |
 |                            | Sampoorna Raksha 12 Dec 2024                               |
 |                            |                                                            |
@@ -735,7 +733,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image52]               | ### Amit Pravin Taralkar                                   |
+| ![][image50]               | ### Amit Pravin Taralkar                                   |
 |                            |                                                            |
 |                            | Fortune Guarantee Pension 12 Dec 2024                      |
 |                            |                                                            |
@@ -743,7 +741,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image53]               | ### Meena Bhatia                                           |
+| ![][image51]               | ### Meena Bhatia                                           |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -756,7 +754,7 @@ Awards & Recognition
 +----------------------------+------------------------------------------------------------+
 | <!-- field:media_image --> | <!-- field:content_text -->                                |
 |                            |                                                            |
-| ![][image54]               | ### Nitin Vishwakarma                                      |
+| ![][image52]               | ### Nitin Vishwakarma                                      |
 |                            |                                                            |
 |                            | Tata AIA                                                   |
 |                            |                                                            |
@@ -776,39 +774,39 @@ Awards & Recognition
 +============================+========================================+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon][image55]           | ### 1.4 Lakh Crore\+                   |
+| ![icon][image53]           | ### 1.4 Lakh Crore\+                   |
 |                            |                                        |
 |                            | Assets Under Management\               |
 |                            | (AUM)<sup>4a</sup>                     |
 +----------------------------+----------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon2][image56]          | ### 9 Lakh Crore\+                     |
+| ![icon2][image54]          | ### 9 Lakh Crore\+                     |
 |                            |                                        |
 |                            | \#1 in Retail Sum Assured<sup>4b</sup> |
 +----------------------------+----------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon3][image57]          | ### 98 Lakh\+                          |
+| ![icon3][image55]          | ### 98 Lakh\+                          |
 |                            |                                        |
 |                            | Families protected so far<sup>4c</sup> |
 +----------------------------+----------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon4][image58]          | ### 600\+ Branches                     |
+| ![icon4][image56]          | ### 600\+ Branches                     |
 |                            |                                        |
 |                            | Presence across major cities in India  |
 +----------------------------+----------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon5][image59]          | ### 99.45%                             |
+| ![icon5][image57]          | ### 99.45%                             |
 |                            |                                        |
 |                            | Individual Death Claim\                |
 |                            | Settlement Ratio<sup>4d</sup>          |
 +----------------------------+----------------------------------------+
 | <!-- field:media_image --> | <!-- field:text -->                    |
 |                            |                                        |
-| ![icon6][image60]          | ### 4 Hours                            |
+| ![icon6][image58]          | ### 4 Hours                            |
 |                            |                                        |
 |                            | Express Claim Settlement<sup>4e</sup>  |
 +----------------------------+----------------------------------------+
@@ -820,27 +818,27 @@ Awards & Recognition
 +=======================================+===============================+
 | <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
 |                                       |                               |
-| ![Unclaimed Insurance Funds][image61] | Unclaimed Insurance Funds     |
+| ![Unclaimed Insurance Funds][image59] | Unclaimed Insurance Funds     |
 +---------------------------------------+-------------------------------+
 | <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
 |                                       |                               |
-| ![APK][image62]                       | APK                           |
+| ![APK][image60]                       | APK                           |
 +---------------------------------------+-------------------------------+
 | <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
 |                                       |                               |
-| ![Extended image][image63]            | Extended image                |
+| ![Extended image][image61]            | Extended image                |
 +---------------------------------------+-------------------------------+
 | <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
 |                                       |                               |
-| ![Bima Bharosa][image64]              | Bima Bharosa                  |
+| ![Bima Bharosa][image62]              | Bima Bharosa                  |
 +---------------------------------------+-------------------------------+
 | <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
 |                                       |                               |
-| ![Bima Bharosa][image65]              | Bima Bharosa                  |
+| ![Bima Bharosa][image63]              | Bima Bharosa                  |
 +---------------------------------------+-------------------------------+
 | <!-- field:media_image -->            | <!-- field:media_imageAlt --> |
 |                                       |                               |
-| ![1600 Series][image66]               | 1600 Series                   |
+| ![1600 Series][image64]               | 1600 Series                   |
 +---------------------------------------+-------------------------------+
 
 ---
@@ -1312,7 +1310,7 @@ Awards & Recognition
 |                                                          |   Life insurance will not cover your death caused while involved in criminal activities.                                                                                                                                                                                                                                                                                                                                          |
 +----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-![bar chart of Individual death claim settlement ratio from 2020 to 2025, showing an upwards graph][image67]
+![bar chart of Individual death claim settlement ratio from 2020 to 2025, showing an upwards graph][image65]
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
 | Table Data                                                                                                                          |
@@ -1346,7 +1344,7 @@ Awards & Recognition
 | **Certified support availability** - IRDAI-approved assistance            | Yes                        | Yes                        |
 +---------------------------------------------------------------------------+----------------------------+----------------------------+
 
-![tata aia][image68]
+![tata aia][image66]
 
 ## Tata AIA Life Insurance
 
@@ -1689,15 +1687,15 @@ L\&C/Advt/2026/Jul/4249
 +=====================================================================================+===================================================================================================================+
 | <!-- field:media_image -->                                                          | <!-- field:content_text -->                                                                                       |
 |                                                                                     |                                                                                                                   |
-| ![What's the Best Shield against Emergencies?][image69]                             | [What's the Best Shield against Emergencies?](https://youtube.com/shorts/Rx8X_Pjsaew)                             |
+| ![What's the Best Shield against Emergencies?][image67]                             | [What's the Best Shield against Emergencies?](https://youtube.com/shorts/Rx8X_Pjsaew)                             |
 +-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:content_text -->                                                                                       |
 |                                                                                     |                                                                                                                   |
-| ![Life Insurance - The Dual Purpose Financial Tool you need to know about][image70] | [Life Insurance - The Dual Purpose Financial Tool you need to know about](https://youtube.com/shorts/WyZKqzxQkUg) |
+| ![Life Insurance - The Dual Purpose Financial Tool you need to know about][image68] | [Life Insurance - The Dual Purpose Financial Tool you need to know about](https://youtube.com/shorts/WyZKqzxQkUg) |
 +-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:content_text -->                                                                                       |
 |                                                                                     |                                                                                                                   |
-| ![Why should women join Life Insurance?][image71]                                   | [Why should women join Life Insurance?](<https://youtube.com/shorts/u2V-M_cayqE >)                                |
+| ![Why should women join Life Insurance?][image69]                                   | [Why should women join Life Insurance?](<https://youtube.com/shorts/u2V-M_cayqE >)                                |
 +-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
 
 ---
@@ -1715,89 +1713,89 @@ L\&C/Advt/2026/Jul/4249
 +=====================================================================================+===========================================================================================================================================================================+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![image][image72]                                                                   | Life Insurance                                                                                                                                                            |
+| ![image][image70]                                                                   | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [How Simple Is It To Buy A Life Insurance Policy? \| Tata AIA Blog](/blogs/life-insurance/how-simple-is-it-to-buy-a-life-insurance-policy.html)                       |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![image][image73]                                                                   | Life Insurance                                                                                                                                                            |
+| ![image][image71]                                                                   | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Types of Life Insurance - A Complete Guide](/blogs/life-insurance/complete-guide-to-types-of-life-insurance.html)                                                    |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![image][image74]                                                                   | Life Insurance                                                                                                                                                            |
+| ![image][image72]                                                                   | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [What Are the Different Types of Whole Life Insurance Policies?](/blogs/life-insurance/what-are-the-different-types-of-whole-life-insurance-policies.html)            |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![image][image75]                                                                   | Life Insurance                                                                                                                                                            |
+| ![image][image73]                                                                   | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [4 Steps to Buy Life Insurance Plan With Your Smartphone](/blogs/life-insurance/4-steps-to-buy-life-insurance-plan-with-your-smartphone2.html)                        |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![image][image76]                                                                   | Life Insurance                                                                                                                                                            |
+| ![image][image74]                                                                   | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [4 Ways to Calculate Coverage of Your Life Insurance Policy](/blogs/life-insurance/4-ways-to-calculate-coverage-of-your-life-insurance-policy.html)                   |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![calculator, showing tax savings, surrounded by money][image77]                    | ### [How To Save Tax With Insurance Policy?](/knowledge-centre/how-to-save-income-tax-with-insurance-policy.html)                                                         |
+| ![calculator, showing tax savings, surrounded by money][image75]                    | ### [How To Save Tax With Insurance Policy?](/knowledge-centre/how-to-save-income-tax-with-insurance-policy.html)                                                         |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of Life insurance][image78]                                           | Life Insurance                                                                                                                                                            |
+| ![Stock image of Life insurance][image76]                                           | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Everything Important to Know About Death Benefits of Life Insurance](/blogs/life-insurance/everything-important-to-know-about-death-benefits-of-life-insurance.html) |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of man saving up money][image79]                                      | Life Insurance                                                                                                                                                            |
+| ![Stock image of man saving up money][image77]                                      | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Will Savings Be Enough for Your Loved Ones if Tomorrow Never Comes?](/blogs/life-insurance/will-savings-be-enough-for-your-loved-ones-if-tomorrow-never-comes.html)  |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of person placing blocks, in an upwards trend][image80]               | Life Insurance                                                                                                                                                            |
+| ![Stock image of person placing blocks, in an upwards trend][image78]               | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [What are the Benefits of a Term Plan with Return of Premium?](/blogs/term-insurance/what-are-the-benefits-of-a-term-plan-with-return-of-premium.html)                |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of Life insurance on an umbrella, saving a family from rain][image81] | Life Insurance                                                                                                                                                            |
+| ![Stock image of Life insurance on an umbrella, saving a family from rain][image79] | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Term Insurance Tax Benefits & Refund Details \| Tata AIA Blog](/blogs/life-insurance/term-insurance-tax-benefits-and-refund-details.html)                            |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image representing annuity][image82]                                        | Life Insurance                                                                                                                                                            |
+| ![Stock image representing annuity][image80]                                        | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [How can annuity plans offer you steady income?](/blogs/life-insurance/how-can-annuity-plans-offer-you-steady-income.html)                                            |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image showing Life insurance][image83]                                      | Life Insurance                                                                                                                                                            |
+| ![Stock image showing Life insurance][image81]                                      | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [10 Reasons You Must Read Your Life Insurance Policy Carefully](/blogs/life-insurance/10-reasons-to-read-life-insurance-policy-carefully.html)                        |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image representing insurance claims][image84]                               | Life Insurance                                                                                                                                                            |
+| ![Stock image representing insurance claims][image82]                               | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Why Your Life Insurance Claim Cannot Be Rejected So Easily](/blogs/life-insurance/why-life-insurance-claim-cannot-be-rejected-so-easily.html)                        |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of a man celebrating][image85]                                        | Life Insurance                                                                                                                                                            |
+| ![Stock image of a man celebrating][image83]                                        | Life Insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Guaranteed Income Plans: Why Should You Buy This?](/blogs/life-insurance/why-should-you-buy-guaranteed-income-plans.html)                                            |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | <!-- field:media_image -->                                                          | <!-- field:text -->                                                                                                                                                       |
 |                                                                                     |                                                                                                                                                                           |
-| ![Stock image of family with insurance policies][image86]                           | Life insurance                                                                                                                                                            |
+| ![Stock image of family with insurance policies][image84]                           | Life insurance                                                                                                                                                            |
 |                                                                                     |                                                                                                                                                                           |
 |                                                                                     | ### [Life Insurance TYPES OF ULIP PLANS: WHICH ONE SHOULD YOU BUY?](/blogs/ulip/different-types-of-ulip-plans.html)                                                       |
 +-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2472,11 +2470,11 @@ Last updated on 16<sup>th</sup> Sept 2026
 |                        |   - Past performance is not indicative of future performance.     |
 +------------------------+-------------------------------------------------------------------+
 
+![][image85]
+
+![][image86]
+
 ![][image87]
-
-![][image88]
-
-![][image89]
 
 ---
 
@@ -2492,7 +2490,7 @@ Last updated on 16<sup>th</sup> Sept 2026
 |             | insurance like term, ulip, savings, investment &          |
 |             | retirement plans.                                         |
 +-------------+-----------------------------------------------------------+
-| Image       | ![Buy Life Insurance with Tata AIA][image90]              |
+| Image       | ![Buy Life Insurance with Tata AIA][image88]              |
 +-------------+-----------------------------------------------------------+
 
 [image0]: https://www.tataaia.com/content/tataaialifeinsurancecompanylimited/en/homepage/_jcr_content/root/responsivegrid/container_1628882372/leadproxyteaser.img.png/1773681683908.png
@@ -2515,164 +2513,160 @@ Last updated on 16<sup>th</sup> Sept 2026
 
 [image9]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-first-fold/group-three.png
 
-[image10]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/hard-code-icons/common-icons/check-circle.svg
+[image10]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2.coreimg.png/1781784684425/image1.png
 
-[image11]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Right-Arrow-red.svg
+[image11]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy.coreimg.png/1781781300616/image2.png
 
-[image12]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2.coreimg.png/1781784684425/image1.png
+[image12]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy_495815520.coreimg.png/1781781317662/image3.png
 
-[image13]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy.coreimg.png/1781781300616/image2.png
+[image13]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy_520581843.coreimg.png/1781781331329/image4.png
 
-[image14]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy_495815520.coreimg.png/1781781317662/image3.png
+[image14]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy.coreimg.svg/1754945974266/icon-pay-premium.svg
 
-[image15]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_886655510/container/proxyteaserv2_copy_520581843.coreimg.png/1781781331329/image4.png
+[image15]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_1261577590.coreimg.svg/1754945984403/icon-download-premium.svg
 
-[image16]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy.coreimg.svg/1754945974266/icon-pay-premium.svg
+[image16]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_1842855145.coreimg.svg/1754945996764/icon-register-claim.svg
 
-[image17]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_1261577590.coreimg.svg/1754945984403/icon-download-premium.svg
+[image17]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_347414094.coreimg.svg/1754946010445/icon-raise-service-request.svg
 
-[image18]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_1842855145.coreimg.svg/1754945996764/icon-register-claim.svg
+[image18]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_347414.coreimg.svg/1764768565946/register-a-complaint.svg
 
-[image19]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_347414094.coreimg.svg/1754946010445/icon-raise-service-request.svg
+[image19]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2.coreimg.png/1754946019342/login.png
 
-[image20]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2_copy_347414.coreimg.svg/1764768565946/register-a-complaint.svg
+[image20]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_405398028/container/proxyteaserv2.coreimg.png/1781781441429/banner1.png
 
-[image21]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_162734292/container/teaserv2.coreimg.png/1754946019342/login.png
+[image21]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_405398028/container/proxyteaserv2_982284627.coreimg.png/1781784715649/vision-success-ideas-businessmans-perspective-future.png
 
-[image22]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_405398028/container/proxyteaserv2.coreimg.png/1781781441429/banner1.png
+[image22]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser.coreimg.svg/1781781736319/slider1.svg
 
-[image23]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_405398028/container/proxyteaserv2_982284627.coreimg.png/1781784715649/vision-success-ideas-businessmans-perspective-future.png
+[image23]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_4095735.coreimg.png/1781781743730/frame-1000010093.png
 
-[image24]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser.coreimg.svg/1781781736319/slider1.svg
+[image24]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_396644274.coreimg.png/1781781754363/frame-1000010095.png
 
-[image25]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_4095735.coreimg.png/1781781743730/frame-1000010093.png
+[image25]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_1386845038.coreimg.png/1781781761064/frame-1000010094.png
 
-[image26]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_396644274.coreimg.png/1781781754363/frame-1000010095.png
+[image26]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/Button1.png
 
-[image27]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_501480085_/leadproxyv2teaser_1386845038.coreimg.png/1781781761064/frame-1000010094.png
+[image27]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/Button2.png
 
-[image28]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/Button1.png
+[image28]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Swapnil-Vartak.png
 
-[image29]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/Button2.png
+[image29]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Simran-Yadav.png
 
-[image30]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Swapnil-Vartak.png
+[image30]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Mahesh-Gaikar.png
 
-[image31]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Simran-Yadav.png
+[image31]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Jatin-Zala.png
 
-[image32]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Mahesh-Gaikar.png
+[image32]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Shweta-Ghag.png
 
-[image33]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Jatin-Zala.png
+[image33]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Meena-Chaudhari.png
 
-[image34]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Shweta-Ghag.png
+[image34]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Nilesh-Kumar.png
 
-[image35]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Meena-Chaudhari.png
+[image35]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Dimple-Amin.png
 
-[image36]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Nilesh-Kumar.png
+[image36]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Pooja-Haria.png
 
-[image37]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Dimple-Amin.png
+[image37]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/desktop-Kanchan-Sharma.png
 
-[image38]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Pooja-Haria.png
+[image38]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Dinesh-Ahuja.png
 
-[image39]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/desktop-Kanchan-Sharma.png
+[image39]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Amin-Yusaf-Jivani.png
 
-[image40]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Dinesh-Ahuja.png
+[image40]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Sunita-Mandal.png
 
-[image41]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Amin-Yusaf-Jivani.png
+[image41]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Maushmi-Dutt.png
 
-[image42]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Sunita-Mandal.png
+[image42]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Kala-R.png
 
-[image43]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Maushmi-Dutt.png
+[image43]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Akash-Jai-Singh.png
 
-[image44]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Kala-R.png
+[image44]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Sumeet-Nayak.png
 
-[image45]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Akash-Jai-Singh.png
+[image45]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Anita-Diwadkar.png
 
-[image46]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Sumeet-Nayak.png
+[image46]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Pearlann-Serro.png
 
-[image47]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Anita-Diwadkar.png
+[image47]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Vivek-Upadhyay.png
 
-[image48]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Pearlann-Serro.png
+[image48]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Aniket-Gaikwad.png
 
-[image49]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Vivek-Upadhyay.png
+[image49]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Jitendra-Dhiman.png
 
-[image50]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Aniket-Gaikwad.png
+[image50]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Amit-Taralkar.png
 
-[image51]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Jitendra-Dhiman.png
+[image51]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Meena-Bhatia.png
 
-[image52]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Desktop-Amit-Taralkar.png
+[image52]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Nitin-Vishwakarma.png
 
-[image53]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Meena-Bhatia.png
+[image53]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2.coreimg.svg/1785151490717/icon3.svg
 
-[image54]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/term-insurance/sampoorna-raksha-supreme/voice-of-happy-customers/Nitin-Vishwakarma.png
+[image54]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2_1338146403.coreimg.svg/1785151504940/icon2.svg
 
-[image55]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2.coreimg.svg/1785151490717/icon3.svg
+[image55]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2_1334429098.coreimg.svg/1785233820949/icon1.svg
 
-[image56]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2_1338146403.coreimg.svg/1785151504940/icon2.svg
+[image56]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2.coreimg.svg/1781781993033/icon4.svg
 
-[image57]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container/proxyteaserv2_1334429098.coreimg.svg/1785233820949/icon1.svg
+[image57]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2_1721122278.coreimg.svg/1785151540660/icon5.svg
 
-[image58]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2.coreimg.svg/1781781993033/icon4.svg
+[image58]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2_123025738.coreimg.svg/1785151557269/icon6.svg
 
-[image59]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2_1721122278.coreimg.svg/1785151540660/icon5.svg
+[image59]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-Unclaimed-Insurance-Funds.jpg
 
-[image60]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_1015339512/container_443314038/container_496719324/proxyteaserv2_123025738.coreimg.svg/1785151557269/icon6.svg
+[image60]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/APK-Desk.png
 
-[image61]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-Unclaimed-Insurance-Funds.jpg
+[image61]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-MDRT-Without-CTA.jpg
 
-[image62]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/navigations/APK-Desk.png
+[image62]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-BIMA-BHAROSA.png
 
-[image63]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-MDRT-Without-CTA.jpg
+[image63]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-Fortune-India-Article.png
 
-[image64]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-BIMA-BHAROSA.png
+[image64]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-1600-Series.png
 
-[image65]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-Fortune-India-Article.png
+[image65]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/HP-Desktop-Chart.png
 
-[image66]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/Desktop-1600-Series.png
+[image66]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_copy/leadproxyv2teaser.coreimg.png/1781782373911/frame-11712759556.png
 
-[image67]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/HP-Desktop-Chart.png
+[image67]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010113.png
 
-[image68]: https://www.tataaia.com/content/experience-fragments/tataaia_life_insuran/homepage-redesign/homepage-firstfold/homepage-firstfold/_jcr_content/root/container_copy/leadproxyv2teaser.coreimg.png/1781782373911/frame-11712759556.png
+[image68]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010114.png
 
-[image69]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010113.png
+[image69]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010092.png
 
-[image70]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010114.png
+[image70]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/how-simple-is-it-to-buy-a-life-insurance-policy-tata-aia-blog/Insurance_Desktop.png
 
-[image71]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Frame-1000010092.png
+[image71]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/types-of-life-insurance-a-complete-guide/shutterstock_1272469927.jpg
 
-[image72]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/how-simple-is-it-to-buy-a-life-insurance-policy-tata-aia-blog/Insurance_Desktop.png
+[image72]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/what-are-the-different-types-of-whole-life-insurance-policies/Whole-Life-insurance-Desktop.png
 
-[image73]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/types-of-life-insurance-a-complete-guide/shutterstock_1272469927.jpg
+[image73]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/4-steps-to-buy-life-insurance-plan-with-your-smartphone/shutterstock_469323245.jpg
 
-[image74]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/what-are-the-different-types-of-whole-life-insurance-policies/Whole-Life-insurance-Desktop.png
+[image74]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/shutterstock_1893826969.jpg
 
-[image75]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/4-steps-to-buy-life-insurance-plan-with-your-smartphone/shutterstock_469323245.jpg
+[image75]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/knowledge-centre/how-to-save-tax-with-insurance-policy/saving-tax-banner.png
 
-[image76]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/shutterstock_1893826969.jpg
+[image76]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/everything-important-to-know-about-death-benefits-of-life-insurance/shutterstock_2631799343.jpg
 
-[image77]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/knowledge-centre/how-to-save-tax-with-insurance-policy/saving-tax-banner.png
+[image77]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/investment-planning/will-savings-be-enough-for-your-loved-ones-if-tomorrow-never-comes/shutterstock_1224969034.jpg
 
-[image78]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/everything-important-to-know-about-death-benefits-of-life-insurance/shutterstock_2631799343.jpg
+[image78]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/term-insurance/what-are-the-benefits-of-a-term-plan-with-return-of-premium/Benefits-of-a-Term-Plan-Desktop.jpg
 
-[image79]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/investment-planning/will-savings-be-enough-for-your-loved-ones-if-tomorrow-never-comes/shutterstock_1224969034.jpg
+[image79]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/shutterstock_2798726246.jpg
 
-[image80]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/term-insurance/what-are-the-benefits-of-a-term-plan-with-return-of-premium/Benefits-of-a-Term-Plan-Desktop.jpg
+[image80]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/retirement-planning/how-to-choose-the-perfect-annuity-insurance/shutterstock_5645836331.jpg
 
-[image81]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/shutterstock_2798726246.jpg
+[image81]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/10-reasons-you-must-read-your-life-insurance-policy-carefully/shutterstock_551101630.jpg
 
-[image82]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/retirement-planning/how-to-choose-the-perfect-annuity-insurance/shutterstock_5645836331.jpg
+[image82]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/why-your-life-insurance-claim-cannot-be-rejected-so-easily/shutterstock_1919068553.jpg
 
-[image83]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/10-reasons-you-must-read-your-life-insurance-policy-carefully/shutterstock_551101630.jpg
+[image83]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/guaranteed-income-plans--why-should-you-buy-this/Guaranteed-Income-Plans-desktop.png
 
-[image84]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/why-your-life-insurance-claim-cannot-be-rejected-so-easily/shutterstock_1919068553.jpg
+[image84]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/how-to-calculate-the-interest-rate-on-provident-fund/shutterstock_14993250921.jpg
 
-[image85]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/guaranteed-income-plans--why-should-you-buy-this/Guaranteed-Income-Plans-desktop.png
+[image85]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/june2026.png
 
-[image86]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/how-to-calculate-the-interest-rate-on-provident-fund/shutterstock_14993250921.jpg
+[image86]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/june-26.png
 
-[image87]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/june2026.png
+[image87]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/fund-performance-homepage.png
 
-[image88]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/june-26.png
-
-[image89]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/life-insurance-plans/combo-plans/capital-guarantee-immediate-income-solution/fund-performance-homepage.png
-
-[image90]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/MicrosoftTeams-image\(1\)1.png
+[image88]: https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/new-homepage/MicrosoftTeams-image\(1\)1.png

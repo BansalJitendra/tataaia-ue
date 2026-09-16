@@ -666,6 +666,25 @@
     ]
   },
   {
+    "id": "quicklinks-toggle-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Persona Label",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "links",
+        "label": "Prompt + Links",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "quote-callout",
     "fields": [
       {

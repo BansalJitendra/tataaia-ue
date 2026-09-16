@@ -1,0 +1,14 @@
+{
+  "variantName": "quicklinks-toggle",
+  "baseBlock": "cards",
+  "canonicalModel": "container",
+  "visualCharacteristics": "A centered horizontal bar: a new/existing customer toggle switch above a bordered pill holding an italic prompt label, an action dropdown, and a red go-arrow.",
+  "contentPattern": "Two persona rows, each with a label and a list of action links (prompt + <ul>).",
+  "usage": "Interactive quick-links selector letting a visitor pick a persona and jump to a relevant action.",
+  "options": [],
+  "memberVariantIds": ["quicklinks-toggle"],
+  "sourceContext": {
+    "originUrl": "https://www.tataaia.com/",
+    "selector": ".homepagewishlistcomp"
+  }
+}

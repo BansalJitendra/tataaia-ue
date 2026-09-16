@@ -87,7 +87,15 @@ export default function parse(element, { document }) {
       summaryFrag.appendChild(document.createTextNode(item.summary));
     }
 
-    // Column 2: text field (answer richtext) — strip any tables into hoistedTables
+    // Column 2: text field (answer richtext). Two things are stripped so the
+    // single richtext field maps cleanly in JCR:
+    //   - tables → hoisted out into standalone table-data blocks (below); a table
+    //     cannot be nested inside another block's markdown cell.
+    //   - inline images/pictures → removed. The accordion item model has only
+    //     summary + text (no image field), and md2jcr's greedy richtext stops at
+    //     an image mid-answer, orphaning the following nodes and failing the
+    //     conversion (this is what forced the Disclaimers answer to degrade to
+    //     plain text). Dropping the images keeps the accordion + all its text.
     const textFrag = document.createDocumentFragment();
     textFrag.appendChild(document.createComment(' field:text '));
     item.content.forEach((node) => {
@@ -99,13 +107,17 @@ export default function parse(element, { document }) {
       const nested = clone.querySelectorAll ? Array.from(clone.querySelectorAll('table')) : [];
       if (nested.length) {
         nested.forEach((t) => { hoistedTables.push(t.cloneNode(true)); t.remove(); });
-        // Keep the table-stripped remainder only if it still carries content.
-        if (clone.textContent.trim() || (clone.querySelector && clone.querySelector('img'))) {
-          textFrag.appendChild(clone);
-        }
-      } else {
-        textFrag.appendChild(clone);
       }
+      // Remove inline images/pictures from the answer richtext.
+      if (clone.tagName === 'IMG' || clone.tagName === 'PICTURE') return;
+      if (clone.querySelectorAll) {
+        clone.querySelectorAll('picture, img').forEach((im) => {
+          const pic = im.closest('picture') || im;
+          if (pic.parentNode) pic.parentNode.removeChild(pic);
+        });
+      }
+      // Keep the (table/image-stripped) node only if it still carries text.
+      if (clone.textContent.trim()) textFrag.appendChild(clone);
     });
 
     cells.push([summaryFrag, textFrag]);

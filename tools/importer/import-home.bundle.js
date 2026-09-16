@@ -185,7 +185,7 @@ var CustomImportScript = (() => {
       const href = linkEl ? linkEl.getAttribute("href") : null;
       const imageFrag = document2.createDocumentFragment();
       if (img) {
-        imageFrag.appendChild(document2.createComment(" field:image "));
+        imageFrag.appendChild(document2.createComment(" field:media_image "));
         imageFrag.appendChild(img);
       }
       const textFrag = document2.createDocumentFragment();
@@ -243,7 +243,7 @@ var CustomImportScript = (() => {
       const paras = desc ? Array.from(desc.querySelectorAll("p")) : [];
       const imageFrag = document2.createDocumentFragment();
       if (img) {
-        imageFrag.appendChild(document2.createComment(" field:image "));
+        imageFrag.appendChild(document2.createComment(" field:media_image "));
         imageFrag.appendChild(img);
       }
       const textFrag = document2.createDocumentFragment();
@@ -307,7 +307,7 @@ var CustomImportScript = (() => {
       const href = anchor ? anchor.getAttribute("href") : null;
       const imageFrag = document2.createDocumentFragment();
       if (img) {
-        imageFrag.appendChild(document2.createComment(" field:image "));
+        imageFrag.appendChild(document2.createComment(" field:media_image "));
         imageFrag.appendChild(img);
       }
       const textFrag = document2.createDocumentFragment();
@@ -375,7 +375,7 @@ var CustomImportScript = (() => {
       const desc = card.querySelector(".bannerCategoryText p");
       const imageFrag = document2.createDocumentFragment();
       if (img) {
-        imageFrag.appendChild(document2.createComment(" field:image "));
+        imageFrag.appendChild(document2.createComment(" field:media_image "));
         imageFrag.appendChild(img);
       }
       const textFrag = document2.createDocumentFragment();
@@ -452,7 +452,7 @@ var CustomImportScript = (() => {
       const ctaAnchor = desc ? desc.querySelector("p a[href]") : null;
       const imageFrag = document2.createDocumentFragment();
       if (img) {
-        imageFrag.appendChild(document2.createComment(" field:image "));
+        imageFrag.appendChild(document2.createComment(" field:media_image "));
         imageFrag.appendChild(img);
       }
       const textFrag = document2.createDocumentFragment();
@@ -521,7 +521,7 @@ var CustomImportScript = (() => {
       const href = linkEl ? linkEl.getAttribute("href") : null;
       const imageFrag = document2.createDocumentFragment();
       if (img) {
-        imageFrag.appendChild(document2.createComment(" field:image "));
+        imageFrag.appendChild(document2.createComment(" field:media_image "));
         imageFrag.appendChild(img);
       }
       const textFrag = document2.createDocumentFragment();
@@ -589,7 +589,7 @@ var CustomImportScript = (() => {
       const paras = desc ? Array.from(desc.querySelectorAll("p")) : [];
       const imageFrag = document2.createDocumentFragment();
       if (img) {
-        imageFrag.appendChild(document2.createComment(" field:image "));
+        imageFrag.appendChild(document2.createComment(" field:media_image "));
         imageFrag.appendChild(img);
       }
       const textFrag = document2.createDocumentFragment();
@@ -648,27 +648,16 @@ var CustomImportScript = (() => {
       const deskSrc = resolveSrc(deskImg);
       const mobSrc = resolveSrc(mobImg);
       if (!deskSrc && !mobSrc) return;
-      const cell = document2.createElement("div");
-      const deskPara = document2.createElement("p");
-      const mobPara = document2.createElement("p");
-      const deskPic = buildPicture(deskSrc, title);
-      const mobPic = buildPicture(mobSrc || deskSrc, title);
-      if (href) {
-        const a1 = document2.createElement("a");
-        a1.setAttribute("href", href);
-        if (deskPic) a1.appendChild(deskPic);
-        deskPara.appendChild(a1);
-        const a2 = document2.createElement("a");
-        a2.setAttribute("href", href);
-        if (mobPic) a2.appendChild(mobPic);
-        mobPara.appendChild(a2);
-      } else {
-        if (deskPic) deskPara.appendChild(deskPic);
-        if (mobPic) mobPara.appendChild(mobPic);
-      }
-      if (deskPara.childNodes.length) cell.appendChild(deskPara);
-      if (mobPara.childNodes.length) cell.appendChild(mobPara);
-      if (cell.childNodes.length) cells.push([cell]);
+      const imgCell = document2.createElement("div");
+      imgCell.appendChild(document2.createComment(" field:media_image "));
+      const p = document2.createElement("p");
+      const pic = buildPicture(deskSrc || mobSrc, title);
+      if (pic) p.appendChild(pic);
+      imgCell.appendChild(p);
+      const altCell = document2.createElement("div");
+      altCell.appendChild(document2.createComment(" field:media_imageAlt "));
+      if (title) altCell.appendChild(document2.createTextNode(title));
+      cells.push([imgCell, altCell]);
     });
     if (!cells.length) {
       element.replaceWith(...element.childNodes);
@@ -944,7 +933,7 @@ var CustomImportScript = (() => {
     const cells = [];
     const imageFrag = document2.createDocumentFragment();
     if (bgImage) {
-      imageFrag.appendChild(document2.createComment(" field:image "));
+      imageFrag.appendChild(document2.createComment(" field:media_image "));
       imageFrag.appendChild(bgImage);
     }
     cells.push([imageFrag]);
@@ -1007,7 +996,7 @@ var CustomImportScript = (() => {
     const cells = [];
     const imageFrag = document2.createDocumentFragment();
     if (bgImage) {
-      imageFrag.appendChild(document2.createComment(" field:image "));
+      imageFrag.appendChild(document2.createComment(" field:media_image "));
       imageFrag.appendChild(bgImage);
     }
     cells.push([imageFrag]);

@@ -51,30 +51,25 @@ export default function parse(element, { document }) {
     const mobSrc = resolveSrc(mobImg);
     if (!deskSrc && !mobSrc) return;
 
-    // Single Image cell per slide row (the mandatory carousel image).
-    const cell = document.createElement('div');
-    const deskPara = document.createElement('p');
-    const mobPara = document.createElement('p');
-    const deskPic = buildPicture(deskSrc, title);
-    const mobPic = buildPicture(mobSrc || deskSrc, title);
+    // One slide row = two cells (mirrors the working carousel-review item):
+    //   cell 1: image (field:image) — the banner picture, optionally linked
+    //   cell 2: imageAlt (field:imageAlt) — the banner title/alt text
+    // Only the desktop image is modeled for authoring; CSS still swaps the
+    // mobile variant in the rendered .plain.html when both are present.
+    // A `reference` field holds a bare image (no link wrapper), so the banner
+    // link is not modeled here — the image alone maps cleanly to field:image.
+    const imgCell = document.createElement('div');
+    imgCell.appendChild(document.createComment(' field:media_image '));
+    const p = document.createElement('p');
+    const pic = buildPicture(deskSrc || mobSrc, title);
+    if (pic) p.appendChild(pic);
+    imgCell.appendChild(p);
 
-    if (href) {
-      const a1 = document.createElement('a');
-      a1.setAttribute('href', href);
-      if (deskPic) a1.appendChild(deskPic);
-      deskPara.appendChild(a1);
-      const a2 = document.createElement('a');
-      a2.setAttribute('href', href);
-      if (mobPic) a2.appendChild(mobPic);
-      mobPara.appendChild(a2);
-    } else {
-      if (deskPic) deskPara.appendChild(deskPic);
-      if (mobPic) mobPara.appendChild(mobPic);
-    }
+    const altCell = document.createElement('div');
+    altCell.appendChild(document.createComment(' field:media_imageAlt '));
+    if (title) altCell.appendChild(document.createTextNode(title));
 
-    if (deskPara.childNodes.length) cell.appendChild(deskPara);
-    if (mobPara.childNodes.length) cell.appendChild(mobPara);
-    if (cell.childNodes.length) cells.push([cell]);
+    cells.push([imgCell, altCell]);
   });
 
   if (!cells.length) {

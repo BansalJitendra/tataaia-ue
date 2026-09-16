@@ -385,30 +385,23 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
-        "label": "Banner Image (Desktop)",
+        "name": "media_image",
+        "label": "Banner Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
+        "name": "media_imageAlt",
         "value": "",
         "label": "Banner Alt"
       },
       {
-        "component": "reference",
+        "component": "richtext",
         "valueType": "string",
-        "name": "imageMobile",
-        "label": "Banner Image (Mobile)",
-        "multi": false
-      },
-      {
-        "component": "aem-content",
-        "valueType": "string",
-        "name": "link",
+        "name": "content_text",
         "value": "",
-        "label": "Banner Link"
+        "label": "Caption"
       }
     ]
   },
@@ -736,17 +729,6 @@
             ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "table-data",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "classes",
-        "label": "Style"
       }
     ]
   },

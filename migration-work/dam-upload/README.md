@@ -8,10 +8,27 @@ which is why images are broken on the delivery page
 ## What's here
 
 ```
-content/dam/tata-aia/tataaialifeinsurancecompanylimited/...   ← 66 images
-MANIFEST.tsv                                                  ← DAM path → source URL
-tata-aia-dam-assets.zip                                       ← same tree, zipped
+tata-aia-dam-content-package.zip   ← INSTALLABLE AEM content package (recommended)
+content/dam/tata-aia/...           ← the 66 raw images (loose tree)
+tata-aia-dam-assets.zip            ← the loose tree zipped (for drag/drop uploaders)
+MANIFEST.tsv                       ← DAM path → source URL
 ```
+
+### Recommended: install the content package (one action, bundles all assets)
+
+`tata-aia-dam-content-package.zip` is a **FileVault content package** — the same
+package format AEM uses for content sync. It contains every image as a proper
+`dam:Asset` under `/content/dam/tata-aia/...` plus `META-INF/vault/filter.xml`
+(filter root `/content/dam/tata-aia`).
+
+Install it in ONE step:
+- **AEM Package Manager** (`/crx/packmgr`): Upload Package → select the zip →
+  Install. All 66 assets are created under `/content/dam/tata-aia`.
+- Rebuild it any time with: `node tools/importer/build-dam-package.mjs`
+
+This is the closest thing to "assets as part of the sync": it's a content package
+you install alongside the page-content package, so both the pages and their images
+land in AEM together.
 
 The folder tree **mirrors the exact target DAM paths**. Every file's location under
 `content/dam/tata-aia/` is where it must land in AEM Assets.

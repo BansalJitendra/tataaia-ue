@@ -78,15 +78,65 @@ async function handleSubmit(form) {
 }
 
 // The "Know more and buy your plan in 2 steps" calc form shows a plan-specific
-// illustration on the left that swaps with the selected plan. The plan option
-// values map to these source illustrations.
-const PLAN_IMAGES = {
-  'Wealth plans/ULIPs': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Wealth-plans-ULIP.png',
-  'Term plans': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Family-Photo.png',
-  'Term + Wealth plans': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Term-wealth-plans.png',
-  'Guaranteed returns plan': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/guaranteed-returns.png',
-  'Retirement/Pension plans': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Retirement-plans1.png',
-  'Health plans': 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Health-plans.png',
+// illustration on the left that swaps with the selected plan, with the promoted
+// plan's name + key benefits listed below it (matching live). Keyed by the plan
+// <option> value.
+const DAM = 'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign';
+const PLAN_INFO = {
+  'Wealth plans/ULIPs': {
+    image: `${DAM}/Wealth-plans-ULIP.png`,
+    plan: 'Param Raksha Life Pro +',
+    benefits: [
+      'High life cover for comprehensive protection',
+      '17.65% 5 yr returns with Multi Cap Fund',
+      'Invest in funds rated 4 or 5 Stars by Morningstar',
+    ],
+  },
+  'Term plans': {
+    image: `${DAM}/Family-Photo.png`,
+    plan: 'Tata AIA Sampoorna Raksha Promise',
+    benefits: [
+      '₹1.5 Crore life cover starts at ₹678/month',
+      'Avail up to 18.5% discount (1st year premium)',
+      'Get 100% premium back',
+    ],
+  },
+  'Term + Wealth plans': {
+    image: `${DAM}/Term-wealth-plans.png`,
+    plan: 'Param Raksha Life Pro +',
+    benefits: [
+      '₹1 Cr life cover + market-linked returns',
+      '17.65% 5 yr returns with Multi Cap Fund',
+      'Invest in funds rated 4 or 5 Stars by Morningstar',
+    ],
+  },
+  'Guaranteed returns plan': {
+    image: `${DAM}/guaranteed-returns.png`,
+    plan: 'Fortune Guarantee Plus',
+    benefits: [
+      'Guaranteed returns for financial goals',
+      'Life cover for family protection',
+      'Tax benefits as per applicable laws',
+    ],
+  },
+  'Retirement/Pension plans': {
+    image: `${DAM}/Retirement-plans1.png`,
+    plan: 'Tata AIA Smart Pension Secure',
+    benefits: [
+      'Build retirement corpus with top rated funds',
+      'Zero premium allocation charges',
+      'Withdraw fund for emergencies',
+    ],
+  },
+  'Health plans': {
+    image: `${DAM}/Health-plans.png`,
+    plan: 'Tata AIA Sampoorna Care – Cancer',
+    benefits: [
+      'Flexible payouts on cancer diagnosis',
+      'Cancer plan with income replacement',
+      'Premium rate fixed for 30 years',
+    ],
+  },
 };
 
 /**
@@ -107,13 +157,20 @@ function enhancePlanLayout(block, form) {
   tabs.className = 'form-plan-tabs';
   tabs.setAttribute('role', 'tablist');
 
-  // Left illustration panel.
+  // Left illustration panel: image on top, plan name + benefit list below.
   const media = document.createElement('div');
   media.className = 'form-plan-media';
   const img = document.createElement('img');
   img.loading = 'lazy';
   img.alt = '';
-  media.append(img);
+  const caption = document.createElement('div');
+  caption.className = 'form-plan-caption';
+  const planName = document.createElement('p');
+  planName.className = 'form-plan-name';
+  const benefitList = document.createElement('ul');
+  benefitList.className = 'form-plan-benefits';
+  caption.append(planName, benefitList);
+  media.append(img, caption);
 
   const setActive = (value) => {
     planSelect.value = value;
@@ -121,8 +178,18 @@ function enhancePlanLayout(block, form) {
     tabs.querySelectorAll('button').forEach((b) => {
       b.setAttribute('aria-selected', String(b.dataset.value === value));
     });
-    const src = PLAN_IMAGES[value];
-    if (src) { img.src = src; img.alt = value; }
+    const info = PLAN_INFO[value];
+    if (info) {
+      img.src = info.image;
+      img.alt = value;
+      planName.textContent = info.plan;
+      benefitList.innerHTML = '';
+      info.benefits.forEach((text) => {
+        const li = document.createElement('li');
+        li.textContent = text;
+        benefitList.append(li);
+      });
+    }
   };
 
   options.forEach((opt) => {

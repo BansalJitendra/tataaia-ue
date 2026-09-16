@@ -120,18 +120,80 @@ main .section.blue-tone-light .form form {
   align-items: stretch;
 }
 
+/* Left panel: a landscape illustration on top with the promoted plan's name and
+   key benefits listed below (matches live — NOT a square/cropped image). */
 .form .form-plan-media {
   display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  border-radius: 16px;
-  background-color: #eaf3fb;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
 }
 
 .form .form-plan-media img {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+
+  /* landscape illustration (source renders ~2.2:1), not cropped to a square */
+  aspect-ratio: 37 / 17;
   object-fit: cover;
+  border-radius: 16px;
+}
+
+.form .form-plan-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form .form-plan-name {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0073bb;
+}
+
+.form .form-plan-benefits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form .form-plan-benefits li {
+  position: relative;
+  padding-left: 26px;
+  color: var(--text-color, #58595b);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.form .form-plan-benefits li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid var(--brand-primary, #d62049);
+  box-sizing: border-box;
+}
+
+.form .form-plan-benefits li::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 6px;
+  height: 3px;
+  border-left: 1.5px solid var(--brand-primary, #d62049);
+  border-bottom: 1.5px solid var(--brand-primary, #d62049);
+  transform: rotate(-45deg);
 }
 
 /* On the plan layout the form no longer needs its own card padding/shadow —
@@ -145,10 +207,6 @@ main .section.blue-tone-light .form .form-plan-body form {
 @media (width >= 900px) {
   .form .form-plan-body {
     grid-template-columns: minmax(280px, 360px) 1fr;
-  }
-
-  .form .form-plan-media {
-    min-height: 100%;
   }
 }
 

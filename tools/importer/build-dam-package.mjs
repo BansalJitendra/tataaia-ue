@@ -26,8 +26,10 @@ const require = createRequire(import.meta.url);
 const SCRIPTS = '/home/node/.excat-marketplaces/excat-marketplace/excat/skills/excat-content-import/scripts';
 
 const REPO = '/backups/BansalJitendra/tataaia-ue/repo';
-const SRC = `${REPO}/migration-work/dam-upload/content/dam/tata-aia`;
-const OUT = `${REPO}/migration-work/dam-upload/tata-aia-dam-content-package.zip`;
+// v2: paths lowercased to match AEM's folder-name sanitization (what the synced
+// pages actually request). Verified 26/26 deployed paths reproduced.
+const SRC = `${REPO}/migration-work/dam-upload-v2/content/dam/tata-aia`;
+const OUT = `${REPO}/migration-work/dam-upload-v2/tata-aia-dam-content-package.zip`;
 const DAM_ROOT = 'content/dam/tata-aia';
 
 const MIME = {

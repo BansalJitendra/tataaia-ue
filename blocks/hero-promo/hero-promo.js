@@ -157,12 +157,13 @@ function autoRotate(block) {
 // image below 768px (the wide desktop banner, force-cropped into the tall
 // mobile card, hides the artwork). On delivery the authored <img> src is
 // rewritten to an opaque /media_* rendition, so the mobile URL can't be
-// derived from the DOM — map it by slide index to the original DAM asset
-// (external www.tataaia.com URLs are the working form for this project).
+// derived from the DOM — map it by slide index. Shipped as own-origin WebP
+// (converted from the DAM mobile PNGs): ~5KB each vs ~65-85KB cross-origin
+// PNG, so the mobile LCP image is tiny and same-origin.
 const MOBILE_BG = [
-  'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/Mobile-Homepage-with-logo-Momentum-value-50-Index-Fund-NFO.png',
-  'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-carousel-banner/Mobile_Homepage-banner-Shield-image.png',
-  'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/Mobile-Sampoorna-Raksha-Cancer-Care-15.png',
+  '/icons/hero-mobile-nfo.webp',
+  '/icons/hero-mobile-shield.webp',
+  '/icons/hero-mobile-cancer.webp',
 ];
 
 function createSlide(row, slideIndex) {

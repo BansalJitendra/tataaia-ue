@@ -116,9 +116,11 @@
 
 /* left pitch panel */
 .columns.columns-product-recom .columns-recom-left {
+  position: relative;
   order: 1;
   padding: 32px;
   background: linear-gradient(135deg, #eef4fb 0%, #f8eef2 100%);
+  overflow: hidden;
 }
 
 .columns.columns-product-recom .columns-recom-left h2,
@@ -190,6 +192,7 @@
 }
 
 .columns.columns-product-recom .columns-recom-media img {
+  display: block;
   width: 100%;
   height: auto;
   max-width: 267px;
@@ -303,6 +306,23 @@ main .columns.columns-product-recom a.button:any-link {
 
   .columns.columns-product-recom .columns-recom-right {
     justify-content: flex-start;
+  }
+
+  /* On desktop the illustration is pinned to the bottom-right of the left
+     panel (as on live), overlapping the copy column instead of stacking below
+     it — this keeps the whole card short. Copy is held to the left ~56%. */
+  .columns.columns-product-recom .columns-recom-media {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 267px;
+    margin: 0;
+  }
+
+  .columns.columns-product-recom .columns-recom-left > :not(.columns-recom-media) {
+    position: relative;
+    z-index: 1;
+    max-width: 56%;
   }
 }
 

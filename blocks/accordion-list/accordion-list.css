@@ -166,6 +166,19 @@
   font-size: 24px;
 }
 
+/* Live renders these plain-accordion titles (Know about Life Insurance,
+   FAQs, Disclaimers) with the same blue->red gradient as the section
+   titles (e.g. "Awards & Recognition"). */
+.accordion-list.accordion-list-plain details summary.accordion-list-item-label,
+.accordion-list.accordion-list-plain details summary.accordion-list-item-label p {
+  background: linear-gradient(90deg, #0073bb 38%, #d62049 66%);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .accordion-list.accordion-list-plain details summary.accordion-list-item-label::after {
   right: 6px;
 }

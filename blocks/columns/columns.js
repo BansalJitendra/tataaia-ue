@@ -88,7 +88,39 @@ function decorateProductRecom(block) {
     const ribbon = [...rightCol.querySelectorAll('p')]
       .find((p) => /best\s*seller/i.test(p.textContent) && p.textContent.trim().length < 20);
     if (ribbon) ribbon.classList.add('columns-recom-ribbon');
-    rightCol.querySelectorAll('li').forEach((li) => li.classList.add('columns-recom-benefit'));
+
+    // Tag the EMI line ("Get ₹1 Crore Life cover @ ₹826/month") and the
+    // age/cover/payment summary line so they can be styled like live.
+    const paras = [...rightCol.querySelectorAll(':scope > p')];
+    paras.forEach((p) => {
+      const t = p.textContent.trim();
+      if (/life cover|@\s*₹|per month|\/month/i.test(t)) p.classList.add('columns-recom-emi');
+      else if (/^age:/i.test(t) || (/age:/i.test(t) && /cover till/i.test(t))) p.classList.add('columns-recom-age');
+    });
+
+    // The three benefit rows carry a leading icon on live. Icons are shipped
+    // with the block code (own-origin /icons) and injected here so they render
+    // as real <img> (not turned into links by the crosswalk renderer).
+    const benefitIcons = [
+      { src: '/icons/prod-recom-death-claim.svg', alt: '' },
+      { src: '/icons/prod-recom-calender.svg', alt: '' },
+      { src: '/icons/prod-recom-early-payout.svg', alt: '' },
+    ];
+    rightCol.querySelectorAll('li').forEach((li, i) => {
+      li.classList.add('columns-recom-benefit');
+      const icon = benefitIcons[i];
+      if (icon) {
+        const img = document.createElement('img');
+        img.className = 'columns-recom-benefit-icon';
+        img.src = icon.src;
+        img.alt = icon.alt;
+        img.loading = 'lazy';
+        img.width = 29;
+        img.height = 29;
+        li.prepend(img);
+      }
+    });
+
     rightCol.querySelectorAll('a').forEach((a) => {
       const p = a.closest('p');
       if (p && p.textContent.trim() === a.textContent.trim()) {

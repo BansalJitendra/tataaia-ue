@@ -329,6 +329,15 @@ main .section.cards-promo-container > .default-content-wrapper > p:only-child {
   -webkit-text-fill-color: transparent;
 }
 
+/* Subheading below the "Find the right..." title — centered grey copy (live). */
+/* stylelint-disable-next-line no-descending-specificity */
+main .section.cards-promo-container > .default-content-wrapper > h2 + p {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-color, #58595b);
+}
+
 @media (width >= 900px) {
   main .section.cards-promo-container > .default-content-wrapper > h2,
   main .section.cards-promo-container > .default-content-wrapper > p:only-child {

@@ -1,8 +1,10 @@
 /* Brand design tokens extracted from https://www.tataaia.com/ */
 :root {
-  /* fonts */
-  --heading-font-family: "Inter", sans-serif;
-  --body-font-family: "Inter", sans-serif;
+  /* fonts — Inter is self-hosted (fonts.css, loaded after LCP); the system
+     fallback stack keeps text visible immediately with no render-blocking
+     request and minimal layout shift. */
+  --heading-font-family: "Inter", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, helvetica, arial, sans-serif;
+  --body-font-family: "Inter", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, helvetica, arial, sans-serif;
 
   /* base colors */
   --background-color: #fff;

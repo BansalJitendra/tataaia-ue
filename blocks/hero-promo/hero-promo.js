@@ -152,7 +152,16 @@ function createSlide(row, slideIndex) {
     const bg = document.createElement('div');
     bg.className = 'hero-promo-bg';
     const pic = imageCol.querySelector('picture') || imageCol.querySelector('img');
-    if (pic) bg.append(pic);
+    if (pic) {
+      // The first slide's image is the LCP element — load it eagerly with high
+      // priority instead of lazily so LCP isn't delayed.
+      const img = pic.querySelector ? pic.querySelector('img') : null;
+      if (slideIndex === 0 && img) {
+        img.setAttribute('loading', 'eager');
+        img.setAttribute('fetchpriority', 'high');
+      }
+      bg.append(pic);
+    }
     slide.append(bg);
   }
 

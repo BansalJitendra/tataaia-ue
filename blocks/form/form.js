@@ -247,13 +247,18 @@ async function resolveFormJson(block) {
   }
   if (!ref) return null;
 
-  // Build candidate URLs (absolute, root, and /content/ fallback).
+  // Build candidate URLs. On DA/EDS prod the JSON is published under /content;
+  // on localhost it is served from the root. Order the root vs /content probes
+  // by host so the FIRST fetch succeeds and prod doesn't emit a wasted 404.
   const name = ref.split('/').pop();
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
   const candidates = [];
   if (/^https?:\/\//.test(ref)) candidates.push(ref);
   else candidates.push(new URL(ref, window.location.href).href);
-  candidates.push(new URL(`/${name}`, window.location.origin).href);
-  candidates.push(new URL(`/content/${name}`, window.location.origin).href);
+  const rootUrl = new URL(`/${name}`, window.location.origin).href;
+  const contentUrl = new URL(`/content/${name}`, window.location.origin).href;
+  if (isLocal) candidates.push(rootUrl, contentUrl);
+  else candidates.push(contentUrl, rootUrl);
 
   // Return the first candidate that actually fetches OK (sequential, deduped).
   const unique = [...new Set(candidates)];

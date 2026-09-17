@@ -1,0 +1,16 @@
+{
+  "total": 9,
+  "offset": 0,
+  "limit": 9,
+  "data": [
+    { "Key": "carousel", "Text": "Carousel" },
+    { "Key": "carouselSlideControls", "Text": "Carousel Slide Controls" },
+    { "Key": "showSlide", "Text": "Show Slide" },
+    { "Key": "of", "Text": "of" },
+    { "Key": "nextSlide", "Text": "Next Slide" },
+    { "Key": "previousSlide", "Text": "Previous Slide" },
+    { "Key": "searchPlaceholder", "Text": "Search..." },
+    { "Key": "searchNoResults", "Text": "No results found." }
+  ],
+  ":type": "sheet"
+}

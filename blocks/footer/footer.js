@@ -5,9 +5,13 @@
 const isDesktop = window.matchMedia('(min-width: 900px)');
 
 export default async function decorate(block) {
-  // metadata-independent dual-fetch: /content first (localhost), then root (DA/EDS prod)
-  let resp = await fetch('/content/footer.plain.html');
-  if (!resp.ok) resp = await fetch('/footer.plain.html');
+  // metadata-independent dual-fetch. On localhost the content lives under
+  // /content; on DA/EDS prod it is served from the root. Probe the likely path
+  // for the current host FIRST so production doesn't emit a wasted 404.
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const paths = isLocal ? ['/content/footer.plain.html', '/footer.plain.html'] : ['/footer.plain.html', '/content/footer.plain.html'];
+  let resp = await fetch(paths[0]);
+  if (!resp.ok) resp = await fetch(paths[1]);
   if (!resp.ok) return;
   const html = await resp.text();
 

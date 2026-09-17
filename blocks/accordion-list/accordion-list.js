@@ -13,7 +13,7 @@ export default function decorate(block) {
   // card accordions used for Types of Life Insurance / FAQs). Flag it so the CSS
   // can drop the card treatment.
   const firstLabel = rows[0]?.children[0]?.textContent.trim() || '';
-  if (rows.length === 1 && /^Disclaimers$/i.test(firstLabel)) {
+  if (rows.length === 1 && /^(Disclaimers|Know about Life Insurance)$/i.test(firstLabel)) {
     block.classList.add('accordion-list-plain');
   }
 

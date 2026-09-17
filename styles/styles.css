@@ -334,7 +334,8 @@ main .section.cards-promo-container > .default-content-wrapper > p:only-child {
    content (logo <p>, then h2/h3/paragraphs), so lay it out with the logo
    floated left and the text flowing beside it. */
 main .default-content-wrapper:has(> h2#tata-aia-life-insurance) {
-  margin: 24px 0;
+  max-width: 1120px;
+  margin: 24px auto;
   padding: 24px 32px;
   border-radius: 14px;
   background: #fff;

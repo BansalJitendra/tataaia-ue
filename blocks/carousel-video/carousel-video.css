@@ -207,12 +207,11 @@ main .carousel-video .carousel-video-slide-content a:hover {
   text-decoration: none;
 }
 
-/* ---- navigation arrows ---- */
+/* ---- navigation arrows ----
+   Live has no prev/next arrow bar on the video carousel (only dot indicators).
+   Hide the buttons so they don't add an empty spacer row. */
 .carousel-video .carousel-video-navigation-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
-  padding: 12px 0 0;
+  display: none;
 }
 
 .carousel-video .carousel-video-navigation-buttons button {

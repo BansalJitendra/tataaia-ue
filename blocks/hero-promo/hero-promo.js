@@ -153,6 +153,18 @@ function autoRotate(block) {
   start();
 }
 
+// Portrait mobile artwork per slide. Live swaps to a dedicated tall mobile
+// image below 768px (the wide desktop banner, force-cropped into the tall
+// mobile card, hides the artwork). On delivery the authored <img> src is
+// rewritten to an opaque /media_* rendition, so the mobile URL can't be
+// derived from the DOM — map it by slide index to the original DAM asset
+// (external www.tataaia.com URLs are the working form for this project).
+const MOBILE_BG = [
+  'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/Mobile-Homepage-with-logo-Momentum-value-50-Index-Fund-NFO.png',
+  'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-carousel-banner/Mobile_Homepage-banner-Shield-image.png',
+  'https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/homepage/homepage-redesign/Mobile-Sampoorna-Raksha-Cancer-Care-15.png',
+];
+
 function createSlide(row, slideIndex) {
   const slide = document.createElement('li');
   slide.dataset.slideIndex = slideIndex;
@@ -174,6 +186,15 @@ function createSlide(row, slideIndex) {
       if (slideIndex === 0 && img) {
         img.setAttribute('loading', 'eager');
         img.setAttribute('fetchpriority', 'high');
+      }
+      // Prepend a mobile <source> so small screens get the portrait artwork
+      // (matches live). Only when this is a real <picture> with a mapped URL.
+      const mobileUrl = MOBILE_BG[slideIndex];
+      if (mobileUrl && pic.tagName === 'PICTURE') {
+        const source = document.createElement('source');
+        source.media = '(max-width: 767px)';
+        source.setAttribute('srcset', mobileUrl);
+        pic.prepend(source);
       }
       bg.append(pic);
     }

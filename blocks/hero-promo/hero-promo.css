@@ -211,6 +211,34 @@ main .hero-promo a.button:focus {
   background-color: #fff;
 }
 
+/* ---- Mobile ( < 900px ) ----
+   Live serves a self-contained portrait mobile banner with all copy baked into
+   the artwork, shown whole at its own aspect ratio (no crop). Match that: let
+   the slide height follow the image, show the full image (no cover-crop), and
+   hide the HTML text overlay so it doesn't duplicate/clash with the baked-in
+   copy or force the image to crop. */
+@media (width < 900px) {
+  .hero-promo .hero-promo-slide {
+    display: block;
+    min-height: 0;
+    padding: 0;
+  }
+
+  .hero-promo .hero-promo-bg {
+    position: static;
+  }
+
+  .hero-promo .hero-promo-bg picture,
+  .hero-promo .hero-promo-bg img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .hero-promo .hero-promo-content {
+    display: none;
+  }
+}
+
 @media (width >= 900px) {
   /* Center the card and drop the mobile side gutters on desktop. */
   .hero-promo {

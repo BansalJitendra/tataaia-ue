@@ -300,10 +300,10 @@ main p:has(> img[alt="close-popup"]) {
   display: none;
 }
 
-/* "Awards & Recognition" section title. It was imported as a bare default-content
-   paragraph (not a heading), so it rendered as small body text. On live it's a
-   32px centered blue->red gradient heading — style the standalone paragraph in
-   the cards-promo section's default-content wrapper to match. */
+/* Section titles in the cards-promo section — the "Find the right life insurance
+   plan for you" heading (<h2>) and the "Awards & Recognition" title (imported as
+   a bare paragraph). On live both are centered blue->red gradient headings. */
+main .section.cards-promo-container > .default-content-wrapper > h2,
 main .section.cards-promo-container > .default-content-wrapper > p:only-child {
   margin: 24px 0;
   font-family: var(--heading-font-family);
@@ -322,6 +322,7 @@ main .section.cards-promo-container > .default-content-wrapper > p:only-child {
 }
 
 @media (width >= 900px) {
+  main .section.cards-promo-container > .default-content-wrapper > h2,
   main .section.cards-promo-container > .default-content-wrapper > p:only-child {
     font-size: 32px;
   }

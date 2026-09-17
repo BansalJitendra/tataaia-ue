@@ -11,6 +11,8 @@ const ICONS = {
   // Live uses an animated "Call us" GIF here (not a line icon). Shipped as an
   // own-origin asset so it renders as a real <img> on delivery.
   phone: '<img class="nav-icon-img" src="/icons/nav-call-us.gif" alt="" width="24" height="24" loading="lazy">',
+  // Accessibility icon (own-origin SVG copied from live).
+  accessibility: '<img class="nav-icon-img" src="/icons/nav-accessibility.svg" alt="" width="24" height="24" loading="lazy">',
   search: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
   account: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
 };
@@ -191,7 +193,7 @@ export default async function decorate(block) {
 
   const icons = document.createElement('div');
   icons.className = 'nav-icons';
-  [['phone', 'Call back'], ['search', 'Search'], ['account', 'My account']].forEach(([key, label]) => {
+  [['phone', 'Call back'], ['search', 'Search'], ['account', 'My account'], ['accessibility', 'Accessibility']].forEach(([key, label]) => {
     const b = document.createElement('button');
     b.className = `nav-icon nav-icon-${key}`;
     b.setAttribute('aria-label', label);

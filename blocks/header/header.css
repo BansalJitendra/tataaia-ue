@@ -307,10 +307,18 @@ header .nav-cta-secondary {
   white-space: nowrap;
 }
 
-header .nav-cta-secondary {
+/* Outline-only secondary CTA (white bg, red border/text) — matches live.
+   Uses a.…:any-link to beat the global `a.button:any-link` red fill. */
+header a.nav-cta-secondary:any-link {
   background-color: transparent;
   border: 2px solid var(--brand-primary, #d62049);
   color: var(--brand-primary, #d62049);
+}
+
+header a.nav-cta-secondary:hover,
+header a.nav-cta-secondary:focus {
+  background-color: var(--brand-primary, #d62049);
+  color: #fff;
 }
 
 /* ---- hamburger (mobile) ---- */

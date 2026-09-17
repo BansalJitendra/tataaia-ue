@@ -372,7 +372,7 @@ header .nav-hamburger span {
   }
 
   header .nav-brand img {
-    height: 40px;
+    height: 34px;
   }
 
   /* menu becomes an inline horizontal bar. Size it to its content (don't grow
@@ -410,7 +410,7 @@ header .nav-hamburger span {
   }
 
   header .nav-menu-item > a {
-    padding: 18px 7px;
+    padding: 18px 6px;
     font-size: 13px;
     white-space: nowrap;
   }

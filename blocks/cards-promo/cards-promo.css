@@ -1,6 +1,12 @@
 /* Block: cards-promo — "Find the right life insurance plan for you" promo cards.
    Values extracted from source computed styles (tataaia.com .quiz-test-cards). */
 
+/* Section background: live renders this section on a light-blue band (#f2f7fb). */
+main .section.cards-promo-container {
+  padding: 40px 0;
+  background-color: #f2f7fb;
+}
+
 .cards-promo {
   color: var(--text-color);
 }

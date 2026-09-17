@@ -155,12 +155,11 @@ main .section.carousel-review-container > .default-content-wrapper > h2 {
   color: var(--text-color, #58595b);
 }
 
-/* --- Navigation arrows --- */
+/* --- Navigation arrows ---
+   Live has no prev/next arrow bar on the review carousel (only the dot
+   indicators). Hide the buttons so they don't add an empty spacer row. */
 .carousel-review .carousel-review-navigation-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
-  padding: 8px 0;
+  display: none;
 }
 
 .carousel-review .carousel-review-navigation-buttons button {

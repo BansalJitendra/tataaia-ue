@@ -17,6 +17,14 @@
   color: #333;
 }
 
+/* Disclaimer fine print below the cards — tiny grey text, like live (~8px). */
+.cards-plan-container .default-content-wrapper > p {
+  margin: 8px 0 0;
+  font-size: 8px;
+  line-height: 1.4;
+  color: var(--text-color, #58595b);
+}
+
 .cards-plan ul {
   list-style: none;
   margin: 0;

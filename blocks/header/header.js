@@ -63,9 +63,12 @@ export default async function decorate(block) {
   header.className = 'nav-wrapper';
 
   // promo bar (row 2) — a right-to-left scrolling ticker of announcement
-  // messages (matches the live .ticker-wrap strip below the nav).
+  // messages (matches the live .ticker-wrap strip below the nav). Built here
+  // but appended AFTER the nav bar so it sits below the nav (and above the
+  // hero promo), like live.
+  let promo = null;
   if (promoSec) {
-    const promo = document.createElement('div');
+    promo = document.createElement('div');
     promo.className = 'nav-promo';
 
     const messages = [...promoSec.querySelectorAll('li')];
@@ -99,7 +102,6 @@ export default async function decorate(block) {
     close.innerHTML = '&times;';
     close.addEventListener('click', () => promo.remove());
     promo.append(close);
-    header.append(promo);
   }
 
   // main bar (row 1)
@@ -207,6 +209,8 @@ export default async function decorate(block) {
 
   bar.append(tools);
   header.append(bar);
+  // ticker sits below the nav bar (and above the hero promo), like live
+  if (promo) header.append(promo);
   block.append(header);
 
   // close behaviors

@@ -5,10 +5,16 @@
   width: 100%;
 }
 
-/* Section heading (h2 sits outside the block in the same section) */
+/* Section heading (h2 sits outside the block in the same section).
+   Match live: small 20px bold dark-grey title with tight 15px margins. */
 .cards-plan-container h2,
 .cards-plan-wrapper + * h2 {
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
   text-align: center;
+  color: #333;
 }
 
 .cards-plan ul {

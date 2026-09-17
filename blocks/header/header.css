@@ -59,12 +59,20 @@ header .nav-promo-item p {
   margin: 0;
 }
 
+/* Ticker links render as small purple CTA pills (matches live). */
 header .nav-promo-item a {
-  color: #ed1164;
-  font-weight: 600;
-  text-decoration: underline;
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 6px;
+  background-color: #6e2b62;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
   white-space: nowrap;
 }
+
 
 /* Small coral outline circle pinned to the top-right of the ticker bar,
    matching live's .aia-call-close. */

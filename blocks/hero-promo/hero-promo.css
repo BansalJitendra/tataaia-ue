@@ -12,7 +12,12 @@
 .hero-promo {
   position: relative;
   max-width: 1206px;
-  margin: 16px auto 0;
+
+  /* Inset rounded card with side gutters on mobile (matches live). Centered
+     with auto margins on desktop (see media query). */
+  margin: 16px 16px 0;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 /* ---- slides track ---- */
@@ -64,17 +69,18 @@
   object-fit: cover;
 }
 
-/* Foreground content */
+/* Foreground content — kept to the left ~58% so it never overlaps the
+   right-side cricket artwork (both mobile and desktop, like live). */
 .hero-promo .hero-promo-content {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 10px;
   width: 100%;
-  max-width: 1206px;
-  margin: 0 auto;
+  max-width: 58%;
+  margin: 0 auto 0 0;
   padding-left: 16px;
 }
 
@@ -206,6 +212,11 @@ main .hero-promo a.button:focus {
 }
 
 @media (width >= 900px) {
+  /* Center the card and drop the mobile side gutters on desktop. */
+  .hero-promo {
+    margin: 16px auto 0;
+  }
+
   .hero-promo .hero-promo-slide {
     /* ~300px banner like live, but allow it to grow if the text overlay is
        taller so the first slide's content isn't cropped from the top. */
@@ -214,12 +225,8 @@ main .hero-promo a.button:focus {
     padding: 16px 20px;
   }
 
-  /* Keep the overlay copy on the left half so it never overlaps the
-     right-side artwork (the batsman / "Introducing … with life cover" panel).
-     Left-align (margin-right auto) rather than centering the narrow block. */
+  /* Wider left padding on desktop (content width already set on the base). */
   .hero-promo .hero-promo-content {
-    max-width: 58%;
-    margin: 0 auto 0 0;
     padding-left: 32px;
   }
 

@@ -187,13 +187,8 @@ export default async function decorate(block) {
     slideIndicators.classList.add('hero-promo-slide-indicators');
     slideIndicatorsNav.append(slideIndicators);
 
-    const slideNavButtons = document.createElement('div');
-    slideNavButtons.classList.add('hero-promo-navigation-buttons');
-    slideNavButtons.innerHTML = `
-      <button type="button" class="slide-prev" aria-label="${placeholders.previousSlide || 'Previous Slide'}"></button>
-      <button type="button" class="slide-next" aria-label="${placeholders.nextSlide || 'Next Slide'}"></button>
-    `;
-    container.append(slideNavButtons);
+    // Live has no prev/next arrows on the hero-promo carousel — only the dot
+    // indicators. Omit the navigation arrow buttons to match live.
     container.append(slideIndicatorsNav);
   }
 

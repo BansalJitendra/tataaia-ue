@@ -243,7 +243,11 @@ main .hero-promo a.button:focus {
 
 @media (width >= 900px) {
   .hero-promo .hero-promo-slide {
+    /* Fixed 300px banner height to match live (content overlays the image);
+       border-box so the padding is included within the 300px total. */
+    box-sizing: border-box;
     min-height: 300px;
+    height: 300px;
     padding: 24px 20px;
   }
 

@@ -300,6 +300,14 @@ main p:has(> img[alt="close-popup"]) {
   display: none;
 }
 
+/* The Awards carousel's prev/next arrow images (Button1/Button2) leak from the
+   source as loose images after the cards-award block. Live hides them (0x0
+   decorative controls) — hide their wrapper paragraphs here too. */
+main .cards-award-container p:has(> picture > img[alt="prevoius-arrow"]),
+main .cards-award-container p:has(> picture > img[alt="next-arrow"]) {
+  display: none;
+}
+
 /* Section titles in the cards-promo section — the "Find the right life insurance
    plan for you" heading (<h2>) and the "Awards & Recognition" title (imported as
    a bare paragraph). On live both are centered blue->red gradient headings. */

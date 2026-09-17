@@ -284,6 +284,15 @@ export default async function decorate(block) {
   block.replaceChildren(form);
   enhancePlanLayout(block, form);
 
+  // The "Looking to buy a new life insurance plan?" call-back form renders on
+  // live as a blue->red gradient band with its fields in a single horizontal
+  // row. It's the form that is NOT the tabbed plan-picker (no date-of-birth).
+  // Flag it so the CSS can apply the gradient-band treatment.
+  if (!form.querySelector('[name="dateOfBirth"]')
+    && form.querySelector('select[name="plan"]')) {
+    block.classList.add('form-callback');
+  }
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const valid = form.checkValidity();

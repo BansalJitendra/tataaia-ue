@@ -448,3 +448,148 @@ main .section.blue-tone-light .form .form-plan-body form {
 .form .toggle-wrapper input:checked + .slider::before {
   transform: translateX(24px);
 }
+
+/* ============================================================================
+   Call-back form variant (.form-callback) — "Looking to buy a new life
+   insurance plan?". Live renders it as a blue->red gradient band with the
+   fields in a single horizontal row, white labels, translucent inputs, and a
+   white "Get a Call Back" button. The heading + subtext sit above the band.
+   ========================================================================== */
+/* stylelint-disable no-descending-specificity */
+
+/* Heading above the band: centered gradient (subtext grey, centered) */
+main .section .form.form-callback .heading-wrapper h2,
+main .section .form.form-callback .heading-wrapper h3 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(90deg, #0073bb 38%, #d62049 66%);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.form.form-callback .plaintext-wrapper p {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-color, #58595b);
+}
+
+/* The form becomes the gradient band; the heading/subtext are pulled out of the
+   band flow (they sit above via order) — keep them full width and transparent. */
+main .section.blue-tone-light .form.form-callback form,
+.form.form-callback form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px 20px;
+  align-items: end;
+  padding: 24px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #0073bb 0%, #d62049 100%);
+  box-shadow: none;
+}
+
+/* Lift the heading + subtext out of the gradient band, above it. */
+.form.form-callback form .heading-wrapper,
+.form.form-callback form .plaintext-wrapper {
+  order: -1;
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+/* Wrap the band's own padding around only the field row: put heading/subtext
+   outside by giving them negative context — simplest is a transparent strip.
+   Keep them readable: heading gradient still applies, subtext grey. */
+.form.form-callback form .plaintext-wrapper {
+  margin-bottom: 4px;
+}
+
+/* Fields in a horizontal row on desktop */
+@media (width >= 900px) {
+  .form.form-callback form {
+    grid-template-columns: auto 1.3fr 1.3fr 1fr auto;
+    align-items: end;
+  }
+
+  .form.form-callback form .heading-wrapper,
+  .form.form-callback form .plaintext-wrapper {
+    grid-column: 1 / -1;
+  }
+}
+
+/* White labels/legends inside the band */
+.form.form-callback form label,
+.form.form-callback form fieldset > legend {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Translucent inputs with white text */
+.form.form-callback form input[type="text"],
+.form.form-callback form input[type="tel"],
+.form.form-callback form input[type="email"],
+.form.form-callback form select {
+  background-color: rgb(255 255 255 / 12%);
+  border: 1px solid rgb(255 255 255 / 45%);
+  color: #fff;
+}
+
+.form.form-callback form input::placeholder {
+  color: rgb(255 255 255 / 70%);
+}
+
+.form.form-callback form select option {
+  color: #333;
+}
+
+/* NRI Yes/No toggle: keep the radios in a row */
+.form.form-callback form fieldset {
+  grid-template-columns: none;
+  gap: 6px;
+}
+
+.form.form-callback form fieldset .selection-wrapper {
+  display: inline-flex;
+}
+
+/* White "Get a Call Back" button with red text (submit wrapper on live/EDS) */
+main .section .form.form-callback form .submit-wrapper button.button,
+main .section .form.form-callback form .button-wrapper button.button {
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  background-color: #fff;
+  color: var(--brand-primary, #d62049);
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+main .section .form.form-callback form .submit-wrapper button.button:hover,
+main .section .form.form-callback form .submit-wrapper button.button:focus,
+main .section .form.form-callback form .button-wrapper button.button:hover,
+main .section .form.form-callback form .button-wrapper button.button:focus {
+  background-color: #f4f7fb;
+  color: var(--brand-primary, #d62049);
+}
+
+/* Consent row spans full width, white fine print */
+.form.form-callback form .checkbox-wrapper {
+  grid-column: 1 / -1;
+}
+
+.form.form-callback form .checkbox-wrapper label {
+  font-size: 11px;
+  font-weight: 400;
+  color: rgb(255 255 255 / 90%);
+}
+
+/* stylelint-enable no-descending-specificity */

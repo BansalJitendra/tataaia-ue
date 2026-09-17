@@ -327,3 +327,46 @@ main .section.cards-promo-container > .default-content-wrapper > p:only-child {
     font-size: 32px;
   }
 }
+
+/* "Tata AIA Life Insurance / Reviewed by Life Insurance Experts" review
+   card. On live it's a white rounded card with the logo on the left and the
+   heading + review text on the right. The imported markup is flat default
+   content (logo <p>, then h2/h3/paragraphs), so lay it out with the logo
+   floated left and the text flowing beside it. */
+main .default-content-wrapper:has(> h2#tata-aia-life-insurance) {
+  margin: 24px 0;
+  padding: 24px 32px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
+}
+
+main .default-content-wrapper:has(> h2#tata-aia-life-insurance) > p {
+  margin: 0 0 8px;
+}
+
+main .default-content-wrapper:has(> h2#tata-aia-life-insurance) > p:first-child {
+  float: left;
+  margin: 0 24px 8px 0;
+  width: 100px;
+}
+
+main .default-content-wrapper:has(> h2#tata-aia-life-insurance) > p:first-child img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+main .default-content-wrapper:has(> h2#tata-aia-life-insurance) > h2 {
+  margin: 0 0 4px;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+main .default-content-wrapper:has(> h2#tata-aia-life-insurance) > h3 {
+  margin: 0 0 12px;
+  color: var(--text-color, #58595b);
+  font-size: 15px;
+  font-weight: 600;
+}

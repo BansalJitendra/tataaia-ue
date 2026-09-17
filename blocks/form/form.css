@@ -457,21 +457,20 @@ main .section.blue-tone-light .form .form-plan-body form {
    ========================================================================== */
 /* stylelint-disable no-descending-specificity */
 
-/* Heading above the band: plain dark-grey, centered (matches live — the
-   heading sits on the white page, NOT on the gradient band). Explicitly
-   reset the gradient text-clip inherited from the base .form heading rule. */
+/* Heading above the band: centered blue->red gradient text (matches live —
+   the heading sits on the white page, above the gradient band). */
 main .section .form.form-callback .heading-wrapper h2,
 main .section .form.form-callback .heading-wrapper h3 {
   margin: 0 0 6px;
   font-size: 28px;
   font-weight: 700;
   text-align: center;
-  background: none;
+  background: linear-gradient(89deg, #0073bb 0.58%, #d62049 99.42%);
   /* stylelint-disable-next-line property-no-vendor-prefix */
-  -webkit-background-clip: border-box;
-  background-clip: border-box;
-  color: #333;
-  -webkit-text-fill-color: #333;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .form.form-callback .plaintext-wrapper p {

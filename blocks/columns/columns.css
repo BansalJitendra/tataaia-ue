@@ -85,6 +85,16 @@
   text-decoration: underline;
 }
 
+/* The global `button { display: inline-block }` overrides the [hidden]
+   attribute, so restore hidden semantics for the toggle buttons/spans:
+   only one of Read more / Read less is ever visible at a time. */
+.columns .columns-readmore[hidden],
+.columns .columns-readless[hidden],
+.columns .columns-text-extra[hidden],
+.columns .columns-ellipsis[hidden] {
+  display: none;
+}
+
 /* ============================================================================
    Variant: product-recommendation callout (.columns-product-recom)
    Rounded two-column card: left pitch panel + right best-seller plan card.

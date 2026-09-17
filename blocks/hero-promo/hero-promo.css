@@ -171,20 +171,20 @@ main .hero-promo a.button:focus {
   list-style: none;
 }
 
+/* Live renders these as equal-width thin white pill bars: translucent when
+   inactive, solid white for the current slide (not round dots). */
 .hero-promo .hero-promo-slide-indicator button {
-  width: 10px;
-  height: 10px;
+  width: 38px;
+  height: 6px;
   padding: 0;
   border: none;
-  border-radius: 50%;
-  background-color: rgb(255 255 255 / 50%);
+  border-radius: 6px;
+  background-color: rgb(255 255 255 / 20%);
   cursor: pointer;
-  transition: background-color 0.2s, width 0.2s;
+  transition: background-color 0.2s;
 }
 
 .hero-promo .hero-promo-slide-indicator button[disabled] {
-  width: 24px;
-  border-radius: 5px;
   background-color: #fff;
 }
 

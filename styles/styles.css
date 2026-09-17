@@ -308,11 +308,13 @@ main .cards-award-container p:has(> picture > img[alt="next-arrow"]) {
   display: none;
 }
 
-/* Section titles in the cards-promo section — the "Find the right life insurance
-   plan for you" heading (<h2>) and the "Awards & Recognition" title (imported as
-   a bare paragraph). On live both are centered blue->red gradient headings. */
+/* Section titles — the "Find the right life insurance plan for you" heading
+   (<h2>) in the cards-promo section and the "Awards & Recognition" title
+   (imported as a bare paragraph) in the cards-award section. On live both are
+   centered blue->red gradient headings. */
 main .section.cards-promo-container > .default-content-wrapper > h2,
-main .section.cards-promo-container > .default-content-wrapper > p:only-child {
+main .section.cards-promo-container > .default-content-wrapper > p:only-child,
+main .section.cards-award-container > .default-content-wrapper > p:only-child {
   margin: 24px 0;
   font-family: var(--heading-font-family);
   font-size: 28px;
@@ -340,7 +342,8 @@ main .section.cards-promo-container > .default-content-wrapper > h2 + p {
 
 @media (width >= 900px) {
   main .section.cards-promo-container > .default-content-wrapper > h2,
-  main .section.cards-promo-container > .default-content-wrapper > p:only-child {
+  main .section.cards-promo-container > .default-content-wrapper > p:only-child,
+  main .section.cards-award-container > .default-content-wrapper > p:only-child {
     font-size: 32px;
   }
 }

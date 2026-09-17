@@ -291,6 +291,13 @@ export default async function decorate(block) {
   if (!form.querySelector('[name="dateOfBirth"]')
     && form.querySelector('select[name="plan"]')) {
     block.classList.add('form-callback');
+    // On live the heading + subtext sit ABOVE the gradient band on the white
+    // page (not on the band). Move them out of the <form> so only the fields
+    // get the gradient background.
+    const heading = form.querySelector('.heading-wrapper');
+    const subtext = form.querySelector('.plaintext-wrapper');
+    if (subtext) block.insertBefore(subtext, form);
+    if (heading) block.insertBefore(heading, subtext || form);
   }
 
   form.addEventListener('submit', (e) => {

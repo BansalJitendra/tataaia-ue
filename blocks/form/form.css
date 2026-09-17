@@ -457,19 +457,21 @@ main .section.blue-tone-light .form .form-plan-body form {
    ========================================================================== */
 /* stylelint-disable no-descending-specificity */
 
-/* Heading above the band: centered gradient (subtext grey, centered) */
+/* Heading above the band: plain dark-grey, centered (matches live — the
+   heading sits on the white page, NOT on the gradient band). Explicitly
+   reset the gradient text-clip inherited from the base .form heading rule. */
 main .section .form.form-callback .heading-wrapper h2,
 main .section .form.form-callback .heading-wrapper h3 {
   margin: 0 0 6px;
   font-size: 28px;
   font-weight: 700;
   text-align: center;
-  background: linear-gradient(90deg, #0073bb 38%, #d62049 66%);
+  background: none;
   /* stylelint-disable-next-line property-no-vendor-prefix */
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  color: #333;
+  -webkit-text-fill-color: #333;
 }
 
 .form.form-callback .plaintext-wrapper p {
@@ -493,21 +495,13 @@ main .section.blue-tone-light .form.form-callback form,
   box-shadow: none;
 }
 
-/* Lift the heading + subtext out of the gradient band, above it. */
-.form.form-callback form .heading-wrapper,
-.form.form-callback form .plaintext-wrapper {
-  order: -1;
-  grid-column: 1 / -1;
+/* Heading + subtext sit above the band (moved out of <form> in JS), on the
+   white page background. */
+.form.form-callback .heading-wrapper,
+.form.form-callback .plaintext-wrapper {
   margin: 0;
   padding: 0;
   background: none;
-}
-
-/* Wrap the band's own padding around only the field row: put heading/subtext
-   outside by giving them negative context — simplest is a transparent strip.
-   Keep them readable: heading gradient still applies, subtext grey. */
-.form.form-callback form .plaintext-wrapper {
-  margin-bottom: 4px;
 }
 
 /* Fields in a horizontal row on desktop */
@@ -515,11 +509,6 @@ main .section.blue-tone-light .form.form-callback form,
   .form.form-callback form {
     grid-template-columns: auto 1.3fr 1.3fr 1fr auto;
     align-items: end;
-  }
-
-  .form.form-callback form .heading-wrapper,
-  .form.form-callback form .plaintext-wrapper {
-    grid-column: 1 / -1;
   }
 }
 

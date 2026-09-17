@@ -479,3 +479,223 @@ header .nav-hamburger span {
     font-size: 15px;
   }
 }
+
+/* ---- utility icon popups ---- */
+header .nav-icon-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+header .nav-popup {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 50;
+  width: max-content;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 15%);
+  color: var(--text-color, #58595b);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+header .nav-popup[hidden] {
+  display: none;
+}
+
+header .nav-popup-title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading-color, #333);
+}
+
+header .nav-popup-subhead {
+  margin: 14px 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--heading-color, #333);
+}
+
+header .nav-popup-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header .nav-popup-links li {
+  margin: 0 0 8px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+header .nav-popup-links a {
+  color: var(--text-color, #58595b);
+  text-decoration: none;
+}
+
+header .nav-popup-links a:hover {
+  color: var(--brand-primary, #d62049);
+  text-decoration: underline;
+}
+
+/* call-us popup */
+header .nav-callus-group {
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+
+header .nav-callus-group:first-of-type {
+  border-top: none;
+}
+
+header .nav-callus-group p {
+  margin: 0 0 4px;
+}
+
+header .nav-callus-head {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: var(--heading-color, #333);
+}
+
+header .nav-callus-time {
+  font-size: 12px;
+  color: #8a8b8d;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+header .nav-callus-group a {
+  color: var(--brand-primary, #d62049);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* search popup */
+header .nav-search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+header .nav-search-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #daeef8;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+header .nav-search-submit {
+  flex: 0 0 auto;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--brand-primary, #d62049);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* more (mega) popup */
+header .nav-popup-more {
+  max-width: 640px;
+}
+
+header .nav-more-cols {
+  display: flex;
+  gap: 28px;
+}
+
+header .nav-more-col {
+  flex: 1 1 0;
+  min-width: 150px;
+}
+
+/* accessibility popup */
+header .nav-a11y-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+header .nav-a11y-controls button {
+  padding: 10px 12px;
+  border: 1px solid #daeef8;
+  border-radius: 8px;
+  background-color: #f4f7fb;
+  color: var(--heading-color, #333);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header .nav-a11y-controls button:hover {
+  border-color: var(--brand-primary, #d62049);
+  color: var(--brand-primary, #d62049);
+}
+
+header .nav-a11y-reset {
+  grid-column: 1 / -1;
+  background-color: #fff !important;
+}
+
+/* accessibility state effects applied to the whole document */
+html[data-a11y-textsize] {
+  font-size: 120%;
+}
+
+html[data-a11y-contrast] {
+  filter: contrast(1.4);
+}
+
+html[data-a11y-grayscale] {
+  filter: grayscale(1);
+}
+
+html[data-a11y-contrast][data-a11y-grayscale] {
+  filter: contrast(1.4) grayscale(1);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+html[data-a11y-links] a {
+  text-decoration: underline !important;
+  outline: 1px solid currentcolor;
+}
+
+html[data-a11y-readable] body {
+  font-family: arial, sans-serif !important;
+  letter-spacing: 0.02em;
+}
+
+/* On mobile the popups drop to a full-width sheet under the bar. */
+@media (width < 900px) {
+  header .nav-icon-wrap {
+    position: static;
+  }
+
+  header .nav-popup {
+    top: auto;
+    right: 8px;
+    left: 8px;
+    max-width: none;
+    width: auto;
+  }
+
+  header .nav-popup-more {
+    max-width: none;
+  }
+
+  header .nav-more-cols {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

@@ -17,6 +17,130 @@ const ICONS = {
   account: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
 };
 
+// ---- Header utility popups ----------------------------------------------
+// Each header icon (phone / search / account / accessibility / more) opens a
+// popup panel with content related to that icon, matching live. Content is
+// static (mirrors live copy/links); the search box links to relevant pages
+// rather than a live backend.
+
+const POPUP_HTML = {
+  phone: `
+    <h3 class="nav-popup-title">Call us</h3>
+    <div class="nav-callus-group">
+      <p class="nav-callus-head">For existing policy</p>
+      <p>Have query on premium, payout or any servicing need?</p>
+      <p>Call us: <a href="tel:18602669966">1860 266 9966</a></p>
+      <p>Dedicated NRI Helpdesk: <a href="tel:+912262519966">+91 22 6251 9966</a></p>
+      <p class="nav-callus-time">Monday – Saturday | 10 am – 7 pm IST · Call charges apply</p>
+    </div>
+    <div class="nav-callus-group">
+      <p class="nav-callus-head">For new policy</p>
+      <p>For Indian Residents <a href="tel:+912269849300">+91 22 6984 9300</a></p>
+      <p class="nav-callus-time">All Days | 8 am – 11 pm IST</p>
+      <p>Give missed call for a call back: <a href="tel:+911166158748">+91 11 6615 8748</a></p>
+      <p class="nav-callus-time">All Days | 9 am – 9 pm IST</p>
+    </div>
+    <div class="nav-callus-group">
+      <p class="nav-callus-head">For new policy (NRIs)</p>
+      <p>Give missed call for a call back: <a href="tel:+911169216464">+91 11 6921 6464</a></p>
+      <p class="nav-callus-time">Available All Days | 24 x 7</p>
+    </div>`,
+  search: `
+    <h3 class="nav-popup-title">Search</h3>
+    <form class="nav-search-form" role="search" action="/search.html" method="get">
+      <input type="search" name="q" class="nav-search-input" placeholder="Search for plans, calculators, services…" aria-label="Search">
+      <button type="submit" class="nav-search-submit" aria-label="Search">Search</button>
+    </form>
+    <p class="nav-popup-subhead">Popular searches</p>
+    <ul class="nav-popup-links">
+      <li><a href="/calculator/term-insurance-calculator.html">Calculate Term Premium</a></li>
+      <li><a href="https://myinsurance.tataaia.com/portfolio/login?target=50">Pay Premium</a></li>
+      <li><a href="/customer-service/claims.html">Register a claim</a></li>
+      <li><a href="/customer-service/life-insurance-dividend-and-bonus-rates.html">Bonus &amp; Dividend</a></li>
+      <li><a href="/customer-service/download-centre.html">Download Policy Document</a></li>
+      <li><a href="/customer-service.html">Submit a Complaint</a></li>
+    </ul>`,
+  account: `
+    <h3 class="nav-popup-title">Login</h3>
+    <ul class="nav-popup-links">
+      <li><a href="https://myinsurance.tataaia.com/">Customer login</a></li>
+      <li><a href="https://grip.tataaia.com/TVG/">Corporate login</a></li>
+      <li><a href="https://www.italic.co.in/wps/portal/italic/login">Distributor login</a></li>
+      <li><a href="https://sellonline.tataaia.com/">Sell Online</a></li>
+    </ul>`,
+  more: `
+    <h3 class="nav-popup-title">More</h3>
+    <div class="nav-more-cols">
+      <div class="nav-more-col">
+        <p class="nav-popup-subhead">Calculators</p>
+        <ul class="nav-popup-links">
+          <li><a href="/calculator/term-insurance-calculator.html">Term Insurance Calculator</a></li>
+          <li><a href="/calculator/ulip-calculator.html">ULIP Calculator</a></li>
+          <li><a href="/calculator/saving-calculator.html">Savings Calculator</a></li>
+          <li><a href="/calculator/retirement-and-pension-calculator.html">Retirement &amp; Pension Calculator</a></li>
+          <li><a href="/calculator/compound-interest-calculator.html">Compound Interest Calculator</a></li>
+          <li><a href="/calculator/human-life-value-calculator.html">Human Life Value Calculator</a></li>
+        </ul>
+      </div>
+      <div class="nav-more-col">
+        <p class="nav-popup-subhead">Fund Performance</p>
+        <ul class="nav-popup-links">
+          <li><a href="/investment-funds/tata-aia-fund-performance.html">All Tata AIA Funds</a></li>
+          <li><a href="/customer-service/fact-sheet.html">View Fund Fact Sheet</a></li>
+          <li><a href="/customer-service/life-insurance-dividend-and-bonus-rates.html">Bonus &amp; Dividend Performance</a></li>
+          <li><a href="/investment-funds/nfo.html">Tata AIA New Fund Offers (NFO)</a></li>
+        </ul>
+      </div>
+      <div class="nav-more-col">
+        <p class="nav-popup-subhead">Trending Topics</p>
+        <ul class="nav-popup-links">
+          <li><a href="/life-insurance-plans/term-insurance/compare-term-insurance-plans.html">Compare Term Plans</a></li>
+          <li><a href="/life-insurance-plans/nri-life-insurance-plans.html">NRI Life Insurance</a></li>
+          <li><a href="/life-insurance-plans/term-insurance/2-crore-term-insurance.html">2 Crore Term Insurance</a></li>
+          <li><a href="/life-insurance-plans/savings-solutions/endowment-policy.html">Endowment Policy</a></li>
+        </ul>
+      </div>
+    </div>`,
+};
+
+// Accessibility panel: functional client-side controls (text size, contrast,
+// grayscale, highlight links, readable font) applied to <html> data-attrs.
+const A11Y_HTML = `
+  <h3 class="nav-popup-title">Accessibility</h3>
+  <div class="nav-a11y-controls">
+    <button type="button" data-a11y="textsize">Bigger Text</button>
+    <button type="button" data-a11y="contrast">High Contrast</button>
+    <button type="button" data-a11y="grayscale">Grayscale</button>
+    <button type="button" data-a11y="links">Highlight Links</button>
+    <button type="button" data-a11y="readable">Readable Font</button>
+    <button type="button" data-a11y="reset" class="nav-a11y-reset">Reset</button>
+  </div>`;
+
+function applyA11y(mode) {
+  const root = document.documentElement;
+  if (mode === 'reset') {
+    ['textsize', 'contrast', 'grayscale', 'links', 'readable'].forEach((m) => root.removeAttribute(`data-a11y-${m}`));
+    return;
+  }
+  const attr = `data-a11y-${mode}`;
+  if (root.hasAttribute(attr)) root.removeAttribute(attr);
+  else root.setAttribute(attr, 'on');
+}
+
+/** Build one popup panel element for a given icon key. */
+function buildPopup(key) {
+  const popup = document.createElement('div');
+  popup.className = `nav-popup nav-popup-${key}`;
+  popup.setAttribute('hidden', '');
+  popup.innerHTML = (key === 'accessibility' ? A11Y_HTML : POPUP_HTML[key]) || '';
+  if (key === 'accessibility') {
+    popup.querySelectorAll('[data-a11y]').forEach((btn) => {
+      btn.addEventListener('click', () => applyA11y(btn.dataset.a11y));
+    });
+  }
+  return popup;
+}
+
 /** Tag product-card badges: an <em> the fragment places before a product link. */
 function decorateBadges(panel) {
   panel.querySelectorAll('li > em').forEach((em) => {
@@ -191,29 +315,77 @@ export default async function decorate(block) {
     }
   }
 
+  // Each utility icon opens a popup panel (like live). The panels are appended
+  // to the tools group and toggled on click; opening one closes the others.
+  const popups = [];
+  const closeAllPopups = (except) => {
+    popups.forEach((p) => { if (p !== except) p.setAttribute('hidden', ''); });
+  };
+  const wirePopup = (trigger, popup) => {
+    popups.push(popup);
+    trigger.setAttribute('aria-haspopup', 'true');
+    trigger.setAttribute('aria-expanded', 'false');
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = !popup.hasAttribute('hidden');
+      closeAllPopups(popup);
+      if (isOpen) popup.setAttribute('hidden', '');
+      else popup.removeAttribute('hidden');
+      trigger.setAttribute('aria-expanded', String(!isOpen));
+    });
+    popup.addEventListener('click', (e) => e.stopPropagation());
+  };
+
   const icons = document.createElement('div');
   icons.className = 'nav-icons';
   [['phone', 'Call back'], ['search', 'Search'], ['account', 'My account'], ['accessibility', 'Accessibility']].forEach(([key, label]) => {
+    const wrap = document.createElement('div');
+    wrap.className = `nav-icon-wrap nav-icon-wrap-${key}`;
     const b = document.createElement('button');
     b.className = `nav-icon nav-icon-${key}`;
     b.setAttribute('aria-label', label);
     b.innerHTML = ICONS[key];
-    icons.append(b);
+    wrap.append(b);
+    const popup = buildPopup(key);
+    wrap.append(popup);
+    wirePopup(b, popup);
+    icons.append(wrap);
   });
   tools.append(icons);
 
+  // Hamburger ("More"): on desktop it opens the More popup; on mobile it opens
+  // the slide-in drawer.
+  const hamburgerWrap = document.createElement('div');
+  hamburgerWrap.className = 'nav-icon-wrap nav-icon-wrap-more';
   const hamburger = document.createElement('button');
   hamburger.className = 'nav-hamburger';
   hamburger.setAttribute('aria-label', 'Open menu');
   hamburger.setAttribute('aria-expanded', 'false');
   hamburger.innerHTML = '<span></span><span></span><span></span>';
-  hamburger.addEventListener('click', () => {
+  const morePopup = buildPopup('more');
+  hamburgerWrap.append(hamburger, morePopup);
+  popups.push(morePopup);
+  hamburger.addEventListener('click', (e) => {
+    if (isDesktop.matches) {
+      e.stopPropagation();
+      const isOpen = !morePopup.hasAttribute('hidden');
+      closeAllPopups(morePopup);
+      if (isOpen) morePopup.setAttribute('hidden', '');
+      else morePopup.removeAttribute('hidden');
+      hamburger.setAttribute('aria-expanded', String(!isOpen));
+      return;
+    }
     const open = block.classList.toggle('nav-mobile-open');
     hamburger.setAttribute('aria-expanded', String(open));
     hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     document.body.style.overflow = open ? 'hidden' : '';
   });
-  tools.append(hamburger);
+  morePopup.addEventListener('click', (e) => e.stopPropagation());
+  tools.append(hamburgerWrap);
+
+  // Close any open popup when clicking outside or pressing Escape.
+  document.addEventListener('click', () => closeAllPopups(null));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAllPopups(null); });
 
   bar.append(tools);
   header.append(bar);

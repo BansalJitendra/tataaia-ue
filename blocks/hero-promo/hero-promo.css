@@ -125,12 +125,11 @@
   border-left: 1px solid rgb(255 255 255 / 35%);
 }
 
+/* The long legal fine print is baked into the banner image on live, so the
+   HTML overlay copy shouldn't repeat it over the image (it dominated the slide
+   and overlapped the artwork). Hide it in the hero overlay. */
 .hero-promo .hero-promo-fineprint {
-  max-width: 640px;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 1.4;
-  color: rgb(255 255 255 / 85%);
+  display: none;
 }
 
 /* CTA button -- white pill with red label */

@@ -34,6 +34,12 @@ function classifyContent(textCell) {
       container.className = 'button-container';
       container.append(link);
       content.append(container);
+    } else if (i === 0 && text.length > 60) {
+      // A long first line is a legal disclaimer (baked into the banner image on
+      // live), not an eyebrow — treat it as hidden fine print so it doesn't
+      // overlay the artwork.
+      node.classList.add('hero-promo-fineprint');
+      content.append(node);
     } else if (i === 0) {
       node.classList.add('hero-promo-eyebrow');
       content.append(node);

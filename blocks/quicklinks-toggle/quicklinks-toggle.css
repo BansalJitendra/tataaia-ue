@@ -159,3 +159,50 @@
     font-size: 18px;
   }
 }
+
+/* ---- "Know your benefits" CTA (matches live) ---- */
+.quicklinks-toggle .quicklinks-toggle-benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.quicklinks-toggle .quicklinks-toggle-benefit-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color, #58595b);
+}
+
+.quicklinks-toggle .quicklinks-toggle-benefit-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 304px;
+  justify-content: center;
+  padding: 12px 20px;
+  border: 1px solid #4197d3;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.quicklinks-toggle .quicklinks-toggle-benefit-cta:hover {
+  background-color: #f4f9fd;
+}
+
+.quicklinks-toggle .quicklinks-toggle-benefit-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.quicklinks-toggle .quicklinks-toggle-benefit-arrow {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  object-fit: contain;
+}

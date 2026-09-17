@@ -87,4 +87,21 @@ export default function decorate(block) {
   renderPersona(0);
 
   block.append(toggle, selector);
+
+  // "Know your benefits" CTA — on live this sits alongside the toggle: a small
+  // label above a bordered white button (paperwork icon + red arrow) that opens
+  // the quote / benefit-illustration tool.
+  const benefit = document.createElement('div');
+  benefit.className = 'quicklinks-toggle-benefit';
+  const benefitLabel = document.createElement('span');
+  benefitLabel.className = 'quicklinks-toggle-benefit-label';
+  benefitLabel.textContent = 'Know your benefits';
+  const benefitLink = document.createElement('a');
+  benefitLink.className = 'quicklinks-toggle-benefit-cta';
+  benefitLink.href = 'https://siddhi-insurance.tataaia.com/product/quotation/generate-quote?source=WEBSALES&callbackUrl=https://www.tataaia.com/';
+  benefitLink.innerHTML = '<img class="quicklinks-toggle-benefit-icon" src="https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/minimum-paperwork.svg" alt="benefit illustration">'
+    + '<span>Quote/Benefit Illustration</span>'
+    + '<img class="quicklinks-toggle-benefit-arrow" src="https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Right-Arrow-red.svg" alt="right arrow">';
+  benefit.append(benefitLabel, benefitLink);
+  block.append(benefit);
 }

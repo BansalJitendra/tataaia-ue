@@ -6,6 +6,29 @@
  * Values extracted from source (.youtubevideoandreels) computed styles.
  */
 
+/* Section title ("Related Reels/Videos") — centered blue->red gradient heading,
+   matching the live section titles. */
+main .section.carousel-video-container > .default-content-wrapper > h2 {
+  margin: 0 0 24px;
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  background: linear-gradient(90deg, #0073bb 38%, #d62049 66%);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (width >= 900px) {
+  main .section.carousel-video-container > .default-content-wrapper > h2 {
+    font-size: 32px;
+  }
+}
+
 .carousel-video .carousel-video-slides-container {
   position: relative;
 }

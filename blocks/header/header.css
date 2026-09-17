@@ -297,6 +297,13 @@ header .nav-icon:hover {
   color: var(--brand-primary, #d62049);
 }
 
+/* Animated "Call us" GIF icon (phone) — sized like the line icons. */
+header .nav-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 /* CTA buttons in header (compact pill; override global button sizing) */
 header .nav-cta-primary,
 header .nav-cta-secondary {

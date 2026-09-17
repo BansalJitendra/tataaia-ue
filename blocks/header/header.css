@@ -290,8 +290,8 @@ header .nav-icon:hover {
 header .nav-cta-primary,
 header .nav-cta-secondary {
   margin: 0;
-  padding: 8px 18px;
-  font-size: 14px;
+  padding: 8px 14px;
+  font-size: 13px;
   border-radius: 999px;
   white-space: nowrap;
 }
@@ -340,18 +340,22 @@ header .nav-hamburger span {
 /* ================= Desktop ================= */
 @media (width >= 900px) {
   header .nav-bar {
-    padding: 8px 32px;
+    max-width: 1440px;
+    padding: 8px 24px;
+    gap: 12px;
   }
 
   header .nav-brand img {
     height: 40px;
   }
 
-  /* menu becomes an inline horizontal bar */
+  /* menu becomes an inline horizontal bar. It may shrink, but the tools group
+     (CTAs + icons) must not, so the icons never get pushed off-screen. */
   header .nav-menu {
     position: static;
     width: auto;
     flex: 1 1 auto;
+    min-width: 0;
     padding: 0;
     background: none;
     box-shadow: none;
@@ -359,10 +363,14 @@ header .nav-hamburger span {
     overflow: visible;
   }
 
+  header .nav-tools {
+    flex: 0 0 auto;
+  }
+
   header .nav-menu-list {
     display: flex;
     justify-content: center;
-    gap: 4px;
+    gap: 2px;
     width: auto;
   }
 
@@ -373,7 +381,7 @@ header .nav-hamburger span {
   }
 
   header .nav-menu-item > a {
-    padding: 18px 12px;
+    padding: 18px 10px;
     font-size: 14px;
     white-space: nowrap;
   }
@@ -425,17 +433,14 @@ header .nav-hamburger span {
     min-width: 280px;
   }
 
-  /* show CTAs + icons, hide hamburger */
+  /* show CTAs + icons; keep the hamburger ("More") visible on desktop too,
+     matching live's utility row (Call us · Search · Login · … · More). */
   header .nav-ctas {
     display: flex;
   }
 
   header .nav-icons {
     display: flex;
-  }
-
-  header .nav-hamburger {
-    display: none;
   }
 }
 

@@ -27,6 +27,27 @@ export default function decorate(block) {
     // decorate accordion item body
     const body = row.children[1];
     body.className = 'accordion-list-item-body';
+    // "Types of Life Insurance" items end with a CTA paragraph holding a
+    // "Calculate Premium" and/or "Know More About ..." link. On live these
+    // render as buttons — flag the paragraph + links so the CSS can style them.
+    body.querySelectorAll('p').forEach((p) => {
+      const links = [...p.querySelectorAll(':scope > a')];
+      const ctaRe = /^(Calculate\b|Know More About)/i;
+      const ctaLinks = links.filter((a) => ctaRe.test(a.textContent.trim()));
+      // only when the paragraph is essentially just CTA links
+      if (ctaLinks.length && ctaLinks.length === links.length
+        && p.textContent.trim() === links.map((a) => a.textContent.trim()).join(' ')) {
+        p.classList.add('accordion-list-cta-row');
+        ctaLinks.forEach((a) => {
+          a.classList.add('accordion-list-cta');
+          if (/^Calculate\b/i.test(a.textContent.trim())) {
+            a.classList.add('accordion-list-cta-primary');
+          } else {
+            a.classList.add('accordion-list-cta-secondary');
+          }
+        });
+      }
+    });
     // decorate accordion item
     const details = document.createElement('details');
     moveInstrumentation(row, details);

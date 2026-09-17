@@ -87,6 +87,43 @@
   text-decoration: underline;
 }
 
+/* CTA row (Calculate Premium / Know More About ...) — styled as buttons,
+   matching live: primary = solid red, secondary = white with red border. */
+.accordion-list details .accordion-list-item-body p.accordion-list-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px 0 4px;
+}
+
+.accordion-list details .accordion-list-item-body a.accordion-list-cta {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid var(--brand-primary, #d62049);
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.accordion-list details .accordion-list-item-body a.accordion-list-cta-primary {
+  background-color: var(--brand-primary, #d62049);
+  color: #fff;
+}
+
+.accordion-list details .accordion-list-item-body a.accordion-list-cta-secondary {
+  background-color: #fff;
+  color: var(--brand-primary, #d62049);
+}
+
+.accordion-list details .accordion-list-item-body a.accordion-list-cta:hover {
+  background-color: var(--brand-primary-dark, #b60d2c);
+  border-color: var(--brand-primary-dark, #b60d2c);
+  color: #fff;
+}
+
 /* nested sub-heading questions (h2/h3 inside a long item) */
 .accordion-list details .accordion-list-item-body h2,
 .accordion-list details .accordion-list-item-body h3,

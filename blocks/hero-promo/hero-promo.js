@@ -24,6 +24,10 @@ function classifyContent(textCell) {
   badges.className = 'hero-promo-badges';
 
   const nodes = [...textCell.children];
+  // `mainIdx` tracks the primary copy lines (eyebrow, heading, chips) so the
+  // classification isn't thrown off by a leading disclaimer line.
+  let mainIdx = 0;
+  let fineprint = null;
   nodes.forEach((node, i) => {
     const hasLink = node.querySelector && node.querySelector('a');
     const text = node.textContent.trim();
@@ -35,25 +39,28 @@ function classifyContent(textCell) {
       container.append(link);
       content.append(container);
     } else if (i === 0 && text.length > 60) {
-      // A long first line is a legal disclaimer (baked into the banner image on
-      // live), not an eyebrow — treat it as hidden fine print so it doesn't
-      // overlay the artwork.
-      node.classList.add('hero-promo-fineprint');
+      // A long first line is the policyholder risk disclaimer — small text
+      // pinned above the eyebrow/heading (as on live), not the eyebrow itself.
+      node.classList.add('hero-promo-disclaimer');
       content.append(node);
-    } else if (i === 0) {
+    } else if (text.length > 120) {
+      // Long legal fine print — small text pinned to the bottom of the overlay.
+      node.classList.add('hero-promo-fineprint');
+      fineprint = node;
+    } else if (mainIdx === 0) {
       node.classList.add('hero-promo-eyebrow');
       content.append(node);
-    } else if (i === 1) {
+      mainIdx += 1;
+    } else if (mainIdx === 1) {
       const h = document.createElement('h2');
       h.className = 'hero-promo-heading';
       h.innerHTML = node.innerHTML;
       content.append(h);
-    } else if (text.length > 120) {
-      node.classList.add('hero-promo-fineprint');
-      content.append(node);
+      mainIdx += 1;
     } else if (text) {
       node.classList.add('hero-promo-chip');
       badges.append(node);
+      mainIdx += 1;
     }
   });
 
@@ -62,6 +69,8 @@ function classifyContent(textCell) {
     if (heading) heading.after(badges);
     else content.prepend(badges);
   }
+  // Append the legal fine print last so it sits below the CTA at the bottom.
+  if (fineprint) content.append(fineprint);
   return content;
 }
 

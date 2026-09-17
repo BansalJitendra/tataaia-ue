@@ -108,5 +108,9 @@ export default function decorate(block) {
   main.className = 'quicklinks-toggle-main';
   main.append(toggle, selector);
 
-  block.append(benefit, main);
+  // Vertical divider between the benefit CTA and the toggle (like live).
+  const divider = document.createElement('span');
+  divider.className = 'quicklinks-toggle-divider';
+
+  block.append(benefit, divider, main);
 }

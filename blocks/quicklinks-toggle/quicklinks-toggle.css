@@ -179,8 +179,16 @@
 
 .quicklinks-toggle .quicklinks-toggle-benefit-label {
   font-size: 14px;
-  font-weight: 600;
-  color: var(--text-color, #58595b);
+  font-weight: 700;
+  color: #0073bb;
+}
+
+/* Vertical fading divider between the benefit CTA and the toggle (like live) */
+.quicklinks-toggle .quicklinks-toggle-divider {
+  align-self: center;
+  width: 2px;
+  height: 65px;
+  background: linear-gradient(180deg, rgb(167 169 172 / 0%) 0%, rgb(167 169 172 / 90%) 50%, rgb(167 169 172 / 0%) 100%);
 }
 
 .quicklinks-toggle .quicklinks-toggle-benefit-cta {

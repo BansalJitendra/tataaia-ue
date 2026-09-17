@@ -169,3 +169,12 @@ footer .footer-legal strong {
     padding: 0;
   }
 }
+
+/* "Connect with us" label above the social icons (matches live: 14px bold grey).
+   Placed at end to avoid a descending-specificity conflict with footer-legal. */
+footer .footer-brand > p:not(.footer-logo, .footer-social) {
+  margin: 8px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color, #58595b);
+}

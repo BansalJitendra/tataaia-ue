@@ -170,11 +170,8 @@ footer .footer-legal strong {
   }
 }
 
-/* "Connect with us" label above the social icons (matches live: 14px bold grey).
-   Placed at end to avoid a descending-specificity conflict with footer-legal. */
+/* The authored "Connect with us" text <p> is not shown on live (it's present
+   but visually hidden there), so hide the stray label above the social icons. */
 footer .footer-brand > p:not(.footer-logo, .footer-social) {
-  margin: 8px 0 0;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-color, #58595b);
+  display: none;
 }

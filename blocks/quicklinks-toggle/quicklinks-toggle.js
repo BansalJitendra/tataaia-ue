@@ -86,11 +86,9 @@ export default function decorate(block) {
 
   renderPersona(0);
 
-  block.append(toggle, selector);
-
-  // "Know your benefits" CTA — on live this sits alongside the toggle: a small
-  // label above a bordered white button (paperwork icon + red arrow) that opens
-  // the quote / benefit-illustration tool.
+  // "Know your benefits" CTA — on live this sits to the LEFT of the persona
+  // toggle: a small label above a bordered white button (paperwork icon + red
+  // arrow) that opens the quote / benefit-illustration tool.
   const benefit = document.createElement('div');
   benefit.className = 'quicklinks-toggle-benefit';
   const benefitLabel = document.createElement('span');
@@ -103,5 +101,12 @@ export default function decorate(block) {
     + '<span>Quote/Benefit Illustration</span>'
     + '<img class="quicklinks-toggle-benefit-arrow" src="https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/Homepage-Redesign/Right-Arrow-red.svg" alt="right arrow">';
   benefit.append(benefitLabel, benefitLink);
-  block.append(benefit);
+
+  // Group the persona toggle + action dropdown so the benefit CTA can sit
+  // beside them (benefit on the left, toggle group on the right — like live).
+  const main = document.createElement('div');
+  main.className = 'quicklinks-toggle-main';
+  main.append(toggle, selector);
+
+  block.append(benefit, main);
 }

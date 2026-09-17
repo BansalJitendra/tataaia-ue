@@ -282,8 +282,8 @@ header .nav-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   padding: 0;
   border: none;
   border-radius: 50%;
@@ -308,7 +308,7 @@ header .nav-icon-img {
 header .nav-cta-primary,
 header .nav-cta-secondary {
   margin: 0;
-  padding: 8px 14px;
+  padding: 8px 12px;
   font-size: 13px;
   border-radius: 999px;
   white-space: nowrap;
@@ -334,8 +334,8 @@ header .nav-hamburger {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   padding: 8px;
   border: none;
   background: none;
@@ -367,20 +367,22 @@ header .nav-hamburger span {
 @media (width >= 900px) {
   header .nav-bar {
     max-width: 1440px;
-    padding: 8px 24px;
-    gap: 12px;
+    padding: 8px 16px;
+    gap: 8px;
   }
 
   header .nav-brand img {
     height: 40px;
   }
 
-  /* menu becomes an inline horizontal bar. It may shrink, but the tools group
-     (CTAs + icons) must not, so the icons never get pushed off-screen. */
+  /* menu becomes an inline horizontal bar. Size it to its content (don't grow
+     to fill free space) so the items stay packed together between the logo and
+     the tools group instead of spreading out under them. It may still shrink
+     if space is tight; the tools group (CTAs + icons) must not. */
   header .nav-menu {
     position: static;
     width: auto;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     min-width: 0;
     padding: 0;
     background: none;
@@ -395,9 +397,10 @@ header .nav-hamburger span {
 
   header .nav-menu-list {
     display: flex;
-    justify-content: center;
-    gap: 2px;
+    justify-content: flex-start;
+    gap: 0;
     width: auto;
+    margin-right: 8px;
   }
 
   header .nav-menu-item {
@@ -407,8 +410,8 @@ header .nav-hamburger span {
   }
 
   header .nav-menu-item > a {
-    padding: 18px 10px;
-    font-size: 14px;
+    padding: 18px 7px;
+    font-size: 13px;
     white-space: nowrap;
   }
 

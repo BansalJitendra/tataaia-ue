@@ -62,11 +62,37 @@ export default async function decorate(block) {
   const header = document.createElement('div');
   header.className = 'nav-wrapper';
 
-  // promo bar (row 2)
+  // promo bar (row 2) — a right-to-left scrolling ticker of announcement
+  // messages (matches the live .ticker-wrap strip below the nav).
   if (promoSec) {
     const promo = document.createElement('div');
     promo.className = 'nav-promo';
-    while (promoSec.firstChild) promo.append(promoSec.firstChild);
+
+    const messages = [...promoSec.querySelectorAll('li')];
+    if (messages.length) {
+      const viewport = document.createElement('div');
+      viewport.className = 'nav-promo-ticker';
+      const track = document.createElement('div');
+      track.className = 'nav-promo-track';
+      // Build one set of items, then duplicate for a seamless loop.
+      const makeItems = () => messages.forEach((li) => {
+        const item = document.createElement('span');
+        item.className = 'nav-promo-item';
+        item.append(...li.cloneNode(true).childNodes);
+        track.append(item);
+      });
+      makeItems();
+      makeItems();
+      viewport.append(track);
+      promo.append(viewport);
+      // Pause the scroll on hover for readability.
+      viewport.addEventListener('mouseenter', () => { track.style.animationPlayState = 'paused'; });
+      viewport.addEventListener('mouseleave', () => { track.style.animationPlayState = 'running'; });
+    } else {
+      // fallback: whatever the promo section holds
+      while (promoSec.firstChild) promo.append(promoSec.firstChild);
+    }
+
     const close = document.createElement('button');
     close.className = 'nav-promo-close';
     close.setAttribute('aria-label', 'Dismiss notification');

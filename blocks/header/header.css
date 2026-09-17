@@ -15,48 +15,71 @@ header .nav-wrapper {
   z-index: 10;
 }
 
-/* ---- promo notification bar (row 2) ---- */
+/* ---- promo announcement ticker (row 2) ---- */
+
+/* right-to-left scrolling strip matching the live .ticker-wrap */
 header .nav-promo {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 8px 40px 8px 16px;
-  background-color: #fdeef2;
-  color: var(--heading-color, #333);
+  padding: 6px 40px 6px 0;
+  background-color: #f5c5c6;
+  color: #58595b;
   font-size: 13px;
-  text-align: center;
+  overflow: hidden;
 }
 
-header .nav-promo p {
+header .nav-promo-ticker {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+header .nav-promo-track {
+  display: flex;
+  width: max-content;
+  animation: nav-ticker 60s linear infinite;
+}
+
+@keyframes nav-ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+header .nav-promo-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 32px;
+  white-space: nowrap;
+  color: #58595b;
+}
+
+header .nav-promo-item p {
+  display: inline;
   margin: 0;
 }
 
-header .nav-promo a {
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 4px;
-  background-color: var(--heading-color, #333);
-  color: #fff;
+header .nav-promo-item a {
+  color: #ed1164;
   font-weight: 600;
+  text-decoration: underline;
   white-space: nowrap;
-  text-decoration: none;
 }
 
 header .nav-promo-close {
   position: absolute;
   top: 50%;
-  right: 12px;
+  right: 10px;
   transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
   padding: 0;
   border: none;
   border-radius: 50%;
   background: none;
-  color: var(--text-color, #58595b);
-  font-size: 20px;
+  color: #58595b;
+  font-size: 18px;
   line-height: 1;
   cursor: pointer;
 }

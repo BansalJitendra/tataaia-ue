@@ -179,10 +179,9 @@ main .columns-product-recom a.button:focus {
     grid-template-columns: 490px 1fr;
   }
 
-  /* Vertically center the content of BOTH panels so the left pitch and the
-     right plan card line up, matching live (both sections centered). */
+  /* Top-align the content of both panels (like live). */
   .columns-product-recom .columns-product-recom-left,
   .columns-product-recom .columns-product-recom-right {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }

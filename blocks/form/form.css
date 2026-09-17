@@ -539,14 +539,53 @@ main .section.blue-tone-light .form.form-callback form,
   color: #333;
 }
 
-/* NRI Yes/No toggle: keep the radios in a row */
+/* NRI Yes/No toggle: keep the radios in a row, white accents on the band */
 .form.form-callback form fieldset {
   grid-template-columns: none;
-  gap: 6px;
+  gap: 10px;
 }
 
 .form.form-callback form fieldset .selection-wrapper {
   display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.form.form-callback form fieldset .selection-wrapper input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #fff;
+  flex: 0 0 auto;
+}
+
+.form.form-callback form fieldset .selection-wrapper label {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Mobile number: country-code prefix inside the field (reflects NRI answer) */
+.form.form-callback form .tel-wrapper.has-cc-prefix {
+  position: relative;
+}
+
+.form.form-callback form .tel-wrapper.has-cc-prefix .form-cc-prefix {
+  position: absolute;
+  left: 12px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: var(--form-input-height);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.form.form-callback form .tel-wrapper.has-cc-prefix input[type="tel"] {
+  padding-left: 52px;
 }
 
 /* White "Get a Call Back" button with red text (submit wrapper on live/EDS) */

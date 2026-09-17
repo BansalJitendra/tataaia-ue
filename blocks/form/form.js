@@ -298,6 +298,26 @@ export default async function decorate(block) {
     const subtext = form.querySelector('.plaintext-wrapper');
     if (subtext) block.insertBefore(subtext, form);
     if (heading) block.insertBefore(heading, subtext || form);
+
+    // Mobile number gets a country-code prefix that reflects the NRI answer:
+    // resident (NRI = No) -> +91, NRI (Yes) -> +971 (like live).
+    const mobile = form.querySelector('input[name="mobileNumber"], input[type="tel"]');
+    const mobileWrap = mobile ? mobile.closest('.field-wrapper') : null;
+    if (mobile && mobileWrap) {
+      mobileWrap.classList.add('has-cc-prefix');
+      const prefix = document.createElement('span');
+      prefix.className = 'form-cc-prefix';
+      prefix.textContent = '+91';
+      mobile.before(prefix);
+      const nriRadios = [...form.querySelectorAll('input[name="nri"]')];
+      const syncPrefix = () => {
+        const yes = nriRadios.find((r) => r.checked
+          && /^(yes|nri|1|true)$/i.test(r.value));
+        prefix.textContent = yes ? '+971' : '+91';
+      };
+      nriRadios.forEach((r) => r.addEventListener('change', syncPrefix));
+      syncPrefix();
+    }
   }
 
   form.addEventListener('submit', (e) => {

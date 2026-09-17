@@ -369,10 +369,12 @@ header .nav-hamburger span {
   header .nav-menu-item > a {
     padding: 18px 12px;
     font-size: 14px;
+    white-space: nowrap;
   }
 
   /* hide the per-item icon on the top-level desktop bar (icons show inside panels) */
-  header .nav-menu-item > a img {
+  header .nav-menu-item > a img,
+  header .nav-menu-item > a picture {
     display: none;
   }
 

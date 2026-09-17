@@ -504,8 +504,10 @@ main .section.blue-tone-light .form.form-callback form,
   background: none;
 }
 
-/* Fields in a horizontal row on desktop */
+/* Fields in a single horizontal row on desktop. Match the base rule's
+   specificity (main .section.blue-tone-light ...) so this override wins. */
 @media (width >= 900px) {
+  main .section.blue-tone-light .form.form-callback form,
   .form.form-callback form {
     grid-template-columns: auto 1.3fr 1.3fr 1fr auto;
     align-items: end;
@@ -573,6 +575,21 @@ main .section .form.form-callback form .button-wrapper button.button:focus {
 /* Consent row spans full width, white fine print */
 .form.form-callback form .checkbox-wrapper {
   grid-column: 1 / -1;
+}
+
+/* Keep the fields + submit button on ONE row (submit in the last column),
+   with the consent checkbox spanning full-width below — matches live. */
+@media (width >= 900px) {
+  main .section.blue-tone-light .form.form-callback form .submit-wrapper,
+  .form.form-callback form .submit-wrapper {
+    grid-column: 5;
+    grid-row: 1;
+  }
+
+  main .section.blue-tone-light .form.form-callback form .checkbox-wrapper,
+  .form.form-callback form .checkbox-wrapper {
+    grid-row: 2;
+  }
 }
 
 .form.form-callback form .checkbox-wrapper label {

@@ -8,18 +8,6 @@
       <section_1 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
         <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ul&gt;
                     &lt;li&gt;
-                    &lt;p&gt;&lt;a href&#x3D;&quot;/life-insurance-plans/nri-life-insurance-plans.html&quot;&gt;&lt;img src&#x3D;&quot;/content/dam/tata-aia/assets/dollar-based-investment-plan-578ed83d.svg&quot; alt&#x3D;&quot;&quot;&gt;NRI Plans&lt;/a&gt;&lt;/p&gt;
-                    &lt;ul&gt;
-                    &lt;li&gt;&lt;a href&#x3D;&quot;/life-insurance-plans/term-insurance/term-insurance-for-nri.html&quot;&gt;Term Insurance for NRI&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href&#x3D;&quot;/life-insurance-plans/nri-life-insurance-plans/nri-investment-plans.html&quot;&gt;Investment Plans for NRI&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href&#x3D;&quot;https://international.tataaia.com/life-insurance-plans/wealth-plans/shubh-global-invest.html?utm_campaign&#x3D;nrinavigationmenu&quot;&gt;$ Investment Plan&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href&#x3D;&quot;/life-insurance-plans/nri-life-insurance-plans.html&quot;&gt;Life Insurance Plans for NRI&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href&#x3D;&quot;/life-insurance-plans/nri-life-insurance-plans/nri-retirement-plans.html&quot;&gt;Retirement Plans for NRI&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href&#x3D;&quot;/blogs/nri/why-nris-should-gift-pension-plan-to-parents.html&quot;&gt;Gift an Annuity to your Parents&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href&#x3D;&quot;/life-insurance-plans/term-insurance/term-insurance-calculator-for-nri.html&quot;&gt;Term Insurance Calculator&lt;/a&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                    &lt;/li&gt;
-                    &lt;li&gt;
                     &lt;p&gt;&lt;a href&#x3D;&quot;/life-insurance-plans/wealth-solutions.html&quot;&gt;&lt;img src&#x3D;&quot;/content/dam/tata-aia/assets/wealth-plans-42e796b9.svg&quot; alt&#x3D;&quot;&quot;&gt;Investment Plans&lt;/a&gt;&lt;/p&gt;
                     &lt;ul&gt;
                     &lt;li&gt;&lt;a href&#x3D;&quot;/life-insurance-plans/wealth-solutions/param-raksha-life-pro-plus.html&quot;&gt;Best-selling Plan&lt;/a&gt;&lt;/li&gt;
@@ -40,6 +28,17 @@
                     &lt;li&gt;&lt;a href&#x3D;&quot;/term-plan-with-return-of-premium.html&quot;&gt;Term Plan With Return of Premium&lt;/a&gt;&lt;/li&gt;
                     &lt;li&gt;&lt;a href&#x3D;&quot;/life-insurance-plans/term-plan-with-market-linked-returns.html?utm_campaign&#x3D;navtermplans&quot;&gt;Term Plan + Market-linked Returns&lt;/a&gt;&lt;/li&gt;
                     &lt;li&gt;&lt;a href&#x3D;&quot;/life-insurance-plans/term-insurance/term-insurance-for-women.html&quot;&gt;Term Plan for Women&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;&lt;a href&#x3D;&quot;/calculator.html&quot;&gt;Calculators&lt;/a&gt;&lt;/p&gt;
+                    &lt;ul&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/calculator/term-insurance-calculator.html&quot;&gt;Term Insurance Calculator&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/calculator/ulip-calculator.html&quot;&gt;ULIP Calculator&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/calculator/saving-calculator.html&quot;&gt;Savings Calculator&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/calculator/retirement-and-pension-calculator.html&quot;&gt;Retirement &amp;#x26; Pension Calculator&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/calculator/compound-interest-calculator.html&quot;&gt;Compound Interest Calculator&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/calculator/human-life-value-calculator.html&quot;&gt;Human Life Value Calculator&lt;/a&gt;&lt;/li&gt;
                     &lt;/ul&gt;
                     &lt;/li&gt;
                     &lt;li&gt;
